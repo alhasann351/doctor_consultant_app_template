@@ -19,35 +19,33 @@ class _SplashScreenState extends State<SplashScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.topLeftSplashBackgroundColor,
-              Colors.white,
-              AppColors.bottomRightSplashBackgroundColor,
-            ],
+          image: DecorationImage(
+            image: AssetImage(ImagesIcons.splashBackgroundImage),
+            fit: BoxFit.cover,
+            opacity: 2.0,
           ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(
-              ImagesIcons.splashImage,
-              width: 205,
-              height: 105,
-            ),
-            const SizedBox(
-              height: 10,
-            ),
             Text(
-              'splash_text'.tr,
+              'splash_text_1'.tr,
               style: const TextStyle(
                 fontFamily: AppFontStyle.rubik,
-                fontSize: 25,
+                fontSize: 26,
+                color: AppColors.splashTextColor,
+              ),
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              'splash_text_2'.tr,
+              style: const TextStyle(
+                fontFamily: AppFontStyle.rubik,
                 fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.normal,
+                fontSize: 30,
                 color: AppColors.splashTextColor,
               ),
             ),

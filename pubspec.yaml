@@ -80,7 +80,7 @@ flutter:
     - family: rubik
       fonts:
         - asset: assets/fonts/rubik.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+        - asset: assets/fonts/rubik_bold.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

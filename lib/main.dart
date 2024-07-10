@@ -1,5 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/localization/languages.dart';
-import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen.dart';
+import 'package:doctor_consultant_app_template/resources/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       translations: Languages(),
       locale: const Locale('en', 'US'),
       fallbackLocale: const Locale('en', 'US'),
-      home: SplashScreen(),
+      getPages: AppRoutes.appRoutes(),
     );
   }
 }
