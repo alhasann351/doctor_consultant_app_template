@@ -1,8 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../resources/colors/app_colors.dart';
+import '../../resources/fonts/app_font_style.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -12,18 +13,33 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  ///SplashService splashService = SplashService();
+
+  @override
+  void initState() {
+    //splashService.isOnboardingScreen();
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    precacheImage(const AssetImage(ImagesIcons.splashBackgroundImage), context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(ImagesIcons.splashBackgroundImage),
             fit: BoxFit.cover,
-            opacity: 2.0,
+            //opacity: 2.0,
           ),
+          color: Colors.transparent,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
