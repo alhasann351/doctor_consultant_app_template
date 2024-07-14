@@ -42,7 +42,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             child: Image.asset(ImagesIcons.onboardingImage2),
           ),
           Center(
-            child: Image.asset('assets/images/onboarding_image_3.png'),
+            child: Image.asset(ImagesIcons.onboardingImage3),
           ),
         ],
       ),

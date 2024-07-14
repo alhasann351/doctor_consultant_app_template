@@ -6,6 +6,6 @@ import 'package:get/get.dart';
 class SplashService {
   Future<void> isOnboardingScreen() async {
     Timer(const Duration(seconds: 4),
-        () => Get.toNamed(RoutesName.onboardingScreen));
+        () => Get.offAllNamed(RoutesName.onboardingScreen));
   }
 }

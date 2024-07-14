@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../resources/colors/app_colors.dart';
 import '../../resources/fonts/app_font_style.dart';
+import '../../views_models/services/splash_service.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,12 +14,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  ///SplashService splashService = SplashService();
+  SplashService splashService = SplashService();
 
   @override
   void initState() {
-    //splashService.isOnboardingScreen();
     super.initState();
+    splashService.isOnboardingScreen();
   }
 
   @override
