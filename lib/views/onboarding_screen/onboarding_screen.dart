@@ -4,6 +4,7 @@ import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/o
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_2.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_3.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
   PageController pageController = PageController();
-  String onboardingScreenSkip = 'Skip';
+  String onboardingScreenSkip = 'onboarding_skip_text'.tr;
   int currentScreenIndex = 0;
 
   @override
@@ -73,9 +74,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             onPageChanged: (index) {
               currentScreenIndex = index;
               if (index == 2) {
-                onboardingScreenSkip = 'Finish';
+                onboardingScreenSkip = 'onboarding_finish_text'.tr;
               } else {
-                onboardingScreenSkip = 'Skip';
+                onboardingScreenSkip = 'onboarding_skip_text'.tr;
               }
               setState(() {});
             },
@@ -113,10 +114,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 currentScreenIndex == 2
                     ? const SizedBox(width: 10)
                     : GestureDetector(
-                        onTap: () {},
-                        child: const Text(
-                          'Next',
-                          style: TextStyle(
+                        onTap: () {
+                          pageController.nextPage(
+                            duration: const Duration(
+                              milliseconds: 500,
+                            ),
+                            curve: Curves.decelerate,
+                          );
+                        },
+                        child: Text(
+                          'onboarding_next_text'.tr,
+                          style: const TextStyle(
                             fontFamily: AppFontStyle.rubik,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,

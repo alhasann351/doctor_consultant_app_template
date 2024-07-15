@@ -15,6 +15,9 @@ class Languages extends Translations {
               'Easily find and book appointments with top-rated healthcare providers in your area with Choose Best Doctors.',
           'onboarding_description_text_3':
               'Simplify your healthcare experience with Easy Appointments. Find and book appointments with trusted doctors in just a few taps.',
+          'onboarding_skip_text': 'Skip',
+          'onboarding_next_text': 'Next',
+          'onboarding_finish_text': 'Finish',
         },
         'bn_BD': {
           'splash_text_1': 'স্বাগতম',
@@ -28,6 +31,9 @@ class Languages extends Translations {
               'সেরা ডাক্তার চয়ন করুন সহ আপনার এলাকার শীর্ষ-রেটেড স্বাস্থ্যসেবা প্রদানকারীদের সাথে সহজেই অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
           'onboarding_description_text_3':
               'সহজ অ্যাপয়েন্টমেন্টের সাথে আপনার স্বাস্থ্যসেবা অভিজ্ঞতা সহজ করুন। শুধুমাত্র কয়েকটি ট্যাপে বিশ্বস্ত ডাক্তারদের সাথে অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
+          'onboarding_skip_text': 'এড়িয়ে যান',
+          'onboarding_next_text': 'পরবর্তী',
+          'onboarding_finish_text': 'শেষ করুন',
         },
         'hi_IN': {
           'splash_text_1': 'आपका स्वागत है',
@@ -41,6 +47,9 @@ class Languages extends Translations {
               'अपने क्षेत्र में सर्वश्रेष्ठ डॉक्टर्स चुनें के साथ शीर्ष-रेटेड स्वास्थ्य सेवा प्रदाताओं के साथ आसानी से अपॉइंटमेंट खोजें और बुक करें।',
           'onboarding_description_text_3':
               'आसान नियुक्तियाँ के साथ अपने स्वास्थ्य सेवा अनुभव को सरल बनाएँ। बस कुछ ही टैप में विश्वसनीय डॉक्टरों के साथ अपॉइंटमेंट पाएँ और बुक करें।',
+          'onboarding_skip_text': 'छोडना',
+          'onboarding_next_text': 'अगला',
+          'onboarding_finish_text': 'खत्म करना',
         },
       };
 }
