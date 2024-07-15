@@ -1,7 +1,8 @@
-import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_1.dart';
+import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_2.dart';
+import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_3.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -11,38 +12,62 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  List onboardingInformation = [
-    {
-      'image': ImagesIcons.onboardingImage1,
-      'title': 'onboarding_title_text_1'.tr,
-      'description': 'onboarding_description_text_1'.tr,
-    },
-    {
-      'image': ImagesIcons.onboardingImage2,
-      'title': 'onboarding_title_text_2'.tr,
-      'description': 'onboarding_description_text_2'.tr,
-    },
-    {
-      'image': ImagesIcons.onboardingImage3,
-      'title': 'onboarding_title_text_3'.tr,
-      'description': 'onboarding_description_text_3'.tr,
-    },
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: PageView(
+      backgroundColor: Colors.white,
+      body: Stack(
         children: [
-          Center(
-            child: Image.asset(ImagesIcons.onboardingImage1),
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Container(
+              height: 342,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.topLeft,
+                  radius: 0.8,
+                  colors: [
+                    AppColors.topBackgroundColor.withOpacity(0.3),
+                    AppColors.centerBackgroundColor.withOpacity(0.3),
+                  ],
+                  stops: const [
+                    0.1,
+                    1.0,
+                  ],
+                ),
+              ),
+            ),
           ),
-          Center(
-            child: Image.asset(ImagesIcons.onboardingImage2),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: Container(
+              height: 342,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.bottomRight,
+                  radius: 0.8,
+                  colors: [
+                    AppColors.bottomBackgroundColor.withOpacity(0.3),
+                    AppColors.centerBackgroundColor.withOpacity(0.3),
+                  ],
+                  stops: const [
+                    0.1,
+                    1.0,
+                  ],
+                ),
+              ),
+            ),
           ),
-          Center(
-            child: Image.asset(ImagesIcons.onboardingImage3),
+          PageView(
+            children: const [
+              OnboardingScreen1(),
+              OnboardingScreen2(),
+              OnboardingScreen3(),
+            ],
           ),
         ],
       ),
