@@ -1,8 +1,10 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_1.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_2.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_3.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -15,9 +17,7 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  PageController pageController = PageController();
-  String onboardingScreenSkip = 'onboarding_skip_text'.tr;
-  int currentScreenIndex = 0;
+  final onboardingController = Get.put(OnboardingController());
 
   @override
   Widget build(BuildContext context) {
@@ -69,70 +69,77 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
             ),
           ),
-          PageView(
-            controller: pageController,
-            onPageChanged: (index) {
-              currentScreenIndex = index;
-              if (index == 2) {
-                onboardingScreenSkip = 'onboarding_finish_text'.tr;
-              } else {
-                onboardingScreenSkip = 'onboarding_skip_text'.tr;
-              }
-              setState(() {});
-            },
-            children: const [
-              OnboardingScreen1(),
-              OnboardingScreen2(),
-              OnboardingScreen3(),
-            ],
+          Obx(
+            () => PageView(
+              controller: onboardingController.pageController.value,
+              onPageChanged: (index) {
+                onboardingController.currentScreenIndex.value = index;
+                if (index == 2) {
+                  onboardingController.onboardingScreenSkip.value =
+                      'onboarding_finish_text'.tr;
+                } else {
+                  onboardingController.onboardingScreenSkip.value =
+                      'onboarding_skip_text'.tr;
+                }
+              },
+              children: const [
+                OnboardingScreen1(),
+                OnboardingScreen2(),
+                OnboardingScreen3(),
+              ],
+            ),
           ),
-          Container(
-            alignment: const Alignment(0, 0.8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                GestureDetector(
-                  onTap: () {},
-                  child: Text(
-                    onboardingScreenSkip,
-                    style: const TextStyle(
-                      fontFamily: AppFontStyle.rubik,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.onboardingSkipFinishButtonTextColor,
+          Obx(
+            () => Container(
+              alignment: const Alignment(0, 0.8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Get.offAllNamed(RoutesName.signupLoginScreen);
+                    },
+                    child: Text(
+                      onboardingController.onboardingScreenSkip.value,
+                      style: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.onboardingSkipFinishButtonTextColor,
+                      ),
                     ),
                   ),
-                ),
-                SmoothPageIndicator(
-                  controller: pageController,
-                  count: 3,
-                  axisDirection: Axis.horizontal,
-                  effect: const WormEffect(
-                      activeDotColor:
-                          AppColors.smoothPageIndicatorActiveDotColor),
-                ),
-                currentScreenIndex == 2
-                    ? const SizedBox(width: 10)
-                    : GestureDetector(
-                        onTap: () {
-                          pageController.nextPage(
-                            duration: const Duration(
-                              milliseconds: 500,
+                  SmoothPageIndicator(
+                    controller: onboardingController.pageController.value,
+                    count: 3,
+                    axisDirection: Axis.horizontal,
+                    effect: const WormEffect(
+                        activeDotColor:
+                            AppColors.smoothPageIndicatorActiveDotColor),
+                  ),
+                  onboardingController.currentScreenIndex.value == 2
+                      ? const SizedBox(width: 10)
+                      : GestureDetector(
+                          onTap: () {
+                            onboardingController.pageController.value.nextPage(
+                              duration: const Duration(
+                                milliseconds: 500,
+                              ),
+                              curve: Curves.decelerate,
+                            );
+                          },
+                          child: Text(
+                            'onboarding_next_text'.tr,
+                            style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.onboardingNextButtonTextColor,
                             ),
-                            curve: Curves.decelerate,
-                          );
-                        },
-                        child: Text(
-                          'onboarding_next_text'.tr,
-                          style: const TextStyle(
-                            fontFamily: AppFontStyle.rubik,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.onboardingNextButtonTextColor,
                           ),
                         ),
-                      ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
