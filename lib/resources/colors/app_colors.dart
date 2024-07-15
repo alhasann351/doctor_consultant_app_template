@@ -11,4 +11,8 @@ class AppColors {
   static const Color circleAvatarForegroundColor = Colors.white;
   static const Color onboardingTitleTextColor = Colors.black;
   static const Color onboardingDescriptionTextColor = Colors.grey;
+  static const Color smoothPageIndicatorActiveDotColor = Colors.lightBlueAccent;
+  static const Color onboardingNextButtonTextColor = Colors.lightBlueAccent;
+  static const Color onboardingSkipFinishButtonTextColor =
+      Colors.lightBlueAccent;
 }
