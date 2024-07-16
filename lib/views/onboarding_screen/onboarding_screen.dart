@@ -98,6 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   GestureDetector(
                     onTap: () {
                       Get.offAllNamed(RoutesName.signupLoginScreen);
+                      onboardingController.completeOnboarding();
                     },
                     child: Text(
                       onboardingController.onboardingScreenSkip.value,

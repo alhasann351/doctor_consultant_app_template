@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../resources/colors/app_colors.dart';
 import '../../resources/fonts/app_font_style.dart';
+import '../../views_models/controllers/onboarding_controller.dart';
 import '../../views_models/services/splash_service.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   SplashService splashService = SplashService();
+  final onboardingController = Get.put(OnboardingController());
 
   @override
   void initState() {
