@@ -25,6 +25,8 @@ class Languages extends Translations {
           //signup login screen
           'title_text': 'Doctor Consultant',
           'description_text': 'Get popular doctors in doctor consultant',
+          'signup_text': 'Signup',
+          'login_text': 'Login',
         },
         'bn_BD': {
           //splash screen
@@ -48,6 +50,8 @@ class Languages extends Translations {
           //signup login screen
           'title_text': 'ডাক্তার পরামর্শদাতা',
           'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
+          'signup_text': 'নিবন্ধন করুন',
+          'login_text': 'প্রবেশ করুন',
         },
         'hi_IN': {
           //splash screen
@@ -70,7 +74,8 @@ class Languages extends Translations {
 
           //signup login screen
           'title_text': 'डॉक्टर सलाहकार',
-          'description_text': 'डॉक्टर सलाहकार में लोकप्रिय डॉक्टर प्राप्त करें',
+          'signup_text': 'साइन अप करें',
+          'login_text': 'लॉग इन करें',
         },
       };
 }

@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -62,10 +63,10 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
               ),
             ),
           ),
-          Column(
+          ListView(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 90),
+                padding: const EdgeInsets.only(top: 70),
                 child: Align(
                   alignment: Alignment.topCenter,
                   child: Text(
@@ -80,30 +81,102 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(25),
-                child: Text(
-                  'description_text'.tr,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontFamily: AppFontStyle.rubik,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: AppColors.descriptionTextColor,
+              const SizedBox(height: 100),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(25),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'description_text'.tr,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontFamily: AppFontStyle.rubik,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: AppColors.descriptionTextColor,
+                        ),
+                      ),
+                      const SizedBox(height: 100),
+                      SizedBox(
+                        height: 54,
+                        width: 295,
+                        child: RoundedButton(
+                          backgroundColor: AppColors.signupButtonBackgroundColor
+                              .withOpacity(0.8),
+                          title: 'signup_text'.tr,
+                          textStyle: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: AppColors.signupButtonTextColor,
+                          ),
+                          onTap: () {},
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Center(
+                            child: SizedBox(
+                              width: 150,
+                              child: Divider(
+                                color: AppColors.dividerColor,
+                                height: 10,
+                                indent: 60,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(
+                              'OR',
+                              style: TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                                color: AppColors.dividerTextColor,
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: SizedBox(
+                              width: 150,
+                              child: Divider(
+                                color: AppColors.dividerColor,
+                                height: 10,
+                                endIndent: 60,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                      SizedBox(
+                        height: 54,
+                        width: 295,
+                        child: RoundedButton(
+                          backgroundColor: AppColors.loginButtonBackgroundColor
+                              .withOpacity(0.8),
+                          title: 'login_text'.tr,
+                          textStyle: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: AppColors.loginButtonTextColor,
+                          ),
+                          onTap: () {},
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
+              )
             ],
-          ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(25),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [],
-              ),
-            ),
           )
         ],
       ),
