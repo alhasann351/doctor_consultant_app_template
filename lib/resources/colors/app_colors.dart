@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  //scaffold background
+  static const Color scaffoldBackgroundColor = Colors.white;
+
   //splash screen
   static const Color splashTopBackgroundColor = Colors.lightBlueAccent;
   static const Color splashCenterBackgroundColor = Colors.white;
@@ -18,4 +21,9 @@ class AppColors {
   static const Color onboardingNextButtonTextColor = Colors.lightBlueAccent;
   static const Color onboardingSkipFinishButtonTextColor =
       Colors.lightBlueAccent;
+
+  //signup login screen
+  static const Color signupLoginTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color signupLoginCenterBackgroundColor = Colors.white;
+  static const Color signupLoginBottomBackgroundColor = Colors.greenAccent;
 }
