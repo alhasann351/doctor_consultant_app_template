@@ -4,8 +4,11 @@ class Languages extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'en_US': {
+          //splash screen
           'splash_text_1': 'Welcome to',
           'splash_text_2': 'Doctor Consultant',
+
+          //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
           'onboarding_title_text_3': 'Easy Appointments',
@@ -18,10 +21,17 @@ class Languages extends Translations {
           'onboarding_skip_text': 'Skip',
           'onboarding_next_text': 'Next',
           'onboarding_finish_text': 'Finish',
+
+          //signup login screen
+          'title_text': 'Doctor Consultant',
+          'description_text': 'Get popular doctors in doctor consultant',
         },
         'bn_BD': {
+          //splash screen
           'splash_text_1': 'স্বাগতম',
           'splash_text_2': 'ডাক্তার পরামর্শদাতা',
+
+          //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
           'onboarding_title_text_2': 'সেরা ডাক্তার চয়ন করুন',
           'onboarding_title_text_3': 'সহজ অ্যাপয়েন্টমেন্ট',
@@ -34,10 +44,17 @@ class Languages extends Translations {
           'onboarding_skip_text': 'এড়িয়ে যান',
           'onboarding_next_text': 'পরবর্তী',
           'onboarding_finish_text': 'শেষ করুন',
+
+          //signup login screen
+          'title_text': 'ডাক্তার পরামর্শদাতা',
+          'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
         },
         'hi_IN': {
+          //splash screen
           'splash_text_1': 'आपका स्वागत है',
           'splash_text_2': 'डॉक्टर सलाहकार',
+
+          //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
           'onboarding_title_text_2': 'सर्वश्रेष्ठ डॉक्टर चुनें',
           'onboarding_title_text_3': 'आसान नियुक्तियाँ',
@@ -50,6 +67,10 @@ class Languages extends Translations {
           'onboarding_skip_text': 'छोडना',
           'onboarding_next_text': 'अगला',
           'onboarding_finish_text': 'खत्म करना',
+
+          //signup login screen
+          'title_text': 'डॉक्टर सलाहकार',
+          'description_text': 'डॉक्टर सलाहकार में लोकप्रिय डॉक्टर प्राप्त करें',
         },
       };
 }

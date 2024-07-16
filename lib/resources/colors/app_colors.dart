@@ -4,6 +4,9 @@ class AppColors {
   //scaffold background
   static const Color scaffoldBackgroundColor = Colors.white;
 
+  //default button background
+  static const Color defaultButtonBackgroundColor = Color(0xFF0EBE7F);
+
   //splash screen
   static const Color splashTopBackgroundColor = Colors.lightBlueAccent;
   static const Color splashCenterBackgroundColor = Colors.white;
@@ -26,4 +29,6 @@ class AppColors {
   static const Color signupLoginTopBackgroundColor = Colors.lightBlueAccent;
   static const Color signupLoginCenterBackgroundColor = Colors.white;
   static const Color signupLoginBottomBackgroundColor = Colors.greenAccent;
+  static const Color titleTextColor = Colors.black;
+  static const Color descriptionTextColor = Colors.grey;
 }
