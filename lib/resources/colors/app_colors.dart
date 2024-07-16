@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   //splash screen
-  static const Color splashTextColor = Colors.white;
+  static const Color splashTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color splashCenterBackgroundColor = Colors.white;
+  static const Color splashBottomBackgroundColor = Colors.greenAccent;
+  static const Color splashTextColor = Colors.black;
 
   //onboarding screen
   static const Color topBackgroundColor = Colors.lightBlueAccent;

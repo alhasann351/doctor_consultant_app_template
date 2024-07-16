@@ -2,6 +2,7 @@ class ImagesIcons {
   //splash screen
   static const String splashBackgroundImage =
       'assets/images/splash_background_image.jpg';
+  static const String splashScreenIcon = 'assets/icons/doctor_consultant.png';
 
   //onboarding screen
   static const String onboardingImage1 = 'assets/images/onboarding_image_1.jpg';

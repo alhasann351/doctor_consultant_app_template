@@ -23,51 +23,87 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    precacheImage(const AssetImage(ImagesIcons.splashBackgroundImage), context);
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(ImagesIcons.splashBackgroundImage),
-            fit: BoxFit.cover,
-            //opacity: 2.0,
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Container(
+              height: 342,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.topLeft,
+                  radius: 0.8,
+                  colors: [
+                    AppColors.splashTopBackgroundColor.withOpacity(0.3),
+                    AppColors.splashCenterBackgroundColor.withOpacity(0.3),
+                  ],
+                  stops: const [
+                    0.1,
+                    1.0,
+                  ],
+                ),
+              ),
+            ),
           ),
-          color: Colors.transparent,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              'splash_text_1'.tr,
-              style: const TextStyle(
-                fontFamily: AppFontStyle.rubik,
-                fontSize: 26,
-                color: AppColors.splashTextColor,
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: Container(
+              height: 342,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.bottomRight,
+                  radius: 0.8,
+                  colors: [
+                    AppColors.splashBottomBackgroundColor.withOpacity(0.3),
+                    AppColors.splashCenterBackgroundColor.withOpacity(0.3),
+                  ],
+                  stops: const [
+                    0.1,
+                    1.0,
+                  ],
+                ),
               ),
             ),
-            const SizedBox(
-              height: 5,
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  ImagesIcons.splashScreenIcon,
+                  height: 105,
+                  width: 205,
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'splash_text_1'.tr,
+                  style: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontSize: 26,
+                    color: AppColors.splashTextColor,
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  'splash_text_2'.tr,
+                  style: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                    color: AppColors.splashTextColor,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              'splash_text_2'.tr,
-              style: const TextStyle(
-                fontFamily: AppFontStyle.rubik,
-                fontWeight: FontWeight.bold,
-                fontSize: 30,
-                color: AppColors.splashTextColor,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
