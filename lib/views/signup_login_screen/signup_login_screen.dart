@@ -84,7 +84,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
               const SizedBox(height: 100),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.all(25),
+                  padding: const EdgeInsets.all(45),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -102,7 +102,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                       const SizedBox(height: 100),
                       SizedBox(
                         height: 54,
-                        width: 295,
+                        width: MediaQuery.of(context).size.width,
                         child: RoundedButton(
                           backgroundColor: AppColors.signupButtonBackgroundColor
                               .withOpacity(0.8),
@@ -117,21 +117,21 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      const Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Center(
+                          Expanded(
                             child: SizedBox(
-                              width: 150,
-                              child: Divider(
+                              width: MediaQuery.of(context).size.width,
+                              child: const Divider(
                                 color: AppColors.dividerColor,
                                 height: 10,
                                 indent: 60,
                               ),
                             ),
                           ),
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
                               'OR',
@@ -143,10 +143,10 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                               ),
                             ),
                           ),
-                          Center(
+                          Expanded(
                             child: SizedBox(
-                              width: 150,
-                              child: Divider(
+                              width: MediaQuery.of(context).size.width,
+                              child: const Divider(
                                 color: AppColors.dividerColor,
                                 height: 10,
                                 endIndent: 60,
@@ -158,7 +158,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                       const SizedBox(height: 20),
                       SizedBox(
                         height: 54,
-                        width: 295,
+                        width: MediaQuery.of(context).size.width,
                         child: RoundedButton(
                           backgroundColor: AppColors.loginButtonBackgroundColor
                               .withOpacity(0.8),
