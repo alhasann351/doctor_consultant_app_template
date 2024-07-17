@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -113,7 +114,9 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                             fontSize: 18,
                             color: AppColors.signupButtonTextColor,
                           ),
-                          onTap: () {},
+                          onTap: () {
+                            Get.offAllNamed(RoutesName.signupScreen);
+                          },
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -169,7 +172,9 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                             fontSize: 18,
                             color: AppColors.loginButtonTextColor,
                           ),
-                          onTap: () {},
+                          onTap: () {
+                            Get.offAllNamed(RoutesName.loginScreen);
+                          },
                         ),
                       ),
                     ],
