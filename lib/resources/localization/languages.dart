@@ -27,6 +27,11 @@ class Languages extends Translations {
           'description_text': 'Get popular doctors in doctor consultant',
           'signup_text': 'Signup',
           'login_text': 'Login',
+
+          //signup screen
+          'signup_title_text': 'Doctor Consultant',
+          'input_name_hint_text': 'Name',
+          'input_email_hint_text': 'Email',
         },
         'bn_BD': {
           //splash screen
@@ -52,6 +57,11 @@ class Languages extends Translations {
           'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
           'signup_text': 'নিবন্ধন করুন',
           'login_text': 'প্রবেশ করুন',
+
+          //signup screen
+          'signup_title_text': 'ডাক্তার পরামর্শদাতা',
+          'input_name_hint_text': 'নাম',
+          'input_email_hint_text': 'ইমেইল',
         },
         'hi_IN': {
           //splash screen
@@ -76,6 +86,11 @@ class Languages extends Translations {
           'title_text': 'डॉक्टर सलाहकार',
           'signup_text': 'साइन अप करें',
           'login_text': 'लॉग इन करें',
+
+          //signup screen
+          'signup_title_text': 'डॉक्टर सलाहकार',
+          'input_name_hint_text': 'नाम',
+          'input_email_hint_text': 'ईमेल',
         },
       };
 }

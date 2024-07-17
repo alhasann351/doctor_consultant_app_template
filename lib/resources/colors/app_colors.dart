@@ -37,4 +37,11 @@ class AppColors {
   static const Color loginButtonTextColor = Colors.white;
   static const Color dividerColor = Colors.grey;
   static const Color dividerTextColor = Colors.black;
+
+  //signup screen
+  static const Color signupTitleTextColor = Colors.black;
+  static const Color cursorColor = Colors.black;
+  static const Color fillColor = Colors.white;
+  static const Color prefixIconColor = Colors.grey;
+  static const Color hintTextColor = Colors.grey;
 }

@@ -1,4 +1,7 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_email.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_name.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -11,10 +14,29 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: Center(
-        child: Text('Signup Screen'),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              AppColors.signupButtonBackgroundColor.withOpacity(0.3),
+              AppColors.loginButtonBackgroundColor.withOpacity(0.3),
+            ],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: ListView(
+            children: const [
+              TitleText(),
+              InputName(),
+              InputEmail(),
+            ],
+          ),
+        ),
       ),
     );
   }
