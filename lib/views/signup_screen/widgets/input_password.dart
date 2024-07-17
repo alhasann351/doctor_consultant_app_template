@@ -33,7 +33,7 @@ class InputPassword extends StatelessWidget {
           prefixIcon: const Padding(
             padding: EdgeInsets.only(left: 8.0),
             child: Icon(
-              Icons.vpn_key_outlined,
+              Icons.lock_outline,
               color: AppColors.prefixIconColor,
               size: 30,
             ),

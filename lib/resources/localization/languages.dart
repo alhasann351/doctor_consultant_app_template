@@ -33,6 +33,7 @@ class Languages extends Translations {
           'input_name_hint_text': 'Name',
           'input_email_hint_text': 'Email',
           'input_password_hint_text': 'Password',
+          'signup_button_text': 'Signup',
         },
         'bn_BD': {
           //splash screen
@@ -64,6 +65,7 @@ class Languages extends Translations {
           'input_name_hint_text': 'নাম',
           'input_email_hint_text': 'ইমেইল',
           'input_password_hint_text': 'পাসওয়ার্ড',
+          'signup_button_text': 'নিবন্ধন করুন',
         },
         'hi_IN': {
           //splash screen
@@ -94,6 +96,7 @@ class Languages extends Translations {
           'input_name_hint_text': 'नाम',
           'input_email_hint_text': 'ईमेल',
           'input_password_hint_text': 'पासवर्ड',
+          'signup_button_text': 'साइन अप करें',
         },
       };
 }

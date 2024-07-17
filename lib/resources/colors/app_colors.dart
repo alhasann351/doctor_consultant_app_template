@@ -48,4 +48,6 @@ class AppColors {
   static const Color nameTextColor = Colors.black;
   static const Color emailTextColor = Colors.black;
   static const Color passwordTextColor = Colors.black;
+  static const Color signupButtonColor = Colors.lightBlueAccent;
+  static const Color signupTextColor = Colors.white;
 }
