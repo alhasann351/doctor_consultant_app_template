@@ -11,14 +11,18 @@ class InputName extends StatelessWidget {
     return TextFormField(
       cursorColor: AppColors.cursorColor,
       keyboardType: TextInputType.text,
+      style: const TextStyle(
+        fontFamily: AppFontStyle.rubik,
+        fontSize: 18,
+        color: AppColors.nameTextColor,
+      ),
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.fillColor,
         hintText: 'input_name_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
+          fontSize: 18,
           color: AppColors.hintTextColor,
         ),
         prefixIcon: const Padding(

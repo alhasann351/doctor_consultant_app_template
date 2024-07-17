@@ -15,6 +15,11 @@ class InputPassword extends StatelessWidget {
       () => TextFormField(
         cursorColor: AppColors.cursorColor,
         keyboardType: TextInputType.text,
+        style: const TextStyle(
+          fontFamily: AppFontStyle.rubik,
+          fontSize: 18,
+          color: AppColors.passwordTextColor,
+        ),
         obscureText: showPasswordController.showPassword.value,
         decoration: InputDecoration(
           filled: true,
@@ -22,8 +27,7 @@ class InputPassword extends StatelessWidget {
           hintText: 'input_password_hint_text'.tr,
           hintStyle: const TextStyle(
             fontFamily: AppFontStyle.rubik,
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
+            fontSize: 18,
             color: AppColors.hintTextColor,
           ),
           prefixIcon: const Padding(

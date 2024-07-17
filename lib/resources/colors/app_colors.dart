@@ -45,4 +45,7 @@ class AppColors {
   static const Color prefixIconColor = Colors.grey;
   static const Color suffixIconColor = Colors.grey;
   static const Color hintTextColor = Colors.grey;
+  static const Color nameTextColor = Colors.black;
+  static const Color emailTextColor = Colors.black;
+  static const Color passwordTextColor = Colors.black;
 }

@@ -11,14 +11,18 @@ class InputEmail extends StatelessWidget {
     return TextFormField(
       cursorColor: AppColors.cursorColor,
       keyboardType: TextInputType.emailAddress,
+      style: const TextStyle(
+        fontFamily: AppFontStyle.rubik,
+        fontSize: 18,
+        color: AppColors.passwordTextColor,
+      ),
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.fillColor,
         hintText: 'input_email_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
+          fontSize: 18,
           color: AppColors.hintTextColor,
         ),
         prefixIcon: const Padding(
