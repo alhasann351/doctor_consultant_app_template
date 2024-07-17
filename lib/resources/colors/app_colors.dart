@@ -43,5 +43,6 @@ class AppColors {
   static const Color cursorColor = Colors.black;
   static const Color fillColor = Colors.white;
   static const Color prefixIconColor = Colors.grey;
+  static const Color suffixIconColor = Colors.grey;
   static const Color hintTextColor = Colors.grey;
 }
