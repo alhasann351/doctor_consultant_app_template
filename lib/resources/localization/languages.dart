@@ -27,6 +27,7 @@ class Languages extends Translations {
           'description_text': 'Get popular doctors in doctor consultant',
           'signup_text': 'Signup',
           'login_text': 'Login',
+          'or_text': 'OR',
 
           //signup screen
           'signup_title_text': 'Doctor Consultant',
@@ -34,6 +35,7 @@ class Languages extends Translations {
           'input_email_hint_text': 'Email',
           'input_password_hint_text': 'Password',
           'signup_button_text': 'Signup',
+          'signup_or_text': 'OR',
         },
         'bn_BD': {
           //splash screen
@@ -59,6 +61,7 @@ class Languages extends Translations {
           'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
           'signup_text': 'নিবন্ধন করুন',
           'login_text': 'প্রবেশ করুন',
+          'or_text': 'অথবা',
 
           //signup screen
           'signup_title_text': 'ডাক্তার পরামর্শদাতা',
@@ -66,6 +69,7 @@ class Languages extends Translations {
           'input_email_hint_text': 'ইমেইল',
           'input_password_hint_text': 'পাসওয়ার্ড',
           'signup_button_text': 'নিবন্ধন করুন',
+          'signup_or_text': 'অথবা',
         },
         'hi_IN': {
           //splash screen
@@ -90,6 +94,7 @@ class Languages extends Translations {
           'title_text': 'डॉक्टर सलाहकार',
           'signup_text': 'साइन अप करें',
           'login_text': 'लॉग इन करें',
+          'or_text': 'अथवा',
 
           //signup screen
           'signup_title_text': 'डॉक्टर सलाहकार',
@@ -97,6 +102,7 @@ class Languages extends Translations {
           'input_email_hint_text': 'ईमेल',
           'input_password_hint_text': 'पासवर्ड',
           'signup_button_text': 'साइन अप करें',
+          'signup_or_text': 'अथवा',
         },
       };
 }

@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/dividers.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_email.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_name.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_password.dart';
@@ -42,6 +43,9 @@ class _SignupScreenState extends State<SignupScreen> {
               InputPassword(),
               SizedBox(height: 50),
               SignupButton(),
+              SizedBox(height: 20),
+              Dividers(),
+              SizedBox(height: 20),
             ],
           ),
         ),

@@ -134,11 +134,12 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                               ),
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 8.0),
+                          Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              'OR',
-                              style: TextStyle(
+                              'or_text'.tr,
+                              style: const TextStyle(
                                 fontFamily: AppFontStyle.rubik,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 14,

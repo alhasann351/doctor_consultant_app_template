@@ -50,4 +50,6 @@ class AppColors {
   static const Color passwordTextColor = Colors.black;
   static const Color signupButtonColor = Colors.lightBlueAccent;
   static const Color signupTextColor = Colors.white;
+  static const Color signupDividerColor = Colors.grey;
+  static const Color signupDividerTextColor = Colors.black;
 }
