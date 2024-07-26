@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/different_way_signup.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/dividers.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_email.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_name.dart';
@@ -46,6 +47,7 @@ class _SignupScreenState extends State<SignupScreen> {
               SizedBox(height: 20),
               Dividers(),
               SizedBox(height: 20),
+              DifferentWaySignup(),
             ],
           ),
         ),

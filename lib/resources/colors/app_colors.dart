@@ -52,4 +52,5 @@ class AppColors {
   static const Color signupTextColor = Colors.white;
   static const Color signupDividerColor = Colors.grey;
   static const Color signupDividerTextColor = Colors.black;
+  static const Color differentSignupCardBackgroundColor = Colors.white;
 }
