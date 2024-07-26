@@ -4,6 +4,10 @@ class AppColors {
   //scaffold background
   static const Color scaffoldBackgroundColor = Colors.white;
 
+  //toast message
+  static const Color toastMessageBackgroundColor = Colors.white;
+  static const Color toastMessageTextColor = Colors.black;
+
   //default button background
   static const Color defaultButtonBackgroundColor = Color(0xFF0EBE7F);
 

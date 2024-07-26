@@ -38,6 +38,7 @@ dependencies:
   get:
   smooth_page_indicator:
   shared_preferences:
+  fluttertoast: ^8.2.6
 
 dev_dependencies:
   flutter_test:
