@@ -46,6 +46,8 @@ class Languages extends Translations {
           'login_title_text': 'Doctor Consultant',
           'login_input_email_hint_text': 'Email',
           'login_input_password_hint_text': 'Password',
+          'login_button_text': 'Login',
+          'login_subtitle_text': 'Welcome! Please enter your login details.'
         },
         'bn_BD': {
           //splash screen
@@ -69,8 +71,8 @@ class Languages extends Translations {
           //signup login screen
           'title_text': 'ডাক্তার পরামর্শদাতা',
           'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
-          'signup_text': 'নিবন্ধন করুন',
-          'login_text': 'প্রবেশ করুন',
+          'signup_text': 'সাইন আপ',
+          'login_text': 'লগইন',
           'or_text': 'অথবা',
 
           //signup screen
@@ -78,18 +80,20 @@ class Languages extends Translations {
           'signup_input_name_hint_text': 'নাম',
           'signup_input_email_hint_text': 'ইমেইল',
           'signup_input_password_hint_text': 'পাসওয়ার্ড',
-          'signup_button_text': 'নিবন্ধন করুন',
+          'signup_button_text': 'সাইন আপ',
           'signup_or_text': 'অথবা',
           'signup_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে সাইন আপ করুন',
           'signup_with_google_toast_message': 'গুগলের সাথে সাইন আপ করুন',
           'signup_with_facebook_toast_message': 'ফেসবুক দিয়ে সাইন আপ',
           'already_account_text': 'একাউন্ট থাকলে?',
-          'already_account_login_text': 'প্রবেশ করুন',
+          'already_account_login_text': 'লগইন',
 
           //login screen
           'login_title_text': 'ডাক্তার পরামর্শদাতা',
           'login_input_email_hint_text': 'ইমেইল',
           'login_input_password_hint_text': 'পাসওয়ার্ড',
+          'login_button_text': 'লগইন',
+          'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।'
         },
         'hi_IN': {
           //splash screen
@@ -113,7 +117,7 @@ class Languages extends Translations {
           //signup login screen
           'title_text': 'डॉक्टर सलाहकार',
           'signup_text': 'साइन अप करें',
-          'login_text': 'लॉग इन करें',
+          'login_text': 'लॉगिन',
           'or_text': 'अथवा',
 
           //signup screen
@@ -127,12 +131,15 @@ class Languages extends Translations {
           'signup_with_google_toast_message': 'गूगल के साथ साइनअप करें',
           'signup_with_facebook_toast_message': 'फेस्बूक के साथ साइन अप करें',
           'already_account_text': 'एक खाता है?',
-          'already_account_login_text': 'लॉग इन करें',
+          'already_account_login_text': 'लॉगिन',
 
           //login screen
           'login_title_text': 'डॉक्टर सलाहकार',
           'login_input_email_hint_text': 'ईमेल',
           'login_input_password_hint_text': 'पासवर्ड',
+          'login_button_text': 'लॉगिन',
+          'login_subtitle_text':
+              'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।'
         },
       };
 }

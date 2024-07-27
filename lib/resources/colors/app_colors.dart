@@ -73,4 +73,7 @@ class AppColors {
   static const Color loginPrefixIconColor = Colors.grey;
   static const Color loginSuffixIconColor = Colors.grey;
   static const Color loginPasswordTextColor = Colors.black;
+  static const Color loginButtonColor = Colors.greenAccent;
+  static const Color loginTextColor = Colors.white;
+  static const Color loginSubtitleTextColor = Colors.grey;
 }
