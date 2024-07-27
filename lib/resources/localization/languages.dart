@@ -41,6 +41,7 @@ class Languages extends Translations {
           'signup_with_facebook_toast_message': 'Signup with facebook',
           'already_account_text': 'Already have an account?',
           'already_account_login_text': 'Login',
+          'signup_subtitle_text': 'Welcome! Please enter your signup details.',
 
           //login screen
           'login_title_text': 'Doctor Consultant',
@@ -87,6 +88,7 @@ class Languages extends Translations {
           'signup_with_facebook_toast_message': 'ফেসবুক দিয়ে সাইন আপ',
           'already_account_text': 'একাউন্ট থাকলে?',
           'already_account_login_text': 'লগইন',
+          'signup_subtitle_text': 'স্বাগত! আপনার সাইন আপ বিবরণ লিখুন।',
 
           //login screen
           'login_title_text': 'ডাক্তার পরামর্শদাতা',
@@ -132,6 +134,8 @@ class Languages extends Translations {
           'signup_with_facebook_toast_message': 'फेस्बूक के साथ साइन अप करें',
           'already_account_text': 'एक खाता है?',
           'already_account_login_text': 'लॉगिन',
+          'signup_subtitle_text':
+              'आपका स्वागत है! कृपया अपना साइनअप विवरण दर्ज करें।',
 
           //login screen
           'login_title_text': 'डॉक्टर सलाहकार',
@@ -139,7 +143,7 @@ class Languages extends Translations {
           'login_input_password_hint_text': 'पासवर्ड',
           'login_button_text': 'लॉगिन',
           'login_subtitle_text':
-              'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।'
+              'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
         },
       };
 }

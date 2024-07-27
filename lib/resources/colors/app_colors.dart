@@ -61,6 +61,7 @@ class AppColors {
   static const Color differentSignupCardBackgroundColor = Colors.white;
   static const Color alreadyAccountTextColor = Colors.grey;
   static const Color alreadyAccountLoginTextColor = Colors.lightBlueAccent;
+  static const Color signupSubtitleTextColor = Colors.grey;
 
 //login screen
   static const Color loginTopBackgroundColor = Colors.greenAccent;

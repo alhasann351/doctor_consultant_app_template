@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: const [
               TitleText(),
               SubtitleText(),
-              SizedBox(height: 100),
+              SizedBox(height: 50),
               InputEmail(),
               SizedBox(height: 10),
               InputPassword(),

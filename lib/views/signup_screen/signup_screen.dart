@@ -6,6 +6,7 @@ import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_name.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/input_password.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/signup_button.dart';
+import 'package:doctor_consultant_app_template/views/signup_screen/widgets/subtitle_text.dart';
 import 'package:doctor_consultant_app_template/views/signup_screen/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,8 @@ class _SignupScreenState extends State<SignupScreen> {
           child: ListView(
             children: const [
               TitleText(),
-              SizedBox(height: 100),
+              SubtitleText(),
+              SizedBox(height: 50),
               InputName(),
               SizedBox(height: 10),
               InputEmail(),
