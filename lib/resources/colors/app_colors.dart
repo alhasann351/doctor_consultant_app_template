@@ -65,4 +65,5 @@ class AppColors {
 //login screen
   static const Color loginTopBackgroundColor = Colors.greenAccent;
   static const Color loginBottomBackgroundColor = Colors.lightBlueAccent;
+  static const Color loginTitleTextColor = Colors.black;
 }
