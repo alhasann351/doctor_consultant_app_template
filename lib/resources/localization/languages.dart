@@ -44,7 +44,8 @@ class Languages extends Translations {
 
           //login screen
           'login_title_text': 'Doctor Consultant',
-          'login_input_name_hint_text': 'Name',
+          'login_input_email_hint_text': 'Email',
+          'login_input_password_hint_text': 'Password',
         },
         'bn_BD': {
           //splash screen
@@ -87,7 +88,8 @@ class Languages extends Translations {
 
           //login screen
           'login_title_text': 'ডাক্তার পরামর্শদাতা',
-          'login_input_name_hint_text': 'নাম',
+          'login_input_email_hint_text': 'ইমেইল',
+          'login_input_password_hint_text': 'পাসওয়ার্ড',
         },
         'hi_IN': {
           //splash screen
@@ -129,7 +131,8 @@ class Languages extends Translations {
 
           //login screen
           'login_title_text': 'डॉक्टर सलाहकार',
-          'login_input_name_hint_text': 'नाम',
+          'login_input_email_hint_text': 'ईमेल',
+          'login_input_password_hint_text': 'पासवर्ड',
         },
       };
 }

@@ -14,7 +14,7 @@ class InputEmail extends StatelessWidget {
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.passwordTextColor,
+        color: AppColors.signupEmailTextColor,
       ),
       decoration: InputDecoration(
         filled: true,

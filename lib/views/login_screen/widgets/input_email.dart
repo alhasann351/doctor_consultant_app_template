@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
-class InputName extends StatelessWidget {
-  const InputName({super.key});
+class InputEmail extends StatelessWidget {
+  const InputEmail({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +15,12 @@ class InputName extends StatelessWidget {
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.loginNameTextColor,
+        color: AppColors.loginEmailTextColor,
       ),
       decoration: InputDecoration(
         filled: true,
         fillColor: AppColors.loginFillColor,
-        hintText: 'login_input_name_hint_text'.tr,
+        hintText: 'login_input_email_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,

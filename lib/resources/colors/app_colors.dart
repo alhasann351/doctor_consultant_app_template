@@ -49,11 +49,11 @@ class AppColors {
   static const Color signupCursorColor = Colors.black;
   static const Color signupFillColor = Colors.white;
   static const Color signupPrefixIconColor = Colors.grey;
-  static const Color suffixIconColor = Colors.grey;
+  static const Color signupSuffixIconColor = Colors.grey;
   static const Color signupHintTextColor = Colors.grey;
   static const Color signupNameTextColor = Colors.black;
-  static const Color emailTextColor = Colors.black;
-  static const Color passwordTextColor = Colors.black;
+  static const Color signupEmailTextColor = Colors.black;
+  static const Color signupPasswordTextColor = Colors.black;
   static const Color signupButtonColor = Colors.lightBlueAccent;
   static const Color signupTextColor = Colors.white;
   static const Color signupDividerColor = Colors.grey;
@@ -67,8 +67,10 @@ class AppColors {
   static const Color loginBottomBackgroundColor = Colors.lightBlueAccent;
   static const Color loginTitleTextColor = Colors.black;
   static const Color loginCursorColor = Colors.black;
-  static const Color loginNameTextColor = Colors.black;
+  static const Color loginEmailTextColor = Colors.black;
   static const Color loginFillColor = Colors.white;
   static const Color loginHintTextColor = Colors.grey;
   static const Color loginPrefixIconColor = Colors.grey;
+  static const Color loginSuffixIconColor = Colors.grey;
+  static const Color loginPasswordTextColor = Colors.black;
 }
