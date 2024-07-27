@@ -20,19 +20,19 @@ class AppRoutes {
           name: RoutesName.signupLoginScreen,
           page: () => const SignupLoginScreen(),
           transition: Transition.zoom,
-          transitionDuration: const Duration(milliseconds: 1000),
+          transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
           name: RoutesName.signupScreen,
           page: () => const SignupScreen(),
           transition: Transition.zoom,
-          transitionDuration: const Duration(milliseconds: 1000),
+          transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
           name: RoutesName.loginScreen,
           page: () => const LoginScreen(),
           transition: Transition.circularReveal,
-          transitionDuration: const Duration(milliseconds: 1000),
+          transitionDuration: const Duration(milliseconds: 600),
         ),
       ];
 }

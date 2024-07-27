@@ -24,7 +24,7 @@ class SignupButton extends StatelessWidget {
           color: AppColors.signupButtonTextColor,
         ),
         onTap: () {
-          Get.offAllNamed(RoutesName.signupScreen);
+          Get.toNamed(RoutesName.signupScreen);
         },
       ),
     );
