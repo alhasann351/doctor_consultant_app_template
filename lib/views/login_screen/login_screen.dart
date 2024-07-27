@@ -11,9 +11,26 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: Center(child: Text('Login Screen')),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              AppColors.loginTopBackgroundColor.withOpacity(0.3),
+              AppColors.loginBottomBackgroundColor.withOpacity(0.3),
+            ],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: ListView(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }

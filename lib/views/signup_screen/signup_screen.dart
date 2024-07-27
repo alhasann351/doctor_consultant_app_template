@@ -27,8 +27,8 @@ class _SignupScreenState extends State<SignupScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              AppColors.signupButtonBackgroundColor.withOpacity(0.3),
-              AppColors.loginButtonBackgroundColor.withOpacity(0.3),
+              AppColors.signupTopBackgroundColor.withOpacity(0.3),
+              AppColors.signupBottomBackgroundColor.withOpacity(0.3),
             ],
           ),
         ),

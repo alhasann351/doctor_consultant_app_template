@@ -43,6 +43,8 @@ class AppColors {
   static const Color dividerTextColor = Colors.black;
 
   //signup screen
+  static const Color signupTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color signupBottomBackgroundColor = Colors.greenAccent;
   static const Color signupTitleTextColor = Colors.black;
   static const Color cursorColor = Colors.black;
   static const Color fillColor = Colors.white;
@@ -59,4 +61,8 @@ class AppColors {
   static const Color differentSignupCardBackgroundColor = Colors.white;
   static const Color alreadyAccountTextColor = Colors.grey;
   static const Color alreadyAccountLoginTextColor = Colors.lightBlueAccent;
+
+//login screen
+  static const Color loginTopBackgroundColor = Colors.greenAccent;
+  static const Color loginBottomBackgroundColor = Colors.lightBlueAccent;
 }
