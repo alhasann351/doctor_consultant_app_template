@@ -39,6 +39,8 @@ class Languages extends Translations {
           'signup_with_apple_toast_message': 'Signup with apple id',
           'signup_with_google_toast_message': 'Signup with google',
           'signup_with_facebook_toast_message': 'Signup with facebook',
+          'already_account_text': 'Already have an account?',
+          'already_account_login_text': 'Login',
         },
         'bn_BD': {
           //splash screen
@@ -76,6 +78,8 @@ class Languages extends Translations {
           'signup_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে সাইন আপ করুন',
           'signup_with_google_toast_message': 'গুগলের সাথে সাইন আপ করুন',
           'signup_with_facebook_toast_message': 'ফেসবুক দিয়ে সাইন আপ',
+          'already_account_text': 'একাউন্ট থাকলে?',
+          'already_account_login_text': 'প্রবেশ করুন',
         },
         'hi_IN': {
           //splash screen
@@ -112,6 +116,8 @@ class Languages extends Translations {
           'signup_with_apple_toast_message': 'एप्पल आईडी से साइनअप करें',
           'signup_with_google_toast_message': 'गूगल के साथ साइनअप करें',
           'signup_with_facebook_toast_message': 'फेस्बूक के साथ साइन अप करें',
+          'already_account_text': 'एक खाता है?',
+          'already_account_login_text': 'लॉग इन करें',
         },
       };
 }
