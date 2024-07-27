@@ -1,35 +1,36 @@
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class InputEmail extends StatelessWidget {
-  const InputEmail({super.key});
+import '../../../resources/colors/app_colors.dart';
+import '../../../resources/fonts/app_font_style.dart';
+
+class InputName extends StatelessWidget {
+  const InputName({super.key});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      cursorColor: AppColors.signupCursorColor,
-      keyboardType: TextInputType.emailAddress,
+      cursorColor: AppColors.loginCursorColor,
+      keyboardType: TextInputType.text,
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.passwordTextColor,
+        color: AppColors.loginNameTextColor,
       ),
       decoration: InputDecoration(
         filled: true,
-        fillColor: AppColors.signupFillColor,
-        hintText: 'signup_input_email_hint_text'.tr,
+        fillColor: AppColors.loginFillColor,
+        hintText: 'login_input_name_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,
-          color: AppColors.signupHintTextColor,
+          color: AppColors.loginHintTextColor,
         ),
         prefixIcon: const Padding(
           padding: EdgeInsets.only(left: 8.0),
           child: Icon(
-            Icons.email_outlined,
-            color: AppColors.signupPrefixIconColor,
+            Icons.person_2_outlined,
+            color: AppColors.loginPrefixIconColor,
             size: 30,
           ),
         ),

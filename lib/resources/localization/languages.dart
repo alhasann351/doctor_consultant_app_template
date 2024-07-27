@@ -31,9 +31,9 @@ class Languages extends Translations {
 
           //signup screen
           'signup_title_text': 'Doctor Consultant',
-          'input_name_hint_text': 'Name',
-          'input_email_hint_text': 'Email',
-          'input_password_hint_text': 'Password',
+          'signup_input_name_hint_text': 'Name',
+          'signup_input_email_hint_text': 'Email',
+          'signup_input_password_hint_text': 'Password',
           'signup_button_text': 'Signup',
           'signup_or_text': 'OR',
           'signup_with_apple_toast_message': 'Signup with apple id',
@@ -43,7 +43,8 @@ class Languages extends Translations {
           'already_account_login_text': 'Login',
 
           //login screen
-          'login_title_text': 'Doctor Consultant'
+          'login_title_text': 'Doctor Consultant',
+          'login_input_name_hint_text': 'Name',
         },
         'bn_BD': {
           //splash screen
@@ -73,9 +74,9 @@ class Languages extends Translations {
 
           //signup screen
           'signup_title_text': 'ডাক্তার পরামর্শদাতা',
-          'input_name_hint_text': 'নাম',
-          'input_email_hint_text': 'ইমেইল',
-          'input_password_hint_text': 'পাসওয়ার্ড',
+          'signup_input_name_hint_text': 'নাম',
+          'signup_input_email_hint_text': 'ইমেইল',
+          'signup_input_password_hint_text': 'পাসওয়ার্ড',
           'signup_button_text': 'নিবন্ধন করুন',
           'signup_or_text': 'অথবা',
           'signup_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে সাইন আপ করুন',
@@ -85,7 +86,8 @@ class Languages extends Translations {
           'already_account_login_text': 'প্রবেশ করুন',
 
           //login screen
-          'login_title_text': 'ডাক্তার পরামর্শদাতা'
+          'login_title_text': 'ডাক্তার পরামর্শদাতা',
+          'login_input_name_hint_text': 'নাম',
         },
         'hi_IN': {
           //splash screen
@@ -114,9 +116,9 @@ class Languages extends Translations {
 
           //signup screen
           'signup_title_text': 'डॉक्टर सलाहकार',
-          'input_name_hint_text': 'नाम',
-          'input_email_hint_text': 'ईमेल',
-          'input_password_hint_text': 'पासवर्ड',
+          'signup_input_name_hint_text': 'नाम',
+          'signup_input_email_hint_text': 'ईमेल',
+          'signup_input_password_hint_text': 'पासवर्ड',
           'signup_button_text': 'साइन अप करें',
           'signup_or_text': 'अथवा',
           'signup_with_apple_toast_message': 'एप्पल आईडी से साइनअप करें',
@@ -126,7 +128,8 @@ class Languages extends Translations {
           'already_account_login_text': 'लॉग इन करें',
 
           //login screen
-          'login_title_text': 'डॉक्टर सलाहकार'
+          'login_title_text': 'डॉक्टर सलाहकार',
+          'login_input_name_hint_text': 'नाम',
         },
       };
 }

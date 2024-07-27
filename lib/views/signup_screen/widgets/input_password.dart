@@ -13,7 +13,7 @@ class InputPassword extends StatelessWidget {
 
     return Obx(
       () => TextFormField(
-        cursorColor: AppColors.cursorColor,
+        cursorColor: AppColors.signupCursorColor,
         keyboardType: TextInputType.text,
         style: const TextStyle(
           fontFamily: AppFontStyle.rubik,
@@ -23,18 +23,18 @@ class InputPassword extends StatelessWidget {
         obscureText: showPasswordController.showPassword.value,
         decoration: InputDecoration(
           filled: true,
-          fillColor: AppColors.fillColor,
-          hintText: 'input_password_hint_text'.tr,
+          fillColor: AppColors.signupFillColor,
+          hintText: 'signup_input_password_hint_text'.tr,
           hintStyle: const TextStyle(
             fontFamily: AppFontStyle.rubik,
             fontSize: 18,
-            color: AppColors.hintTextColor,
+            color: AppColors.signupHintTextColor,
           ),
           prefixIcon: const Padding(
             padding: EdgeInsets.only(left: 8.0),
             child: Icon(
               Icons.lock_outline,
-              color: AppColors.prefixIconColor,
+              color: AppColors.signupPrefixIconColor,
               size: 30,
             ),
           ),
