@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/login_screen/widgets/forgot_password.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/input_email.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/input_password.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/login_button.dart';
@@ -41,7 +42,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 InputEmail(),
                 SizedBox(height: 10),
                 InputPassword(),
-                SizedBox(height: 70),
+                ForgotPassword(),
+                SizedBox(height: 40),
                 LoginButton(),
               ],
             ),

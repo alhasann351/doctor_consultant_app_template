@@ -48,7 +48,8 @@ class Languages extends Translations {
           'login_input_email_hint_text': 'Email',
           'login_input_password_hint_text': 'Password',
           'login_button_text': 'Login',
-          'login_subtitle_text': 'Welcome! Please enter your login details.'
+          'login_subtitle_text': 'Welcome! Please enter your login details.',
+          'forgot_password_text': 'Forgot password?',
         },
         'bn_BD': {
           //splash screen
@@ -95,7 +96,8 @@ class Languages extends Translations {
           'login_input_email_hint_text': 'ইমেইল',
           'login_input_password_hint_text': 'পাসওয়ার্ড',
           'login_button_text': 'লগইন',
-          'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।'
+          'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।',
+          'forgot_password_text': 'পাসওয়ার্ড ভুলে গেছেন?',
         },
         'hi_IN': {
           //splash screen
@@ -144,6 +146,7 @@ class Languages extends Translations {
           'login_button_text': 'लॉगिन',
           'login_subtitle_text':
               'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
+          'forgot_password_text': 'पासवर्ड भूल गए?',
         },
       };
 }
