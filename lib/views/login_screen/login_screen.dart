@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/login_screen/widgets/different_way_login.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/dividers.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/forgot_password.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/input_email.dart';
@@ -48,6 +49,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 LoginButton(),
                 SizedBox(height: 20),
                 Dividers(),
+                SizedBox(height: 20),
+                DifferentWayLogin(),
               ],
             ),
           ),

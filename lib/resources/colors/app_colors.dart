@@ -80,4 +80,5 @@ class AppColors {
   static const Color forgotPasswordTextColor = Colors.lightBlueAccent;
   static const Color loginDividerColor = Colors.grey;
   static const Color loginDividerTextColor = Colors.black;
+  static const Color differentLoginCardBackgroundColor = Colors.white;
 }

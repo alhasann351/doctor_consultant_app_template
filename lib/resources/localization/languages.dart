@@ -51,6 +51,9 @@ class Languages extends Translations {
           'login_subtitle_text': 'Welcome! Please enter your login details.',
           'forgot_password_text': 'Forgot password?',
           'login_or_text': 'OR',
+          'login_with_apple_toast_message': 'Login with apple id',
+          'login_with_google_toast_message': 'Login with google',
+          'login_with_facebook_toast_message': 'Login with facebook',
         },
         'bn_BD': {
           //splash screen
@@ -100,6 +103,9 @@ class Languages extends Translations {
           'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।',
           'forgot_password_text': 'পাসওয়ার্ড ভুলে গেছেন?',
           'login_or_text': 'অথবা',
+          'login_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে লগইন করুন',
+          'login_with_google_toast_message': 'গুগলের সাথে লগইন করুন',
+          'login_with_facebook_toast_message': 'ফেসবুক দিয়ে লগইন আপ',
         },
         'hi_IN': {
           //splash screen
@@ -150,6 +156,9 @@ class Languages extends Translations {
               'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
           'forgot_password_text': 'पासवर्ड भूल गए?',
           'login_or_text': 'अथवा',
+          'login_with_apple_toast_message': 'एप्पल आईडी से लॉगइन करें',
+          'login_with_google_toast_message': 'गूगल से लॉगिन करें',
+          'login_with_facebook_toast_message': 'फ़ेसबुक लॉगिन करें',
         },
       };
 }
