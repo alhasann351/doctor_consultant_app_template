@@ -50,6 +50,7 @@ class Languages extends Translations {
           'login_button_text': 'Login',
           'login_subtitle_text': 'Welcome! Please enter your login details.',
           'forgot_password_text': 'Forgot password?',
+          'login_or_text': 'OR',
         },
         'bn_BD': {
           //splash screen
@@ -98,6 +99,7 @@ class Languages extends Translations {
           'login_button_text': 'লগইন',
           'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।',
           'forgot_password_text': 'পাসওয়ার্ড ভুলে গেছেন?',
+          'login_or_text': 'অথবা',
         },
         'hi_IN': {
           //splash screen
@@ -147,6 +149,7 @@ class Languages extends Translations {
           'login_subtitle_text':
               'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
           'forgot_password_text': 'पासवर्ड भूल गए?',
+          'login_or_text': 'अथवा',
         },
       };
 }
