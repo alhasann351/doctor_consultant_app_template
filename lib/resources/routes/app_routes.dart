@@ -31,7 +31,7 @@ class AppRoutes {
         GetPage(
           name: RoutesName.loginScreen,
           page: () => const LoginScreen(),
-          transition: Transition.circularReveal,
+          transition: Transition.fadeIn,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];

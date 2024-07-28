@@ -31,17 +31,20 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: ListView(
-            children: const [
-              TitleText(),
-              SubtitleText(),
-              SizedBox(height: 50),
-              InputEmail(),
-              SizedBox(height: 10),
-              InputPassword(),
-              SizedBox(height: 70),
-              LoginButton(),
-            ],
+          child: Center(
+            child: ListView(
+              shrinkWrap: true,
+              children: const [
+                TitleText(),
+                SubtitleText(),
+                SizedBox(height: 50),
+                InputEmail(),
+                SizedBox(height: 10),
+                InputPassword(),
+                SizedBox(height: 70),
+                LoginButton(),
+              ],
+            ),
           ),
         ),
       ),
