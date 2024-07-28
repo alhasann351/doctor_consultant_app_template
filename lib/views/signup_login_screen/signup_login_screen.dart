@@ -1,8 +1,8 @@
 import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/description_text.dart';
-import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/signup_button.dart';
-import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/title_text.dart';
 import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/dividers.dart';
 import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/login_button.dart';
+import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/signup_button.dart';
+import 'package:doctor_consultant_app_template/views/signup_login_screen/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
 import '../../resources/colors/app_colors.dart';
@@ -65,29 +65,32 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
               ),
             ),
           ),
-          ListView(
-            children: const [
-              TitleText(),
-              SizedBox(height: 100),
-              Center(
-                child: Padding(
-                  padding: EdgeInsets.all(45),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      DescriptionText(),
-                      SizedBox(height: 100),
-                      SignupButton(),
-                      SizedBox(height: 20),
-                      Dividers(),
-                      SizedBox(height: 20),
-                      LoginButton(),
-                    ],
+          Center(
+            child: ListView(
+              shrinkWrap: true,
+              children: const [
+                TitleText(),
+                SizedBox(height: 20),
+                Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(45),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        DescriptionText(),
+                        SizedBox(height: 50),
+                        SignupButton(),
+                        SizedBox(height: 20),
+                        Dividers(),
+                        SizedBox(height: 20),
+                        LoginButton(),
+                      ],
+                    ),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           ),
         ],
       ),
