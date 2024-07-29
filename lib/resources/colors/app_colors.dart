@@ -88,4 +88,5 @@ class AppColors {
   static const Color forgotPasswordTopBackgroundColor = Colors.lightBlueAccent;
   static const Color forgotPasswordBackgroundColor = Colors.greenAccent;
   static const Color forgotPasswordTitleTextColor = Colors.black;
+  static const Color forgotPasswordSubtitleTextColor = Colors.grey;
 }

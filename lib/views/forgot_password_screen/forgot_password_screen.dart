@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/subtitle_text.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               shrinkWrap: true,
               children: const [
                 TitleText(),
+                SubtitleText(),
               ],
             ),
           ),

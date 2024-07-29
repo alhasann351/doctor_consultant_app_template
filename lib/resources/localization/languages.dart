@@ -58,7 +58,9 @@ class Languages extends Translations {
           'do_not_account_signup_text': 'Signup',
 
           //forgot password screen
-          'forgot_password_title_text': 'Doctor Consultant',
+          'forgot_password_title_text': 'Forgot Password?',
+          'forgot_password_subtitle_text':
+              "Don't worry! It happens. Please enter the email address associated with your account.",
         },
         'bn_BD': {
           //splash screen
@@ -115,7 +117,9 @@ class Languages extends Translations {
           'do_not_account_signup_text': 'সাইন আপ',
 
           //forgot password screen
-          'forgot_password_title_text': 'ডাক্তার পরামর্শদাতা',
+          'forgot_password_title_text': 'পাসওয়ার্ড ভুলে গেছেন?',
+          'forgot_password_subtitle_text':
+              "চিন্তা করবেন না! এটা ঘটে। আপনার অ্যাকাউন্টের সাথে যুক্ত ইমেইল ঠিকানা লিখুন।",
         },
         'hi_IN': {
           //splash screen
@@ -173,7 +177,9 @@ class Languages extends Translations {
           'do_not_account_signup_text': 'साइन अप करें',
 
           //forgot password screen
-          'forgot_password_title_text': 'डॉक्टर सलाहकार',
+          'forgot_password_title_text': 'पासवर्ड भूल गए?',
+          'forgot_password_subtitle_text':
+              'चिंता मत करो! ऐसा होता है। कृपया अपने खाते से जुड़ा ईमेल पता दर्ज करें।',
         },
       };
 }
