@@ -83,4 +83,8 @@ class AppColors {
   static const Color differentLoginCardBackgroundColor = Colors.white;
   static const Color doNotAccountTextColor = Colors.grey;
   static const Color doNotAccountSignupTextColor = Colors.lightBlueAccent;
+
+  //forgot password screen
+  static const Color forgotPasswordTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color forgotPasswordBackgroundColor = Colors.greenAccent;
 }
