@@ -61,6 +61,7 @@ class Languages extends Translations {
           'forgot_password_title_text': 'Forgot Password?',
           'forgot_password_subtitle_text':
               "Don't worry! It happens. Please enter the email address associated with your account.",
+          'forgot_password_input_email_hint_text': 'Email',
         },
         'bn_BD': {
           //splash screen
@@ -120,6 +121,7 @@ class Languages extends Translations {
           'forgot_password_title_text': 'পাসওয়ার্ড ভুলে গেছেন?',
           'forgot_password_subtitle_text':
               "চিন্তা করবেন না! এটা ঘটে। আপনার অ্যাকাউন্টের সাথে যুক্ত ইমেইল ঠিকানা লিখুন।",
+          'forgot_password_input_email_hint_text': 'ইমেইল',
         },
         'hi_IN': {
           //splash screen
@@ -180,6 +182,7 @@ class Languages extends Translations {
           'forgot_password_title_text': 'पासवर्ड भूल गए?',
           'forgot_password_subtitle_text':
               'चिंता मत करो! ऐसा होता है। कृपया अपने खाते से जुड़ा ईमेल पता दर्ज करें।',
+          'forgot_password_input_email_hint_text': 'ईमेल',
         },
       };
 }
