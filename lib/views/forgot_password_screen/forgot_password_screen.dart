@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 
 import '../../resources/colors/app_colors.dart';
@@ -23,6 +24,17 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               AppColors.forgotPasswordTopBackgroundColor.withOpacity(0.3),
               AppColors.forgotPasswordBackgroundColor.withOpacity(0.3),
             ],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Center(
+            child: ListView(
+              shrinkWrap: true,
+              children: const [
+                TitleText(),
+              ],
+            ),
           ),
         ),
       ),

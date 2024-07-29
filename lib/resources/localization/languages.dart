@@ -56,6 +56,9 @@ class Languages extends Translations {
           'login_with_facebook_toast_message': 'Login with facebook',
           'do_not_account_text': "Don't have an account?",
           'do_not_account_signup_text': 'Signup',
+
+          //forgot password screen
+          'forgot_password_title_text': 'Doctor Consultant',
         },
         'bn_BD': {
           //splash screen
@@ -110,6 +113,9 @@ class Languages extends Translations {
           'login_with_facebook_toast_message': 'ফেসবুক দিয়ে লগইন আপ',
           'do_not_account_text': 'একাউন্ট না থাকলে?',
           'do_not_account_signup_text': 'সাইন আপ',
+
+          //forgot password screen
+          'forgot_password_title_text': 'ডাক্তার পরামর্শদাতা',
         },
         'hi_IN': {
           //splash screen
@@ -165,6 +171,9 @@ class Languages extends Translations {
           'login_with_facebook_toast_message': 'फ़ेसबुक लॉगिन करें',
           'do_not_account_text': 'कोई खाता नहीं है?',
           'do_not_account_signup_text': 'साइन अप करें',
+
+          //forgot password screen
+          'forgot_password_title_text': 'डॉक्टर सलाहकार',
         },
       };
 }
