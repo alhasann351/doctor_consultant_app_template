@@ -86,7 +86,7 @@ class AppColors {
 
   //forgot password screen
   static const Color forgotPasswordTopBackgroundColor = Colors.lightBlueAccent;
-  static const Color forgotPasswordBackgroundColor = Colors.greenAccent;
+  static const Color forgotPasswordBottomBackgroundColor = Colors.greenAccent;
   static const Color forgotPasswordTitleTextColor = Colors.black;
   static const Color forgotPasswordSubtitleTextColor = Colors.grey;
   static const Color forgotPasswordCursorColor = Colors.black;
@@ -96,4 +96,8 @@ class AppColors {
   static const Color forgotPasswordPrefixIconColor = Colors.grey;
   static const Color submitButtonColor = Colors.lightBlueAccent;
   static const Color submitTextColor = Colors.white;
+
+  //home screen
+  static const Color homeTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color homeBottomBackgroundColor = Colors.greenAccent;
 }
