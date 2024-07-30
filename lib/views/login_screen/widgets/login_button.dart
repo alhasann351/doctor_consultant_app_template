@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../resources/routes/routes_name.dart';
 
 class LoginButton extends StatelessWidget {
   const LoginButton({super.key});
@@ -22,7 +23,9 @@ class LoginButton extends StatelessWidget {
           fontSize: 18,
           color: AppColors.loginTextColor,
         ),
-        onTap: () {},
+        onTap: () {
+          Get.offAllNamed(RoutesName.homeScreen);
+        },
       ),
     );
   }

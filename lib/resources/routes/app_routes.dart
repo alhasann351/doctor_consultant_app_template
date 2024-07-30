@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
 import 'package:doctor_consultant_app_template/views/signup_login_screen/signup_login_screen.dart';
@@ -39,6 +40,12 @@ class AppRoutes {
           name: RoutesName.forgotPasswordScreen,
           page: () => const ForgotPasswordScreen(),
           transition: Transition.fade,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.homeScreen,
+          page: () => const HomeScreen(),
+          transition: Transition.rightToLeft,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];

@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +23,9 @@ class SignupButton extends StatelessWidget {
           fontSize: 18,
           color: AppColors.signupTextColor,
         ),
-        onTap: () {},
+        onTap: () {
+          Get.offAllNamed(RoutesName.homeScreen);
+        },
       ),
     );
   }
