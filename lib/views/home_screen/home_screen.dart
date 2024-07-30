@@ -23,6 +23,24 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
+        child: Stack(
+          children: [
+            Container(
+              height: 176,
+              width: MediaQuery.of(context).size.width,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    AppColors.homeRectangleTopLeftBackgroundColor,
+                    AppColors.homeRectangleBottomRightBackgroundColor,
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

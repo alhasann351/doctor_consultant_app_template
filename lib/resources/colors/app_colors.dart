@@ -100,4 +100,7 @@ class AppColors {
   //home screen
   static const Color homeTopBackgroundColor = Colors.lightBlueAccent;
   static const Color homeBottomBackgroundColor = Colors.greenAccent;
+  static const Color homeRectangleTopLeftBackgroundColor = Color(0xFF0EBE7E);
+  static const Color homeRectangleBottomRightBackgroundColor =
+      Color(0xFF07D9AD);
 }
