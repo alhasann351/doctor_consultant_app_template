@@ -64,6 +64,10 @@ class Languages extends Translations {
           'forgot_password_input_email_hint_text': 'Email',
           'submit_button_text': 'Submit',
           'forgot_password_submit_toast': 'Check your email',
+
+          //home screen
+          'home_user_title_text': 'Hi Al-Hasan!',
+          'home_title_text': 'Find popular Doctors',
         },
         'bn_BD': {
           //splash screen
@@ -126,6 +130,10 @@ class Languages extends Translations {
           'forgot_password_input_email_hint_text': 'ইমেইল',
           'submit_button_text': 'জমা দিন',
           'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
+
+          //home screen
+          'home_user_title_text': 'হাই আল-হাসান!',
+          'home_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
         },
         'hi_IN': {
           //splash screen
@@ -189,6 +197,10 @@ class Languages extends Translations {
           'forgot_password_input_email_hint_text': 'ईमेल',
           'submit_button_text': 'जमा करना',
           'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
+
+          //home screen
+          'home_user_title_text': 'हाय अल-हसन!',
+          'home_title_text': 'लोकप्रिय डॉक्टर खोजें',
         },
       };
 }

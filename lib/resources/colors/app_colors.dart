@@ -103,4 +103,6 @@ class AppColors {
   static const Color homeRectangleTopLeftBackgroundColor = Color(0xFF0EBE7E);
   static const Color homeRectangleBottomRightBackgroundColor =
       Color(0xFF07D9AD);
+  static const Color homeUserTitleTextColor = Colors.white;
+  static const Color homeTitleTextColor = Colors.white;
 }

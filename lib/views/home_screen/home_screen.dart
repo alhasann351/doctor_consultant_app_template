@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/widgets/user_profile.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,6 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -29,6 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 176,
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30)),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -38,7 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-            )
+              child: const UserProfile(),
+            ),
           ],
         ),
       ),

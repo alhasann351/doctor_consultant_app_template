@@ -22,7 +22,7 @@ class DifferentWayLogin extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset(
-                ImagesIcons.signupWithApple,
+                ImagesIcons.signupLoginWithApple,
                 height: 35,
                 width: 35,
               ),
@@ -39,7 +39,7 @@ class DifferentWayLogin extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset(
-                ImagesIcons.signupWithGoogle,
+                ImagesIcons.signupLoginWithGoogle,
                 height: 35,
                 width: 35,
               ),
@@ -56,7 +56,7 @@ class DifferentWayLogin extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Image.asset(
-                ImagesIcons.signupWithFacebook,
+                ImagesIcons.signupLoginWithFacebook,
                 height: 35,
                 width: 35,
               ),
