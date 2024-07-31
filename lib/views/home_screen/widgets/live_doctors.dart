@@ -62,12 +62,36 @@ class LiveDoctors extends StatelessWidget {
                               borderRadius: BorderRadius.circular(8)),
                           child: ColorFiltered(
                             colorFilter: const ColorFilter.mode(
-                                Colors.black26, BlendMode.darken),
+                                AppColors.liveDoctorsImageDarkenColor,
+                                BlendMode.darken),
                             child: Image.asset(
                               imagePaths[index],
                               fit: BoxFit.cover,
                             ),
                           ),
+                        ),
+                      ),
+                    ),
+                    Positioned.fill(
+                      child: Align(
+                        alignment: Alignment.topRight,
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 15, top: 10),
+                          child: Image.asset(
+                            ImagesIcons.liveDoctorsIcon,
+                            height: 30,
+                            width: 30,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Positioned.fill(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Icon(
+                          Icons.play_circle_outline_rounded,
+                          color: AppColors.liveDoctorsPlayIconColor,
+                          size: 35,
                         ),
                       ),
                     ),

@@ -113,4 +113,6 @@ class AppColors {
   static const Color searchSuffixIconColor = Colors.grey;
   static const Color liveDoctorsTitleTextColor = Colors.black;
   static const Color userProfileBackgroundColor = Color(0xFF07D9AD);
+  static const Color liveDoctorsPlayIconColor = Colors.white;
+  static const Color liveDoctorsImageDarkenColor = Colors.black26;
 }

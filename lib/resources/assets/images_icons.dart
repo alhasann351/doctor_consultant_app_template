@@ -26,4 +26,5 @@ class ImagesIcons {
   static const String liveDoctorsImage8 = 'assets/images/live_doctors_8.webp';
   static const String liveDoctorsImage9 = 'assets/images/live_doctors_9.webp';
   static const String liveDoctorsImage10 = 'assets/images/live_doctors_10.webp';
+  static const String liveDoctorsIcon = 'assets/icons/live_doctors.png';
 }
