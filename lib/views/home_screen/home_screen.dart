@@ -3,6 +3,10 @@ import 'package:doctor_consultant_app_template/views/home_screen/widgets/live_do
 import 'package:doctor_consultant_app_template/views/home_screen/widgets/search_input.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/widgets/user_profile.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../resources/components/shimmer_effect.dart';
+import '../../views_models/controllers/shimmer_effect_controller.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,6 +16,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final shimmerEffectController = Get.put(ShimmerEffectController());
+
+  @override
+  void initState() {
+    shimmerEffectController.loadShimmerEffect();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,11 +72,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 220),
-            child: ListView(
-              scrollDirection: Axis.vertical,
-              children: [
-                LiveDoctors(),
-              ],
+            child: Obx(
+              () => shimmerEffectController.isLoading.value
+                  ? const ShimmerEffect()
+                  : ListView(
+                      scrollDirection: Axis.vertical,
+                      children: [
+                        LiveDoctors(),
+                      ],
+                    ),
             ),
           ),
         ],

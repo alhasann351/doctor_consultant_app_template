@@ -55,6 +55,7 @@ class LiveDoctors extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 5),
                       child: SizedBox(
                         height: 200,
+                        width: 150,
                         child: Card(
                           elevation: 10,
                           clipBehavior: Clip.antiAlias,
