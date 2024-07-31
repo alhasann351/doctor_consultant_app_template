@@ -69,6 +69,7 @@ class Languages extends Translations {
           'home_user_title_text': 'Hi Al-Hasan!',
           'home_title_text': 'Find popular Doctors',
           'search_input_name_hint_text': 'Search',
+          'live_doctors_title_text': 'Live Doctors',
         },
         'bn_BD': {
           //splash screen
@@ -136,6 +137,7 @@ class Languages extends Translations {
           'home_user_title_text': 'হাই আল-হাসান!',
           'home_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
           'search_input_name_hint_text': 'অনুসন্ধান করুন',
+          'live_doctors_title_text': 'লাইভ ডাক্তার',
         },
         'hi_IN': {
           //splash screen
@@ -204,6 +206,7 @@ class Languages extends Translations {
           'home_user_title_text': 'हाय अल-हसन!',
           'home_title_text': 'लोकप्रिय डॉक्टर खोजें',
           'search_input_name_hint_text': 'खोज',
+          'live_doctors_title_text': 'लाइव डॉक्टर्स',
         },
       };
 }

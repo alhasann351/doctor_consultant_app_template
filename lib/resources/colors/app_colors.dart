@@ -111,4 +111,6 @@ class AppColors {
   static const Color searchHintTextColor = Colors.grey;
   static const Color searchPrefixIconColor = Colors.grey;
   static const Color searchSuffixIconColor = Colors.grey;
+  static const Color liveDoctorsTitleTextColor = Colors.black;
+  static const Color userProfileBackgroundColor = Color(0xFF07D9AD);
 }

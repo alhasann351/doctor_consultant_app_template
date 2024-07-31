@@ -43,11 +43,13 @@ class UserProfile extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 20),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
                   child: CircleAvatar(
                     radius: 25,
-                    foregroundImage: AssetImage(
+                    backgroundColor:
+                        AppColors.userProfileBackgroundColor.withOpacity(0.5),
+                    foregroundImage: const AssetImage(
                       ImagesIcons.profileImage,
                     ),
                   ),
