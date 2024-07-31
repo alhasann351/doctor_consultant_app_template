@@ -22,12 +22,15 @@ class UserProfile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'home_user_title_text'.tr,
-                      style: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontSize: 20,
-                          color: AppColors.homeUserTitleTextColor),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15),
+                      child: Text(
+                        'home_user_title_text'.tr,
+                        style: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontSize: 20,
+                            color: AppColors.homeUserTitleTextColor),
+                      ),
                     ),
                     Text(
                       'home_title_text'.tr,

@@ -105,4 +105,10 @@ class AppColors {
       Color(0xFF07D9AD);
   static const Color homeUserTitleTextColor = Colors.white;
   static const Color homeTitleTextColor = Colors.white;
+  static const Color searchCursorColor = Colors.black;
+  static const Color searchNameTextColor = Colors.black;
+  static const Color searchFillColor = Colors.white;
+  static const Color searchHintTextColor = Colors.grey;
+  static const Color searchPrefixIconColor = Colors.grey;
+  static const Color searchSuffixIconColor = Colors.grey;
 }
