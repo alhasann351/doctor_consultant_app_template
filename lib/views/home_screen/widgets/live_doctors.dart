@@ -60,9 +60,13 @@ class LiveDoctors extends StatelessWidget {
                           clipBehavior: Clip.antiAlias,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
-                          child: Image.asset(
-                            imagePaths[index],
-                            fit: BoxFit.cover,
+                          child: ColorFiltered(
+                            colorFilter: const ColorFilter.mode(
+                                Colors.black26, BlendMode.darken),
+                            child: Image.asset(
+                              imagePaths[index],
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
