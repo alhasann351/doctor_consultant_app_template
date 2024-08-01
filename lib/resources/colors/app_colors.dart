@@ -115,4 +115,5 @@ class AppColors {
   static const Color userProfileBackgroundColor = Color(0xFF07D9AD);
   static const Color liveDoctorsPlayIconColor = Colors.white;
   static const Color liveDoctorsImageDarkenColor = Colors.black26;
+  static const Color cardBackgroundColor = Colors.transparent;
 }

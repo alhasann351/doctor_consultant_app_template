@@ -57,6 +57,7 @@ class LiveDoctors extends StatelessWidget {
                         height: 200,
                         width: 150,
                         child: Card(
+                          color: AppColors.cardBackgroundColor.withOpacity(1),
                           elevation: 10,
                           clipBehavior: Clip.antiAlias,
                           shape: RoundedRectangleBorder(
