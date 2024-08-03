@@ -27,4 +27,10 @@ class ImagesIcons {
   static const String liveDoctorsImage9 = 'assets/images/live_doctors_9.webp';
   static const String liveDoctorsImage10 = 'assets/images/live_doctors_10.webp';
   static const String liveDoctorsIcon = 'assets/icons/live_doctors.png';
+  static const String doctorsCategoryCancerIcon =
+      'assets/icons/cancer_icon.png';
+  static const String doctorsCategoryEarIcon = 'assets/icons/ear_icon.png';
+  static const String doctorsCategoryEyeIcon = 'assets/icons/eye_icon.png';
+  static const String doctorsCategoryHeartIcon = 'assets/icons/heart_icon.png';
+  static const String doctorsCategorySkinIcon = 'assets/icons/skin_icon.png';
 }

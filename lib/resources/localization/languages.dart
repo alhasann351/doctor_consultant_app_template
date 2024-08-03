@@ -70,6 +70,7 @@ class Languages extends Translations {
           'home_title_text': 'Find popular Doctors',
           'search_input_name_hint_text': 'Search',
           'live_doctors_title_text': 'Live Doctors',
+          'doctors_category_title_text': 'Doctors Category',
         },
         'bn_BD': {
           //splash screen
@@ -138,6 +139,7 @@ class Languages extends Translations {
           'home_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
           'search_input_name_hint_text': 'অনুসন্ধান করুন',
           'live_doctors_title_text': 'লাইভ ডাক্তার',
+          'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
         },
         'hi_IN': {
           //splash screen
@@ -207,6 +209,7 @@ class Languages extends Translations {
           'home_title_text': 'लोकप्रिय डॉक्टर खोजें',
           'search_input_name_hint_text': 'खोज',
           'live_doctors_title_text': 'लाइव डॉक्टर्स',
+          'doctors_category_title_text': 'डॉक्टर श्रेणी',
         },
       };
 }
