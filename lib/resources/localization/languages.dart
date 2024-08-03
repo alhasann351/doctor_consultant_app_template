@@ -71,6 +71,11 @@ class Languages extends Translations {
           'search_input_name_hint_text': 'Search',
           'live_doctors_title_text': 'Live Doctors',
           'doctors_category_title_text': 'Doctors Category',
+          'cancer': 'Cancer',
+          'ear': 'Ear',
+          'eye': 'Eye',
+          'heart': 'Heart',
+          'skin': 'Skin',
         },
         'bn_BD': {
           //splash screen
@@ -140,6 +145,11 @@ class Languages extends Translations {
           'search_input_name_hint_text': 'অনুসন্ধান করুন',
           'live_doctors_title_text': 'লাইভ ডাক্তার',
           'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
+          'cancer': 'ক্যান্সার',
+          'ear': 'কান',
+          'eye': 'চোখ',
+          'heart': 'হার্ট',
+          'skin': 'ত্বক',
         },
         'hi_IN': {
           //splash screen
@@ -210,6 +220,11 @@ class Languages extends Translations {
           'search_input_name_hint_text': 'खोज',
           'live_doctors_title_text': 'लाइव डॉक्टर्स',
           'doctors_category_title_text': 'डॉक्टर श्रेणी',
+          'cancer': 'कैंसर',
+          'ear': 'कान',
+          'eye': 'आँख',
+          'heart': 'हार्ट',
+          'skin': 'त्वचा',
         },
       };
 }

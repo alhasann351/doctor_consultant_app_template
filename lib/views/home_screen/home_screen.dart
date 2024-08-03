@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
               scrollDirection: Axis.vertical,
               children: [
                 LiveDoctors(),
-                const DoctorsCategory(),
+                DoctorsCategory(),
               ],
             ),
           ),

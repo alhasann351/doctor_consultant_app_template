@@ -117,4 +117,11 @@ class AppColors {
   static const Color liveDoctorsImageDarkenColor = Colors.black26;
   static const Color cardBackgroundColor = Colors.transparent;
   static const Color doctorsCategoryTitleTextColor = Colors.black;
+  static const Color doctorsCategoryCancerCardColor = Colors.orange;
+  static const Color doctorsCategoryEarCardColor = Colors.blue;
+  static const Color doctorsCategoryEyeCardColor = Colors.deepPurple;
+  static const Color doctorsCategoryHeartCardColor = Colors.red;
+  static const Color doctorsCategorySkinCardColor = Colors.pink;
+  static const Color doctorsCategoryIconsColor = Colors.white;
+  static const Color categoryNameTextColor = Colors.white;
 }
