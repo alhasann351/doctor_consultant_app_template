@@ -124,4 +124,6 @@ class AppColors {
   static const Color doctorsCategorySkinCardColor = Colors.pink;
   static const Color doctorsCategoryIconsColor = Colors.white;
   static const Color categoryNameTextColor = Colors.white;
+  static const Color backButtonCardBackgroundColor = Colors.white;
+  static const Color backButtonIconColor = Colors.black;
 }
