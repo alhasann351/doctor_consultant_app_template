@@ -27,6 +27,7 @@ class LiveDoctorsScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
                       height: 50,
@@ -39,6 +40,18 @@ class LiveDoctorsScreen extends StatelessWidget {
                         child: const Icon(
                           CupertinoIcons.back,
                           color: AppColors.backButtonIconColor,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50,
+                      width: 50,
+                      child: CircleAvatar(
+                        radius: 25,
+                        backgroundColor:
+                            AppColors.doctorProfileCircleAvatarBackgroundColor,
+                        foregroundImage: AssetImage(
+                          Get.arguments['image'.toString()],
                         ),
                       ),
                     ),
