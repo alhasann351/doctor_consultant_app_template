@@ -76,6 +76,7 @@ class Languages extends Translations {
           'eye': 'Eye',
           'heart': 'Heart',
           'skin': 'Skin',
+          'comments_input_hint_text': 'Add a comment',
         },
         'bn_BD': {
           //splash screen
@@ -150,6 +151,7 @@ class Languages extends Translations {
           'eye': 'চোখ',
           'heart': 'হার্ট',
           'skin': 'ত্বক',
+          'comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
         },
         'hi_IN': {
           //splash screen
@@ -225,6 +227,7 @@ class Languages extends Translations {
           'eye': 'आँख',
           'heart': 'हार्ट',
           'skin': 'त्वचा',
+          'comments_input_hint_text': 'एक टिप्पणी जोड़ने',
         },
       };
 }

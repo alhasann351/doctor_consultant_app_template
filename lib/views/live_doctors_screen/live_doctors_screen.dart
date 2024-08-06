@@ -1,6 +1,5 @@
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:doctor_consultant_app_template/views/live_doctors_screen/widgets/back_button_doctor_profile.dart';
+import 'package:doctor_consultant_app_template/views/live_doctors_screen/widgets/comments_input.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,54 +19,17 @@ class LiveDoctorsScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 0,
             left: 0,
             right: 0,
-            child: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      height: 50,
-                      width: 50,
-                      child: GestureDetector(
-                        onTap: () {
-                          Get.offAllNamed(RoutesName.homeScreen);
-                        },
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          color: AppColors.backButtonCardBackgroundColor,
-                          child: const Icon(
-                            CupertinoIcons.back,
-                            color: AppColors.backButtonIconColor,
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 50,
-                      width: 50,
-                      child: GestureDetector(
-                        onTap: () {},
-                        child: CircleAvatar(
-                          radius: 25,
-                          backgroundColor: AppColors
-                              .doctorProfileCircleAvatarBackgroundColor,
-                          foregroundImage: AssetImage(
-                            Get.arguments['image'.toString()],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            child: BackButtonDoctorProfile(),
+          ),
+          const Positioned(
+            left: 0,
+            right: 0,
+            bottom: 20,
+            child: CommentsInput(),
           ),
         ],
       ),

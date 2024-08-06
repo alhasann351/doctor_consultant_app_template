@@ -127,4 +127,10 @@ class AppColors {
   static const Color backButtonCardBackgroundColor = Colors.white;
   static const Color backButtonIconColor = Colors.black;
   static const Color doctorProfileCircleAvatarBackgroundColor = Colors.white;
+  static const Color commentsInputCursorColor = Colors.black;
+  static const Color commentsInputTextColor = Colors.black;
+  static const Color commentsInputFillColor = Colors.white;
+  static const Color commentsInputHintTextColor = Colors.grey;
+  static const Color commentsInputPrefixIconColor = Colors.greenAccent;
+  static const Color commentsInputSuffixIconColor = Colors.lightBlueAccent;
 }
