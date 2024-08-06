@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -32,26 +33,34 @@ class LiveDoctorsScreen extends StatelessWidget {
                     SizedBox(
                       height: 50,
                       width: 50,
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        color: AppColors.backButtonCardBackgroundColor,
-                        child: const Icon(
-                          CupertinoIcons.back,
-                          color: AppColors.backButtonIconColor,
+                      child: GestureDetector(
+                        onTap: () {
+                          Get.offAllNamed(RoutesName.homeScreen);
+                        },
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          color: AppColors.backButtonCardBackgroundColor,
+                          child: const Icon(
+                            CupertinoIcons.back,
+                            color: AppColors.backButtonIconColor,
+                          ),
                         ),
                       ),
                     ),
                     SizedBox(
                       height: 50,
                       width: 50,
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor:
-                            AppColors.doctorProfileCircleAvatarBackgroundColor,
-                        foregroundImage: AssetImage(
-                          Get.arguments['image'.toString()],
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: CircleAvatar(
+                          radius: 25,
+                          backgroundColor: AppColors
+                              .doctorProfileCircleAvatarBackgroundColor,
+                          foregroundImage: AssetImage(
+                            Get.arguments['image'.toString()],
+                          ),
                         ),
                       ),
                     ),
