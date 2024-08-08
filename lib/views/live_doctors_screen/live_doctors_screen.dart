@@ -3,12 +3,15 @@ import 'package:doctor_consultant_app_template/views/live_doctors_screen/widgets
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../resources/colors/app_colors.dart';
+
 class LiveDoctorsScreen extends StatelessWidget {
   const LiveDoctorsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldBackgroundColor,
       body: Stack(
         children: [
           SizedBox(

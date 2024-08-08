@@ -45,21 +45,42 @@ class _CommentsInputState extends State<CommentsInput> {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
-          SizedBox(
+          Container(
             height: 300,
+            decoration: BoxDecoration(
+                color: AppColors.liveDoctorsImageDarkenColor.withOpacity(0.2),
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(10)),
             child: Obx(
               () => ListView.builder(
                 controller: scrollController,
-                shrinkWrap: true,
+                //shrinkWrap: true,
                 itemCount: commentShowController.comments.length,
                 itemBuilder: (context, index) {
                   final comment = commentShowController.comments[index];
                   return ListTile(
                     leading: CircleAvatar(
-                      child: Image.asset(comment.image),
+                      foregroundImage: AssetImage(comment.image),
+                      backgroundColor:
+                          AppColors.commentUserProfileBackgroundColor,
                     ),
-                    title: Text(comment.name),
-                    subtitle: Text(comment.comment),
+                    title: Text(
+                      comment.name,
+                      style: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.commentUserNameColor,
+                      ),
+                    ),
+                    subtitle: Text(
+                      comment.comment,
+                      style: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 16,
+                        color: AppColors.commentColor,
+                      ),
+                    ),
                   );
                 },
               ),

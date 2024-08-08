@@ -133,4 +133,7 @@ class AppColors {
   static const Color commentsInputHintTextColor = Colors.grey;
   static const Color commentsInputPrefixIconColor = Colors.greenAccent;
   static const Color commentsInputSuffixIconColor = Colors.lightBlueAccent;
+  static const Color commentUserProfileBackgroundColor = Colors.white;
+  static const Color commentUserNameColor = Colors.white;
+  static const Color commentColor = Colors.white;
 }
