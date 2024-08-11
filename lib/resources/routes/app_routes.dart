@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
+import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
 import 'package:doctor_consultant_app_template/views/live_doctors_screen/live_doctors_screen.dart';
@@ -53,6 +54,12 @@ class AppRoutes {
           name: RoutesName.liveDoctorsScreen,
           page: () => const LiveDoctorsScreen(),
           transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.doctorsCategoryScreens,
+          page: () => const DoctorsCategoryScreens(),
+          transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];
