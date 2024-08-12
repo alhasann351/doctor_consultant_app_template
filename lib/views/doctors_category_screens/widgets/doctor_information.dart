@@ -48,28 +48,41 @@ class DoctorInformation extends StatelessWidget {
   ];
 
   final List<String> goodDoctor = [
-    '95% good',
-    '90% good',
-    '85% good',
-    '95% good',
-    '90% good',
-    '85% good',
-    '95% good',
-    '90% good',
-    '85% good',
-    '85% good',
+    '95%_good'.tr,
+    '85%_good'.tr,
+    '95%_good'.tr,
+    '95%_good'.tr,
+    '85%_good'.tr,
+    '85%_good'.tr,
+    '95%_good'.tr,
+    '95%_good'.tr,
+    '85%_good'.tr,
+    '85%_good'.tr,
   ];
   final List<String> seePatients = [
-    '95 patients',
-    '90 patients',
-    '85 patients',
-    '95 patients',
-    '90 patients',
-    '85 patients',
-    '95 patients',
-    '90 patients',
-    '85 patients',
-    '85 patients',
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+  ];
+
+  final List<String> nextAvailableTime = [
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
   ];
 
   @override
@@ -86,7 +99,7 @@ class DoctorInformation extends StatelessWidget {
             itemCount: image.length,
             itemBuilder: (context, index) {
               return SizedBox(
-                height: 180,
+                height: 200,
                 child: Card(
                   color: AppColors.doctorInfoCardBackgroundColor,
                   elevation: 8,
@@ -180,6 +193,35 @@ class DoctorInformation extends StatelessWidget {
                                   fontFamily: AppFontStyle.rubik,
                                   fontSize: 15,
                                   color: AppColors.seePatientsTextColor),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Positioned(
+                        top: 130,
+                        left: 10,
+                        right: 0,
+                        bottom: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'next_available'.tr,
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.nextAvailableTextColor),
+                            ),
+                            const SizedBox(
+                              height: 2,
+                            ),
+                            Text(
+                              nextAvailableTime[index],
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  color: AppColors.nextAvailableTimeTextColor),
                             ),
                           ],
                         ),

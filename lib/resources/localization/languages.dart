@@ -84,6 +84,13 @@ class Languages extends Translations {
           'hasan': 'Hasan',
           '5_years_experience': '5 years experience',
           '7_years_experience': '7 years experience',
+          '95%_good': '95% good',
+          '85%_good': '85% good',
+          '95_patients': '95 patients',
+          '85_patients': '85 patients',
+          'next_available': 'Next Available',
+          '10:00_AM_tomorrow': '10:00 AM tomorrow',
+          '11:00_AM_tomorrow': '11:00 AM tomorrow',
         },
         'bn_BD': {
           //splash screen
@@ -166,6 +173,13 @@ class Languages extends Translations {
           'hasan': 'হাসান',
           '5_years_experience': '৫ বছরের অভিজ্ঞতা',
           '7_years_experience': '৭ বছরের অভিজ্ঞতা',
+          '95%_good': '৯৫% ভালো',
+          '85%_good': '৮৫% ভালো',
+          '95_patients': '৯৫ রোগী',
+          '85_patients': '৮৫ রোগী',
+          'next_available': 'পরবর্তী সময়',
+          '10:00_AM_tomorrow': 'আগামীকাল সকাল ১০টা',
+          '11:00_AM_tomorrow': 'আগামীকাল সকাল ১১টা',
         },
         'hi_IN': {
           //splash screen
@@ -249,6 +263,13 @@ class Languages extends Translations {
           'hasan': 'हसन',
           '5_years_experience': '५ वर्ष का अनुभव',
           '7_years_experience': '७ वर्ष का अनुभव',
+          '95%_good': '९५% ভালো',
+          '85%_good': '८५% ভালো',
+          '95_patients': '९५ मरीज',
+          '85_patients': '८५ मरीज',
+          'next_available': 'अगली बार',
+          '10:00_AM_tomorrow': 'कल सुबह १० बजे',
+          '11:00_AM_tomorrow': 'कल सुबह ११ बजे',
         },
       };
 }
