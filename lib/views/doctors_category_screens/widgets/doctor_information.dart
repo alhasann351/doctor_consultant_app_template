@@ -47,6 +47,31 @@ class DoctorInformation extends StatelessWidget {
     '7_years_experience'.tr,
   ];
 
+  final List<String> goodDoctor = [
+    '95% good',
+    '90% good',
+    '85% good',
+    '95% good',
+    '90% good',
+    '85% good',
+    '95% good',
+    '90% good',
+    '85% good',
+    '85% good',
+  ];
+  final List<String> seePatients = [
+    '95 patients',
+    '90 patients',
+    '85 patients',
+    '95 patients',
+    '90 patients',
+    '85 patients',
+    '95 patients',
+    '90 patients',
+    '85 patients',
+    '85 patients',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -129,6 +154,34 @@ class DoctorInformation extends StatelessWidget {
                               fontFamily: AppFontStyle.rubik,
                               fontSize: 15,
                               color: AppColors.doctorNameColor),
+                        ),
+                      ),
+                      Positioned(
+                        top: 90,
+                        left: 120,
+                        right: 10,
+                        bottom: 0,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              goodDoctor[index],
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  color: AppColors.goodDoctorTextColor),
+                            ),
+                            const SizedBox(
+                              width: 15,
+                            ),
+                            Text(
+                              seePatients[index],
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  color: AppColors.seePatientsTextColor),
+                            ),
+                          ],
                         ),
                       ),
                     ],
