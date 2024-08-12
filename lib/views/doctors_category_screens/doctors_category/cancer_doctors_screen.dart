@@ -6,9 +6,25 @@ class CancerDoctorsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: Center(child: Text('Cancer Doctors Screen')),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
+              AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
+            ],
+          ),
+        ),
+        child: ListView(
+          children: [],
+        ),
+      ),
     );
   }
 }

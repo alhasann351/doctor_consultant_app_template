@@ -124,6 +124,8 @@ class AppColors {
   static const Color doctorsCategorySkinCardColor = Colors.pink;
   static const Color doctorsCategoryIconsColor = Colors.white;
   static const Color categoryNameTextColor = Colors.white;
+
+  //live doctors screen
   static const Color backButtonCardBackgroundColor = Colors.white;
   static const Color backButtonIconColor = Colors.black;
   static const Color doctorProfileCircleAvatarBackgroundColor = Colors.white;
@@ -136,4 +138,8 @@ class AppColors {
   static const Color commentUserProfileBackgroundColor = Colors.white;
   static const Color commentUserNameColor = Colors.white;
   static const Color commentColor = Colors.white;
+
+  //doctors category screen
+  static const Color cancerScreenTopBackgroundColor = Colors.lightBlueAccent;
+  static const Color cancerScreenBottomBackgroundColor = Colors.greenAccent;
 }
