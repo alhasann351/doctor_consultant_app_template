@@ -148,4 +148,5 @@ class AppColors {
   static const Color doctorNameColor = Colors.black;
   static const Color doctorSpecialistTextColor = Colors.lightBlueAccent;
   static const Color doctorInfoCardBackgroundColor = Colors.white;
+  static const Color doctorInfoFavoriteIconColor = Colors.grey;
 }

@@ -1,8 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../resources/fonts/app_font_style.dart';
 
 class DoctorInformation extends StatelessWidget {
   DoctorInformation({super.key});
@@ -64,9 +65,7 @@ class DoctorInformation extends StatelessWidget {
                 child: Card(
                   color: AppColors.doctorInfoCardBackgroundColor,
                   elevation: 8,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Stack(
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 10, left: 10),
@@ -81,11 +80,14 @@ class DoctorInformation extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10, left: 10),
-                        child: Column(
+                      Positioned(
+                        top: 15,
+                        left: 120,
+                        right: 10,
+                        bottom: 0,
+                        child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               doctorName[index],
@@ -95,21 +97,38 @@ class DoctorInformation extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: AppColors.doctorNameColor),
                             ),
-                            Text(
-                              'cancer_specialist'.tr,
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  color: AppColors.doctorSpecialistTextColor),
-                            ),
-                            Text(
-                              doctorExperience[index],
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  color: AppColors.doctorNameColor),
+                            const Icon(
+                              Icons.favorite_outline_outlined,
+                              size: 25,
+                              color: AppColors.doctorInfoFavoriteIconColor,
                             ),
                           ],
+                        ),
+                      ),
+                      Positioned(
+                        top: 42,
+                        left: 120,
+                        right: 0,
+                        bottom: 0,
+                        child: Text(
+                          'cancer_specialist'.tr,
+                          style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 15,
+                              color: AppColors.doctorSpecialistTextColor),
+                        ),
+                      ),
+                      Positioned(
+                        top: 65,
+                        left: 120,
+                        right: 0,
+                        bottom: 0,
+                        child: Text(
+                          doctorExperience[index],
+                          style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 15,
+                              color: AppColors.doctorNameColor),
                         ),
                       ),
                     ],
