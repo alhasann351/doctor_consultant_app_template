@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -224,6 +225,22 @@ class DoctorInformation extends StatelessWidget {
                                   color: AppColors.nextAvailableTimeTextColor),
                             ),
                           ],
+                        ),
+                      ),
+                      Positioned(
+                        top: 130,
+                        left: 220,
+                        right: 10,
+                        bottom: 20,
+                        child: RoundedButton(
+                          title: 'book_now'.tr,
+                          backgroundColor: AppColors.bookNowButtonColor,
+                          textStyle: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              fontFamily: AppFontStyle.rubik,
+                              color: AppColors.bookNowButtonTextColor),
+                          onTap: () {},
                         ),
                       ),
                     ],

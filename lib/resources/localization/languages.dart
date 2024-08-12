@@ -91,6 +91,7 @@ class Languages extends Translations {
           'next_available': 'Next Available',
           '10:00_AM_tomorrow': '10:00 AM tomorrow',
           '11:00_AM_tomorrow': '11:00 AM tomorrow',
+          'book_now': 'Book now',
         },
         'bn_BD': {
           //splash screen
@@ -180,6 +181,7 @@ class Languages extends Translations {
           'next_available': 'পরবর্তী সময়',
           '10:00_AM_tomorrow': 'আগামীকাল সকাল ১০টা',
           '11:00_AM_tomorrow': 'আগামীকাল সকাল ১১টা',
+          'book_now': 'বুক করুন',
         },
         'hi_IN': {
           //splash screen
@@ -270,6 +272,7 @@ class Languages extends Translations {
           'next_available': 'अगली बार',
           '10:00_AM_tomorrow': 'कल सुबह १० बजे',
           '11:00_AM_tomorrow': 'कल सुबह ११ बजे',
+          'book_now': 'बुक करें',
         },
       };
 }

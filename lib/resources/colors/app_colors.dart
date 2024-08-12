@@ -153,4 +153,6 @@ class AppColors {
   static const Color seePatientsTextColor = Colors.blueAccent;
   static const Color nextAvailableTextColor = Colors.lightBlueAccent;
   static const Color nextAvailableTimeTextColor = Colors.grey;
+  static const Color bookNowButtonTextColor = Colors.white;
+  static const Color bookNowButtonColor = Colors.lightBlueAccent;
 }
