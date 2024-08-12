@@ -10,27 +10,25 @@ class CancerDoctorsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
-              AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
-            ],
+      body: Stack(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
+                  AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
+                ],
+              ),
+            ),
           ),
-        ),
-        child: ListView(
-          scrollDirection: Axis.vertical,
-          //shrinkWrap: true,
-          children: [
-            const BackButtonCategoryTitle(),
-            DoctorInformation(),
-          ],
-        ),
+          const BackButtonCategoryTitle(),
+          DoctorInformation(),
+        ],
       ),
     );
   }

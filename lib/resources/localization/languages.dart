@@ -80,6 +80,10 @@ class Languages extends Translations {
 
           //doctors category screen
           'cancer_specialist': 'Cancer specialist',
+          'elisa': 'Elisa',
+          'hasan': 'Hasan',
+          '5_years_experience': '5 years experience',
+          '7_years_experience': '7 years experience',
         },
         'bn_BD': {
           //splash screen
@@ -158,6 +162,10 @@ class Languages extends Translations {
 
           //doctors category screen
           'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
+          'elisa': 'এলিসা',
+          'hasan': 'হাসান',
+          '5_years_experience': '৫ বছরের অভিজ্ঞতা',
+          '7_years_experience': '৭ বছরের অভিজ্ঞতা',
         },
         'hi_IN': {
           //splash screen
@@ -237,6 +245,10 @@ class Languages extends Translations {
 
           //doctors category screen
           'cancer_specialist': 'कैंसर विशेषज्ञ',
+          'elisa': 'एलिसा',
+          'hasan': 'हसन',
+          '5_years_experience': '५ वर्ष का अनुभव',
+          '7_years_experience': '७ वर्ष का अनुभव',
         },
       };
 }

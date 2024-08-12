@@ -145,4 +145,5 @@ class AppColors {
   static const Color cancerScreenBackButtonCardBackgroundColor = Colors.white;
   static const Color cancerScreenBackButtonIconColor = Colors.black;
   static const Color cancerTitleTextColor = Colors.black;
+  static const Color doctorNameColor = Colors.black;
 }
