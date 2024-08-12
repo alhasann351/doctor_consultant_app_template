@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/widgets/back_button_category_title.dart';
+import 'package:doctor_consultant_app_template/views/doctors_category_screens/widgets/doctor_information.dart';
 import 'package:flutter/material.dart';
 
 class CancerDoctorsScreen extends StatelessWidget {
@@ -23,8 +24,11 @@ class CancerDoctorsScreen extends StatelessWidget {
           ),
         ),
         child: ListView(
-          children: const [
-            BackButtonCategoryTitle(),
+          scrollDirection: Axis.vertical,
+          //shrinkWrap: true,
+          children: [
+            const BackButtonCategoryTitle(),
+            DoctorInformation(),
           ],
         ),
       ),
