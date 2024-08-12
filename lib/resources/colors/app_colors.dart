@@ -142,4 +142,7 @@ class AppColors {
   //doctors category screen
   static const Color cancerScreenTopBackgroundColor = Colors.lightBlueAccent;
   static const Color cancerScreenBottomBackgroundColor = Colors.greenAccent;
+  static const Color cancerScreenBackButtonCardBackgroundColor = Colors.white;
+  static const Color cancerScreenBackButtonIconColor = Colors.black;
+  static const Color cancerTitleTextColor = Colors.black;
 }

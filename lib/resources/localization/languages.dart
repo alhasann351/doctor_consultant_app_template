@@ -77,6 +77,9 @@ class Languages extends Translations {
           'heart': 'Heart',
           'skin': 'Skin',
           'comments_input_hint_text': 'Add a comment',
+
+          //doctors category screen
+          'cancer_specialist': 'Cancer specialist',
         },
         'bn_BD': {
           //splash screen
@@ -152,6 +155,9 @@ class Languages extends Translations {
           'heart': 'হার্ট',
           'skin': 'ত্বক',
           'comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
+
+          //doctors category screen
+          'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
         },
         'hi_IN': {
           //splash screen
@@ -228,6 +234,9 @@ class Languages extends Translations {
           'heart': 'हार्ट',
           'skin': 'त्वचा',
           'comments_input_hint_text': 'एक टिप्पणी जोड़ने',
+
+          //doctors category screen
+          'cancer_specialist': 'कैंसर विशेषज्ञ',
         },
       };
 }
