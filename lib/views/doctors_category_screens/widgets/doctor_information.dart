@@ -62,6 +62,7 @@ class DoctorInformation extends StatelessWidget {
               return SizedBox(
                 height: 180,
                 child: Card(
+                  color: AppColors.doctorInfoCardBackgroundColor,
                   elevation: 8,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -69,40 +70,47 @@ class DoctorInformation extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 10, left: 10),
-                        child: Image.asset(
-                          image[index],
-                          fit: BoxFit.fill,
-                          height: 95,
-                          width: 100,
+                        child: ClipRRect(
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10)),
+                          child: Image.asset(
+                            image[index],
+                            fit: BoxFit.fill,
+                            height: 95,
+                            width: 100,
+                          ),
                         ),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            doctorName[index],
-                            style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: AppColors.doctorNameColor),
-                          ),
-                          Text(
-                            'cancer_specialist'.tr,
-                            style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 15,
-                                color: AppColors.doctorNameColor),
-                          ),
-                          Text(
-                            doctorExperience[index],
-                            style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 15,
-                                color: AppColors.doctorNameColor),
-                          ),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10, left: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              doctorName[index],
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.doctorNameColor),
+                            ),
+                            Text(
+                              'cancer_specialist'.tr,
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  color: AppColors.doctorSpecialistTextColor),
+                            ),
+                            Text(
+                              doctorExperience[index],
+                              style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  color: AppColors.doctorNameColor),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
