@@ -1,13 +1,23 @@
 import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
+import 'package:doctor_consultant_app_template/utils/app_utils.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/favorite_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/fonts/app_font_style.dart';
 
-class DoctorInformation extends StatelessWidget {
-  DoctorInformation({super.key});
+class CancerDoctorInformation extends StatefulWidget {
+  const CancerDoctorInformation({super.key});
+
+  @override
+  State<CancerDoctorInformation> createState() =>
+      _CancerDoctorInformationState();
+}
+
+class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
+  final FavoriteController favoriteController = Get.put(FavoriteController());
 
   final List<String> image = [
     ImagesIcons.liveDoctorsImage1,
@@ -60,6 +70,7 @@ class DoctorInformation extends StatelessWidget {
     '85%_good'.tr,
     '85%_good'.tr,
   ];
+
   final List<String> seePatients = [
     '95_patients'.tr,
     '85_patients'.tr,
@@ -85,6 +96,8 @@ class DoctorInformation extends StatelessWidget {
     '10:00_AM_tomorrow'.tr,
     '11:00_AM_tomorrow'.tr,
   ];
+
+  bool isFav = true;
 
   @override
   Widget build(BuildContext context) {
@@ -136,10 +149,16 @@ class DoctorInformation extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: AppColors.doctorNameColor),
                             ),
-                            const Icon(
-                              Icons.favorite_outline_outlined,
-                              size: 25,
-                              color: AppColors.doctorInfoFavoriteIconColor,
+                            InkWell(
+                              onTap: () {
+                                AppUtils.showToastMessage(
+                                    'Favorite option clicked');
+                              },
+                              child: const Icon(
+                                Icons.favorite,
+                                size: 25,
+                                color: AppColors.doctorInfoFavoriteIconColor,
+                              ),
                             ),
                           ],
                         ),

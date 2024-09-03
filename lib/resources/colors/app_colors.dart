@@ -155,4 +155,5 @@ class AppColors {
   static const Color nextAvailableTimeTextColor = Colors.grey;
   static const Color bookNowButtonTextColor = Colors.white;
   static const Color bookNowButtonColor = Colors.lightBlueAccent;
+  static const Color favoriteIconColor = Colors.red;
 }
