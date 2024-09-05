@@ -7,15 +7,14 @@ import 'package:get/get.dart';
 
 import '../../../resources/fonts/app_font_style.dart';
 
-class CancerDoctorInformation extends StatefulWidget {
-  const CancerDoctorInformation({super.key});
+class EarDoctorInformation extends StatefulWidget {
+  const EarDoctorInformation({super.key});
 
   @override
-  State<CancerDoctorInformation> createState() =>
-      _CancerDoctorInformationState();
+  State<EarDoctorInformation> createState() => _EarDoctorInformationState();
 }
 
-class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
+class _EarDoctorInformationState extends State<EarDoctorInformation> {
   final List<String> image = [
     ImagesIcons.liveDoctorsImage1,
     ImagesIcons.liveDoctorsImage2,
@@ -164,7 +163,7 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
                         right: 0,
                         bottom: 0,
                         child: Text(
-                          'cancer_specialist'.tr,
+                          'ear_specialist'.tr,
                           style: const TextStyle(
                               fontFamily: AppFontStyle.rubik,
                               fontSize: 15,

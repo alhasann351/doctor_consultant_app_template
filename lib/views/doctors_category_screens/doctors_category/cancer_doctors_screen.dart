@@ -27,7 +27,7 @@ class CancerDoctorsScreen extends StatelessWidget {
             ),
           ),
           const BackButtonCategoryTitle(),
-          CancerDoctorInformation(),
+          const CancerDoctorInformation(),
         ],
       ),
     );
