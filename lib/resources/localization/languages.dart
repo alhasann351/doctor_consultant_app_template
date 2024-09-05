@@ -93,6 +93,7 @@ class Languages extends Translations {
           '11:00_AM_tomorrow': '11:00 AM tomorrow',
           'book_now': 'Book now',
           'ear_specialist': 'Ear specialist',
+          'eye_specialist': 'Eye specialist',
         },
         'bn_BD': {
           //splash screen
@@ -184,6 +185,7 @@ class Languages extends Translations {
           '11:00_AM_tomorrow': 'আগামীকাল সকাল ১১টা',
           'book_now': 'বুক করুন',
           'ear_specialist': 'কান বিশেষজ্ঞ',
+          'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
         },
         'hi_IN': {
           //splash screen
@@ -276,6 +278,7 @@ class Languages extends Translations {
           '11:00_AM_tomorrow': 'कल सुबह ११ बजे',
           'book_now': 'बुक करें',
           'ear_specialist': 'कान विशेषज्ञ',
+          'eye_specialist': 'नेत्र विशेषज्ञ',
         },
       };
 }
