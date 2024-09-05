@@ -79,7 +79,7 @@ class Languages extends Translations {
           'comments_input_hint_text': 'Add a comment',
 
           //doctors category screen
-          'cancer_specialist': 'Cancer specialist',
+          'specialist_doctors': 'Specialist doctors',
           'elisa': 'Elisa',
           'hasan': 'Hasan',
           '5_years_experience': '5 years experience',
@@ -92,6 +92,7 @@ class Languages extends Translations {
           '10:00_AM_tomorrow': '10:00 AM tomorrow',
           '11:00_AM_tomorrow': '11:00 AM tomorrow',
           'book_now': 'Book now',
+          'cancer_specialist': 'Cancer specialist',
           'ear_specialist': 'Ear specialist',
           'eye_specialist': 'Eye specialist',
           'heart_specialist': 'Heart specialist',
@@ -173,7 +174,7 @@ class Languages extends Translations {
           'comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
 
           //doctors category screen
-          'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
+          'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
           'elisa': 'এলিসা',
           'hasan': 'হাসান',
           '5_years_experience': '৫ বছরের অভিজ্ঞতা',
@@ -186,6 +187,7 @@ class Languages extends Translations {
           '10:00_AM_tomorrow': 'আগামীকাল সকাল ১০টা',
           '11:00_AM_tomorrow': 'আগামীকাল সকাল ১১টা',
           'book_now': 'বুক করুন',
+          'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
           'ear_specialist': 'কান বিশেষজ্ঞ',
           'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
           'heart_specialist': 'হৃদরোগ বিশেষজ্ঞ',
@@ -268,7 +270,7 @@ class Languages extends Translations {
           'comments_input_hint_text': 'एक टिप्पणी जोड़ने',
 
           //doctors category screen
-          'cancer_specialist': 'कैंसर विशेषज्ञ',
+          'specialist_doctors': 'विशेषज्ञ डॉक्टर',
           'elisa': 'एलिसा',
           'hasan': 'हसन',
           '5_years_experience': '५ वर्ष का अनुभव',
@@ -281,6 +283,7 @@ class Languages extends Translations {
           '10:00_AM_tomorrow': 'कल सुबह १० बजे',
           '11:00_AM_tomorrow': 'कल सुबह ११ बजे',
           'book_now': 'बुक करें',
+          'cancer_specialist': 'कैंसर विशेषज्ञ',
           'ear_specialist': 'कान विशेषज्ञ',
           'eye_specialist': 'नेत्र विशेषज्ञ',
           'heart_specialist': 'हृदय रोग विशेषज्ञ',

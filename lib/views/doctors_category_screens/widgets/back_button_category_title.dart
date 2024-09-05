@@ -38,7 +38,7 @@ class BackButtonCategoryTitle extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Text(
-                'cancer_specialist'.tr,
+                'specialist_doctors'.tr,
                 style: const TextStyle(
                     fontFamily: AppFontStyle.rubik,
                     fontSize: 20,
