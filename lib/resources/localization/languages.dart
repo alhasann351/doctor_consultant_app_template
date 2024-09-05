@@ -94,6 +94,8 @@ class Languages extends Translations {
           'book_now': 'Book now',
           'ear_specialist': 'Ear specialist',
           'eye_specialist': 'Eye specialist',
+          'heart_specialist': 'Heart specialist',
+          'skin_specialist': 'Skin specialist',
         },
         'bn_BD': {
           //splash screen
@@ -186,6 +188,8 @@ class Languages extends Translations {
           'book_now': 'বুক করুন',
           'ear_specialist': 'কান বিশেষজ্ঞ',
           'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
+          'heart_specialist': 'হৃদরোগ বিশেষজ্ঞ',
+          'skin_specialist': 'ত্বক বিশেষজ্ঞ',
         },
         'hi_IN': {
           //splash screen
@@ -279,6 +283,8 @@ class Languages extends Translations {
           'book_now': 'बुक करें',
           'ear_specialist': 'कान विशेषज्ञ',
           'eye_specialist': 'नेत्र विशेषज्ञ',
+          'heart_specialist': 'हृदय रोग विशेषज्ञ',
+          'skin_specialist': 'त्वचा विशेषज्ञ',
         },
       };
 }
