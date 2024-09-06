@@ -1,6 +1,7 @@
 import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -254,7 +255,13 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
                               fontSize: 16,
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
-                          onTap: () {},
+                          onTap: () {
+                            Get.toNamed(RoutesName.bookingDoctorsScreens,
+                                arguments: {
+                                  'doctorsName': doctorName[index],
+                                  'doctorsSpecialty': 'cancer_specialist'.tr,
+                                });
+                          },
                         ),
                       ),
                     ],
