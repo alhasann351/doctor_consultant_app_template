@@ -97,6 +97,9 @@ class Languages extends Translations {
           'eye_specialist': 'Eye specialist',
           'heart_specialist': 'Heart specialist',
           'skin_specialist': 'Skin specialist',
+
+          //booking doctors screen
+          'select_time': 'Select time',
         },
         'bn_BD': {
           //splash screen
@@ -192,6 +195,9 @@ class Languages extends Translations {
           'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
           'heart_specialist': 'হৃদরোগ বিশেষজ্ঞ',
           'skin_specialist': 'ত্বক বিশেষজ্ঞ',
+
+          //booking doctors screen
+          'select_time': 'সময় নির্বাচন',
         },
         'hi_IN': {
           //splash screen
@@ -288,6 +294,9 @@ class Languages extends Translations {
           'eye_specialist': 'नेत्र विशेषज्ञ',
           'heart_specialist': 'हृदय रोग विशेषज्ञ',
           'skin_specialist': 'त्वचा विशेषज्ञ',
+
+          //booking doctors screen
+          'select_time': 'समय चुनें',
         },
       };
 }

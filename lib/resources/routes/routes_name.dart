@@ -9,4 +9,5 @@ class RoutesName {
   static const String liveDoctorsScreen = '/live_doctors_screen';
   static const String doctorsCategoryScreens = '/doctors_category_screens';
   static const String bookingDoctorsScreens = '/booking_doctors_screens';
+  static const String cancerDoctorsScreens = '/cancer_doctors_screens';
 }

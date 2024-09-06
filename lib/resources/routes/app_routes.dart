@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/booking_doctors_screen/booking_doctors_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/cancer_doctors_screen.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
@@ -67,6 +68,12 @@ class AppRoutes {
           name: RoutesName.bookingDoctorsScreens,
           page: () => const BookingDoctorsScreen(),
           transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.cancerDoctorsScreens,
+          page: () => const CancerDoctorsScreen(),
+          transition: Transition.leftToRight,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];
