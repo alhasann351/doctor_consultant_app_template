@@ -15,9 +15,11 @@ import 'package:get/get.dart';
 import '../../views/booking_doctors_screen/widgets/ear_doctors_booking/booking_ear_doctors_screen.dart';
 import '../../views/booking_doctors_screen/widgets/eye_doctors_booking/booking_eye_doctors_screen.dart';
 import '../../views/booking_doctors_screen/widgets/heart_doctors_booking/booking_heart_doctors_screen.dart';
+import '../../views/booking_doctors_screen/widgets/skin_doctors_booking/booking_skin_doctors_screen.dart';
 import '../../views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
 import '../../views/doctors_category_screens/doctors_category/eye_doctors_screen.dart';
 import '../../views/doctors_category_screens/doctors_category/heart_doctors_screen.dart';
+import '../../views/doctors_category_screens/doctors_category/skin_doctors_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [
@@ -116,6 +118,18 @@ class AppRoutes {
         GetPage(
           name: RoutesName.heartDoctorsScreens,
           page: () => const HeartDoctorsScreen(),
+          transition: Transition.leftToRight,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.bookingSkinDoctorsScreens,
+          page: () => const BookingSkinDoctorsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.skinDoctorsScreens,
+          page: () => const SkinDoctorsScreen(),
           transition: Transition.leftToRight,
           transitionDuration: const Duration(milliseconds: 600),
         ),
