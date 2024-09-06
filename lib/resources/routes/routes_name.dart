@@ -8,6 +8,9 @@ class RoutesName {
   static const String homeScreen = '/home_screen';
   static const String liveDoctorsScreen = '/live_doctors_screen';
   static const String doctorsCategoryScreens = '/doctors_category_screens';
-  static const String bookingDoctorsScreens = '/booking_doctors_screens';
+  static const String bookingCancerDoctorsScreens =
+      '/booking_cancer_doctors_screens';
   static const String cancerDoctorsScreens = '/cancer_doctors_screens';
+  static const String bookingEarDoctorsScreens = '/booking_ear_doctors_screens';
+  static const String earDoctorsScreens = '/ear_doctors_screens';
 }

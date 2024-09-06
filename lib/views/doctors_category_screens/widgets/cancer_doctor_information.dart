@@ -256,7 +256,7 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
                           onTap: () {
-                            Get.toNamed(RoutesName.bookingDoctorsScreens,
+                            Get.toNamed(RoutesName.bookingCancerDoctorsScreens,
                                 arguments: {
                                   'doctorsName': doctorName[index],
                                   'doctorsSpecialty': 'cancer_specialist'.tr,

@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../resources/routes/routes_name.dart';
 
 class EarDoctorInformation extends StatefulWidget {
   const EarDoctorInformation({super.key});
@@ -253,7 +254,13 @@ class _EarDoctorInformationState extends State<EarDoctorInformation> {
                               fontSize: 16,
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
-                          onTap: () {},
+                          onTap: () {
+                            Get.toNamed(RoutesName.bookingEarDoctorsScreens,
+                                arguments: {
+                                  'doctorsName': doctorName[index],
+                                  'doctorsSpecialty': 'ear_specialist'.tr,
+                                });
+                          },
                         ),
                       ),
                     ],
