@@ -13,7 +13,9 @@ import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen
 import 'package:get/get.dart';
 
 import '../../views/booking_doctors_screen/widgets/ear_doctors_booking/booking_ear_doctors_screen.dart';
+import '../../views/booking_doctors_screen/widgets/eye_doctors_booking/booking_eye_doctors_screen.dart';
 import '../../views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
+import '../../views/doctors_category_screens/doctors_category/eye_doctors_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [
@@ -88,6 +90,18 @@ class AppRoutes {
         GetPage(
           name: RoutesName.earDoctorsScreens,
           page: () => const EarDoctorsScreen(),
+          transition: Transition.leftToRight,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.bookingEyeDoctorsScreens,
+          page: () => const BookingEyeDoctorsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.eyeDoctorsScreens,
+          page: () => const EyeDoctorsScreen(),
           transition: Transition.leftToRight,
           transitionDuration: const Duration(milliseconds: 600),
         ),

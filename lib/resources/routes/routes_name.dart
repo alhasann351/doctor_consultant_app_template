@@ -13,4 +13,6 @@ class RoutesName {
   static const String cancerDoctorsScreens = '/cancer_doctors_screens';
   static const String bookingEarDoctorsScreens = '/booking_ear_doctors_screens';
   static const String earDoctorsScreens = '/ear_doctors_screens';
+  static const String bookingEyeDoctorsScreens = '/booking_eye_doctors_screens';
+  static const String eyeDoctorsScreens = '/eye_doctors_screens';
 }
