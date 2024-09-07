@@ -38,8 +38,9 @@ dependencies:
   get:
   smooth_page_indicator:
   shared_preferences:
-  fluttertoast: ^8.2.6
+  fluttertoast: ^8.2.8
   loading_animation_widget:
+  cached_network_image:
 
 dev_dependencies:
   flutter_test:

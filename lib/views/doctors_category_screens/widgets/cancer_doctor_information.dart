@@ -1,11 +1,13 @@
-import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../resources/assets/images_icons.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
 class CancerDoctorInformation extends StatefulWidget {
@@ -104,9 +106,11 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: ListView.builder(
+            cacheExtent: 1500,
             //scrollDirection: Axis.vertical,
             //shrinkWrap: true,
-            itemCount: image.length,
+            //itemCount: image.length,
+            itemCount: doctorName.length,
             itemBuilder: (context, index) {
               return SizedBox(
                 height: 200,
@@ -120,12 +124,23 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
                         child: ClipRRect(
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10)),
-                          child: Image.asset(
+                          child: CachedNetworkImage(
+                            fit: BoxFit.fill,
+                            height: 95,
+                            width: 100,
+                            imageUrl:
+                                'https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg',
+                            placeholder: (context, url) =>
+                                const LoadingAnimation(),
+                            errorWidget: (context, url, error) =>
+                                const Icon(Icons.error),
+                          ),
+                          /*child: Image.asset(
                             image[index],
                             fit: BoxFit.fill,
                             height: 95,
                             width: 100,
-                          ),
+                          ),*/
                         ),
                       ),
                       Positioned(
