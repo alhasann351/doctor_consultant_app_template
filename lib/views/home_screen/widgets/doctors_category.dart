@@ -1,5 +1,6 @@
-import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/white_loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/cancer_doctors_screen.dart';
@@ -14,11 +15,11 @@ class DoctorsCategory extends StatelessWidget {
   DoctorsCategory({super.key});
 
   final List<String> iconPaths = [
-    ImagesIcons.doctorsCategoryCancerIcon,
-    ImagesIcons.doctorsCategoryEarIcon,
-    ImagesIcons.doctorsCategoryEyeIcon,
-    ImagesIcons.doctorsCategoryHeartIcon,
-    ImagesIcons.doctorsCategorySkinIcon,
+    'https://drive.google.com/uc?export=view&id=1QaFhAXGb4UU86sFQVGt0kn72sOKm51XJ',
+    'https://drive.google.com/uc?export=view&id=16P8SYdyk4YsFvQCLQYBnnKFrfb2tCTgi',
+    'https://drive.google.com/uc?export=view&id=1bBTGf_G2TdCsQ71CHcIIG67moxUBf6O4',
+    'https://drive.google.com/uc?export=view&id=1hgzMCzUqwAVn46MSft_Cnkc5dxlGxgCU',
+    'https://drive.google.com/uc?export=view&id=1In6j384sP42RRrPRW1B9uAiSTWB4zlOk',
   ];
   final List<String> categoryName = [
     'cancer'.tr,
@@ -65,8 +66,9 @@ class DoctorsCategory extends StatelessWidget {
           height: 150,
           width: double.infinity,
           child: ListView.builder(
+            cacheExtent: 1500,
             scrollDirection: Axis.horizontal,
-            shrinkWrap: true,
+            //shrinkWrap: true,
             itemCount: iconPaths.length,
             itemBuilder: (context, index) {
               return Padding(
@@ -90,12 +92,24 @@ class DoctorsCategory extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset(
+                            CachedNetworkImage(
+                              imageUrl: iconPaths[index],
+                              color: AppColors.doctorsCategoryIconsColor,
+                              height: 33,
+                              width: 33,
+                              placeholder: (context, url) =>
+                                  const WhiteLoadingAnimation(),
+                              errorWidget: (context, url, error) => const Icon(
+                                Icons.error,
+                                color: Colors.white,
+                              ),
+                            ),
+                            /*Image.asset(
                               iconPaths[index],
                               color: AppColors.doctorsCategoryIconsColor,
                               height: 33,
                               width: 33,
-                            ),
+                            ),*/
                             const SizedBox(height: 10),
                             Text(
                               categoryName[index],
