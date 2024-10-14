@@ -1,9 +1,11 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/views/live_doctors_screen/widgets/back_button_doctor_profile.dart';
 import 'package:doctor_consultant_app_template/views/live_doctors_screen/widgets/comments_input.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../resources/colors/app_colors.dart';
+import '../../resources/components/loading_animation.dart';
 
 class LiveDoctorsScreen extends StatelessWidget {
   const LiveDoctorsScreen({super.key});
@@ -17,9 +19,14 @@ class LiveDoctorsScreen extends StatelessWidget {
           SizedBox(
             height: double.infinity,
             width: double.infinity,
-            child: Image.asset(
-              Get.arguments['image'.toString()],
+            child: CachedNetworkImage(
+              imageUrl: Get.arguments['image'.toString()],
               fit: BoxFit.cover,
+              placeholder: (context, url) => const LoadingAnimation(),
+              errorWidget: (context, url, error) => const Icon(
+                Icons.error,
+                color: Colors.grey,
+              ),
             ),
           ),
           const Positioned(

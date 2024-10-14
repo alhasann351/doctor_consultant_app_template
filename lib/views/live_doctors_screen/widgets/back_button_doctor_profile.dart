@@ -44,7 +44,7 @@ class BackButtonDoctorProfile extends StatelessWidget {
                   radius: 25,
                   backgroundColor:
                       AppColors.doctorProfileCircleAvatarBackgroundColor,
-                  foregroundImage: AssetImage(
+                  foregroundImage: NetworkImage(
                     Get.arguments['image'.toString()],
                   ),
                 ),
