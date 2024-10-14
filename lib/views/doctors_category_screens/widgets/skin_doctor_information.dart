@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
 
 class SkinDoctorInformation extends StatefulWidget {
   const SkinDoctorInformation({super.key});
@@ -269,11 +268,11 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
                           onTap: () {
-                            Get.toNamed(RoutesName.bookingSkinDoctorsScreens,
+                            /*Get.toNamed(RoutesName.bookingSkinDoctorsScreens,
                                 arguments: {
                                   'doctorsName': doctorName[index],
                                   'doctorsSpecialty': 'skin_specialist'.tr,
-                                });
+                                });*/
                           },
                         ),
                       ),

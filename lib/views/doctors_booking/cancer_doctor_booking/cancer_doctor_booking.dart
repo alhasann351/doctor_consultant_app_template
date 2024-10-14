@@ -1,16 +1,16 @@
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/views/booking_doctors_screen/widgets/ear_doctors_booking/back_button_title_text.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking_back_button.dart';
 import 'package:flutter/material.dart';
 
-class BookingEarDoctorsScreen extends StatefulWidget {
-  const BookingEarDoctorsScreen({super.key});
+import '../../../resources/colors/app_colors.dart';
+
+class CancerDoctorBooking extends StatefulWidget {
+  const CancerDoctorBooking({super.key});
 
   @override
-  State<BookingEarDoctorsScreen> createState() =>
-      _BookingEarDoctorsScreenState();
+  State<CancerDoctorBooking> createState() => _CancerDoctorBookingState();
 }
 
-class _BookingEarDoctorsScreenState extends State<BookingEarDoctorsScreen> {
+class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class _BookingEarDoctorsScreenState extends State<BookingEarDoctorsScreen> {
               ),
             ),
           ),
-          const BackButtonTitleText(),
+          const CancerDoctorBookingBackButton(),
         ],
       ),
     );

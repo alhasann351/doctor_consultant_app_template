@@ -269,7 +269,7 @@ class _EarDoctorInformationState extends State<EarDoctorInformation> {
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
                           onTap: () {
-                            Get.toNamed(RoutesName.bookingEarDoctorsScreens,
+                            Get.toNamed(RoutesName.earDoctorBooking,
                                 arguments: {
                                   'doctorsName': doctorName[index],
                                   'doctorsSpecialty': 'ear_specialist'.tr,

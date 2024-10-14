@@ -1,6 +1,8 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:doctor_consultant_app_template/views/booking_doctors_screen/widgets/cancer_doctors_booking/booking_cancer_doctors_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/ear_doctor_booking/ear_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/cancer_doctors_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
@@ -11,15 +13,6 @@ import 'package:doctor_consultant_app_template/views/signup_login_screen/signup_
 import 'package:doctor_consultant_app_template/views/signup_screen/signup_screen.dart';
 import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen.dart';
 import 'package:get/get.dart';
-
-import '../../views/booking_doctors_screen/widgets/ear_doctors_booking/booking_ear_doctors_screen.dart';
-import '../../views/booking_doctors_screen/widgets/eye_doctors_booking/booking_eye_doctors_screen.dart';
-import '../../views/booking_doctors_screen/widgets/heart_doctors_booking/booking_heart_doctors_screen.dart';
-import '../../views/booking_doctors_screen/widgets/skin_doctors_booking/booking_skin_doctors_screen.dart';
-import '../../views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
-import '../../views/doctors_category_screens/doctors_category/eye_doctors_screen.dart';
-import '../../views/doctors_category_screens/doctors_category/heart_doctors_screen.dart';
-import '../../views/doctors_category_screens/doctors_category/skin_doctors_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [
@@ -74,63 +67,27 @@ class AppRoutes {
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.bookingCancerDoctorsScreens,
-          page: () => const BookingCancerDoctorsScreen(),
-          transition: Transition.zoom,
+          name: RoutesName.cancerDoctorBooking,
+          page: () => const CancerDoctorBooking(),
+          transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.cancerDoctorsScreens,
+          name: RoutesName.cancerDoctorScreen,
           page: () => const CancerDoctorsScreen(),
-          transition: Transition.leftToRight,
+          transition: Transition.downToUp,
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.bookingEarDoctorsScreens,
-          page: () => const BookingEarDoctorsScreen(),
-          transition: Transition.zoom,
+          name: RoutesName.earDoctorBooking,
+          page: () => const EarDoctorBooking(),
+          transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.earDoctorsScreens,
+          name: RoutesName.earDoctorScreen,
           page: () => const EarDoctorsScreen(),
-          transition: Transition.leftToRight,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.bookingEyeDoctorsScreens,
-          page: () => const BookingEyeDoctorsScreen(),
-          transition: Transition.zoom,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.eyeDoctorsScreens,
-          page: () => const EyeDoctorsScreen(),
-          transition: Transition.leftToRight,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.bookingHeartDoctorsScreens,
-          page: () => const BookingHeartDoctorsScreen(),
-          transition: Transition.zoom,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.heartDoctorsScreens,
-          page: () => const HeartDoctorsScreen(),
-          transition: Transition.leftToRight,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.bookingSkinDoctorsScreens,
-          page: () => const BookingSkinDoctorsScreen(),
-          transition: Transition.zoom,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
-          name: RoutesName.skinDoctorsScreens,
-          page: () => const SkinDoctorsScreen(),
-          transition: Transition.leftToRight,
+          transition: Transition.downToUp,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];

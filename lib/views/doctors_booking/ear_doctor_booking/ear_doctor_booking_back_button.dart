@@ -1,13 +1,13 @@
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../resources/colors/app_colors.dart';
-import '../../../../resources/routes/routes_name.dart';
+import '../../../resources/colors/app_colors.dart';
+import '../../../resources/fonts/app_font_style.dart';
+import '../../../resources/routes/routes_name.dart';
 
-class BackButtonTitleText extends StatelessWidget {
-  const BackButtonTitleText({super.key});
+class EarDoctorBookingBackButton extends StatelessWidget {
+  const EarDoctorBookingBackButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class BackButtonTitleText extends StatelessWidget {
               width: 50,
               child: GestureDetector(
                 onTap: () {
-                  Get.offAllNamed(RoutesName.earDoctorsScreens);
+                  Get.offAllNamed(RoutesName.earDoctorScreen);
                 },
                 child: Card(
                   shape: RoundedRectangleBorder(

@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [
-                LiveDoctors(),
+                const LiveDoctors(),
                 DoctorsCategory(),
               ],
             ),
