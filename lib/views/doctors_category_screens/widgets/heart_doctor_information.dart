@@ -40,7 +40,7 @@ class _HeartDoctorInformationState extends State<HeartDoctorInformation> {
     'elisa'.tr,
     'hasan'.tr,
     'elisa'.tr,
-    'hasan'.tr,
+    'elisa'.tr,
   ];
 
   final List<String> doctorExperience = [

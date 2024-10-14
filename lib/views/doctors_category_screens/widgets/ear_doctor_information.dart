@@ -40,7 +40,7 @@ class _EarDoctorInformationState extends State<EarDoctorInformation> {
     'elisa'.tr,
     'hasan'.tr,
     'elisa'.tr,
-    'hasan'.tr,
+    'elisa'.tr,
   ];
 
   final List<String> doctorExperience = [

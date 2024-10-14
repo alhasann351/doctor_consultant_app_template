@@ -40,7 +40,7 @@ class _EyeDoctorInformationState extends State<EyeDoctorInformation> {
     'elisa'.tr,
     'hasan'.tr,
     'elisa'.tr,
-    'hasan'.tr,
+    'elisa'.tr,
   ];
 
   final List<String> doctorExperience = [
