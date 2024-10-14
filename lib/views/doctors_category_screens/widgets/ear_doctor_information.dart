@@ -1,5 +1,6 @@
-import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:flutter/material.dart';
@@ -17,16 +18,16 @@ class EarDoctorInformation extends StatefulWidget {
 
 class _EarDoctorInformationState extends State<EarDoctorInformation> {
   final List<String> image = [
-    ImagesIcons.liveDoctorsImage1,
-    ImagesIcons.liveDoctorsImage2,
-    ImagesIcons.liveDoctorsImage3,
-    ImagesIcons.liveDoctorsImage4,
-    ImagesIcons.liveDoctorsImage5,
-    ImagesIcons.liveDoctorsImage6,
-    ImagesIcons.liveDoctorsImage7,
-    ImagesIcons.liveDoctorsImage8,
-    ImagesIcons.liveDoctorsImage9,
-    ImagesIcons.liveDoctorsImage10,
+    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
+    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
+    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
+    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
+    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
+    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
+    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
+    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
+    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
+    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
   ];
 
   final List<String> doctorName = [
@@ -103,6 +104,7 @@ class _EarDoctorInformationState extends State<EarDoctorInformation> {
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: ListView.builder(
+            cacheExtent: 1500,
             //scrollDirection: Axis.vertical,
             //shrinkWrap: true,
             itemCount: image.length,
@@ -119,12 +121,24 @@ class _EarDoctorInformationState extends State<EarDoctorInformation> {
                         child: ClipRRect(
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10)),
-                          child: Image.asset(
+                          child: CachedNetworkImage(
+                            imageUrl: image[index],
+                            fit: BoxFit.fill,
+                            height: 95,
+                            width: 100,
+                            placeholder: (context, url) =>
+                                const LoadingAnimation(),
+                            errorWidget: (context, url, error) => const Icon(
+                              Icons.error,
+                              color: Colors.grey,
+                            ),
+                          ),
+                          /*child: Image.asset(
                             image[index],
                             fit: BoxFit.fill,
                             height: 95,
                             width: 100,
-                          ),
+                          ),*/
                         ),
                       ),
                       Positioned(

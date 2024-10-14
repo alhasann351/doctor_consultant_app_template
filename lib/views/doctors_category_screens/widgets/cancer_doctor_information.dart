@@ -109,7 +109,6 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
             //scrollDirection: Axis.vertical,
             //shrinkWrap: true,
             itemCount: image.length,
-            //itemCount: doctorName.length,
             itemBuilder: (context, index) {
               return SizedBox(
                 height: 200,
