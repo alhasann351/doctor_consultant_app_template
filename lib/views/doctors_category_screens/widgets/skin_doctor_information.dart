@@ -271,6 +271,7 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
                           onTap: () {
                             Get.toNamed(RoutesName.skinDoctorBooking,
                                 arguments: {
+                                  'doctorImage': image[index],
                                   'doctorsName': doctorName[index],
                                   'doctorsSpecialty': 'skin_specialist'.tr,
                                 });

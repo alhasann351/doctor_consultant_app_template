@@ -1,7 +1,10 @@
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
+import '../../../resources/components/card_doctor_information.dart';
+import '../../../resources/fonts/app_font_style.dart';
 
 class SkinDoctorBooking extends StatefulWidget {
   const SkinDoctorBooking({super.key});
@@ -32,6 +35,17 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             ),
           ),
           const SkinDoctorBookingBackButton(),
+          CardDoctorInformation(
+              doctorName: 'doctorName',
+              speciality: 'speciality',
+              hospitalName: 'hospitalName',
+              textStyle: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.doctorNameColor),
+              backgroundColor: AppColors.doctorInfoCardBackgroundColor,
+              doctorImage: Get.arguments['doctorImage'.toString()]),
         ],
       ),
     );

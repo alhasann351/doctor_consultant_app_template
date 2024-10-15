@@ -1,0 +1,60 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+
+import '../colors/app_colors.dart';
+
+class CardDoctorInformation extends StatelessWidget {
+  final String doctorImage;
+  final String doctorName;
+  final String speciality;
+  final String hospitalName;
+  final TextStyle? textStyle;
+  final Color backgroundColor;
+
+  const CardDoctorInformation(
+      {super.key,
+      required this.doctorName,
+      required this.speciality,
+      required this.hospitalName,
+      required this.textStyle,
+      this.backgroundColor = AppColors.doctorInfoCardBackgroundColor,
+      required this.doctorImage});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Card(
+        color: backgroundColor,
+        child: Stack(
+          children: [
+            CachedNetworkImage(imageUrl: doctorImage),
+            Text(
+              doctorName,
+              style: textStyle,
+            ),
+            const Icon(
+              Icons.favorite,
+              color: Colors.grey,
+            ),
+          ],
+        ),
+        /*child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  doctorName,
+                  style: textStyle,
+                ),
+                const Icon(
+                  Icons.favorite,
+                  color: Colors.grey,
+                ),
+              ],
+            )
+          ],
+        ),*/
+      ),
+    );
+  }
+}
