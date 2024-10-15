@@ -14,6 +14,8 @@ import 'package:doctor_consultant_app_template/views/signup_screen/signup_screen
 import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen.dart';
 import 'package:get/get.dart';
 
+import '../../views/doctors_booking/skin_doctor_booking/skin_doctor_booking.dart';
+
 class AppRoutes {
   static appRoutes() => [
         GetPage(
@@ -88,6 +90,12 @@ class AppRoutes {
           name: RoutesName.heartDoctorBooking,
           page: () => const HeartDoctorBooking(),
           transition: Transition.downToUp,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.skinDoctorBooking,
+          page: () => const SkinDoctorBooking(),
+          transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];
