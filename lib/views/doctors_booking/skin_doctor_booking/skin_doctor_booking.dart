@@ -41,7 +41,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             child: CardDoctorInformation(
                 doctorName: Get.arguments['doctorName'.toString()],
                 speciality: Get.arguments['doctorSpeciality'.toString()],
-                hospitalName: 'hospitalName',
+                hospitalName: Get.arguments['hospitalName'.toString()],
                 textStyle: const TextStyle(
                     fontFamily: AppFontStyle.rubik,
                     fontSize: 18,

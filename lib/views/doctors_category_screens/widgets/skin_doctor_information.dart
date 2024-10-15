@@ -43,6 +43,19 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
     'elisa'.tr,
   ];
 
+  final List<String> hospitalName = [
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+    'Life Care Medical Center',
+  ];
+
   final List<String> doctorExperience = [
     '5_years_experience'.tr,
     '7_years_experience'.tr,
@@ -274,6 +287,7 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
                                   'doctorImage': image[index],
                                   'doctorName': doctorName[index],
                                   'doctorSpeciality': 'skin_specialist'.tr,
+                                  'hospitalName': hospitalName[index],
                                 });
                           },
                         ),

@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
+import '../../utils/app_utils.dart';
 import '../colors/app_colors.dart';
 import 'loading_animation.dart';
 
@@ -48,32 +49,34 @@ class CardDoctorInformation extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
-                doctorName,
-                style: textStyle,
-              ),
-              const Icon(
-                Icons.favorite,
-                color: Colors.grey,
+              Positioned(
+                top: 15,
+                left: 120,
+                right: 10,
+                bottom: 0,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      doctorName,
+                      style: textStyle,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        AppUtils.showToastMessage('Favorite option clicked');
+                      },
+                      child: const Icon(
+                        Icons.favorite,
+                        size: 25,
+                        color: AppColors.doctorInfoFavoriteIconColor,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
-          /*child: Column(
-            children: [
-              Row(
-                children: [
-                  Text(
-                    doctorName,
-                    style: textStyle,
-                  ),
-                  const Icon(
-                    Icons.favorite,
-                    color: Colors.grey,
-                  ),
-                ],
-              )
-            ],
-          ),*/
         ),
       ),
     );
