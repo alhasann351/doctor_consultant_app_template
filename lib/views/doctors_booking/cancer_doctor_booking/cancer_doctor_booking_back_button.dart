@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
 
 class CancerDoctorBookingBackButton extends StatelessWidget {
   const CancerDoctorBookingBackButton({super.key});
@@ -21,7 +20,7 @@ class CancerDoctorBookingBackButton extends StatelessWidget {
               width: 50,
               child: GestureDetector(
                 onTap: () {
-                  Get.offAllNamed(RoutesName.cancerDoctorScreen);
+                  Get.back();
                 },
                 child: Card(
                   shape: RoundedRectangleBorder(

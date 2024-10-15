@@ -1,8 +1,7 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/ear_doctor_booking/ear_doctor_booking.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/cancer_doctors_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/eye_doctor_booking/eye_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
@@ -73,21 +72,15 @@ class AppRoutes {
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.cancerDoctorScreen,
-          page: () => const CancerDoctorsScreen(),
-          transition: Transition.downToUp,
-          transitionDuration: const Duration(milliseconds: 600),
-        ),
-        GetPage(
           name: RoutesName.earDoctorBooking,
           page: () => const EarDoctorBooking(),
-          transition: Transition.upToDown,
+          transition: Transition.downToUp,
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.earDoctorScreen,
-          page: () => const EarDoctorsScreen(),
-          transition: Transition.downToUp,
+          name: RoutesName.eyeDoctorBooking,
+          page: () => const EyeDoctorBooking(),
+          transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];

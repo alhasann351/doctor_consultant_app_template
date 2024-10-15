@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
-class EarDoctorBookingBackButton extends StatelessWidget {
-  const EarDoctorBookingBackButton({super.key});
+class EyeDoctorBookingBackButton extends StatelessWidget {
+  const EyeDoctorBookingBackButton({super.key});
 
   @override
   Widget build(BuildContext context) {
