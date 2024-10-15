@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../resources/routes/routes_name.dart';
 
 class HeartDoctorInformation extends StatefulWidget {
   const HeartDoctorInformation({super.key});
@@ -268,11 +269,11 @@ class _HeartDoctorInformationState extends State<HeartDoctorInformation> {
                               fontFamily: AppFontStyle.rubik,
                               color: AppColors.bookNowButtonTextColor),
                           onTap: () {
-                            /*Get.toNamed(RoutesName.bookingHeartDoctorsScreens,
+                            Get.toNamed(RoutesName.heartDoctorBooking,
                                 arguments: {
                                   'doctorsName': doctorName[index],
                                   'doctorsSpecialty': 'heart_specialist'.tr,
-                                });*/
+                                });
                           },
                         ),
                       ),
