@@ -35,17 +35,21 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             ),
           ),
           const SkinDoctorBookingBackButton(),
-          CardDoctorInformation(
-              doctorName: 'doctorName',
-              speciality: 'speciality',
-              hospitalName: 'hospitalName',
-              textStyle: const TextStyle(
-                  fontFamily: AppFontStyle.rubik,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.doctorNameColor),
-              backgroundColor: AppColors.doctorInfoCardBackgroundColor,
-              doctorImage: Get.arguments['doctorImage'.toString()]),
+          Padding(
+            padding:
+                const EdgeInsets.only(top: 80, left: 10, right: 10, bottom: 10),
+            child: CardDoctorInformation(
+                doctorName: Get.arguments['doctorName'.toString()],
+                speciality: Get.arguments['doctorSpeciality'.toString()],
+                hospitalName: 'hospitalName',
+                textStyle: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.doctorNameColor),
+                backgroundColor: AppColors.doctorInfoCardBackgroundColor,
+                doctorImage: Get.arguments['doctorImage'.toString()]),
+          ),
         ],
       ),
     );

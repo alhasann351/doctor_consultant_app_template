@@ -272,8 +272,8 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
                             Get.toNamed(RoutesName.skinDoctorBooking,
                                 arguments: {
                                   'doctorImage': image[index],
-                                  'doctorsName': doctorName[index],
-                                  'doctorsSpecialty': 'skin_specialist'.tr,
+                                  'doctorName': doctorName[index],
+                                  'doctorSpeciality': 'skin_specialist'.tr,
                                 });
                           },
                         ),
