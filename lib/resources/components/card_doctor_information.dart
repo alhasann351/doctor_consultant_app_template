@@ -89,6 +89,19 @@ class CardDoctorInformation extends StatelessWidget {
                       color: AppColors.doctorSpecialistTextColor),
                 ),
               ),
+              Positioned(
+                top: 65,
+                left: 120,
+                right: 0,
+                bottom: 0,
+                child: Text(
+                  hospitalName,
+                  style: const TextStyle(
+                      fontFamily: AppFontStyle.rubik,
+                      fontSize: 15,
+                      color: Colors.black),
+                ),
+              ),
             ],
           ),
         ),
