@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../utils/app_utils.dart';
 import '../colors/app_colors.dart';
+import '../fonts/app_font_style.dart';
 import 'loading_animation.dart';
 
 class CardDoctorInformation extends StatelessWidget {
@@ -73,6 +74,19 @@ class CardDoctorInformation extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ),
+              Positioned(
+                top: 42,
+                left: 120,
+                right: 0,
+                bottom: 0,
+                child: Text(
+                  speciality,
+                  style: const TextStyle(
+                      fontFamily: AppFontStyle.rubik,
+                      fontSize: 15,
+                      color: AppColors.doctorSpecialistTextColor),
                 ),
               ),
             ],
