@@ -14,6 +14,9 @@ class CardDoctorInformation extends StatelessWidget {
   final TextStyle? textStyle;
   final Color backgroundColor;
 
+  //final IconData ratingIcon;
+  final Widget rowChild;
+
   const CardDoctorInformation(
       {super.key,
       required this.doctorName,
@@ -21,7 +24,8 @@ class CardDoctorInformation extends StatelessWidget {
       required this.hospitalName,
       required this.textStyle,
       this.backgroundColor = AppColors.doctorInfoCardBackgroundColor,
-      required this.doctorImage});
+      required this.doctorImage,
+      required this.rowChild});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +44,7 @@ class CardDoctorInformation extends StatelessWidget {
                   child: CachedNetworkImage(
                     imageUrl: doctorImage,
                     fit: BoxFit.fill,
-                    height: 95,
+                    height: 100,
                     width: 100,
                     placeholder: (context, url) => const LoadingAnimation(),
                     errorWidget: (context, url, error) => const Icon(
@@ -101,6 +105,13 @@ class CardDoctorInformation extends StatelessWidget {
                       fontSize: 15,
                       color: Colors.black),
                 ),
+              ),
+              Positioned(
+                top: 12,
+                left: 120,
+                right: 0,
+                bottom: 0,
+                child: rowChild,
               ),
             ],
           ),
