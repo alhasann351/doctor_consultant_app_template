@@ -19,6 +19,9 @@ class CardDoctorBookingTime extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
       color: backgroundColor,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/components/card_doctor_booking_time.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -33,6 +34,9 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
     'Slot available',
     'Slot available',
   ];
+
+  final CardDoctorBookingTimeController cardDoctorBookingTimeController =
+      Get.put(CardDoctorBookingTimeController());
 
   @override
   Widget build(BuildContext context) {
@@ -110,21 +114,39 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                 itemCount: doctorAvailableDate.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    child: SizedBox(
-                      width: 170,
-                      child: CardDoctorBookingTime(
-                        availableDate: doctorAvailableDate[index],
-                        availableDateTextStyle: const TextStyle(
-                            fontFamily: AppFontStyle.rubik,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.doctorNameColor),
-                        availableSlot: doctorAvailableSlot[index],
-                        availableSlotTextStyle: const TextStyle(
-                            fontFamily: AppFontStyle.rubik,
-                            fontSize: 13,
-                            //fontWeight: FontWeight.bold,
-                            color: Colors.grey),
+                    onTap: () {
+                      cardDoctorBookingTimeController.selectedCardIndex(index);
+                    },
+                    child: Obx(
+                      () => SizedBox(
+                        width: 170,
+                        child: CardDoctorBookingTime(
+                          backgroundColor: cardDoctorBookingTimeController
+                                      .selectedCardIndex.value ==
+                                  index
+                              ? AppColors.cardSelectedColor
+                              : Colors.white,
+                          availableDate: doctorAvailableDate[index],
+                          availableDateTextStyle: TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: cardDoctorBookingTimeController
+                                          .selectedCardIndex.value ==
+                                      index
+                                  ? Colors.white
+                                  : AppColors.doctorNameColor),
+                          availableSlot: doctorAvailableSlot[index],
+                          availableSlotTextStyle: TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 14,
+                              //fontWeight: FontWeight.bold,
+                              color: cardDoctorBookingTimeController
+                                          .selectedCardIndex.value ==
+                                      index
+                                  ? Colors.white
+                                  : Colors.grey),
+                        ),
                       ),
                     ),
                   );

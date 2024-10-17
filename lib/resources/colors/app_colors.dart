@@ -156,4 +156,5 @@ class AppColors {
   static const Color bookNowButtonTextColor = Colors.white;
   static const Color bookNowButtonColor = Colors.lightBlueAccent;
   static const Color favoriteIconColor = Colors.red;
+  static const Color cardSelectedColor = Color(0xFF0EBE7F);
 }
