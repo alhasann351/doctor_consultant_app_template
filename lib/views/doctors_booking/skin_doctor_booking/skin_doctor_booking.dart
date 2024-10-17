@@ -104,17 +104,27 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             padding: const EdgeInsets.only(
                 top: 270, left: 10, right: 10, bottom: 10),
             child: SizedBox(
-              height: 70,
+              height: 80,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: doctorAvailableDate.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     child: SizedBox(
-                      width: 150,
+                      width: 170,
                       child: CardDoctorBookingTime(
                         availableDate: doctorAvailableDate[index],
+                        availableDateTextStyle: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.doctorNameColor),
                         availableSlot: doctorAvailableSlot[index],
+                        availableSlotTextStyle: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontSize: 13,
+                            //fontWeight: FontWeight.bold,
+                            color: Colors.grey),
                       ),
                     ),
                   );
