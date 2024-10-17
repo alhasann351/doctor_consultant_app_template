@@ -31,7 +31,7 @@ class CardDoctorInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: SizedBox(
-        height: 200,
+        height: 130,
         width: double.infinity,
         child: Card(
           color: backgroundColor,
@@ -107,7 +107,7 @@ class CardDoctorInformation extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 12,
+                top: 75,
                 left: 120,
                 right: 0,
                 bottom: 0,

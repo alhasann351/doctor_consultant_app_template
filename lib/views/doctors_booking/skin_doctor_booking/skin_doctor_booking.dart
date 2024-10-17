@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/components/card_doctor_booking_time.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,6 +15,25 @@ class SkinDoctorBooking extends StatefulWidget {
 }
 
 class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
+  final List<String> doctorAvailableDate = [
+    'Sat, 19 Oct',
+    'Sun, 20 Oct',
+    'Mon, 21 Oct',
+    'Tue, 22 Oct',
+    'Wed, 23 Oct',
+    'Thu, 24 Oct',
+    'Fri, 25 Oct',
+  ];
+  final List<String> doctorAvailableSlot = [
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,6 +97,28 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                     color: Colors.grey,
                   ),
                 ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+                top: 270, left: 10, right: 10, bottom: 10),
+            child: SizedBox(
+              height: 70,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: doctorAvailableDate.length,
+                itemBuilder: (context, index) {
+                  return GestureDetector(
+                    child: SizedBox(
+                      width: 150,
+                      child: CardDoctorBookingTime(
+                        availableDate: doctorAvailableDate[index],
+                        availableSlot: doctorAvailableSlot[index],
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           ),
