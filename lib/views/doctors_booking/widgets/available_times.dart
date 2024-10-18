@@ -24,14 +24,18 @@ class AvailableTimes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        gridDelegate:
-            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          //childAspectRatio: 2,
+          mainAxisExtent: 65,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 5,
+        ),
         itemCount: times.length,
         itemBuilder: (context, index) {
-          return SizedBox(
-            child: Card(
-              child: Text(times[index]),
-            ),
+          return Card(
+            color: Colors.white,
+            child: Center(child: Text(times[index])),
           );
         });
   }
