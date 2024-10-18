@@ -35,6 +35,15 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
     'Slot available',
   ];
 
+  final List<String> times = [
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+    '1',
+  ];
+
   final CardDoctorBookingTimeController cardDoctorBookingTimeController =
       Get.put(CardDoctorBookingTimeController());
 
@@ -116,6 +125,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                   return GestureDetector(
                     onTap: () {
                       cardDoctorBookingTimeController.selectedCardIndex(index);
+                      cardDoctorBookingTimeController.toggleListview();
                     },
                     child: Obx(
                       () => SizedBox(
@@ -153,6 +163,24 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                 },
               ),
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+                top: 350, left: 10, right: 10, bottom: 10),
+            child: Obx(() {
+              return cardDoctorBookingTimeController.showListview.value
+                  ? Expanded(
+                      child: ListView.builder(
+                        itemCount: times.length,
+                        itemBuilder: (context, index) {
+                          return ListTile(
+                            title: Text(times[index]),
+                          );
+                        },
+                      ),
+                    )
+                  : const SizedBox(); // Return empty widget when ListView is hidden
+            }),
           ),
         ],
       ),
