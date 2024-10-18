@@ -44,16 +44,16 @@ class _SkinDoctorInformationState extends State<SkinDoctorInformation> {
   ];
 
   final List<String> hospitalName = [
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
-    'Life Care Medical Center',
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
   ];
 
   final List<String> doctorExperience = [
