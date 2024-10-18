@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/components/card_doctor_booking_time.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -33,15 +34,6 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
     'Slot available',
     'Slot available',
     'Slot available',
-  ];
-
-  final List<String> times = [
-    '1',
-    '1',
-    '1',
-    '1',
-    '1',
-    '1',
   ];
 
   final CardDoctorBookingTimeController cardDoctorBookingTimeController =
@@ -125,7 +117,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                   return GestureDetector(
                     onTap: () {
                       cardDoctorBookingTimeController.selectedCardIndex(index);
-                      cardDoctorBookingTimeController.toggleListview();
+                      cardDoctorBookingTimeController.toggleGridview();
                     },
                     child: Obx(
                       () => SizedBox(
@@ -168,17 +160,8 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             padding: const EdgeInsets.only(
                 top: 350, left: 10, right: 10, bottom: 10),
             child: Obx(() {
-              return cardDoctorBookingTimeController.showListview.value
-                  ? Expanded(
-                      child: ListView.builder(
-                        itemCount: times.length,
-                        itemBuilder: (context, index) {
-                          return ListTile(
-                            title: Text(times[index]),
-                          );
-                        },
-                      ),
-                    )
+              return cardDoctorBookingTimeController.showGridview.value
+                  ? Expanded(child: AvailableTimes())
                   : const SizedBox(); // Return empty widget when ListView is hidden
             }),
           ),
