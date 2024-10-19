@@ -117,7 +117,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                   return GestureDetector(
                     onTap: () {
                       cardDoctorBookingTimeController.selectedCardIndex(index);
-                      cardDoctorBookingTimeController.toggleGridview();
+                      //cardDoctorBookingTimeController.toggleGridview();
                     },
                     child: Obx(
                       () => SizedBox(
@@ -159,11 +159,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
           Padding(
             padding: const EdgeInsets.only(
                 top: 350, left: 10, right: 10, bottom: 10),
-            child: Obx(() {
-              return cardDoctorBookingTimeController.showGridview.value
-                  ? Expanded(child: AvailableTimes())
-                  : const SizedBox(); // Return empty widget when ListView is hidden
-            }),
+            child: AvailableTimes(),
           ),
         ],
       ),

@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 class CardDoctorBookingTimeController extends GetxController {
-  var selectedCardIndex = (-1).obs;
+  var selectedCardIndex = (0).obs;
   var showGridview = false.obs;
 
   void selectCard(int index) {

@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 
 class AvailableTimes extends StatelessWidget {
@@ -35,7 +36,11 @@ class AvailableTimes extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             color: Colors.white,
-            child: Center(child: Text(times[index])),
+            child: Center(
+                child: Text(
+              times[index],
+              style: TextStyle(fontSize: 14, fontFamily: AppFontStyle.rubik),
+            )),
           );
         });
   }
