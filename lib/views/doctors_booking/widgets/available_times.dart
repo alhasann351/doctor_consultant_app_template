@@ -1,5 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../../resources/colors/app_colors.dart';
 
 class AvailableTimes extends StatelessWidget {
   AvailableTimes({super.key});
@@ -22,6 +26,9 @@ class AvailableTimes extends StatelessWidget {
     '9:30 PM',
   ];
 
+  final CardDoctorBookingTimeController cardDoctorBookingTimeController =
+      Get.put(CardDoctorBookingTimeController());
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -34,13 +41,31 @@ class AvailableTimes extends StatelessWidget {
         ),
         itemCount: times.length,
         itemBuilder: (context, index) {
-          return Card(
-            color: Colors.white,
-            child: Center(
-                child: Text(
-              times[index],
-              style: TextStyle(fontSize: 14, fontFamily: AppFontStyle.rubik),
-            )),
+          return GestureDetector(
+            onTap: () {
+              cardDoctorBookingTimeController.selectedTimeIndex(index);
+            },
+            child: Obx(
+              () => Card(
+                color:
+                    cardDoctorBookingTimeController.selectedTimeIndex.value ==
+                            index
+                        ? AppColors.cardSelectedColor
+                        : Colors.white,
+                child: Center(
+                    child: Text(
+                  times[index],
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontFamily: AppFontStyle.rubik,
+                      color: cardDoctorBookingTimeController
+                                  .selectedTimeIndex.value ==
+                              index
+                          ? Colors.white
+                          : AppColors.doctorNameColor),
+                )),
+              ),
+            ),
           );
         });
   }

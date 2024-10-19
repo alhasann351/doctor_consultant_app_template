@@ -159,7 +159,8 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
           Padding(
             padding: const EdgeInsets.only(
                 top: 350, left: 10, right: 10, bottom: 10),
-            child: AvailableTimes(),
+            child:
+                AvailableTimes(), // Return empty widget when ListView is hidden
           ),
         ],
       ),
