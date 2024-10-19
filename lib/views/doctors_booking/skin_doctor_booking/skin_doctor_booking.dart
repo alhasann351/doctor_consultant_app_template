@@ -60,107 +60,123 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
             ),
           ),
           const SkinDoctorBookingBackButton(),
-          Padding(
-            padding:
-                const EdgeInsets.only(top: 80, left: 10, right: 10, bottom: 10),
-            child: CardDoctorInformation(
-              doctorName: Get.arguments['doctorName'.toString()],
-              speciality: Get.arguments['doctorSpeciality'.toString()],
-              hospitalName: Get.arguments['hospitalName'.toString()],
-              textStyle: const TextStyle(
-                  fontFamily: AppFontStyle.rubik,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.doctorNameColor),
-              backgroundColor: AppColors.doctorInfoCardBackgroundColor,
-              doctorImage: Get.arguments['doctorImage'.toString()],
-              rowChild: const Row(
+          Positioned(
+            top: 80,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: SafeArea(
+              child: ListView(
+                shrinkWrap: true,
                 children: [
-                  Icon(
-                    Icons.star,
-                    size: 20,
-                    color: Colors.yellow,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 0, left: 10, right: 10, bottom: 10),
+                    child: CardDoctorInformation(
+                      doctorName: Get.arguments['doctorName'.toString()],
+                      speciality: Get.arguments['doctorSpeciality'.toString()],
+                      hospitalName: Get.arguments['hospitalName'.toString()],
+                      textStyle: const TextStyle(
+                          fontFamily: AppFontStyle.rubik,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.doctorNameColor),
+                      backgroundColor: AppColors.doctorInfoCardBackgroundColor,
+                      doctorImage: Get.arguments['doctorImage'.toString()],
+                      rowChild: const Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            size: 20,
+                            color: Colors.yellow,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 20,
+                            color: Colors.yellow,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 20,
+                            color: Colors.yellow,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 20,
+                            color: Colors.yellow,
+                          ),
+                          Icon(
+                            Icons.star,
+                            size: 20,
+                            color: Colors.grey,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                  Icon(
-                    Icons.star,
-                    size: 20,
-                    color: Colors.yellow,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 10),
+                    child: SizedBox(
+                      height: 80,
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        itemCount: doctorAvailableDate.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              cardDoctorBookingTimeController
+                                  .selectedCardIndex(index);
+                              //cardDoctorBookingTimeController.toggleGridview();
+                            },
+                            child: Obx(
+                              () => SizedBox(
+                                width: 170,
+                                child: CardDoctorBookingTime(
+                                  backgroundColor:
+                                      cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? AppColors.cardSelectedColor
+                                          : Colors.white,
+                                  availableDate: doctorAvailableDate[index],
+                                  availableDateTextStyle: TextStyle(
+                                      fontFamily: AppFontStyle.rubik,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? Colors.white
+                                          : AppColors.doctorNameColor),
+                                  availableSlot: doctorAvailableSlot[index],
+                                  availableSlotTextStyle: TextStyle(
+                                      fontFamily: AppFontStyle.rubik,
+                                      fontSize: 14,
+                                      //fontWeight: FontWeight.bold,
+                                      color: cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? Colors.white
+                                          : Colors.grey),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
                   ),
-                  Icon(
-                    Icons.star,
-                    size: 20,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 20,
-                    color: Colors.yellow,
-                  ),
-                  Icon(
-                    Icons.star,
-                    size: 20,
-                    color: Colors.grey,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 10),
+                    child:
+                        AvailableTimes(), // Return empty widget when ListView is hidden
                   ),
                 ],
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-                top: 270, left: 10, right: 10, bottom: 10),
-            child: SizedBox(
-              height: 80,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: doctorAvailableDate.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      cardDoctorBookingTimeController.selectedCardIndex(index);
-                      //cardDoctorBookingTimeController.toggleGridview();
-                    },
-                    child: Obx(
-                      () => SizedBox(
-                        width: 170,
-                        child: CardDoctorBookingTime(
-                          backgroundColor: cardDoctorBookingTimeController
-                                      .selectedCardIndex.value ==
-                                  index
-                              ? AppColors.cardSelectedColor
-                              : Colors.white,
-                          availableDate: doctorAvailableDate[index],
-                          availableDateTextStyle: TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: cardDoctorBookingTimeController
-                                          .selectedCardIndex.value ==
-                                      index
-                                  ? Colors.white
-                                  : AppColors.doctorNameColor),
-                          availableSlot: doctorAvailableSlot[index],
-                          availableSlotTextStyle: TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 14,
-                              //fontWeight: FontWeight.bold,
-                              color: cardDoctorBookingTimeController
-                                          .selectedCardIndex.value ==
-                                      index
-                                  ? Colors.white
-                                  : Colors.grey),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-                top: 350, left: 10, right: 10, bottom: 10),
-            child:
-                AvailableTimes(), // Return empty widget when ListView is hidden
           ),
         ],
       ),
