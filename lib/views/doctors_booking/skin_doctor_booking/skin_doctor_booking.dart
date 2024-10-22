@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/components/card_doctor_booking_time.dart';
+import 'package:doctor_consultant_app_template/resources/components/date_select_text.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
@@ -113,6 +114,11 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                         ],
                       ),
                     ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 0),
+                    child: DateSelectText(),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
