@@ -104,6 +104,8 @@ class Languages extends Translations {
           'date_select': 'Select your date',
           'time_select': 'Select your time',
           'booking': 'Booking',
+          'doctor_booking_successfully': 'Doctor Booking Successfully',
+          'thank_you': 'Thank you...',
         },
         'bn_BD': {
           //splash screen
@@ -206,6 +208,8 @@ class Languages extends Translations {
           'date_select': 'আপনার তারিখ নির্বাচন করুন',
           'time_select': 'আপনার সময় নির্বাচন করুন',
           'booking': 'বুকিং',
+          'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
+          'thank_you': 'ধন্যবাদ...',
         },
         'hi_IN': {
           //splash screen
@@ -309,6 +313,8 @@ class Languages extends Translations {
           'date_select': 'अपनी तिथि चुनें',
           'time_select': 'अपना समय चुनें',
           'booking': 'बुकिंग',
+          'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
+          'thank_you': 'धन्यवाद...',
         },
       };
 }

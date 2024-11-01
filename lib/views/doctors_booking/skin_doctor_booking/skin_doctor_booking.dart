@@ -2,6 +2,7 @@ import 'package:doctor_consultant_app_template/resources/components/card_doctor_
 import 'package:doctor_consultant_app_template/resources/components/date_select_text.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/resources/components/time_select_text.dart';
+import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
@@ -200,7 +201,9 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                           fontSize: 18,
                           color: Colors.white,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          AppUtils.showDoctorBookingDialog();
+                        },
                       ),
                     ),
                   ),
