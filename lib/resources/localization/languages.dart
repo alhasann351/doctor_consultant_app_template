@@ -103,6 +103,7 @@ class Languages extends Translations {
           'hospital_name': 'Life Care Medical Center',
           'date_select': 'Select your date',
           'time_select': 'Select your time',
+          'booking': 'Booking',
         },
         'bn_BD': {
           //splash screen
@@ -204,6 +205,7 @@ class Languages extends Translations {
           'hospital_name': 'লাইফ কেয়ার মেডিকেল সেন্টার',
           'date_select': 'আপনার তারিখ নির্বাচন করুন',
           'time_select': 'আপনার সময় নির্বাচন করুন',
+          'booking': 'বুকিং',
         },
         'hi_IN': {
           //splash screen
@@ -306,6 +308,7 @@ class Languages extends Translations {
           'hospital_name': 'लाइफ केयर मेडिकल सेंटर',
           'date_select': 'अपनी तिथि चुनें',
           'time_select': 'अपना समय चुनें',
+          'booking': 'बुकिंग',
         },
       };
 }

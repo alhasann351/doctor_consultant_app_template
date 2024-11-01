@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/components/card_doctor_booking_time.dart';
 import 'package:doctor_consultant_app_template/resources/components/date_select_text.dart';
+import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/resources/components/time_select_text.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
@@ -185,6 +186,23 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                         top: 10, left: 10, right: 10, bottom: 10),
                     child:
                         AvailableTimes(), // Return empty widget when ListView is hidden
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(25),
+                    child: SizedBox(
+                      height: 54,
+                      width: MediaQuery.of(context).size.width,
+                      child: RoundedButton(
+                        title: 'booking'.tr,
+                        textStyle: const TextStyle(
+                          fontFamily: AppFontStyle.rubik,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                        onTap: () {},
+                      ),
+                    ),
                   ),
                 ],
               ),
