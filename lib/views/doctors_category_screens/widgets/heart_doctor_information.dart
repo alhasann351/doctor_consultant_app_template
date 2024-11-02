@@ -43,6 +43,19 @@ class _HeartDoctorInformationState extends State<HeartDoctorInformation> {
     'elisa'.tr,
   ];
 
+  final List<String> hospitalName = [
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+  ];
+
   final List<String> doctorExperience = [
     '5_years_experience'.tr,
     '7_years_experience'.tr,
@@ -271,8 +284,10 @@ class _HeartDoctorInformationState extends State<HeartDoctorInformation> {
                           onTap: () {
                             Get.toNamed(RoutesName.heartDoctorBooking,
                                 arguments: {
-                                  'doctorsName': doctorName[index],
-                                  'doctorsSpecialty': 'heart_specialist'.tr,
+                                  'doctorImage': image[index],
+                                  'doctorName': doctorName[index],
+                                  'doctorSpeciality': 'heart_specialist'.tr,
+                                  'hospitalName': hospitalName[index],
                                 });
                           },
                         ),
