@@ -41,6 +41,7 @@ dependencies:
   fluttertoast: ^8.2.8
   loading_animation_widget:
   cached_network_image:
+  table_calendar: ^3.1.2
 
 dev_dependencies:
   flutter_test:

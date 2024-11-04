@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
-import '../../../resources/components/card_doctor_booking_time.dart';
 import '../../../resources/components/card_doctor_information.dart';
 import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/rounded_button.dart';
@@ -12,6 +11,7 @@ import '../../../resources/fonts/app_font_style.dart';
 import '../../../utils/app_utils.dart';
 import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
 import '../widgets/available_times.dart';
+import '../widgets/show_calendar.dart';
 
 class CancerDoctorBooking extends StatefulWidget {
   const CancerDoctorBooking({super.key});
@@ -123,7 +123,12 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                         top: 10, left: 10, right: 10, bottom: 0),
                     child: DateSelectText(),
                   ),
-                  Padding(
+                  const Padding(
+                    padding: EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 10),
+                    child: ShowCalendar(),
+                  ),
+                  /*Padding(
                     padding: const EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 10),
                     child: SizedBox(
@@ -176,7 +181,7 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                         },
                       ),
                     ),
-                  ),
+                  ),*/
                   const Padding(
                     padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 0),
