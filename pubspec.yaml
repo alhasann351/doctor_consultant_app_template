@@ -42,6 +42,7 @@ dependencies:
   loading_animation_widget:
   cached_network_image:
   table_calendar: ^3.1.2
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
