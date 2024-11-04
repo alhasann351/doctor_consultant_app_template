@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/card_doctor_information.dart';
+import '../../../resources/components/date_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
 class CancerDoctorBooking extends StatefulWidget {
@@ -88,6 +89,11 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                         ],
                       ),
                     ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 0),
+                    child: DateSelectText(),
                   ),
                 ],
               ),
