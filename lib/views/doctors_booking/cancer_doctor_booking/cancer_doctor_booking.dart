@@ -9,6 +9,7 @@ import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../utils/app_utils.dart';
 import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
 import '../widgets/available_times.dart';
 
@@ -200,7 +201,9 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                           fontSize: 18,
                           color: Colors.white,
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          AppUtils.showDoctorBookingDialog();
+                        },
                       ),
                     ),
                   ),
