@@ -9,6 +9,7 @@ import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
 import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
+import '../widgets/available_times.dart';
 
 class CancerDoctorBooking extends StatefulWidget {
   const CancerDoctorBooking({super.key});
@@ -178,6 +179,12 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                     padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 0),
                     child: TimeSelectText(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 10),
+                    child:
+                        AvailableTimes(), // Return empty widget when ListView is hidden
                   ),
                 ],
               ),
