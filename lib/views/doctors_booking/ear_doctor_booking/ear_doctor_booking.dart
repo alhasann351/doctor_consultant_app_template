@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
+import '../../../resources/components/card_doctor_booking_time.dart';
 import '../../../resources/components/card_doctor_information.dart';
 import '../../../resources/components/date_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
 
 class EarDoctorBooking extends StatefulWidget {
   const EarDoctorBooking({super.key});
@@ -15,6 +17,28 @@ class EarDoctorBooking extends StatefulWidget {
 }
 
 class _EarDoctorBookingState extends State<EarDoctorBooking> {
+  final List<String> doctorAvailableDate = [
+    'Sat, 19 Oct',
+    'Sun, 20 Oct',
+    'Mon, 21 Oct',
+    'Tue, 22 Oct',
+    'Wed, 23 Oct',
+    'Thu, 24 Oct',
+    'Fri, 25 Oct',
+  ];
+  final List<String> doctorAvailableSlot = [
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+    'Slot available',
+  ];
+
+  final CardDoctorBookingTimeController cardDoctorBookingTimeController =
+      Get.put(CardDoctorBookingTimeController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,6 +118,60 @@ class _EarDoctorBookingState extends State<EarDoctorBooking> {
                     padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 0),
                     child: DateSelectText(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 10, left: 10, right: 10, bottom: 10),
+                    child: SizedBox(
+                      height: 80,
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        itemCount: doctorAvailableDate.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              cardDoctorBookingTimeController
+                                  .selectedCardIndex(index);
+                              //cardDoctorBookingTimeController.toggleGridview();
+                            },
+                            child: Obx(
+                              () => SizedBox(
+                                width: 170,
+                                child: CardDoctorBookingTime(
+                                  backgroundColor:
+                                      cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? AppColors.cardSelectedColor
+                                          : Colors.white,
+                                  availableDate: doctorAvailableDate[index],
+                                  availableDateTextStyle: TextStyle(
+                                      fontFamily: AppFontStyle.rubik,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? Colors.white
+                                          : AppColors.doctorNameColor),
+                                  availableSlot: doctorAvailableSlot[index],
+                                  availableSlotTextStyle: TextStyle(
+                                      fontFamily: AppFontStyle.rubik,
+                                      fontSize: 14,
+                                      //fontWeight: FontWeight.bold,
+                                      color: cardDoctorBookingTimeController
+                                                  .selectedCardIndex.value ==
+                                              index
+                                          ? Colors.white
+                                          : Colors.grey),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
                   ),
                 ],
               ),
