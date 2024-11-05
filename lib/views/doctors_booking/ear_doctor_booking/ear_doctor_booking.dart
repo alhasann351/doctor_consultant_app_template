@@ -1,15 +1,15 @@
 import 'package:doctor_consultant_app_template/views/doctors_booking/ear_doctor_booking/ear_doctor_booking_back_button.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
-import '../../../resources/components/card_doctor_booking_time.dart';
 import '../../../resources/components/card_doctor_information.dart';
 import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../utils/app_utils.dart';
+import '../../../resources/routes/routes_name.dart';
 import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
 import '../widgets/available_times.dart';
 
@@ -123,59 +123,10 @@ class _EarDoctorBookingState extends State<EarDoctorBooking> {
                         top: 10, left: 10, right: 10, bottom: 0),
                     child: DateSelectText(),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
+                  const Padding(
+                    padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 10),
-                    child: SizedBox(
-                      height: 80,
-                      child: ListView.builder(
-                        shrinkWrap: true,
-                        scrollDirection: Axis.horizontal,
-                        itemCount: doctorAvailableDate.length,
-                        itemBuilder: (context, index) {
-                          return GestureDetector(
-                            onTap: () {
-                              cardDoctorBookingTimeController
-                                  .selectedCardIndex(index);
-                              //cardDoctorBookingTimeController.toggleGridview();
-                            },
-                            child: Obx(
-                              () => SizedBox(
-                                width: 170,
-                                child: CardDoctorBookingTime(
-                                  backgroundColor:
-                                      cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? AppColors.cardSelectedColor
-                                          : Colors.white,
-                                  availableDate: doctorAvailableDate[index],
-                                  availableDateTextStyle: TextStyle(
-                                      fontFamily: AppFontStyle.rubik,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? Colors.white
-                                          : AppColors.doctorNameColor),
-                                  availableSlot: doctorAvailableSlot[index],
-                                  availableSlotTextStyle: TextStyle(
-                                      fontFamily: AppFontStyle.rubik,
-                                      fontSize: 14,
-                                      //fontWeight: FontWeight.bold,
-                                      color: cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? Colors.white
-                                          : Colors.grey),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
+                    child: ShowCalendar(),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(
@@ -202,7 +153,7 @@ class _EarDoctorBookingState extends State<EarDoctorBooking> {
                           color: Colors.white,
                         ),
                         onTap: () {
-                          AppUtils.showDoctorBookingDialog();
+                          Get.toNamed(RoutesName.doctorBookingConfirmScreen);
                         },
                       ),
                     ),

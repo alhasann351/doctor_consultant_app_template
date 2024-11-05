@@ -128,60 +128,6 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                         top: 10, left: 10, right: 10, bottom: 10),
                     child: ShowCalendar(),
                   ),
-                  /*Padding(
-                    padding: const EdgeInsets.only(
-                        top: 10, left: 10, right: 10, bottom: 10),
-                    child: SizedBox(
-                      height: 80,
-                      child: ListView.builder(
-                        shrinkWrap: true,
-                        scrollDirection: Axis.horizontal,
-                        itemCount: doctorAvailableDate.length,
-                        itemBuilder: (context, index) {
-                          return GestureDetector(
-                            onTap: () {
-                              cardDoctorBookingTimeController
-                                  .selectedCardIndex(index);
-                              //cardDoctorBookingTimeController.toggleGridview();
-                            },
-                            child: Obx(
-                              () => SizedBox(
-                                width: 170,
-                                child: CardDoctorBookingTime(
-                                  backgroundColor:
-                                      cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? AppColors.cardSelectedColor
-                                          : Colors.white,
-                                  availableDate: doctorAvailableDate[index],
-                                  availableDateTextStyle: TextStyle(
-                                      fontFamily: AppFontStyle.rubik,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? Colors.white
-                                          : AppColors.doctorNameColor),
-                                  availableSlot: doctorAvailableSlot[index],
-                                  availableSlotTextStyle: TextStyle(
-                                      fontFamily: AppFontStyle.rubik,
-                                      fontSize: 14,
-                                      //fontWeight: FontWeight.bold,
-                                      color: cardDoctorBookingTimeController
-                                                  .selectedCardIndex.value ==
-                                              index
-                                          ? Colors.white
-                                          : Colors.grey),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),*/
                   const Padding(
                     padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 0),
