@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,7 +22,25 @@ class _DocrorBookingConfirmScreenState
         DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value);
 
     return Scaffold(
-      body: Center(child: Text(formattedDate)),
+      backgroundColor: AppColors.scaffoldBackgroundColor,
+      body: Stack(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
+                  AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
