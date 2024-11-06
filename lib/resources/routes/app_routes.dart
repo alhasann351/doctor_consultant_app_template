@@ -1,6 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/docror_booking_confirm_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/doctor_booking_confirm_screen.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/ear_doctor_booking/ear_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/eye_doctor_booking/eye_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/heart_doctor_booking/heart_doctor_booking.dart';
@@ -101,7 +101,7 @@ class AppRoutes {
         ),
         GetPage(
           name: RoutesName.doctorBookingConfirmScreen,
-          page: () => const DocrorBookingConfirmScreen(),
+          page: () => const DoctorBookingConfirmScreen(),
           transition: Transition.leftToRight,
           transitionDuration: const Duration(milliseconds: 600),
         ),

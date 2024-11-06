@@ -4,7 +4,7 @@ import 'package:doctor_consultant_app_template/resources/components/time_select_
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
-import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

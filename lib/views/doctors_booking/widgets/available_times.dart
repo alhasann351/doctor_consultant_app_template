@@ -1,5 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
-import 'package:doctor_consultant_app_template/views_models/controllers/CardDoctorBookingTimeController.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -45,13 +45,13 @@ class AvailableTimes extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              cardDoctorBookingTimeController.selectedTimeIndex(index);
+              cardDoctorBookingTimeController.selectedTimeIndex(times[index]);
             },
             child: Obx(
               () => Card(
                 color:
                     cardDoctorBookingTimeController.selectedTimeIndex.value ==
-                            index
+                            times[index]
                         ? AppColors.cardSelectedColor
                         : Colors.white,
                 child: Center(
@@ -62,7 +62,7 @@ class AvailableTimes extends StatelessWidget {
                       fontFamily: AppFontStyle.rubik,
                       color: cardDoctorBookingTimeController
                                   .selectedTimeIndex.value ==
-                              index
+                              times[index]
                           ? Colors.white
                           : AppColors.doctorNameColor),
                 )),

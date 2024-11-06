@@ -1,4 +1,3 @@
-import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking_back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,7 +8,7 @@ import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../views_models/controllers/CardDoctorBookingTimeController.dart';
+import '../../../views_models/controllers/card_doctor_booking_time_controller.dart';
 import '../widgets/available_times.dart';
 import '../widgets/show_calendar.dart';
 
@@ -153,7 +152,7 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                           color: Colors.white,
                         ),
                         onTap: () {
-                          Get.toNamed(RoutesName.doctorBookingConfirmScreen);
+                          cardDoctorBookingTimeController.goToDetailScreen();
                         },
                       ),
                     ),
