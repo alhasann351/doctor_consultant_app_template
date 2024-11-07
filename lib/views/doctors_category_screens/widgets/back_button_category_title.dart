@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
-import '../../../resources/routes/routes_name.dart';
 
 class BackButtonCategoryTitle extends StatelessWidget {
   const BackButtonCategoryTitle({super.key});
@@ -21,7 +20,7 @@ class BackButtonCategoryTitle extends StatelessWidget {
               width: 50,
               child: GestureDetector(
                 onTap: () {
-                  Get.offAllNamed(RoutesName.homeScreen);
+                  Get.back();
                 },
                 child: Card(
                   shape: RoundedRectangleBorder(

@@ -3,6 +3,7 @@ import 'package:doctor_consultant_app_template/resources/components/rounded_butt
 import 'package:doctor_consultant_app_template/resources/components/time_select_text.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/skin_doctor_booking/skin_doctor_booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:flutter/material.dart';
@@ -86,35 +87,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                           color: AppColors.doctorNameColor),
                       backgroundColor: AppColors.doctorInfoCardBackgroundColor,
                       doctorImage: Get.arguments['doctorImage'.toString()],
-                      rowChild: const Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.grey,
-                          ),
-                        ],
-                      ),
+                      rowChild: const RatingIcons(),
                     ),
                   ),
                   const Padding(

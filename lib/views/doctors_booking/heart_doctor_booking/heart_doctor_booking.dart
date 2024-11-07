@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/views/doctors_booking/heart_doctor_booking/heart_doctor_booking_back_button.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -86,35 +87,7 @@ class _HeartDoctorBookingState extends State<HeartDoctorBooking> {
                           color: AppColors.doctorNameColor),
                       backgroundColor: AppColors.doctorInfoCardBackgroundColor,
                       doctorImage: Get.arguments['doctorImage'.toString()],
-                      rowChild: const Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.yellow,
-                          ),
-                          Icon(
-                            Icons.star,
-                            size: 20,
-                            color: Colors.grey,
-                          ),
-                        ],
-                      ),
+                      rowChild: const RatingIcons(),
                     ),
                   ),
                   const Padding(
