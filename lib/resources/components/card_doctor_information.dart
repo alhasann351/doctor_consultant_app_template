@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../utils/app_utils.dart';
 import '../colors/app_colors.dart';
@@ -107,11 +108,45 @@ class CardDoctorInformation extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 75,
+                top: 90,
                 left: 120,
                 right: 0,
                 bottom: 0,
-                child: rowChild,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    rowChild,
+                    Row(
+                      children: [
+                        const Text(
+                          "\$",
+                          style: TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                            color: Colors.green,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 2,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 10),
+                          child: Text(
+                            '10_hr'.tr,
+                            style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              //fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ],
           ),

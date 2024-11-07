@@ -107,6 +107,7 @@ class Languages extends Translations {
           'doctor_booking_successfully': 'Doctor Booking Successfully',
           'thank_you': 'Thank you...',
           'booking_confirm': 'Booking Confirm',
+          '10_hr': '10/hr',
         },
         'bn_BD': {
           //splash screen
@@ -212,6 +213,7 @@ class Languages extends Translations {
           'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
           'thank_you': 'ধন্যবাদ...',
           'booking_confirm': 'বুকিং নিশ্চিত করুন',
+          '10_hr': '10/ঘণ্টা',
         },
         'hi_IN': {
           //splash screen
@@ -318,6 +320,7 @@ class Languages extends Translations {
           'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
           'thank_you': 'धन्यवाद...',
           'booking_confirm': 'बुकिंग की पुष्टि',
+          '10_hr': '10/घंटा',
         },
       };
 }
