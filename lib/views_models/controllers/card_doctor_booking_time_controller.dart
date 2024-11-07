@@ -1,4 +1,4 @@
-import 'package:doctor_consultant_app_template/views/doctors_booking/doctor_booking_confirm_screen.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:get/get.dart';
 
 class CardDoctorBookingTimeController extends GetxController {
@@ -17,7 +17,8 @@ class CardDoctorBookingTimeController extends GetxController {
 
   void goToDetailScreen() {
     if (selectedTimeIndex.value.isNotEmpty) {
-      Get.to(() => const DoctorBookingConfirmScreen());
+      Get.toNamed(RoutesName.doctorBookingConfirmScreen);
+      //Get.to(() => const DoctorBookingConfirmScreen());
     } else {
       Get.snackbar("Error", "Please select an item");
     }

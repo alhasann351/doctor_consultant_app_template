@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/doctor_booking_confirm_back_button.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
 import 'package:flutter/material.dart';
@@ -42,6 +43,7 @@ class _DoctorBookingConfirmScreenState
               ),
             ),
           ),
+          const DoctorBookingConfirmBackButton(),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

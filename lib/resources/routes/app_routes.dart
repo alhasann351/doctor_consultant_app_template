@@ -102,7 +102,7 @@ class AppRoutes {
         GetPage(
           name: RoutesName.doctorBookingConfirmScreen,
           page: () => const DoctorBookingConfirmScreen(),
-          transition: Transition.leftToRight,
+          transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),
       ];
