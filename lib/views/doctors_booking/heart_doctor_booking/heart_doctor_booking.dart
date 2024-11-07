@@ -9,7 +9,6 @@ import '../../../resources/components/date_select_text.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
 import '../../../views_models/controllers/card_doctor_booking_time_controller.dart';
 import '../widgets/available_times.dart';
 
@@ -153,7 +152,7 @@ class _HeartDoctorBookingState extends State<HeartDoctorBooking> {
                           color: Colors.white,
                         ),
                         onTap: () {
-                          Get.toNamed(RoutesName.doctorBookingConfirmScreen);
+                          cardDoctorBookingTimeController.goToDetailScreen();
                         },
                       ),
                     ),

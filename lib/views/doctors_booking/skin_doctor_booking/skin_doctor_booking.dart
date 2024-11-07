@@ -11,7 +11,6 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/card_doctor_information.dart';
 import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
 
 class SkinDoctorBooking extends StatefulWidget {
   const SkinDoctorBooking({super.key});
@@ -153,7 +152,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                           color: Colors.white,
                         ),
                         onTap: () {
-                          Get.toNamed(RoutesName.doctorBookingConfirmScreen);
+                          cardDoctorBookingTimeController.goToDetailScreen();
                         },
                       ),
                     ),
