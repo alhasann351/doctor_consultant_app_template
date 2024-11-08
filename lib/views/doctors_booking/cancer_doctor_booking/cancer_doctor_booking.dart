@@ -6,11 +6,11 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/card_doctor_information.dart';
 import '../../../resources/components/date_select_text.dart';
-import '../../../resources/components/rounded_button.dart';
 import '../../../resources/components/time_select_text.dart';
 import '../../../resources/fonts/app_font_style.dart';
 import '../../../views_models/controllers/card_doctor_booking_time_controller.dart';
 import '../widgets/available_times.dart';
+import '../widgets/booking_confirm_button.dart';
 import '../widgets/show_calendar.dart';
 
 class CancerDoctorBooking extends StatefulWidget {
@@ -113,22 +113,7 @@ class _CancerDoctorBookingState extends State<CancerDoctorBooking> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(25),
-                    child: SizedBox(
-                      height: 54,
-                      width: MediaQuery.of(context).size.width,
-                      child: RoundedButton(
-                        title: 'booking'.tr,
-                        textStyle: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                        onTap: () {
-                          cardDoctorBookingTimeController.goToDetailScreen();
-                        },
-                      ),
-                    ),
+                    child: BookingConfirmButton(),
                   ),
                 ],
               ),
