@@ -37,7 +37,7 @@ class DoctorBookingConfirmBackButton extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Text(
-                'booking_confirm'.tr,
+                'payment'.tr,
                 style: const TextStyle(
                     fontFamily: AppFontStyle.rubik,
                     fontSize: 20,

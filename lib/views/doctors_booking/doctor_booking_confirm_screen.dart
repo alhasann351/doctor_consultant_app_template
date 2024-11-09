@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/doctor_booking_confirm_back_button.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
@@ -44,7 +45,24 @@ class _DoctorBookingConfirmScreenState
             ),
           ),
           const DoctorBookingConfirmBackButton(),
-          Center(
+          Positioned(
+            top: 80,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: SafeArea(
+              child: ListView(
+                shrinkWrap: true,
+                children: const [
+                  Padding(
+                      padding: EdgeInsets.only(
+                          top: 0, left: 10, right: 10, bottom: 10),
+                      child: CreditDebitCardsButton()),
+                ],
+              ),
+            ),
+          ),
+          /*Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -62,7 +80,7 @@ class _DoctorBookingConfirmScreenState
                 ),
               ],
             ),
-          ),
+          ),*/
         ],
       ),
     );

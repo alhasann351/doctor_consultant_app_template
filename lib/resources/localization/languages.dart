@@ -106,8 +106,9 @@ class Languages extends Translations {
           'confirm': 'Confirm',
           'doctor_booking_successfully': 'Doctor Booking Successfully',
           'thank_you': 'Thank you...',
-          'booking_confirm': 'Booking Confirm',
+          'payment': 'Payment',
           '10_hr': '10/hr',
+          'credit_debit_card_text': 'Credit/Debit Card',
         },
         'bn_BD': {
           //splash screen
@@ -212,8 +213,9 @@ class Languages extends Translations {
           'confirm': 'নিশ্চিত করুন',
           'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
           'thank_you': 'ধন্যবাদ...',
-          'booking_confirm': 'বুকিং নিশ্চিত করুন',
+          'payment': 'পেমেন্ট',
           '10_hr': '10/ঘণ্টা',
+          'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
         },
         'hi_IN': {
           //splash screen
@@ -319,8 +321,9 @@ class Languages extends Translations {
           'confirm': 'पुष्टि करना',
           'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
           'thank_you': 'धन्यवाद...',
-          'booking_confirm': 'बुकिंग की पुष्टि',
+          'payment': 'भुगतान',
           '10_hr': '10/घंटा',
+          'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
         },
       };
 }
