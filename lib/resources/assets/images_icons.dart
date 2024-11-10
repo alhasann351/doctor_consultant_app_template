@@ -19,6 +19,8 @@ class ImagesIcons {
   static const String liveDoctorsIcon = 'assets/icons/live_doctors.png';
 
   //payment screen
+  static const String creditDebitCardIcon =
+      'assets/icons/credit_debit_card.png';
   static const String paypalIcon = 'assets/icons/paypal.png';
   static const String cashOnDeliveryIcon = 'assets/icons/cash_on_delivery.png';
 }
