@@ -20,4 +20,5 @@ class ImagesIcons {
 
   //payment screen
   static const String paypalIcon = 'assets/icons/paypal.png';
+  static const String cashOnDeliveryIcon = 'assets/icons/cash_on_delivery.png';
 }

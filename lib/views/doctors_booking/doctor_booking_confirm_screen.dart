@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/cash_on_delivery.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/doctor_booking_confirm_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/paypal_payment_button.dart';
@@ -63,6 +64,10 @@ class _DoctorBookingConfirmScreenState
                       padding: EdgeInsets.only(
                           top: 0, left: 10, right: 10, bottom: 10),
                       child: PaypalPaymentButton()),
+                  Padding(
+                      padding: EdgeInsets.only(
+                          top: 0, left: 10, right: 10, bottom: 10),
+                      child: CashOnDelivery()),
                 ],
               ),
             ),
