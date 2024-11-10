@@ -41,6 +41,39 @@ class CreditDebitCardInputForm extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          SizedBox(
+            height: 50,
+            child: TextFormField(
+              cursorColor: AppColors.signupCursorColor,
+              keyboardType: TextInputType.number,
+              style: const TextStyle(
+                fontFamily: AppFontStyle.rubik,
+                fontSize: 18,
+                color: AppColors.signupNameTextColor,
+              ),
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: AppColors.signupFillColor,
+                hintText: 'card_number'.tr,
+                hintStyle: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontSize: 18,
+                  color: AppColors.signupHintTextColor,
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(style: BorderStyle.none),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(style: BorderStyle.none),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

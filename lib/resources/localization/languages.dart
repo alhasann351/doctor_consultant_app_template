@@ -112,6 +112,7 @@ class Languages extends Translations {
           'paypal': 'Paypal',
           'cash_on_delivery': 'Cash On Delivery',
           'name_on_the_card': 'Name on the card',
+          'card_number': 'Card number',
         },
         'bn_BD': {
           //splash screen
@@ -221,7 +222,8 @@ class Languages extends Translations {
           'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
           'paypal': 'পেপ্যাল',
           'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
-          'name_on_the_card': 'কার্ডে নাম',
+          'name_on_the_card': 'কার্ডের নাম',
+          'card_number': 'কার্ড নম্বর',
         },
         'hi_IN': {
           //splash screen
@@ -333,6 +335,7 @@ class Languages extends Translations {
           'paypal': 'पेपाल',
           'cash_on_delivery': 'डिलवरी पर नकदी',
           'name_on_the_card': 'कार्ड पर नाम',
+          'card_number': 'कार्ड संख्या',
         },
       };
 }
