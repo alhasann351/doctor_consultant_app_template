@@ -11,6 +11,7 @@ class InputName extends StatelessWidget {
     return TextFormField(
       cursorColor: AppColors.signupCursorColor,
       keyboardType: TextInputType.text,
+      expands: true,
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,

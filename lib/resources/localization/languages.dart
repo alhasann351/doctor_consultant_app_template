@@ -111,6 +111,7 @@ class Languages extends Translations {
           'credit_debit_card_text': 'Credit/Debit Card',
           'paypal': 'Paypal',
           'cash_on_delivery': 'Cash On Delivery',
+          'name_on_the_card': 'Name on the card',
         },
         'bn_BD': {
           //splash screen
@@ -220,6 +221,7 @@ class Languages extends Translations {
           'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
           'paypal': 'পেপ্যাল',
           'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
+          'name_on_the_card': 'কার্ডে নাম',
         },
         'hi_IN': {
           //splash screen
@@ -330,6 +332,7 @@ class Languages extends Translations {
           'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
           'paypal': 'पेपाल',
           'cash_on_delivery': 'डिलवरी पर नकदी',
+          'name_on_the_card': 'कार्ड पर नाम',
         },
       };
 }
