@@ -7,13 +7,19 @@ class PaymentButtonController extends GetxController {
 
   void selectCreditDebitCard() {
     creditDebitCardSelected.value = !creditDebitCardSelected.value;
+    paypalSelected.value = false;
+    cashOnDeliverySelected.value = false;
   }
 
   void selectPaypal() {
     paypalSelected.value = !paypalSelected.value;
+    creditDebitCardSelected.value = false;
+    cashOnDeliverySelected.value = false;
   }
 
   void selectCashOnDelivery() {
     cashOnDeliverySelected.value = !cashOnDeliverySelected.value;
+    creditDebitCardSelected.value = false;
+    paypalSelected.value = false;
   }
 }
