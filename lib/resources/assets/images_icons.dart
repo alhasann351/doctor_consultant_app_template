@@ -17,4 +17,7 @@ class ImagesIcons {
   //home screen
   static const String profileImage = 'assets/images/profile_image.webp';
   static const String liveDoctorsIcon = 'assets/icons/live_doctors.png';
+
+  //payment screen
+  static const String paypalIcon = 'assets/icons/paypal.png';
 }

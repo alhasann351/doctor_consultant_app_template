@@ -109,6 +109,7 @@ class Languages extends Translations {
           'payment': 'Payment',
           '10_hr': '10/hr',
           'credit_debit_card_text': 'Credit/Debit Card',
+          'paypal': 'Paypal',
         },
         'bn_BD': {
           //splash screen
@@ -216,6 +217,7 @@ class Languages extends Translations {
           'payment': 'পেমেন্ট',
           '10_hr': '10/ঘণ্টা',
           'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
+          'paypal': 'পেপ্যাল',
         },
         'hi_IN': {
           //splash screen
@@ -324,6 +326,7 @@ class Languages extends Translations {
           'payment': 'भुगतान',
           '10_hr': '10/घंटा',
           'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
+          'paypal': 'पेपाल',
         },
       };
 }
