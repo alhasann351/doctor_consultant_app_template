@@ -74,6 +74,44 @@ class CreditDebitCardInputForm extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                height: 50,
+                width: 200,
+                child: TextFormField(
+                  cursorColor: AppColors.signupCursorColor,
+                  keyboardType: TextInputType.number,
+                  style: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontSize: 18,
+                    color: AppColors.signupNameTextColor,
+                  ),
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: AppColors.signupFillColor,
+                    hintText: 'card_expiry_date'.tr,
+                    hintStyle: const TextStyle(
+                      fontFamily: AppFontStyle.rubik,
+                      fontSize: 18,
+                      color: AppColors.signupHintTextColor,
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(style: BorderStyle.none),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(style: BorderStyle.none),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );

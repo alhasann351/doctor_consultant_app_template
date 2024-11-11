@@ -113,6 +113,7 @@ class Languages extends Translations {
           'cash_on_delivery': 'Cash On Delivery',
           'name_on_the_card': 'Name on the card',
           'card_number': 'Card number',
+          'card_expiry_date': 'Expiry (MM/YY)',
         },
         'bn_BD': {
           //splash screen
@@ -224,6 +225,7 @@ class Languages extends Translations {
           'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
           'name_on_the_card': 'কার্ডের নাম',
           'card_number': 'কার্ড নম্বর',
+          'card_expiry_date': 'মেয়াদ (MM/YY)',
         },
         'hi_IN': {
           //splash screen
@@ -336,6 +338,7 @@ class Languages extends Translations {
           'cash_on_delivery': 'डिलवरी पर नकदी',
           'name_on_the_card': 'कार्ड पर नाम',
           'card_number': 'कार्ड संख्या',
+          'card_expiry_date': 'समाप्ति (MM/YY)',
         },
       };
 }
