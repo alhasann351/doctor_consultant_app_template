@@ -6,6 +6,7 @@ import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/doc
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/paypal_payment_button.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/payment_button_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -23,6 +24,8 @@ class _DoctorBookingConfirmScreenState
   final DateController dateController = Get.put(DateController());
   final CardDoctorBookingTimeController cardDoctorBookingTimeController =
       Get.put(CardDoctorBookingTimeController());
+  final PaymentButtonController paymentButtonController =
+      Get.put(PaymentButtonController());
 
   @override
   Widget build(BuildContext context) {
@@ -56,20 +59,23 @@ class _DoctorBookingConfirmScreenState
             child: SafeArea(
               child: ListView(
                 shrinkWrap: true,
-                children: const [
-                  Padding(
+                children: [
+                  const Padding(
                       padding: EdgeInsets.only(
                           top: 0, left: 10, right: 10, bottom: 10),
                       child: CreditDebitCardsButton()),
                   Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           top: 0, left: 30, right: 30, bottom: 10),
-                      child: CreditDebitCardInputForm()),
-                  Padding(
+                      child: Obx(() =>
+                          paymentButtonController.creditDebitCardSelected.value
+                              ? CreditDebitCardInputForm()
+                              : const SizedBox())),
+                  const Padding(
                       padding: EdgeInsets.only(
-                          top: 0, left: 10, right: 10, bottom: 10),
+                          top: 0, left: 10, right: 10, bottom: 20),
                       child: PaypalPaymentButton()),
-                  Padding(
+                  const Padding(
                       padding: EdgeInsets.only(
                           top: 0, left: 10, right: 10, bottom: 10),
                       child: CashOnDelivery()),

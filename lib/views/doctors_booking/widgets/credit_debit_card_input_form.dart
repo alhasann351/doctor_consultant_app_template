@@ -3,8 +3,13 @@ import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.da
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../views_models/controllers/payment_button_controller.dart';
+
 class CreditDebitCardInputForm extends StatelessWidget {
-  const CreditDebitCardInputForm({super.key});
+  CreditDebitCardInputForm({super.key});
+
+  final PaymentButtonController paymentButtonController =
+      Get.put(PaymentButtonController());
 
   @override
   Widget build(BuildContext context) {
