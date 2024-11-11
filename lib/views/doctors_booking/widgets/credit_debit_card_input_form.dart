@@ -79,33 +79,71 @@ class CreditDebitCardInputForm extends StatelessWidget {
           ),
           Row(
             children: [
-              SizedBox(
-                height: 50,
-                width: 200,
-                child: TextFormField(
-                  cursorColor: AppColors.signupCursorColor,
-                  keyboardType: TextInputType.number,
-                  style: const TextStyle(
-                    fontFamily: AppFontStyle.rubik,
-                    fontSize: 18,
-                    color: AppColors.signupNameTextColor,
-                  ),
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: AppColors.signupFillColor,
-                    hintText: 'card_expiry_date'.tr,
-                    hintStyle: const TextStyle(
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  //width: 200,
+                  child: TextFormField(
+                    cursorColor: AppColors.signupCursorColor,
+                    keyboardType: TextInputType.number,
+                    style: const TextStyle(
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 18,
-                      color: AppColors.signupHintTextColor,
+                      color: AppColors.signupNameTextColor,
                     ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(style: BorderStyle.none),
-                      borderRadius: BorderRadius.circular(10),
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: AppColors.signupFillColor,
+                      hintText: 'card_expiry_date'.tr,
+                      hintStyle: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 18,
+                        color: AppColors.signupHintTextColor,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(style: BorderStyle.none),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(style: BorderStyle.none),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(style: BorderStyle.none),
-                      borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                  //width: 200,
+                  child: TextFormField(
+                    cursorColor: AppColors.signupCursorColor,
+                    keyboardType: TextInputType.number,
+                    style: const TextStyle(
+                      fontFamily: AppFontStyle.rubik,
+                      fontSize: 18,
+                      color: AppColors.signupNameTextColor,
+                    ),
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: AppColors.signupFillColor,
+                      hintText: 'card_cvv_number'.tr,
+                      hintStyle: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 18,
+                        color: AppColors.signupHintTextColor,
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(style: BorderStyle.none),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(style: BorderStyle.none),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
                   ),
                 ),
