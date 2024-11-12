@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
+import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/cash_on_delivery.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_card_input_form.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
@@ -105,7 +106,9 @@ class _DoctorBookingConfirmScreenState
                               fontSize: 18,
                               color: Colors.white,
                             ),
-                            onTap: () {}))
+                            onTap: () {
+                              AppUtils().showDoctorBookingDialog();
+                            }))
                     : const SizedBox(),
               ),
             ),
