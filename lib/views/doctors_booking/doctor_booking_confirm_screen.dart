@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/cash_on_delivery.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_card_input_form.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
@@ -10,6 +11,8 @@ import 'package:doctor_consultant_app_template/views_models/controllers/payment_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+
+import '../../resources/fonts/app_font_style.dart';
 
 class DoctorBookingConfirmScreen extends StatefulWidget {
   const DoctorBookingConfirmScreen({super.key});
@@ -81,6 +84,26 @@ class _DoctorBookingConfirmScreenState
                       child: CashOnDelivery()),
                 ],
               ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Padding(
+              padding: const EdgeInsets.all(25),
+              child: SizedBox(
+                  height: 54,
+                  width: MediaQuery.of(context).size.width,
+                  child: RoundedButton(
+                      title: 'pay'.tr,
+                      textStyle: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
+                      onTap: () {})),
             ),
           ),
           /*Center(
