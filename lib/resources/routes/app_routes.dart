@@ -1,9 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/cancer_doctor_booking/cancer_doctor_booking.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/doctor_booking_confirm_screen.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/ear_doctor_booking/ear_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/eye_doctor_booking/eye_doctor_booking.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/heart_doctor_booking/heart_doctor_booking.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/payment_screen.dart';
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
@@ -100,8 +100,8 @@ class AppRoutes {
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
-          name: RoutesName.doctorBookingConfirmScreen,
-          page: () => const DoctorBookingConfirmScreen(),
+          name: RoutesName.paymentScreen,
+          page: () => const PaymentScreen(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),

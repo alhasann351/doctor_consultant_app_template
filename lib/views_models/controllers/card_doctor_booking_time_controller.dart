@@ -14,9 +14,9 @@ class CardDoctorBookingTimeController extends GetxController {
     selectedTimeIndex.value = index;
   }
 
-  void goToDetailScreen() {
+  void goToPaymentScreen() {
     if (selectedTimeIndex.value.isNotEmpty) {
-      Get.toNamed(RoutesName.doctorBookingConfirmScreen);
+      Get.toNamed(RoutesName.paymentScreen);
       //Get.to(() => const DoctorBookingConfirmScreen());
     } else {
       Get.snackbar("Error", "Please select an item");

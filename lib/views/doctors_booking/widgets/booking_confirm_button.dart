@@ -25,7 +25,7 @@ class BookingConfirmButton extends StatelessWidget {
           color: Colors.white,
         ),
         onTap: () {
-          cardDoctorBookingTimeController.goToDetailScreen();
+          //cardDoctorBookingTimeController.goToPaymentScreen();
         },
       ),
     );

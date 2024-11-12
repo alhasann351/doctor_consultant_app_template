@@ -22,7 +22,7 @@ class AppUtils {
     );
   }
 
-  showDoctorBookingDialog() {
+  void showDoctorBookingDialog() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.white,
       title: Text(
@@ -34,30 +34,43 @@ class AppUtils {
             fontSize: 16,
             color: Colors.black),
       ),
-      content: Column(
-        children: [
-          Text(
-            textAlign: TextAlign.center,
-            'thank_you'.tr,
-            style: const TextStyle(
-                fontFamily: AppFontStyle.rubik,
-                fontWeight: FontWeight.bold,
-                fontSize: 14,
-                color: Colors.black),
-          ),
-          Text(
-            DateFormat('dd MMMM yyyy')
-                .format(dateController.selectedDate.value),
-            style: const TextStyle(fontSize: 24),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-            cardDoctorBookingTimeController.selectedTimeIndex.value.toString(),
-            style: const TextStyle(fontSize: 24),
-          ),
-        ],
+      content: SizedBox(
+        height: 300,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              textAlign: TextAlign.center,
+              'thank_you'.tr,
+              style: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: Colors.black),
+            ),
+            Text(
+              DateFormat('dd MMMM yyyy')
+                  .format(dateController.selectedDate.value),
+              style: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              cardDoctorBookingTimeController.selectedTimeIndex.value
+                  .toString(),
+              style: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: Colors.black),
+            ),
+          ],
+        ),
       ),
       alignment: Alignment.center,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),

@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
-class DoctorBookingConfirmBackButton extends StatelessWidget {
-  const DoctorBookingConfirmBackButton({super.key});
+class PaymentBackButton extends StatelessWidget {
+  const PaymentBackButton({super.key});
 
   @override
   Widget build(BuildContext context) {

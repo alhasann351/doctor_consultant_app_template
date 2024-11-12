@@ -13,6 +13,5 @@ class RoutesName {
   static const String eyeDoctorBooking = '/eye_doctor_booking';
   static const String heartDoctorBooking = '/heart_doctor_booking';
   static const String skinDoctorBooking = '/skin_doctor_booking';
-  static const String doctorBookingConfirmScreen =
-      '/doctor_booking_confirm_screen';
+  static const String paymentScreen = '/doctor_booking_confirm_screen';
 }

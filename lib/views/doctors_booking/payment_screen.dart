@@ -4,7 +4,7 @@ import 'package:doctor_consultant_app_template/utils/app_utils.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/cash_on_delivery.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_card_input_form.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/doctor_booking_confirm_back_button.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/payment_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/paypal_payment_button.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
@@ -15,16 +15,14 @@ import 'package:intl/intl.dart';
 
 import '../../resources/fonts/app_font_style.dart';
 
-class DoctorBookingConfirmScreen extends StatefulWidget {
-  const DoctorBookingConfirmScreen({super.key});
+class PaymentScreen extends StatefulWidget {
+  const PaymentScreen({super.key});
 
   @override
-  State<DoctorBookingConfirmScreen> createState() =>
-      _DoctorBookingConfirmScreenState();
+  State<PaymentScreen> createState() => _PaymentScreenState();
 }
 
-class _DoctorBookingConfirmScreenState
-    extends State<DoctorBookingConfirmScreen> {
+class _PaymentScreenState extends State<PaymentScreen> {
   final DateController dateController = Get.put(DateController());
   final CardDoctorBookingTimeController cardDoctorBookingTimeController =
       Get.put(CardDoctorBookingTimeController());
@@ -54,7 +52,7 @@ class _DoctorBookingConfirmScreenState
               ),
             ),
           ),
-          const DoctorBookingConfirmBackButton(),
+          const PaymentBackButton(),
           Positioned(
             top: 80,
             left: 0,
