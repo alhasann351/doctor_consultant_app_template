@@ -5,6 +5,11 @@ class PaymentButtonController extends GetxController {
   var paypalSelected = false.obs;
   var cashOnDeliverySelected = false.obs;
 
+  bool get allSelectedTrue =>
+      creditDebitCardSelected.value ||
+      paypalSelected.value ||
+      cashOnDeliverySelected.value;
+
   void selectCreditDebitCard() {
     creditDebitCardSelected.value = !creditDebitCardSelected.value;
     paypalSelected.value = false;

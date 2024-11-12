@@ -72,7 +72,7 @@ class _DoctorBookingConfirmScreenState
                           top: 0, left: 30, right: 30, bottom: 10),
                       child: Obx(() =>
                           paymentButtonController.creditDebitCardSelected.value
-                              ? CreditDebitCardInputForm()
+                              ? const CreditDebitCardInputForm()
                               : const SizedBox())),
                   const Padding(
                       padding: EdgeInsets.only(
@@ -92,18 +92,22 @@ class _DoctorBookingConfirmScreenState
             bottom: 0,
             child: Padding(
               padding: const EdgeInsets.all(25),
-              child: SizedBox(
-                  height: 54,
-                  width: MediaQuery.of(context).size.width,
-                  child: RoundedButton(
-                      title: 'pay'.tr,
-                      textStyle: const TextStyle(
-                        fontFamily: AppFontStyle.rubik,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                        color: Colors.white,
-                      ),
-                      onTap: () {})),
+              child: Obx(
+                () => paymentButtonController.allSelectedTrue
+                    ? SizedBox(
+                        height: 54,
+                        width: MediaQuery.of(context).size.width,
+                        child: RoundedButton(
+                            title: 'pay'.tr,
+                            textStyle: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                            onTap: () {}))
+                    : const SizedBox(),
+              ),
             ),
           ),
           /*Center(
