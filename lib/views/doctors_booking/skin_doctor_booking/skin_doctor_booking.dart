@@ -10,8 +10,8 @@ import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/card_doctor_information.dart';
-import '../../../resources/components/rounded_button.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../widgets/booking_confirm_button.dart';
 
 class SkinDoctorBooking extends StatefulWidget {
   const SkinDoctorBooking({super.key});
@@ -114,22 +114,7 @@ class _SkinDoctorBookingState extends State<SkinDoctorBooking> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(25),
-                    child: SizedBox(
-                      height: 54,
-                      width: MediaQuery.of(context).size.width,
-                      child: RoundedButton(
-                        title: 'confirm'.tr,
-                        textStyle: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                        onTap: () {
-                          cardDoctorBookingTimeController.goToPaymentScreen();
-                        },
-                      ),
-                    ),
+                    child: BookingConfirmButton(),
                   ),
                 ],
               ),

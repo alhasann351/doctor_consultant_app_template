@@ -22,7 +22,7 @@ class AppUtils {
     );
   }
 
-  void showDoctorBookingDialog() {
+  void showDoctorBookingDialog(String doctorName) {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.white,
       title: Text(
@@ -35,7 +35,7 @@ class AppUtils {
             color: Colors.black),
       ),
       content: SizedBox(
-        height: 300,
+        height: 200,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -48,26 +48,17 @@ class AppUtils {
                   fontSize: 14,
                   color: Colors.black),
             ),
-            Text(
-              DateFormat('dd MMMM yyyy')
-                  .format(dateController.selectedDate.value),
-              style: const TextStyle(
-                  fontFamily: AppFontStyle.rubik,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                  color: Colors.black),
-            ),
             const SizedBox(
-              height: 5,
+              height: 10,
             ),
             Text(
-              cardDoctorBookingTimeController.selectedTimeIndex.value
-                  .toString(),
+              textAlign: TextAlign.center,
+              'You booked an appointment with Dr. $doctorName on ${DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value)} at ${cardDoctorBookingTimeController.selectedTimeIndex.value}',
               style: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
-                  color: Colors.black),
+                  color: Colors.grey),
             ),
           ],
         ),

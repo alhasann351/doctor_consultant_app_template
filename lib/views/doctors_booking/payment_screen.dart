@@ -105,7 +105,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
                               color: Colors.white,
                             ),
                             onTap: () {
-                              AppUtils().showDoctorBookingDialog();
+                              AppUtils().showDoctorBookingDialog(
+                                  Get.arguments['doctorName'.toString()]);
                             }))
                     : const SizedBox(),
               ),
