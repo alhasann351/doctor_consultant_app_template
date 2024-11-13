@@ -117,6 +117,7 @@ class Languages extends Translations {
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
           'ok': 'OK',
+          'edit_appointment': 'Edit your appointment',
         },
         'bn_BD': {
           //splash screen
@@ -232,6 +233,7 @@ class Languages extends Translations {
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
           'ok': 'ঠিক আছে',
+          'edit_appointment': 'অ্যাপয়েন্টমেন্ট এডিট করুন',
         },
         'hi_IN': {
           //splash screen
@@ -348,6 +350,7 @@ class Languages extends Translations {
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
           'ok': 'ठीक है',
+          'edit_appointment': 'अपॉइंटमेंट संपादित करें',
         },
       };
 }

@@ -36,7 +36,7 @@ class AppUtils {
             color: Colors.black),
       ),
       content: SizedBox(
-        height: 200,
+        height: 215,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -76,6 +76,20 @@ class AppUtils {
                   onTap: () {
                     Get.back();
                   }),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                'edit_appointment'.tr,
+                style: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    color: Colors.grey),
+              ),
             ),
           ],
         ),
