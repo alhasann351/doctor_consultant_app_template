@@ -22,7 +22,7 @@ class AppUtils {
     );
   }
 
-  void showDoctorBookingDialog(String doctorName) {
+  void showDoctorBookingDialog(String doctorName, doctorSpeciality) {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.white,
       title: Text(
@@ -53,7 +53,7 @@ class AppUtils {
             ),
             Text(
               textAlign: TextAlign.center,
-              'You booked an appointment with Dr. $doctorName on ${DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value)} at ${cardDoctorBookingTimeController.selectedTimeIndex.value}',
+              'You booked an appointment with Dr. $doctorName, $doctorSpeciality on ${DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value)} at ${cardDoctorBookingTimeController.selectedTimeIndex.value}',
               style: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
                   fontWeight: FontWeight.bold,

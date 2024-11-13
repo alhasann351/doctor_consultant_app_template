@@ -6,12 +6,9 @@ import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/cre
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/credit_debit_cards_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/payment_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/paypal_payment_button.dart';
-import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
-import 'package:doctor_consultant_app_template/views_models/controllers/date_controller.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/payment_button_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:intl/intl.dart';
 
 import '../../resources/fonts/app_font_style.dart';
 
@@ -23,17 +20,11 @@ class PaymentScreen extends StatefulWidget {
 }
 
 class _PaymentScreenState extends State<PaymentScreen> {
-  final DateController dateController = Get.put(DateController());
-  final CardDoctorBookingTimeController cardDoctorBookingTimeController =
-      Get.put(CardDoctorBookingTimeController());
   final PaymentButtonController paymentButtonController =
       Get.put(PaymentButtonController());
 
   @override
   Widget build(BuildContext context) {
-    final formattedDate =
-        DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value);
-
     return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
       body: Stack(
@@ -106,31 +97,13 @@ class _PaymentScreenState extends State<PaymentScreen> {
                             ),
                             onTap: () {
                               AppUtils().showDoctorBookingDialog(
-                                  Get.arguments['doctorName'.toString()]);
+                                  Get.arguments['doctorName'.toString()],
+                                  Get.arguments['doctorSpeciality'.toString()]);
                             }))
                     : const SizedBox(),
               ),
             ),
           ),
-          /*Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  formattedDate,
-                  style: const TextStyle(fontSize: 24),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  cardDoctorBookingTimeController.selectedTimeIndex.value
-                      .toString(),
-                  style: const TextStyle(fontSize: 24),
-                ),
-              ],
-            ),
-          ),*/
         ],
       ),
     );
