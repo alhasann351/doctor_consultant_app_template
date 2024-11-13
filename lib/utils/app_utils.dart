@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -59,6 +60,22 @@ class AppUtils {
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
                   color: Colors.grey),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            SizedBox(
+              width: 200,
+              child: RoundedButton(
+                  title: 'ok'.tr,
+                  textStyle: const TextStyle(
+                      fontFamily: AppFontStyle.rubik,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Colors.white),
+                  onTap: () {
+                    Get.back();
+                  }),
             ),
           ],
         ),

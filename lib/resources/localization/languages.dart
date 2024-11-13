@@ -116,6 +116,7 @@ class Languages extends Translations {
           'card_expiry_date': 'Expiry (MM/YY)',
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
+          'ok': 'OK',
         },
         'bn_BD': {
           //splash screen
@@ -230,6 +231,7 @@ class Languages extends Translations {
           'card_expiry_date': 'মেয়াদ (MM/YY)',
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
+          'ok': 'ঠিক আছে',
         },
         'hi_IN': {
           //splash screen
@@ -345,6 +347,7 @@ class Languages extends Translations {
           'card_expiry_date': 'समाप्ति (MM/YY)',
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
+          'ok': 'ठीक है',
         },
       };
 }
