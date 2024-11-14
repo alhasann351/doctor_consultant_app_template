@@ -12,6 +12,7 @@ class PopularDoctors extends StatelessWidget {
     return Column(
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 10, top: 10),
@@ -22,6 +23,18 @@ class PopularDoctors extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: AppColors.doctorsCategoryTitleTextColor,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 10, top: 10),
+              child: Text(
+                'see_all_text'.tr,
+                style: const TextStyle(
+                  fontFamily: AppFontStyle.rubik,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey,
                 ),
               ),
             ),

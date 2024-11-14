@@ -78,6 +78,7 @@ class Languages extends Translations {
           'skin': 'Skin',
           'comments_input_hint_text': 'Add a comment',
           'popular_doctors_title_text': 'Popular Doctors',
+          'see_all_text': 'See all',
 
           //doctors category screen
           'specialist_doctors': 'Specialist doctors',
@@ -195,6 +196,7 @@ class Languages extends Translations {
           'skin': 'ত্বক',
           'comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
+          'see_all_text': 'সব দেখুন',
 
           //doctors category screen
           'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
@@ -313,6 +315,7 @@ class Languages extends Translations {
           'skin': 'त्वचा',
           'comments_input_hint_text': 'एक टिप्पणी जोड़ने',
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
+          'see_all_text': 'सभी देखें',
 
           //doctors category screen
           'specialist_doctors': 'विशेषज्ञ डॉक्टर',
