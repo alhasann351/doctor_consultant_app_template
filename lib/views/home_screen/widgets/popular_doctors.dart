@@ -35,6 +35,19 @@ class PopularDoctors extends StatelessWidget {
     'elisa'.tr,
   ];
 
+  final List<String> doctorSpeciality = [
+    'skin_specialist'.tr,
+    'heart_specialist'.tr,
+    'eye_specialist'.tr,
+    'ear_specialist'.tr,
+    'cancer_specialist'.tr,
+    'cancer_specialist'.tr,
+    'ear_specialist'.tr,
+    'eye_specialist'.tr,
+    'heart_specialist'.tr,
+    'skin_specialist'.tr,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -102,7 +115,7 @@ class PopularDoctors extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                              top: 10, bottom: 5, left: 5, right: 5),
+                              top: 10, bottom: 0, left: 5, right: 5),
                           child: Text(
                             doctorName[index],
                             style: const TextStyle(
@@ -111,6 +124,14 @@ class PopularDoctors extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
+                          ),
+                        ),
+                        Text(
+                          doctorSpeciality[index],
+                          style: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontSize: 15,
+                            color: Colors.grey,
                           ),
                         ),
                       ],
