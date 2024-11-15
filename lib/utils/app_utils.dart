@@ -54,7 +54,7 @@ class AppUtils {
             ),
             Text(
               textAlign: TextAlign.center,
-              'You booked an appointment with Dr. $doctorName, $doctorSpeciality on ${DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value)} at ${cardDoctorBookingTimeController.selectedTimeIndex.value}',
+              'You booked an appointment with $doctorName, $doctorSpeciality on ${DateFormat('dd MMMM yyyy').format(dateController.selectedDate.value)} at ${cardDoctorBookingTimeController.selectedTimeIndex.value}',
               style: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
                   fontWeight: FontWeight.bold,

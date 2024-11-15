@@ -82,8 +82,8 @@ class Languages extends Translations {
 
           //doctors category screen
           'specialist_doctors': 'Specialist doctors',
-          'elisa': 'Elisa',
-          'hasan': 'Hasan',
+          'elisa': 'Dr. Elisa',
+          'hasan': 'Dr. Hasan',
           '5_years_experience': '5 years experience',
           '7_years_experience': '7 years experience',
           '95%_good': '95% good',
@@ -200,8 +200,8 @@ class Languages extends Translations {
 
           //doctors category screen
           'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
-          'elisa': 'এলিসা',
-          'hasan': 'হাসান',
+          'elisa': 'ডা: এলিসা',
+          'hasan': 'ডা: হাসান',
           '5_years_experience': '৫ বছরের অভিজ্ঞতা',
           '7_years_experience': '৭ বছরের অভিজ্ঞতা',
           '95%_good': '৯৫% ভালো',
@@ -319,8 +319,8 @@ class Languages extends Translations {
 
           //doctors category screen
           'specialist_doctors': 'विशेषज्ञ डॉक्टर',
-          'elisa': 'एलिसा',
-          'hasan': 'हसन',
+          'elisa': 'डॉ: एलिसा',
+          'hasan': 'डॉ: हसन',
           '5_years_experience': '५ वर्ष का अनुभव',
           '7_years_experience': '७ वर्ष का अनुभव',
           '95%_good': '९५% ভালো',

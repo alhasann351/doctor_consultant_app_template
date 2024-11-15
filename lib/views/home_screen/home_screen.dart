@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 const LiveDoctors(),
                 DoctorsCategory(),
-                const PopularDoctors(),
+                PopularDoctors(),
               ],
             ),
           ),

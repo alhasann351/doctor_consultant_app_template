@@ -54,7 +54,7 @@ class _LiveDoctorsState extends State<LiveDoctors> {
             height: 220,
             width: double.infinity,
             child: ListView.builder(
-              //cacheExtent: 1500,
+              cacheExtent: 1500,
               scrollDirection: Axis.horizontal,
               shrinkWrap: true,
               itemCount: imagePaths.length,
