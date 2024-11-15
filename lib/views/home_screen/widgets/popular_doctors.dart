@@ -86,6 +86,7 @@ class PopularDoctors extends StatelessWidget {
                     color: Colors.white,
                     clipBehavior: Clip.antiAlias,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         CachedNetworkImage(
                           height: 200,
@@ -97,6 +98,19 @@ class PopularDoctors extends StatelessWidget {
                           errorWidget: (context, url, error) => const Icon(
                             Icons.error,
                             color: Colors.grey,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              top: 10, bottom: 5, left: 5, right: 5),
+                          child: Text(
+                            doctorName[index],
+                            style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                       ],
