@@ -6,6 +6,8 @@ class RatingIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
           Icons.star,

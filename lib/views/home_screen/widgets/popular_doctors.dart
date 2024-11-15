@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -82,7 +83,7 @@ class PopularDoctors extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 284,
+          height: 300,
           width: double.infinity,
           child: ListView.builder(
             cacheExtent: 1500,
@@ -126,13 +127,22 @@ class PopularDoctors extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
-                          doctorSpeciality[index],
-                          style: const TextStyle(
-                            fontFamily: AppFontStyle.rubik,
-                            fontSize: 15,
-                            color: Colors.grey,
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              top: 0, bottom: 0, left: 5, right: 5),
+                          child: Text(
+                            doctorSpeciality[index],
+                            style: const TextStyle(
+                              fontFamily: AppFontStyle.rubik,
+                              fontSize: 15,
+                              color: Colors.grey,
+                            ),
                           ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(
+                              top: 0, bottom: 0, left: 5, right: 5),
+                          child: RatingIcons(),
                         ),
                       ],
                     ),
