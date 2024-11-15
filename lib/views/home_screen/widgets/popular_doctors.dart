@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -91,6 +92,12 @@ class PopularDoctors extends StatelessWidget {
                           width: double.infinity,
                           imageUrl: image[index],
                           fit: BoxFit.fill,
+                          placeholder: (context, url) =>
+                              const LoadingAnimation(),
+                          errorWidget: (context, url, error) => const Icon(
+                            Icons.error,
+                            color: Colors.grey,
+                          ),
                         ),
                       ],
                     ),
