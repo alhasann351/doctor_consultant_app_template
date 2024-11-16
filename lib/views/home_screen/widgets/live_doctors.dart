@@ -49,7 +49,7 @@ class _LiveDoctorsState extends State<LiveDoctors> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 10),
           child: SizedBox(
             height: 220,
             width: double.infinity,

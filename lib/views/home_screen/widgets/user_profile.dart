@@ -14,7 +14,7 @@ class UserProfile extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.only(left: 15, right: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -23,12 +23,12 @@ class UserProfile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 15),
+                      padding: const EdgeInsets.only(top: 5),
                       child: Text(
                         'home_user_title_text'.tr,
                         style: const TextStyle(
                             fontFamily: AppFontStyle.rubik,
-                            fontSize: 20,
+                            fontSize: 16,
                             color: AppColors.homeUserTitleTextColor),
                       ),
                     ),
@@ -36,7 +36,7 @@ class UserProfile extends StatelessWidget {
                       'home_title_text'.tr,
                       style: const TextStyle(
                         fontFamily: AppFontStyle.rubik,
-                        fontSize: 25,
+                        fontSize: 18,
                         color: AppColors.homeTitleTextColor,
                         fontWeight: FontWeight.bold,
                       ),
@@ -44,7 +44,7 @@ class UserProfile extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(top: 15, bottom: 20),
                   child: CircleAvatar(
                     radius: 25,
                     backgroundColor:

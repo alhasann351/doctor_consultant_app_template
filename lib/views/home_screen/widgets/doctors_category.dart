@@ -51,7 +51,7 @@ class DoctorsCategory extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 10, top: 10),
+          padding: const EdgeInsets.only(left: 10, top: 0),
           child: Text(
             'doctors_category_title_text'.tr,
             style: const TextStyle(
@@ -63,7 +63,7 @@ class DoctorsCategory extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 150,
+          height: 130,
           width: double.infinity,
           child: ListView.builder(
             cacheExtent: 1500,
@@ -72,7 +72,7 @@ class DoctorsCategory extends StatelessWidget {
             itemCount: iconPaths.length,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.only(top: 20, bottom: 20),
+                padding: const EdgeInsets.only(top: 10, bottom: 20),
                 child: SizedBox(
                   width: 120,
                   child: Padding(

@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Container(
-            height: 186,
+            height: 156,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
@@ -54,21 +54,26 @@ class _HomeScreenState extends State<HomeScreen> {
             child: const UserProfile(),
           ),
           const Positioned(
-            top: 155,
+            top: 115,
             right: 0,
             left: 0,
             bottom: 0,
             child: SearchInput(),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 220),
-            child: ListView(
-              scrollDirection: Axis.vertical,
-              children: [
-                const LiveDoctors(),
-                DoctorsCategory(),
-                PopularDoctors(),
-              ],
+          Positioned(
+            top: 160,
+            right: 0,
+            left: 0,
+            bottom: 0,
+            child: SafeArea(
+              child: ListView(
+                scrollDirection: Axis.vertical,
+                children: [
+                  const LiveDoctors(),
+                  DoctorsCategory(),
+                  PopularDoctors(),
+                ],
+              ),
             ),
           ),
         ],

@@ -57,7 +57,7 @@ class PopularDoctors extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 10, top: 10),
+              padding: const EdgeInsets.only(left: 10, top: 0),
               child: Text(
                 'popular_doctors_title_text'.tr,
                 style: const TextStyle(
@@ -69,7 +69,7 @@ class PopularDoctors extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 10, top: 10),
+              padding: const EdgeInsets.only(right: 10, top: 0),
               child: Text(
                 'see_all_text'.tr,
                 style: const TextStyle(
@@ -82,74 +82,77 @@ class PopularDoctors extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
-          height: 300,
-          width: double.infinity,
-          child: ListView.builder(
-            cacheExtent: 1500,
-            shrinkWrap: true,
-            scrollDirection: Axis.horizontal,
-            itemCount: image.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 5),
-                child: SizedBox(
-                  width: 200,
-                  child: Card(
-                    elevation: 10,
-                    color: Colors.white,
-                    clipBehavior: Clip.antiAlias,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CachedNetworkImage(
-                          height: 200,
-                          width: double.infinity,
-                          imageUrl: image[index],
-                          fit: BoxFit.fill,
-                          placeholder: (context, url) =>
-                              const LoadingAnimation(),
-                          errorWidget: (context, url, error) => const Icon(
-                            Icons.error,
-                            color: Colors.grey,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                              top: 10, bottom: 0, left: 5, right: 5),
-                          child: Text(
-                            doctorName[index],
-                            style: const TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                              top: 0, bottom: 0, left: 5, right: 5),
-                          child: Text(
-                            doctorSpeciality[index],
-                            style: const TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 15,
+        Padding(
+          padding: const EdgeInsets.only(top: 10),
+          child: SizedBox(
+            height: 300,
+            width: double.infinity,
+            child: ListView.builder(
+              cacheExtent: 1500,
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemCount: image.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: SizedBox(
+                    width: 200,
+                    child: Card(
+                      elevation: 10,
+                      color: Colors.white,
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          CachedNetworkImage(
+                            height: 200,
+                            width: double.infinity,
+                            imageUrl: image[index],
+                            fit: BoxFit.fill,
+                            placeholder: (context, url) =>
+                                const LoadingAnimation(),
+                            errorWidget: (context, url, error) => const Icon(
+                              Icons.error,
                               color: Colors.grey,
                             ),
                           ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(
-                              top: 0, bottom: 0, left: 5, right: 5),
-                          child: RatingIcons(),
-                        ),
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 10, bottom: 0, left: 5, right: 5),
+                            child: Text(
+                              doctorName[index],
+                              style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 0, bottom: 0, left: 5, right: 5),
+                            child: Text(
+                              doctorSpeciality[index],
+                              style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.only(
+                                top: 0, bottom: 0, left: 5, right: 5),
+                            child: RatingIcons(),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              );
-            },
+                );
+              },
+            ),
           ),
         )
       ],
