@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -70,13 +71,18 @@ class PopularDoctors extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 10, top: 0),
-              child: Text(
-                'see_all_text'.tr,
-                style: const TextStyle(
-                  fontFamily: AppFontStyle.rubik,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey,
+              child: GestureDetector(
+                onTap: () {
+                  Get.toNamed(RoutesName.popularDoctorsScreen);
+                },
+                child: Text(
+                  'see_all_text'.tr,
+                  style: const TextStyle(
+                    fontFamily: AppFontStyle.rubik,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey,
+                  ),
                 ),
               ),
             ),
