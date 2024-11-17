@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/views/popular_doctors_screen/widgets/back_button_Popular_doctors_title.dart';
+import 'package:doctor_consultant_app_template/views/popular_doctors_screen/widgets/popular_doctors_information.dart';
 import 'package:flutter/material.dart';
 
 import '../../resources/colors/app_colors.dart';
@@ -31,6 +32,7 @@ class _PopularDoctorsScreenState extends State<PopularDoctorsScreen> {
             ),
           ),
           const BackButtonPopularDoctorsTitle(),
+          const PopularDoctorsInformation(),
         ],
       ),
     );

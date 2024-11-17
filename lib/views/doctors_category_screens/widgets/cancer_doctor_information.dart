@@ -125,175 +125,179 @@ class _CancerDoctorInformationState extends State<CancerDoctorInformation> {
             itemBuilder: (context, index) {
               return SizedBox(
                 height: 200,
-                child: Card(
-                  color: AppColors.doctorInfoCardBackgroundColor,
-                  elevation: 8,
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10, left: 10),
-                        child: ClipRRect(
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(10)),
-                          child: CachedNetworkImage(
-                            fit: BoxFit.fill,
-                            height: 95,
-                            width: 100,
-                            imageUrl: image[index],
-                            placeholder: (context, url) =>
-                                const LoadingAnimation(),
-                            errorWidget: (context, url, error) => const Icon(
-                              Icons.error,
-                              color: Colors.grey,
-                            ),
-                          ),
-                          /*child: Image.asset(
-                            image[index],
-                            fit: BoxFit.fill,
-                            height: 95,
-                            width: 100,
-                          ),*/
-                        ),
-                      ),
-                      Positioned(
-                        top: 15,
-                        left: 120,
-                        right: 10,
-                        bottom: 0,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              doctorName[index],
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppColors.doctorNameColor),
-                            ),
-                            InkWell(
-                              onTap: () {
-                                AppUtils.showToastMessage(
-                                    'Favorite option clicked');
-                              },
-                              child: const Icon(
-                                Icons.favorite,
-                                size: 25,
-                                color: AppColors.doctorInfoFavoriteIconColor,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Card(
+                    color: AppColors.doctorInfoCardBackgroundColor,
+                    elevation: 8,
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 10),
+                          child: ClipRRect(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(10)),
+                            child: CachedNetworkImage(
+                              fit: BoxFit.fill,
+                              height: 95,
+                              width: 100,
+                              imageUrl: image[index],
+                              placeholder: (context, url) =>
+                                  const LoadingAnimation(),
+                              errorWidget: (context, url, error) => const Icon(
+                                Icons.error,
+                                color: Colors.grey,
                               ),
                             ),
-                          ],
+                            /*child: Image.asset(
+                              image[index],
+                              fit: BoxFit.fill,
+                              height: 95,
+                              width: 100,
+                            ),*/
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        top: 42,
-                        left: 120,
-                        right: 0,
-                        bottom: 0,
-                        child: Text(
-                          'cancer_specialist'.tr,
-                          style: const TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 15,
-                              color: AppColors.doctorSpecialistTextColor),
+                        Positioned(
+                          top: 15,
+                          left: 120,
+                          right: 10,
+                          bottom: 0,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                doctorName[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.doctorNameColor),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  AppUtils.showToastMessage(
+                                      'Favorite option clicked');
+                                },
+                                child: const Icon(
+                                  Icons.favorite,
+                                  size: 25,
+                                  color: AppColors.doctorInfoFavoriteIconColor,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        top: 65,
-                        left: 120,
-                        right: 0,
-                        bottom: 0,
-                        child: Text(
-                          doctorExperience[index],
-                          style: const TextStyle(
-                              fontFamily: AppFontStyle.rubik,
-                              fontSize: 15,
-                              color: AppColors.doctorNameColor),
+                        Positioned(
+                          top: 42,
+                          left: 120,
+                          right: 0,
+                          bottom: 0,
+                          child: Text(
+                            'cancer_specialist'.tr,
+                            style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                color: AppColors.doctorSpecialistTextColor),
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        top: 90,
-                        left: 120,
-                        right: 10,
-                        bottom: 0,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              goodDoctor[index],
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  color: AppColors.goodDoctorTextColor),
-                            ),
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              seePatients[index],
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  color: AppColors.seePatientsTextColor),
-                            ),
-                          ],
+                        Positioned(
+                          top: 65,
+                          left: 120,
+                          right: 0,
+                          bottom: 0,
+                          child: Text(
+                            doctorExperience[index],
+                            style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                color: AppColors.doctorNameColor),
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        top: 130,
-                        left: 10,
-                        right: 0,
-                        bottom: 0,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'next_available'.tr,
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppColors.nextAvailableTextColor),
-                            ),
-                            const SizedBox(
-                              height: 2,
-                            ),
-                            Text(
-                              nextAvailableTime[index],
-                              style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
-                                  color: AppColors.nextAvailableTimeTextColor),
-                            ),
-                          ],
+                        Positioned(
+                          top: 90,
+                          left: 120,
+                          right: 10,
+                          bottom: 0,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                goodDoctor[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    color: AppColors.goodDoctorTextColor),
+                              ),
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                seePatients[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    color: AppColors.seePatientsTextColor),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Positioned(
-                        top: 130,
-                        left: 220,
-                        right: 10,
-                        bottom: 20,
-                        child: RoundedButton(
-                          title: 'book_now'.tr,
-                          backgroundColor: AppColors.bookNowButtonColor,
-                          textStyle: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              fontFamily: AppFontStyle.rubik,
-                              color: AppColors.bookNowButtonTextColor),
-                          onTap: () {
-                            Get.toNamed(RoutesName.cancerDoctorBooking,
-                                arguments: {
-                                  'doctorImage': image[index],
-                                  'doctorName': doctorName[index],
-                                  'doctorSpeciality': 'cancer_specialist'.tr,
-                                  'hospitalName': hospitalName[index],
-                                });
-                          },
+                        Positioned(
+                          top: 130,
+                          left: 10,
+                          right: 0,
+                          bottom: 0,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'next_available'.tr,
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.nextAvailableTextColor),
+                              ),
+                              const SizedBox(
+                                height: 2,
+                              ),
+                              Text(
+                                nextAvailableTime[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    color:
+                                        AppColors.nextAvailableTimeTextColor),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                        Positioned(
+                          top: 130,
+                          left: 220,
+                          right: 10,
+                          bottom: 20,
+                          child: RoundedButton(
+                            title: 'book_now'.tr,
+                            backgroundColor: AppColors.bookNowButtonColor,
+                            textStyle: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                fontFamily: AppFontStyle.rubik,
+                                color: AppColors.bookNowButtonTextColor),
+                            onTap: () {
+                              Get.toNamed(RoutesName.cancerDoctorBooking,
+                                  arguments: {
+                                    'doctorImage': image[index],
+                                    'doctorName': doctorName[index],
+                                    'doctorSpeciality': 'cancer_specialist'.tr,
+                                    'hospitalName': hospitalName[index],
+                                  });
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               );
