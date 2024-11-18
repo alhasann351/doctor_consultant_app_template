@@ -42,6 +42,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
     'elisa'.tr,
   ];
 
+  final List<String> doctorSpeciality = [
+    'skin_specialist'.tr,
+    'heart_specialist'.tr,
+    'eye_specialist'.tr,
+    'ear_specialist'.tr,
+    'cancer_specialist'.tr,
+    'cancer_specialist'.tr,
+    'ear_specialist'.tr,
+    'eye_specialist'.tr,
+    'heart_specialist'.tr,
+    'skin_specialist'.tr,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -110,6 +123,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                 ),
                               ),
                             ],
+                          ),
+                        ),
+                        Positioned(
+                          top: 42,
+                          left: 120,
+                          right: 0,
+                          bottom: 0,
+                          child: Text(
+                            doctorSpeciality[index],
+                            style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                color: AppColors.doctorSpecialistTextColor),
                           ),
                         ),
                       ],
