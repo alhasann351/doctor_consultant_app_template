@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../utils/app_utils.dart';
 
 class PopularDoctorsInformation extends StatefulWidget {
   const PopularDoctorsInformation({super.key});
@@ -96,6 +97,17 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                     color: AppColors.doctorNameColor),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  AppUtils.showToastMessage(
+                                      'Favorite option clicked');
+                                },
+                                child: const Icon(
+                                  Icons.favorite,
+                                  size: 25,
+                                  color: AppColors.doctorInfoFavoriteIconColor,
+                                ),
                               ),
                             ],
                           ),
