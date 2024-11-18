@@ -1,8 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
+import '../../../resources/fonts/app_font_style.dart';
 
 class PopularDoctorsInformation extends StatefulWidget {
   const PopularDoctorsInformation({super.key});
@@ -24,6 +26,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
     'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
     'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
     'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
+  ];
+
+  final List<String> doctorName = [
+    'elisa'.tr,
+    'elisa'.tr,
+    'hasan'.tr,
+    'elisa'.tr,
+    'hasan'.tr,
+    'elisa'.tr,
+    'hasan'.tr,
+    'elisa'.tr,
+    'hasan'.tr,
+    'elisa'.tr,
   ];
 
   @override
@@ -63,6 +78,26 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                 color: Colors.grey,
                               ),
                             ),
+                          ),
+                        ),
+                        Positioned(
+                          top: 15,
+                          left: 120,
+                          right: 10,
+                          bottom: 0,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                doctorName[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.doctorNameColor),
+                              ),
+                            ],
                           ),
                         ),
                       ],
