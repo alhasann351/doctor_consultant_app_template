@@ -81,6 +81,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
     '85%_good'.tr,
   ];
 
+  final List<String> seePatients = [
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+    '95_patients'.tr,
+    '85_patients'.tr,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -191,6 +204,16 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 15,
                                     color: AppColors.goodDoctorTextColor),
+                              ),
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                seePatients[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    color: AppColors.seePatientsTextColor),
                               ),
                             ],
                           ),
