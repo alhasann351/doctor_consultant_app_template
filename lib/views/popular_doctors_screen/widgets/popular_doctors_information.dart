@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
+import '../../../resources/components/rounded_button.dart';
 import '../../../resources/fonts/app_font_style.dart';
 import '../../../utils/app_utils.dart';
 
@@ -259,6 +260,25 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                         AppColors.nextAvailableTimeTextColor),
                               ),
                             ],
+                          ),
+                        ),
+                        Positioned(
+                          top: 130,
+                          left: 220,
+                          right: 10,
+                          bottom: 20,
+                          child: SizedBox(
+                            height: 50,
+                            child: RoundedButton(
+                              title: 'book_now'.tr,
+                              backgroundColor: AppColors.bookNowButtonColor,
+                              textStyle: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  fontFamily: AppFontStyle.rubik,
+                                  color: AppColors.bookNowButtonTextColor),
+                              onTap: () {},
+                            ),
                           ),
                         ),
                       ],
