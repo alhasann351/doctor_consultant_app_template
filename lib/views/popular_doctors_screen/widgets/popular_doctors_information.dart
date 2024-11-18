@@ -94,6 +94,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
     '85_patients'.tr,
   ];
 
+  final List<String> nextAvailableTime = [
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+    '10:00_AM_tomorrow'.tr,
+    '11:00_AM_tomorrow'.tr,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -214,6 +227,25 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 15,
                                     color: AppColors.seePatientsTextColor),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Positioned(
+                          top: 130,
+                          left: 10,
+                          right: 0,
+                          bottom: 0,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'next_available'.tr,
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.nextAvailableTextColor),
                               ),
                             ],
                           ),
