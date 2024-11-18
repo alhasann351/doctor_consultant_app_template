@@ -247,6 +247,17 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontWeight: FontWeight.bold,
                                     color: AppColors.nextAvailableTextColor),
                               ),
+                              const SizedBox(
+                                height: 2,
+                              ),
+                              Text(
+                                nextAvailableTime[index],
+                                style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 15,
+                                    color:
+                                        AppColors.nextAvailableTimeTextColor),
+                              ),
                             ],
                           ),
                         ),
