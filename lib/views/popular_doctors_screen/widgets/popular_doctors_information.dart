@@ -1,3 +1,5 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../resources/colors/app_colors.dart';
@@ -11,6 +13,19 @@ class PopularDoctorsInformation extends StatefulWidget {
 }
 
 class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
+  final List<String> image = [
+    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
+    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
+    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
+    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
+    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
+    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
+    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
+    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
+    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -22,13 +37,36 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
           cacheExtent: 1500,
           itemCount: 10,
           itemBuilder: (context, index) {
-            return const SizedBox(
+            return SizedBox(
                 height: 200,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Card(
                     color: AppColors.doctorInfoCardBackgroundColor,
                     elevation: 8,
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 10),
+                          child: ClipRRect(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(10)),
+                            child: CachedNetworkImage(
+                              imageUrl: image[index],
+                              fit: BoxFit.fill,
+                              width: 100,
+                              height: 95,
+                              placeholder: (context, url) =>
+                                  const LoadingAnimation(),
+                              errorWidget: (context, url, error) => const Icon(
+                                Icons.error,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ));
           },
