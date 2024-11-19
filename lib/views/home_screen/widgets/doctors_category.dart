@@ -3,11 +3,7 @@ import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart'
 import 'package:doctor_consultant_app_template/resources/components/white_loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/cancer_doctors_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/ear_doctors_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/eye_doctors_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/heart_doctors_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category/skin_doctors_screen.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/cancer_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -36,12 +32,20 @@ class DoctorsCategory extends StatelessWidget {
     AppColors.doctorsCategorySkinCardColor,
   ];
 
-  final List<Widget> doctorsCategoryScreens = [
+  /*final List<Widget> doctorsCategoryScreens = [
     const CancerDoctorsScreen(),
     const EarDoctorsScreen(),
     const EyeDoctorsScreen(),
     const HeartDoctorsScreen(),
     const SkinDoctorsScreen(),
+  ];*/
+
+  final List<Widget> doctorsCategoryScreens = [
+    const CancerDoctors(),
+    /*const EarDoctorsScreen(),
+    const EyeDoctorsScreen(),
+    const HeartDoctorsScreen(),
+    const SkinDoctorsScreen(),*/
   ];
 
   @override
@@ -104,12 +108,6 @@ class DoctorsCategory extends StatelessWidget {
                                 color: Colors.white,
                               ),
                             ),
-                            /*Image.asset(
-                              iconPaths[index],
-                              color: AppColors.doctorsCategoryIconsColor,
-                              height: 33,
-                              width: 33,
-                            ),*/
                             const SizedBox(height: 10),
                             Text(
                               categoryName[index],
