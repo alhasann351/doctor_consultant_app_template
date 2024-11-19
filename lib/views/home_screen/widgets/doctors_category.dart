@@ -4,6 +4,7 @@ import 'package:doctor_consultant_app_template/resources/components/white_loadin
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/cancer_doctors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/ear_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,8 +43,8 @@ class DoctorsCategory extends StatelessWidget {
 
   final List<Widget> doctorsCategoryScreens = [
     const CancerDoctors(),
-    /*const EarDoctorsScreen(),
-    const EyeDoctorsScreen(),
+    const EarDoctors(),
+    /*const EyeDoctorsScreen(),
     const HeartDoctorsScreen(),
     const SkinDoctorsScreen(),*/
   ];

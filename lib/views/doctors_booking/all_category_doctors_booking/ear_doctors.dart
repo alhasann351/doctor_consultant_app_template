@@ -10,14 +10,14 @@ import '../../../resources/fonts/app_font_style.dart';
 import '../../../resources/routes/routes_name.dart';
 import '../../../utils/app_utils.dart';
 
-class CancerDoctors extends StatefulWidget {
-  const CancerDoctors({super.key});
+class EarDoctors extends StatefulWidget {
+  const EarDoctors({super.key});
 
   @override
-  State<CancerDoctors> createState() => _CancerDoctorsState();
+  State<EarDoctors> createState() => _EarDoctorsState();
 }
 
-class _CancerDoctorsState extends State<CancerDoctors> {
+class _EarDoctorsState extends State<EarDoctors> {
   final List<String> image = [
     'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
     'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
@@ -129,7 +129,7 @@ class _CancerDoctorsState extends State<CancerDoctors> {
               ),
             ),
           ),
-          BackButtonTitle(titleText: 'cancer_specialist'.tr),
+          BackButtonTitle(titleText: 'ear_specialist'.tr),
           Positioned(
             top: 70,
             bottom: 0,
@@ -214,7 +214,7 @@ class _CancerDoctorsState extends State<CancerDoctors> {
                                   right: 0,
                                   bottom: 0,
                                   child: Text(
-                                    'cancer_specialist'.tr,
+                                    'ear_specialist'.tr,
                                     style: const TextStyle(
                                         fontFamily: AppFontStyle.rubik,
                                         fontSize: 15,
@@ -320,7 +320,7 @@ class _CancerDoctorsState extends State<CancerDoctors> {
                                             'doctorImage': image[index],
                                             'doctorName': doctorName[index],
                                             'doctorSpeciality':
-                                                'cancer_specialist'.tr,
+                                                'ear_specialist'.tr,
                                             'hospitalName': hospitalName[index],
                                           });
                                     },
