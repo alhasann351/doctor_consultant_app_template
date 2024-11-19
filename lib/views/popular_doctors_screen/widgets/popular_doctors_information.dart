@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/components/rounded_button.dart';
 import '../../../resources/fonts/app_font_style.dart';
+import '../../../resources/routes/routes_name.dart';
 import '../../../utils/app_utils.dart';
 
 class PopularDoctorsInformation extends StatefulWidget {
@@ -106,6 +107,19 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
     '11:00_AM_tomorrow'.tr,
     '10:00_AM_tomorrow'.tr,
     '11:00_AM_tomorrow'.tr,
+  ];
+
+  final List<String> hospitalName = [
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
+    'hospital_name'.tr,
   ];
 
   @override
@@ -277,7 +291,16 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                   fontSize: 16,
                                   fontFamily: AppFontStyle.rubik,
                                   color: AppColors.bookNowButtonTextColor),
-                              onTap: () {},
+                              onTap: () {
+                                Get.toNamed(RoutesName.cancerDoctorBooking,
+                                    arguments: {
+                                      'doctorImage': image[index],
+                                      'doctorName': doctorName[index],
+                                      'doctorSpeciality':
+                                          doctorSpeciality[index],
+                                      'hospitalName': hospitalName[index],
+                                    });
+                              },
                             ),
                           ),
                         ),
