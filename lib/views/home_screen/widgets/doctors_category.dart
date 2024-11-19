@@ -6,6 +6,8 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/cancer_doctors.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/ear_doctors.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/eye_doctors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/heart_doctors.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/skin_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,8 +48,8 @@ class DoctorsCategory extends StatelessWidget {
     const CancerDoctors(),
     const EarDoctors(),
     const EyeDoctors(),
-    /*const HeartDoctorsScreen(),
-    const SkinDoctorsScreen(),*/
+    const HeartDoctors(),
+    const SkinDoctors(),
   ];
 
   @override
