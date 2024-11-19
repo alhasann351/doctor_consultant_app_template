@@ -3,11 +3,11 @@ import 'package:doctor_consultant_app_template/resources/components/loading_anim
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/components/rounded_button.dart';
-import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
-import '../../../utils/app_utils.dart';
+import '../../resources/colors/app_colors.dart';
+import '../../resources/components/rounded_button.dart';
+import '../../resources/fonts/app_font_style.dart';
+import '../../resources/routes/routes_name.dart';
+import '../../utils/app_utils.dart';
 
 class PopularDoctorsInformation extends StatefulWidget {
   const PopularDoctorsInformation({super.key});
@@ -292,7 +292,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                   fontFamily: AppFontStyle.rubik,
                                   color: AppColors.bookNowButtonTextColor),
                               onTap: () {
-                                Get.toNamed(RoutesName.cancerDoctorBooking,
+                                Get.toNamed(RoutesName.doctorsBookingScreen,
                                     arguments: {
                                       'doctorImage': image[index],
                                       'doctorName': doctorName[index],

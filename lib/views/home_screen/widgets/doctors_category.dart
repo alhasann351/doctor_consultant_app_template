@@ -36,14 +36,6 @@ class DoctorsCategory extends StatelessWidget {
     AppColors.doctorsCategorySkinCardColor,
   ];
 
-  /*final List<Widget> doctorsCategoryScreens = [
-    const CancerDoctorsScreen(),
-    const EarDoctorsScreen(),
-    const EyeDoctorsScreen(),
-    const HeartDoctorsScreen(),
-    const SkinDoctorsScreen(),
-  ];*/
-
   final List<Widget> doctorsCategoryScreens = [
     const CancerDoctors(),
     const EarDoctors(),

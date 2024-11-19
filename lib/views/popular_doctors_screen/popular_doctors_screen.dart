@@ -1,6 +1,7 @@
-import 'package:doctor_consultant_app_template/views/popular_doctors_screen/widgets/back_button_Popular_doctors_title.dart';
-import 'package:doctor_consultant_app_template/views/popular_doctors_screen/widgets/popular_doctors_information.dart';
+import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
+import 'package:doctor_consultant_app_template/views/popular_doctors_screen/popular_doctors_information.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../resources/colors/app_colors.dart';
 
@@ -31,7 +32,7 @@ class _PopularDoctorsScreenState extends State<PopularDoctorsScreen> {
               ),
             ),
           ),
-          const BackButtonPopularDoctorsTitle(),
+          BackButtonTitle(titleText: 'popular_doctors_title_text'.tr),
           const PopularDoctorsInformation(),
         ],
       ),
