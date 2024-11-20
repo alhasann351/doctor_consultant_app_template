@@ -1,14 +1,13 @@
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/available_times.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/booking_back_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/booking_confirm_button.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
+import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_available_times.dart';
 import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../resources/colors/app_colors.dart';
 import '../../resources/components/card_doctor_information.dart';
-import '../../resources/components/time_select_text.dart';
 import '../../resources/fonts/app_font_style.dart';
 
 class DoctorsBookingScreen extends StatefulWidget {
@@ -66,26 +65,16 @@ class _DoctorsBookingScreenState extends State<DoctorsBookingScreen> {
                       rowChild: const RatingIcons(),
                     ),
                   ),
-                  /*const Padding(
-                    padding: EdgeInsets.only(
-                        top: 10, left: 10, right: 10, bottom: 0),
-                    child: DateSelectText(),
-                  ),*/
                   const Padding(
                     padding: EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 10),
                     child: ShowCalendar(),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(
-                        top: 10, left: 10, right: 10, bottom: 0),
-                    child: TimeSelectText(),
-                  ),
                   Padding(
                     padding: const EdgeInsets.only(
                         top: 10, left: 10, right: 10, bottom: 10),
                     child:
-                        AvailableTimes(), // Return empty widget when ListView is hidden
+                        ShowAvailableTimes(), // Return empty widget when ListView is hidden
                   ),
                   Padding(
                     padding: const EdgeInsets.all(25),
