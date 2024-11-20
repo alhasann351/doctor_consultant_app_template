@@ -36,7 +36,7 @@ class UserProfile extends StatelessWidget {
                       'home_title_text'.tr,
                       style: const TextStyle(
                         fontFamily: AppFontStyle.rubik,
-                        fontSize: 18,
+                        fontSize: 20,
                         color: AppColors.homeTitleTextColor,
                         fontWeight: FontWeight.bold,
                       ),
