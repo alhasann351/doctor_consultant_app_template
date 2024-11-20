@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  //common colors
+  static const Color commonWhiteColor = Colors.white;
+  static const Color commonBlackColor = Colors.white;
+  static const Color commonGreyColor = Colors.grey;
+
   //scaffold background
   static const Color scaffoldBackgroundColor = Colors.white;
+
+  //users profile
+  static const Color usersProfileDetailsTopLeftBackgroundColor =
+      Color(0xFF0EBE7E);
+  static const Color usersProfileDetailsBottomRightBackgroundColor =
+      Color(0xFF07D9AD);
 
   //toast message
   static const Color toastMessageBackgroundColor = Colors.white;
@@ -100,11 +111,6 @@ class AppColors {
   //home screen
   static const Color homeTopBackgroundColor = Colors.lightBlueAccent;
   static const Color homeBottomBackgroundColor = Colors.greenAccent;
-  static const Color homeRectangleTopLeftBackgroundColor = Color(0xFF0EBE7E);
-  static const Color homeRectangleBottomRightBackgroundColor =
-      Color(0xFF07D9AD);
-  static const Color homeUserTitleTextColor = Colors.white;
-  static const Color homeTitleTextColor = Colors.white;
   static const Color searchCursorColor = Colors.black;
   static const Color searchNameTextColor = Colors.black;
   static const Color searchFillColor = Colors.white;
@@ -112,7 +118,6 @@ class AppColors {
   static const Color searchPrefixIconColor = Colors.grey;
   static const Color searchSuffixIconColor = Colors.grey;
   static const Color liveDoctorsTitleTextColor = Colors.black;
-  static const Color userProfileBackgroundColor = Color(0xFF07D9AD);
   static const Color liveDoctorsPlayIconColor = Colors.white;
   static const Color liveDoctorsImageDarkenColor = Colors.black26;
   static const Color cardBackgroundColor = Colors.transparent;

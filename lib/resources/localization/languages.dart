@@ -8,6 +8,10 @@ class Languages extends Translations {
           'splash_text_1': 'Welcome to',
           'splash_text_2': 'Doctor Consultant',
 
+          //users profile
+          'user_name_text': 'Hi Al-Hasan!',
+          'users_title_text': 'Find popular Doctors',
+
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
@@ -66,8 +70,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'Check your email',
 
           //home screen
-          'home_user_title_text': 'Hi Al-Hasan!',
-          'home_title_text': 'Find popular Doctors',
           'search_input_name_hint_text': 'Search',
           'live_doctors_title_text': 'Live Doctors',
           'doctors_category_title_text': 'Doctors Category',
