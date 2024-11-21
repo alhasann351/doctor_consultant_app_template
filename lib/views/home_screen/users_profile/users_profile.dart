@@ -1,4 +1,4 @@
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/user_profile_details.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/user_profile_details.dart';
 import 'package:flutter/material.dart';
 
 import '../../../resources/colors/app_colors.dart';

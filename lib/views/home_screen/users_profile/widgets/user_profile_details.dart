@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/assets/images_icons.dart';
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/fonts/app_font_style.dart';
+import '../../../../resources/assets/images_icons.dart';
+import '../../../../resources/colors/app_colors.dart';
+import '../../../../resources/fonts/app_font_style.dart';
 
 class UserProfileDetails extends StatelessWidget {
   const UserProfileDetails({super.key});

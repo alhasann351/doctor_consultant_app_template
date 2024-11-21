@@ -12,6 +12,9 @@ class Languages extends Translations {
           'user_name_text': 'Hi Al-Hasan!',
           'users_title_text': 'Find popular Doctors',
 
+          //search input
+          'search_input_hint_text': 'Search',
+
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
@@ -70,7 +73,7 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'Check your email',
 
           //home screen
-          'search_input_name_hint_text': 'Search',
+
           'live_doctors_title_text': 'Live Doctors',
           'doctors_category_title_text': 'Doctors Category',
           'cancer': 'Cancer',
@@ -127,6 +130,13 @@ class Languages extends Translations {
           //splash screen
           'splash_text_1': 'স্বাগতম',
           'splash_text_2': 'ডাক্তার পরামর্শদাতা',
+
+          //users profile
+          'user_name_text': 'হাই আল-হাসান!',
+          'users_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
+
+          //search input
+          'search_input_hint_text': 'অনুসন্ধান করুন',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -186,9 +196,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
 
           //home screen
-          'home_user_title_text': 'হাই আল-হাসান!',
-          'home_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
-          'search_input_name_hint_text': 'অনুসন্ধান করুন',
           'live_doctors_title_text': 'লাইভ ডাক্তার',
           'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
           'cancer': 'ক্যান্সার',
@@ -245,6 +252,13 @@ class Languages extends Translations {
           //splash screen
           'splash_text_1': 'आपका स्वागत है',
           'splash_text_2': 'डॉक्टर सलाहकार',
+
+          //users profile
+          'user_name_text': 'हाय अल-हसन!',
+          'users_title_text': 'लोकप्रिय डॉक्टर खोजें',
+
+          //search input
+          'search_input_hint_text': 'खोज',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
@@ -305,9 +319,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
 
           //home screen
-          'home_user_title_text': 'हाय अल-हसन!',
-          'home_title_text': 'लोकप्रिय डॉक्टर खोजें',
-          'search_input_name_hint_text': 'खोज',
           'live_doctors_title_text': 'लाइव डॉक्टर्स',
           'doctors_category_title_text': 'डॉक्टर श्रेणी',
           'cancer': 'कैंसर',
