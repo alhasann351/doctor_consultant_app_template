@@ -14,6 +14,9 @@ class Languages extends Translations {
 
           //search input
           'search_input_hint_text': 'Search',
+          'search_input_title_text': 'Search',
+          'search_input_description_text':
+              'Hello, Al-Hasan. What would you like to search?',
 
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
@@ -137,6 +140,9 @@ class Languages extends Translations {
 
           //search input
           'search_input_hint_text': 'অনুসন্ধান করুন',
+          'search_input_title_text': 'অনুসন্ধান করুন',
+          'search_input_description_text':
+              'হ্যালো, আল-হাসান। আপনি কি অনুসন্ধান করতে চান?',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -259,6 +265,9 @@ class Languages extends Translations {
 
           //search input
           'search_input_hint_text': 'खोज',
+          'search_input_title_text': 'खोज',
+          'search_input_description_text':
+              'नमस्ते, अल-हसन। आप क्या खोजना चाहेंगे?',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
