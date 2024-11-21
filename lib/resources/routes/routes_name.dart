@@ -6,6 +6,7 @@ class RoutesName {
   static const String loginScreen = '/login_screen';
   static const String forgotPasswordScreen = '/forgot_password_screen';
   static const String homeScreen = '/home_screen';
+  static const String searchInputScreen = '/search_input_screen';
   static const String liveDoctorsScreen = '/live_doctors_screen';
   static const String doctorsCategoryScreens = '/doctors_category_screens';
   static const String paymentScreen = '/doctor_booking_confirm_screen';
