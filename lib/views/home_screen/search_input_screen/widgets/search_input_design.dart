@@ -16,8 +16,6 @@ class SearchInputDesign extends StatelessWidget {
         onTap: () {
           Get.toNamed(RoutesName.searchInputScreen);
         },
-        /*cursorColor: AppColors.commonBlackColor,
-        keyboardType: TextInputType.text,*/
         showCursor: false,
         keyboardType: TextInputType.none,
         style: const TextStyle(
@@ -40,14 +38,6 @@ class SearchInputDesign extends StatelessWidget {
               Icons.search_outlined,
               color: AppColors.commonGreyColor,
               size: 30,
-            ),
-          ),
-          suffixIcon: const Padding(
-            padding: EdgeInsets.only(right: 8.0),
-            child: Icon(
-              Icons.cancel_outlined,
-              color: AppColors.commonGreyColor,
-              size: 25,
             ),
           ),
           enabledBorder: OutlineInputBorder(

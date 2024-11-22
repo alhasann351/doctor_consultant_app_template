@@ -36,14 +36,6 @@ class SearchInput extends StatelessWidget {
               size: 30,
             ),
           ),
-          suffixIcon: const Padding(
-            padding: EdgeInsets.only(right: 8.0),
-            child: Icon(
-              Icons.cancel_outlined,
-              color: AppColors.commonGreyColor,
-              size: 25,
-            ),
-          ),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(style: BorderStyle.none),
             borderRadius: BorderRadius.circular(10),

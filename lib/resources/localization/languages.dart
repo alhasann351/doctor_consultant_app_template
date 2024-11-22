@@ -17,6 +17,15 @@ class Languages extends Translations {
           'search_input_title_text': 'Search',
           'search_input_description_text':
               'Hello, Al-Hasan. What would you like to search?',
+          'search_input_cancer': 'Cancer',
+          'search_input_ear': 'Ear',
+          'search_input_eye': 'Eye',
+          'search_input_heart': 'Heart',
+          'search_input_skin': 'Skin',
+          'search_input_specialist': 'Specialist',
+          'search_input_popular': 'Popular',
+          'search_input_experience': 'Experience',
+          'search_input_doctors': 'Doctors',
 
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
@@ -143,6 +152,15 @@ class Languages extends Translations {
           'search_input_title_text': 'অনুসন্ধান করুন',
           'search_input_description_text':
               'হ্যালো, আল-হাসান। আপনি কি অনুসন্ধান করতে চান?',
+          'search_input_cancer': 'ক্যান্সার',
+          'search_input_ear': 'কান',
+          'search_input_eye': 'চোখ',
+          'search_input_heart': 'হার্ট',
+          'search_input_skin': 'স্কিন',
+          'search_input_specialist': 'বিশেষজ্ঞ',
+          'search_input_popular': 'জনপ্রিয়',
+          'search_input_experience': 'অভিজ্ঞতা',
+          'search_input_doctors': 'ডাক্তার',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -268,6 +286,15 @@ class Languages extends Translations {
           'search_input_title_text': 'खोज',
           'search_input_description_text':
               'नमस्ते, अल-हसन। आप क्या खोजना चाहेंगे?',
+          'search_input_cancer': 'कैंसर',
+          'search_input_ear': 'कान',
+          'search_input_eye': 'आंख',
+          'search_input_heart': 'हृदय',
+          'search_input_skin': 'त्वचा',
+          'search_input_specialist': 'विशेषज्ञ',
+          'search_input_popular': 'लोकप्रिय',
+          'search_input_experience': 'अनुभव',
+          'search_input_doctors': 'डॉक्टर',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',

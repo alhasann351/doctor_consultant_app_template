@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
             top: 160,
             right: 0,
             left: 0,
-            bottom: 0,
+            bottom: 10,
             child: SafeArea(
               child: ListView(
                 scrollDirection: Axis.vertical,
