@@ -17,6 +17,7 @@ class Languages extends Translations {
           'search_input_title_text': 'Search',
           'search_input_description_text':
               'Hello, Al-Hasan. What would you like to search?',
+          'popularSearchTitleText': 'Popularity',
           'search_input_cancer': 'Cancer',
           'search_input_ear': 'Ear',
           'search_input_eye': 'Eye',
@@ -152,6 +153,7 @@ class Languages extends Translations {
           'search_input_title_text': 'অনুসন্ধান করুন',
           'search_input_description_text':
               'হ্যালো, আল-হাসান। আপনি কি অনুসন্ধান করতে চান?',
+          'popularSearchTitleText': 'জনপ্রিয়তা',
           'search_input_cancer': 'ক্যান্সার',
           'search_input_ear': 'কান',
           'search_input_eye': 'চোখ',
@@ -286,6 +288,7 @@ class Languages extends Translations {
           'search_input_title_text': 'खोज',
           'search_input_description_text':
               'नमस्ते, अल-हसन। आप क्या खोजना चाहेंगे?',
+          'popularSearchTitleText': 'लोकप्रियता',
           'search_input_cancer': 'कैंसर',
           'search_input_ear': 'कान',
           'search_input_eye': 'आंख',
