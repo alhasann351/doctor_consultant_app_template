@@ -35,69 +35,17 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
     'elisa'.tr,
   ];
 
-  final List<String> hospitalName = [
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-  ];
-
-  final List<String> doctorExperience = [
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-  ];
-
-  final List<String> goodDoctor = [
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '95%_good'.tr,
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '85%_good'.tr,
-    '95%_good'.tr,
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '85%_good'.tr,
-  ];
-
-  final List<String> seePatients = [
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-  ];
-
-  final List<String> nextAvailableTime = [
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
+  final List<String> doctorSpeciality = [
+    'skin_specialist'.tr,
+    'heart_specialist'.tr,
+    'eye_specialist'.tr,
+    'ear_specialist'.tr,
+    'cancer_specialist'.tr,
+    'cancer_specialist'.tr,
+    'ear_specialist'.tr,
+    'eye_specialist'.tr,
+    'heart_specialist'.tr,
+    'skin_specialist'.tr,
   ];
 
   @override
@@ -143,6 +91,18 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: AppColors.commonBlackColor,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          top: 0, bottom: 0, left: 5, right: 5),
+                      child: Text(
+                        doctorSpeciality[index],
+                        style: const TextStyle(
+                          fontFamily: AppFontStyle.rubik,
+                          fontSize: 15,
+                          color: AppColors.commonGreyColor,
                         ),
                       ),
                     ),
