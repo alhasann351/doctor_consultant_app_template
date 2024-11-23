@@ -102,7 +102,7 @@ class PopularDoctors extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5),
                   child: SizedBox(
-                    width: 160,
+                    width: 170,
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 20),
                       child: Card(
@@ -131,7 +131,7 @@ class PopularDoctors extends StatelessWidget {
                                 doctorName[index],
                                 style: const TextStyle(
                                   fontFamily: AppFontStyle.rubik,
-                                  fontSize: 15,
+                                  fontSize: 13,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
@@ -144,7 +144,7 @@ class PopularDoctors extends StatelessWidget {
                                 doctorSpeciality[index],
                                 style: const TextStyle(
                                   fontFamily: AppFontStyle.rubik,
-                                  fontSize: 14,
+                                  fontSize: 13,
                                   color: Colors.grey,
                                 ),
                               ),

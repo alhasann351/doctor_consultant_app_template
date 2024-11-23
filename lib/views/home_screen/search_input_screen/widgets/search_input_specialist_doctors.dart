@@ -11,42 +11,42 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
   SearchInputSpecialistDoctors({super.key});
 
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1a3UgEUM9CUmYy0S7NBi11HRjG6R4WuWN',
+    'https://drive.google.com/uc?export=view&id=1r7LBg33lcRZZ1T2O6VfnjNx-U31xSrbC',
+    'https://drive.google.com/uc?export=view&id=1z9NAlCrg3mmh-6IHgHtFfh2Se-feDaya',
+    'https://drive.google.com/uc?export=view&id=1_FoaYqsOYIKjvFSJkq1MO3KxgHC822HM',
+    'https://drive.google.com/uc?export=view&id=18p1_vSzT9ASdj8-DgQk73voEx3FWQcvQ',
+    'https://drive.google.com/uc?export=view&id=1sHCuDu8eikh1oh9VGffjtITgCQHL3aq8',
+    'https://drive.google.com/uc?export=view&id=1X8_VB2EUFMKKQLPRXD4bi6B2KEgB1SD0',
+    'https://drive.google.com/uc?export=view&id=1THoNiWWkzMOG2W3qf-sFm3mQF3-o-yDZ',
+    'https://drive.google.com/uc?export=view&id=1eTsGX651Yn-cpSkNDXSjDnhhBSC4UOEP',
+    'https://drive.google.com/uc?export=view&id=1G3agoGVMS29h86XnyYKfX2Z7vrRf_NAL',
   ];
 
   final List<String> doctorName = [
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'elisa'.tr,
+    'Dr. William Johnson',
+    'Dr. Sophia Martinez',
+    'Dr. James Anderson',
+    'Dr. Emma Thompson',
+    'Dr. Michael Roberts',
+    'Dr. Isabella Perez',
+    'Dr. Christopher Lee',
+    'Dr. Olivia Carter',
+    'Dr. Daniel Harris',
+    'Dr. Ava Wilson',
   ];
 
   final List<String> doctorSpeciality = [
-    'skin_specialist'.tr,
-    'heart_specialist'.tr,
-    'eye_specialist'.tr,
-    'ear_specialist'.tr,
-    'cancer_specialist'.tr,
-    'cancer_specialist'.tr,
-    'ear_specialist'.tr,
-    'eye_specialist'.tr,
-    'heart_specialist'.tr,
-    'skin_specialist'.tr,
+    'Skin specialist',
+    'Heart specialist',
+    'Eye specialist',
+    'Ear specialist',
+    'Cancer specialist',
+    'Eye specialist',
+    'Cancer specialist',
+    'Ear specialist',
+    'Heart specialist',
+    'Skin specialist',
   ];
 
   @override
@@ -79,7 +79,7 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 5.0),
                 child: SizedBox(
-                  width: 160,
+                  width: 170,
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: Card(
@@ -108,7 +108,7 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                               doctorName[index],
                               style: const TextStyle(
                                 fontFamily: AppFontStyle.rubik,
-                                fontSize: 15,
+                                fontSize: 13,
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.commonBlackColor,
                               ),
@@ -121,7 +121,7 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                               doctorSpeciality[index],
                               style: const TextStyle(
                                 fontFamily: AppFontStyle.rubik,
-                                fontSize: 14,
+                                fontSize: 13,
                                 color: AppColors.commonGreyColor,
                               ),
                             ),
