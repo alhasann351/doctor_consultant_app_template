@@ -4,6 +4,8 @@ import 'package:doctor_consultant_app_template/resources/components/loading_anim
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../resources/fonts/app_font_style.dart';
+
 class SearchInputSpecialistDoctors extends StatelessWidget {
   SearchInputSpecialistDoctors({super.key});
 
@@ -107,7 +109,7 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
         cacheExtent: 1500,
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        itemCount: image.length,
+        itemCount: doctorName.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5.0),
@@ -117,16 +119,34 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                 elevation: 10,
                 color: AppColors.commonWhiteColor,
                 clipBehavior: Clip.antiAlias,
-                child: CachedNetworkImage(
-                  fit: BoxFit.fill,
-                  height: 200,
-                  width: double.infinity,
-                  imageUrl: image[index],
-                  placeholder: (context, url) => const LoadingAnimation(),
-                  errorWidget: (context, url, error) => const Icon(
-                    Icons.error,
-                    color: AppColors.commonGreyColor,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.fill,
+                      height: 200,
+                      width: double.infinity,
+                      imageUrl: image[index],
+                      placeholder: (context, url) => const LoadingAnimation(),
+                      errorWidget: (context, url, error) => const Icon(
+                        Icons.error,
+                        color: AppColors.commonGreyColor,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          top: 10, bottom: 0, left: 5, right: 5),
+                      child: Text(
+                        doctorName[index],
+                        style: const TextStyle(
+                          fontFamily: AppFontStyle.rubik,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.commonBlackColor,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
