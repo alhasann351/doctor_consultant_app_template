@@ -17,7 +17,7 @@ class Languages extends Translations {
           'search_input_title_text': 'Search',
           'search_input_description_text':
               'Hello, Al-Hasan. What would you like to search?',
-          'popularSearchTitleText': 'Popularity',
+          'search_input_popular_search_title_text': 'Popularity',
           'search_input_cancer': 'Cancer',
           'search_input_ear': 'Ear',
           'search_input_eye': 'Eye',
@@ -27,6 +27,7 @@ class Languages extends Translations {
           'search_input_popular': 'Popular',
           'search_input_experience': 'Experience',
           'search_input_doctors': 'Doctors',
+          'search_input_specialist_Title_Text': 'Specialist',
 
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
@@ -153,7 +154,7 @@ class Languages extends Translations {
           'search_input_title_text': 'অনুসন্ধান করুন',
           'search_input_description_text':
               'হ্যালো, আল-হাসান। আপনি কি অনুসন্ধান করতে চান?',
-          'popularSearchTitleText': 'জনপ্রিয়তা',
+          'search_input_popular_search_title_text': 'জনপ্রিয়তা',
           'search_input_cancer': 'ক্যান্সার',
           'search_input_ear': 'কান',
           'search_input_eye': 'চোখ',
@@ -163,6 +164,7 @@ class Languages extends Translations {
           'search_input_popular': 'জনপ্রিয়',
           'search_input_experience': 'অভিজ্ঞতা',
           'search_input_doctors': 'ডাক্তার',
+          'search_input_specialist_Title_Text': 'বিশেষজ্ঞ',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -288,7 +290,7 @@ class Languages extends Translations {
           'search_input_title_text': 'खोज',
           'search_input_description_text':
               'नमस्ते, अल-हसन। आप क्या खोजना चाहेंगे?',
-          'popularSearchTitleText': 'लोकप्रियता',
+          'search_input_popular_search_title_text': 'लोकप्रियता',
           'search_input_cancer': 'कैंसर',
           'search_input_ear': 'कान',
           'search_input_eye': 'आंख',
@@ -298,6 +300,7 @@ class Languages extends Translations {
           'search_input_popular': 'लोकप्रिय',
           'search_input_experience': 'अनुभव',
           'search_input_doctors': 'डॉक्टर',
+          'search_input_specialist_Title_Text': 'विशेषज्ञ',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',

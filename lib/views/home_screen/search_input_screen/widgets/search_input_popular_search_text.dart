@@ -28,7 +28,7 @@ class SearchInputPopularSearchText extends StatelessWidget {
           padding:
               const EdgeInsets.only(top: 20, bottom: 10, left: 10, right: 10),
           child: Text(
-            'popularSearchTitleText'.tr,
+            'search_input_popular_search_title_text'.tr,
             style: const TextStyle(
                 fontFamily: AppFontStyle.rubik,
                 fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class SearchInputPopularSearchText extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 10, right: 10),
           child: SizedBox(
-            height: 200,
+            height: 180,
             child: GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

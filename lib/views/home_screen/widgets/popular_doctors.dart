@@ -91,7 +91,7 @@ class PopularDoctors extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 10),
           child: SizedBox(
-            height: 300,
+            height: 260,
             width: double.infinity,
             child: ListView.builder(
               cacheExtent: 1500,
@@ -102,57 +102,60 @@ class PopularDoctors extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5),
                   child: SizedBox(
-                    width: 200,
-                    child: Card(
-                      elevation: 10,
-                      color: Colors.white,
-                      clipBehavior: Clip.antiAlias,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          CachedNetworkImage(
-                            height: 200,
-                            width: double.infinity,
-                            imageUrl: image[index],
-                            fit: BoxFit.fill,
-                            placeholder: (context, url) =>
-                                const LoadingAnimation(),
-                            errorWidget: (context, url, error) => const Icon(
-                              Icons.error,
-                              color: Colors.grey,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                top: 10, bottom: 0, left: 5, right: 5),
-                            child: Text(
-                              doctorName[index],
-                              style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                top: 0, bottom: 0, left: 5, right: 5),
-                            child: Text(
-                              doctorSpeciality[index],
-                              style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 15,
+                    width: 160,
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Card(
+                        elevation: 10,
+                        color: Colors.white,
+                        clipBehavior: Clip.antiAlias,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            CachedNetworkImage(
+                              height: 150,
+                              width: double.infinity,
+                              imageUrl: image[index],
+                              fit: BoxFit.fill,
+                              placeholder: (context, url) =>
+                                  const LoadingAnimation(),
+                              errorWidget: (context, url, error) => const Icon(
+                                Icons.error,
                                 color: Colors.grey,
                               ),
                             ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(
-                                top: 0, bottom: 0, left: 5, right: 5),
-                            child: RatingIcons(),
-                          ),
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 10, bottom: 0, left: 5, right: 5),
+                              child: Text(
+                                doctorName[index],
+                                style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 0, bottom: 0, left: 5, right: 5),
+                              child: Text(
+                                doctorSpeciality[index],
+                                style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 14,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.only(
+                                  top: 0, bottom: 0, left: 5, right: 5),
+                              child: RatingIcons(),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

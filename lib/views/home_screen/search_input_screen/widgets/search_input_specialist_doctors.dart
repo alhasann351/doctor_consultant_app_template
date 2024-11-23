@@ -51,74 +51,96 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 300,
-      width: double.infinity,
-      child: ListView.builder(
-        cacheExtent: 1500,
-        scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
-        itemCount: doctorName.length,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5.0),
-            child: SizedBox(
-              width: 200,
-              child: Card(
-                elevation: 10,
-                color: AppColors.commonWhiteColor,
-                clipBehavior: Clip.antiAlias,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    CachedNetworkImage(
-                      fit: BoxFit.fill,
-                      height: 200,
-                      width: double.infinity,
-                      imageUrl: image[index],
-                      placeholder: (context, url) => const LoadingAnimation(),
-                      errorWidget: (context, url, error) => const Icon(
-                        Icons.error,
-                        color: AppColors.commonGreyColor,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding:
+              const EdgeInsets.only(top: 0, bottom: 10, left: 10, right: 10),
+          child: Text(
+            'search_input_specialist_Title_Text'.tr,
+            style: const TextStyle(
+                fontFamily: AppFontStyle.rubik,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: AppColors.commonBlackColor),
+          ),
+        ),
+        SizedBox(
+          height: 260,
+          width: double.infinity,
+          child: ListView.builder(
+            cacheExtent: 1500,
+            scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
+            itemCount: doctorName.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                child: SizedBox(
+                  width: 160,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Card(
+                      elevation: 10,
+                      color: AppColors.commonWhiteColor,
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          CachedNetworkImage(
+                            fit: BoxFit.fill,
+                            height: 150,
+                            width: double.infinity,
+                            imageUrl: image[index],
+                            placeholder: (context, url) =>
+                                const LoadingAnimation(),
+                            errorWidget: (context, url, error) => const Icon(
+                              Icons.error,
+                              color: AppColors.commonGreyColor,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 10, bottom: 0, left: 5, right: 5),
+                            child: Text(
+                              doctorName[index],
+                              style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.commonBlackColor,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 0, bottom: 0, left: 5, right: 5),
+                            child: Text(
+                              doctorSpeciality[index],
+                              style: const TextStyle(
+                                fontFamily: AppFontStyle.rubik,
+                                fontSize: 14,
+                                color: AppColors.commonGreyColor,
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.only(
+                                top: 0, bottom: 0, left: 5, right: 5),
+                            child: RatingIcons(),
+                          ),
+                        ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10, bottom: 0, left: 5, right: 5),
-                      child: Text(
-                        doctorName[index],
-                        style: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.commonBlackColor,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 0, bottom: 0, left: 5, right: 5),
-                      child: Text(
-                        doctorSpeciality[index],
-                        style: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontSize: 15,
-                          color: AppColors.commonGreyColor,
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding:
-                          EdgeInsets.only(top: 0, bottom: 0, left: 5, right: 5),
-                      child: RatingIcons(),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-          );
-        },
-      ),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }
