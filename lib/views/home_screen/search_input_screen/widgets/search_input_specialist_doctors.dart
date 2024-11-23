@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../resources/fonts/app_font_style.dart';
+import '../../../doctors_booking/widgets/rating_icons.dart';
 
 class SearchInputSpecialistDoctors extends StatelessWidget {
   SearchInputSpecialistDoctors({super.key});
@@ -105,6 +106,11 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                           color: AppColors.commonGreyColor,
                         ),
                       ),
+                    ),
+                    const Padding(
+                      padding:
+                          EdgeInsets.only(top: 0, bottom: 0, left: 5, right: 5),
+                      child: RatingIcons(),
                     ),
                   ],
                 ),
