@@ -3,8 +3,8 @@ import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.da
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class PopularSearchText extends StatelessWidget {
-  PopularSearchText({super.key});
+class SearchInputPopularSearchText extends StatelessWidget {
+  SearchInputPopularSearchText({super.key});
 
   final List<String> popularSearchText = [
     'search_input_cancer'.tr,

@@ -1,8 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
 import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/popular_search_text.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/search_input.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/search_input_description_text.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/search_input_popular_search_text.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/search_input_specialist_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +30,8 @@ class SearchInputScreen extends StatelessWidget {
                 children: [
                   const SearchInputDescriptionText(),
                   const SearchInput(),
-                  PopularSearchText(),
+                  SearchInputPopularSearchText(),
+                  SearchInputSpecialistDoctors(),
                 ],
               ),
             ),
