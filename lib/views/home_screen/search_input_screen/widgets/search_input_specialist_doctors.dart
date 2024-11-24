@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -82,56 +83,67 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                   width: 170,
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 20),
-                    child: Card(
-                      elevation: 10,
-                      color: AppColors.commonWhiteColor,
-                      clipBehavior: Clip.antiAlias,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          CachedNetworkImage(
-                            fit: BoxFit.fill,
-                            height: 150,
-                            width: double.infinity,
-                            imageUrl: image[index],
-                            placeholder: (context, url) =>
-                                const LoadingAnimation(),
-                            errorWidget: (context, url, error) => const Icon(
-                              Icons.error,
-                              color: AppColors.commonGreyColor,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                top: 10, bottom: 0, left: 5, right: 5),
-                            child: Text(
-                              doctorName[index],
-                              style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                                color: AppColors.commonBlackColor,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                top: 0, bottom: 0, left: 5, right: 5),
-                            child: Text(
-                              doctorSpeciality[index],
-                              style: const TextStyle(
-                                fontFamily: AppFontStyle.rubik,
-                                fontSize: 13,
+                    child: GestureDetector(
+                      onTap: () {
+                        Get.toNamed(RoutesName.doctorsBookingScreen,
+                            arguments: {
+                              'doctorImage': image[index],
+                              'doctorName': doctorName[index],
+                              'doctorSpeciality': doctorSpeciality[index],
+                              'hospitalName': 'search_input_hospital_name'.tr,
+                            });
+                      },
+                      child: Card(
+                        elevation: 10,
+                        color: AppColors.commonWhiteColor,
+                        clipBehavior: Clip.antiAlias,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            CachedNetworkImage(
+                              fit: BoxFit.fill,
+                              height: 150,
+                              width: double.infinity,
+                              imageUrl: image[index],
+                              placeholder: (context, url) =>
+                                  const LoadingAnimation(),
+                              errorWidget: (context, url, error) => const Icon(
+                                Icons.error,
                                 color: AppColors.commonGreyColor,
                               ),
                             ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(
-                                top: 0, bottom: 0, left: 5, right: 5),
-                            child: RatingIcons(),
-                          ),
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 10, bottom: 0, left: 5, right: 5),
+                              child: Text(
+                                doctorName[index],
+                                style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.commonBlackColor,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 0, bottom: 0, left: 5, right: 5),
+                              child: Text(
+                                doctorSpeciality[index],
+                                style: const TextStyle(
+                                  fontFamily: AppFontStyle.rubik,
+                                  fontSize: 13,
+                                  color: AppColors.commonGreyColor,
+                                ),
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.only(
+                                  top: 0, bottom: 0, left: 5, right: 5),
+                              child: RatingIcons(),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

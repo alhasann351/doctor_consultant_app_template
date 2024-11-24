@@ -28,6 +28,7 @@ class Languages extends Translations {
           'search_input_experience': 'Experience',
           'search_input_doctors': 'Doctors',
           'search_input_specialist_Title_Text': 'Specialist',
+          'search_input_hospital_name': 'Life Care Medical Center',
 
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
@@ -165,6 +166,7 @@ class Languages extends Translations {
           'search_input_experience': 'অভিজ্ঞতা',
           'search_input_doctors': 'ডাক্তার',
           'search_input_specialist_Title_Text': 'বিশেষজ্ঞ',
+          'search_input_hospital_name': 'লাইফ কেয়ার মেডিকেল সেন্টার',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -301,6 +303,7 @@ class Languages extends Translations {
           'search_input_experience': 'अनुभव',
           'search_input_doctors': 'डॉक्टर',
           'search_input_specialist_Title_Text': 'विशेषज्ञ',
+          'search_input_hospital_name': 'लाइफ केयर मेडिकल सेंटर',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
