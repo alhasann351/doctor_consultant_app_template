@@ -23,6 +23,19 @@ class LiveDoctorsDesign extends StatelessWidget {
     'https://drive.google.com/uc?export=view&id=1qI2lrwyhXYUMKOsgmnXPnAjg4KmXpYDY',
   ];
 
+  final List<String> liveDoctorsNames = [
+    'Dr.Jonathan Evans',
+    'Dr.Charlotte Davies',
+    'Dr.Henry Brooks',
+    'Dr.Amelia Hughes',
+    'Dr.Samuel Clarke',
+    'Dr.Victoria Scott',
+    'Dr.Andrew Collins',
+    'Dr.Hannah Mitchell',
+    'Dr.Philip Wright',
+    'Dr. Rebecca Adams',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -56,6 +69,7 @@ class LiveDoctorsDesign extends StatelessWidget {
                   onTap: () {
                     Get.toNamed(RoutesName.liveDoctorsScreen, arguments: {
                       'image': imagePaths[index],
+                      'liveDoctorsNames': liveDoctorsNames[index],
                     });
                   },
                   child: Stack(

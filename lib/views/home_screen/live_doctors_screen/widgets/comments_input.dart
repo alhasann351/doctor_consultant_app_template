@@ -2,8 +2,8 @@ import 'package:doctor_consultant_app_template/views_models/controllers/comment_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/fonts/app_font_style.dart';
+import '../../../../resources/colors/app_colors.dart';
+import '../../../../resources/fonts/app_font_style.dart';
 
 class CommentsInput extends StatefulWidget {
   const CommentsInput({super.key});
@@ -48,7 +48,7 @@ class _CommentsInputState extends State<CommentsInput> {
           Container(
             height: 300,
             decoration: BoxDecoration(
-                color: AppColors.liveDoctorsImageDarkenColor.withOpacity(0.2),
+                color: AppColors.liveDoctorsCommentBoxColor,
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(10)),
             child: Obx(
@@ -61,8 +61,7 @@ class _CommentsInputState extends State<CommentsInput> {
                   return ListTile(
                     leading: CircleAvatar(
                       foregroundImage: AssetImage(comment.image),
-                      backgroundColor:
-                          AppColors.commentUserProfileBackgroundColor,
+                      backgroundColor: AppColors.commonWhiteColor,
                     ),
                     title: Text(
                       comment.name,
@@ -70,7 +69,7 @@ class _CommentsInputState extends State<CommentsInput> {
                         fontFamily: AppFontStyle.rubik,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: AppColors.commentUserNameColor,
+                        color: AppColors.commonWhiteColor,
                       ),
                     ),
                     subtitle: Text(
@@ -78,7 +77,7 @@ class _CommentsInputState extends State<CommentsInput> {
                       style: const TextStyle(
                         fontFamily: AppFontStyle.rubik,
                         fontSize: 16,
-                        color: AppColors.commentColor,
+                        color: AppColors.commonWhiteColor,
                       ),
                     ),
                   );
@@ -90,28 +89,28 @@ class _CommentsInputState extends State<CommentsInput> {
             height: 10,
           ),
           TextFormField(
-            cursorColor: AppColors.commentsInputCursorColor,
+            cursorColor: AppColors.commonBlackColor,
             keyboardType: TextInputType.text,
             controller: commentController,
             style: const TextStyle(
               fontFamily: AppFontStyle.rubik,
               fontSize: 18,
-              color: AppColors.commentsInputTextColor,
+              color: AppColors.commonBlackColor,
             ),
             decoration: InputDecoration(
               filled: true,
-              fillColor: AppColors.commentsInputFillColor,
-              hintText: 'comments_input_hint_text'.tr,
+              fillColor: AppColors.commonWhiteColor,
+              hintText: 'live_doctors_comments_input_hint_text'.tr,
               hintStyle: const TextStyle(
                 fontFamily: AppFontStyle.rubik,
                 fontSize: 18,
-                color: AppColors.commentsInputHintTextColor,
+                color: AppColors.commonGreyColor,
               ),
               prefixIcon: const Padding(
                 padding: EdgeInsets.only(left: 8.0),
                 child: Icon(
                   Icons.comment_outlined,
-                  color: AppColors.commentsInputPrefixIconColor,
+                  color: AppColors.liveDoctorsCommentsInputPrefixIconColor,
                   size: 30,
                 ),
               ),
@@ -127,7 +126,7 @@ class _CommentsInputState extends State<CommentsInput> {
                   },
                   child: const Icon(
                     Icons.send_outlined,
-                    color: AppColors.commentsInputSuffixIconColor,
+                    color: AppColors.liveDoctorsCommentsInputSuffixIconColor,
                     size: 25,
                   ),
                 ),

@@ -19,6 +19,12 @@ class AppColors {
   static Color liveDoctorsCardBackgroundColor =
       Colors.transparent.withOpacity(1);
   static const Color liveDoctorsImageDarkenColor = Colors.black26;
+  static Color liveDoctorsNameBackgroundColor = Colors.black26.withOpacity(0.2);
+  static Color liveDoctorsCommentBoxColor = Colors.black26.withOpacity(0.2);
+  static const Color liveDoctorsCommentsInputPrefixIconColor =
+      Colors.greenAccent;
+  static const Color liveDoctorsCommentsInputSuffixIconColor =
+      Colors.lightBlueAccent;
 
   //toast message
   static const Color toastMessageBackgroundColor = Colors.white;
@@ -129,16 +135,6 @@ class AppColors {
   //live doctors screen
   static const Color backButtonCardBackgroundColor = Colors.white;
   static const Color backButtonIconColor = Colors.black;
-  static const Color doctorProfileCircleAvatarBackgroundColor = Colors.white;
-  static const Color commentsInputCursorColor = Colors.black;
-  static const Color commentsInputTextColor = Colors.black;
-  static const Color commentsInputFillColor = Colors.white;
-  static const Color commentsInputHintTextColor = Colors.grey;
-  static const Color commentsInputPrefixIconColor = Colors.greenAccent;
-  static const Color commentsInputSuffixIconColor = Colors.lightBlueAccent;
-  static const Color commentUserProfileBackgroundColor = Colors.white;
-  static const Color commentUserNameColor = Colors.white;
-  static const Color commentColor = Colors.white;
 
   //doctors category screen
   static const Color cancerScreenTopBackgroundColor = Colors.lightBlueAccent;

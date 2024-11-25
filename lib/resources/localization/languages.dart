@@ -32,6 +32,7 @@ class Languages extends Translations {
 
           //live doctors
           'live_doctors_title_text': 'Live Doctors',
+          'live_doctors_comments_input_hint_text': 'Add a comment',
 
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
@@ -98,7 +99,7 @@ class Languages extends Translations {
           'eye': 'Eye',
           'heart': 'Heart',
           'skin': 'Skin',
-          'comments_input_hint_text': 'Add a comment',
+
           'popular_doctors_title_text': 'Popular Doctors',
           'see_all_text': 'See all',
 
@@ -172,6 +173,7 @@ class Languages extends Translations {
 
           //live doctors
           'live_doctors_title_text': 'লাইভ ডাক্তার',
+          'live_doctors_comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -238,7 +240,7 @@ class Languages extends Translations {
           'eye': 'চোখ',
           'heart': 'হার্ট',
           'skin': 'ত্বক',
-          'comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
+
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
           'see_all_text': 'সব দেখুন',
 
@@ -312,6 +314,7 @@ class Languages extends Translations {
 
           //live doctors
           'live_doctors_title_text': 'लाइव डॉक्टर्स',
+          'live_doctors_comments_input_hint_text': 'एक टिप्पणी जोड़ने',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
@@ -379,7 +382,7 @@ class Languages extends Translations {
           'eye': 'आँख',
           'heart': 'हार्ट',
           'skin': 'त्वचा',
-          'comments_input_hint_text': 'एक टिप्पणी जोड़ने',
+
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
           'see_all_text': 'सभी देखें',
 
