@@ -3,7 +3,6 @@ import 'package:doctor_consultant_app_template/views/doctors_booking/payment_scr
 import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/search_input_screen.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
 import 'package:doctor_consultant_app_template/views/popular_doctors_screen/popular_doctors_screen.dart';
@@ -13,7 +12,8 @@ import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen
 import 'package:get/get.dart';
 
 import '../../views/doctors_booking/doctors_booking_screen.dart';
-import '../../views/home_screen/live_doctors_screen/live_doctors_screen.dart';
+import '../../views/home_screen/live_doctors/live_doctors_screen.dart';
+import '../../views/home_screen/search_input/search_input_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [

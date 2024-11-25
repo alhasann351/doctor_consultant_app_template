@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/live_doctors_screen/widgets/comments_input.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/live_doctors_screen/widgets/doctor_profile.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/live_doctors_screen/widgets/live_doctors_name.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/comments_input.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/doctor_profile.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/live_doctors_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

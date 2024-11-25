@@ -7,8 +7,8 @@ import '../../../../resources/colors/app_colors.dart';
 import '../../../../resources/fonts/app_font_style.dart';
 import '../../../../resources/routes/routes_name.dart';
 
-class LiveDoctorsDesign extends StatelessWidget {
-  LiveDoctorsDesign({super.key});
+class LiveDoctors extends StatelessWidget {
+  LiveDoctors({super.key});
 
   final List<String> imagePaths = [
     'https://drive.google.com/uc?export=view&id=1ohEaip9_1yZkLSLm9overFPw3MD70FyC',

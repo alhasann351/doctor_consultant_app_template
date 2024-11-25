@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import '../../../../resources/colors/app_colors.dart';
 import '../../../../resources/fonts/app_font_style.dart';
 
-class SearchInputDesign extends StatelessWidget {
-  const SearchInputDesign({super.key});
+class SearchInput extends StatelessWidget {
+  const SearchInput({super.key});
 
   @override
   Widget build(BuildContext context) {
