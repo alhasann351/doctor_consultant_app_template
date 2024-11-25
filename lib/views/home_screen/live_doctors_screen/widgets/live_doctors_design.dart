@@ -1,34 +1,27 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
-import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/assets/images_icons.dart';
+import '../../../../resources/assets/images_icons.dart';
+import '../../../../resources/colors/app_colors.dart';
+import '../../../../resources/fonts/app_font_style.dart';
+import '../../../../resources/routes/routes_name.dart';
 
-class LiveDoctors extends StatefulWidget {
-  const LiveDoctors({super.key});
+class LiveDoctorsDesign extends StatelessWidget {
+  LiveDoctorsDesign({super.key});
 
-  @override
-  State<LiveDoctors> createState() => _LiveDoctorsState();
-}
-
-class _LiveDoctorsState extends State<LiveDoctors> {
   final List<String> imagePaths = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1ohEaip9_1yZkLSLm9overFPw3MD70FyC',
+    'https://drive.google.com/uc?export=view&id=1NFhLZ-fy3eqhJN-b1ooPO22hcps-wkkp',
+    'https://drive.google.com/uc?export=view&id=1dQWLSIDgqn0XjCOTTBA-I9mEijy08oP_',
+    'https://drive.google.com/uc?export=view&id=1viq51sr2v9Hiqc_2v81kA0CYqCC6I0Ho',
+    'https://drive.google.com/uc?export=view&id=19Gt-x8sTVlHZGdzJUoaFqcY1iDf6jIQA',
+    'https://drive.google.com/uc?export=view&id=1fnlnGS6KYulTZB_eFOvoaxv9itNVPboI',
+    'https://drive.google.com/uc?export=view&id=1Fl87pQZGBvlZFFppF_hmopW0FEW5BanQ',
+    'https://drive.google.com/uc?export=view&id=1pjO8f7g2MXtzPHLSGGE2vY39qJc4Pem5',
+    'https://drive.google.com/uc?export=view&id=1KDh_VdMxwsgSy7Z6nMbgj8A3PCrVZlb3',
+    'https://drive.google.com/uc?export=view&id=1qI2lrwyhXYUMKOsgmnXPnAjg4KmXpYDY',
   ];
-
-  bool isImageLoaded = false;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +37,7 @@ class _LiveDoctorsState extends State<LiveDoctors> {
               fontFamily: AppFontStyle.rubik,
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: AppColors.liveDoctorsTitleTextColor,
+              color: AppColors.commonBlackColor,
             ),
           ),
         ),
@@ -73,7 +66,7 @@ class _LiveDoctorsState extends State<LiveDoctors> {
                           height: 200,
                           width: 150,
                           child: Card(
-                            color: AppColors.cardBackgroundColor.withOpacity(1),
+                            color: AppColors.liveDoctorsCardBackgroundColor,
                             elevation: 10,
                             clipBehavior: Clip.antiAlias,
                             shape: RoundedRectangleBorder(
@@ -85,17 +78,11 @@ class _LiveDoctorsState extends State<LiveDoctors> {
                               child: CachedNetworkImage(
                                 imageUrl: imagePaths[index],
                                 fit: BoxFit.cover,
-                                /*placeholder: (context, url) =>
-                                    const LoadingAnimation(),*/
                                 errorWidget: (context, url, error) =>
                                     const Icon(
                                   Icons.error,
-                                  color: Colors.grey,
+                                  color: AppColors.commonGreyColor,
                                 ),
-                                /*child: Image.asset(
-                                imagePaths[index],
-                                fit: BoxFit.cover,
-                              ),*/
                               ),
                             ),
                           ),
@@ -106,7 +93,7 @@ class _LiveDoctorsState extends State<LiveDoctors> {
                           alignment: Alignment.center,
                           child: Icon(
                             Icons.play_circle_outline_rounded,
-                            color: AppColors.liveDoctorsPlayIconColor,
+                            color: AppColors.commonWhiteColor,
                             size: 35,
                           ),
                         ),

@@ -30,6 +30,9 @@ class Languages extends Translations {
           'search_input_specialist_Title_Text': 'Specialist',
           'search_input_hospital_name': 'Life Care Medical Center',
 
+          //live doctors
+          'live_doctors_title_text': 'Live Doctors',
+
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
@@ -89,7 +92,6 @@ class Languages extends Translations {
 
           //home screen
 
-          'live_doctors_title_text': 'Live Doctors',
           'doctors_category_title_text': 'Doctors Category',
           'cancer': 'Cancer',
           'ear': 'Ear',
@@ -168,6 +170,9 @@ class Languages extends Translations {
           'search_input_specialist_Title_Text': 'বিশেষজ্ঞ',
           'search_input_hospital_name': 'লাইফ কেয়ার মেডিকেল সেন্টার',
 
+          //live doctors
+          'live_doctors_title_text': 'লাইভ ডাক্তার',
+
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
           'onboarding_title_text_2': 'সেরা ডাক্তার চয়ন করুন',
@@ -226,7 +231,7 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
 
           //home screen
-          'live_doctors_title_text': 'লাইভ ডাক্তার',
+
           'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
           'cancer': 'ক্যান্সার',
           'ear': 'কান',
@@ -305,6 +310,9 @@ class Languages extends Translations {
           'search_input_specialist_Title_Text': 'विशेषज्ञ',
           'search_input_hospital_name': 'लाइफ केयर मेडिकल सेंटर',
 
+          //live doctors
+          'live_doctors_title_text': 'लाइव डॉक्टर्स',
+
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
           'onboarding_title_text_2': 'सर्वश्रेष्ठ डॉक्टर चुनें',
@@ -364,7 +372,7 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
 
           //home screen
-          'live_doctors_title_text': 'लाइव डॉक्टर्स',
+
           'doctors_category_title_text': 'डॉक्टर श्रेणी',
           'cancer': 'कैंसर',
           'ear': 'कान',

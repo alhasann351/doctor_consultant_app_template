@@ -2,9 +2,10 @@ import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart'
 import 'package:doctor_consultant_app_template/views/home_screen/search_input_screen/widgets/search_input_design.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/users_profile.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/widgets/doctors_category.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/widgets/live_doctors.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/widgets/popular_doctors.dart';
 import 'package:flutter/material.dart';
+
+import 'live_doctors_screen/widgets/live_doctors_design.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -50,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
-                  const LiveDoctors(),
+                  LiveDoctorsDesign(),
                   DoctorsCategory(),
                   PopularDoctors(),
                 ],
