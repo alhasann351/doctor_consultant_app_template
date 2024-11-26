@@ -3,13 +3,14 @@ import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart'
 import 'package:doctor_consultant_app_template/resources/components/white_loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/cancer_doctors.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/ear_doctors.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/eye_doctors.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/heart_doctors.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/all_category_doctors_booking/skin_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../doctors_booking/all_category_doctors_booking/cancer_doctors.dart';
+import '../doctors_booking/all_category_doctors_booking/ear_doctors.dart';
+import '../doctors_booking/all_category_doctors_booking/eye_doctors.dart';
+import '../doctors_booking/all_category_doctors_booking/heart_doctors.dart';
+import '../doctors_booking/all_category_doctors_booking/skin_doctors.dart';
 
 class DoctorsCategory extends StatelessWidget {
   DoctorsCategory({super.key});
@@ -58,7 +59,7 @@ class DoctorsCategory extends StatelessWidget {
               fontFamily: AppFontStyle.rubik,
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: AppColors.doctorsCategoryTitleTextColor,
+              color: AppColors.commonBlackColor,
             ),
           ),
         ),
@@ -94,14 +95,14 @@ class DoctorsCategory extends StatelessWidget {
                           children: [
                             CachedNetworkImage(
                               imageUrl: iconPaths[index],
-                              color: AppColors.doctorsCategoryIconsColor,
+                              color: AppColors.commonWhiteColor,
                               height: 33,
                               width: 33,
                               placeholder: (context, url) =>
                                   const WhiteLoadingAnimation(),
                               errorWidget: (context, url, error) => const Icon(
                                 Icons.error,
-                                color: Colors.white,
+                                color: AppColors.commonWhiteColor,
                               ),
                             ),
                             const SizedBox(height: 10),
@@ -111,7 +112,7 @@ class DoctorsCategory extends StatelessWidget {
                                 fontFamily: AppFontStyle.rubik,
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.categoryNameTextColor,
+                                color: AppColors.commonWhiteColor,
                               ),
                             ),
                           ],

@@ -2,7 +2,7 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:get/get.dart';
 
 class CardDoctorBookingTimeController extends GetxController {
-  var selectedTimeIndex = ('4:30 PM').obs;
+  var selectedTimeIndex = ('5:00 PM').obs;
 
   //var showGridview = false.obs;
 

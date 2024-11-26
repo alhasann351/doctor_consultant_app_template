@@ -1,14 +1,15 @@
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/booking_back_button.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/booking_confirm_button.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_available_times.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/show_calendar.dart';
+import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
+import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../resources/colors/app_colors.dart';
-import '../../resources/components/card_doctor_information.dart';
-import '../../resources/fonts/app_font_style.dart';
+import '../../../../resources/colors/app_colors.dart';
+import '../../../../resources/components/card_doctor_information.dart';
+import '../../../../resources/components/rating_icons.dart';
+import '../../../../resources/fonts/app_font_style.dart';
+import 'all_category_doctors_booking/widgets/booking_confirm_button.dart';
+import 'all_category_doctors_booking/widgets/show_available_times.dart';
+import 'all_category_doctors_booking/widgets/show_calendar.dart';
 
 class DoctorsBookingScreen extends StatefulWidget {
   const DoctorsBookingScreen({super.key});
@@ -21,24 +22,11 @@ class _DoctorsBookingScreenState extends State<DoctorsBookingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
-                  AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
-                ],
-              ),
-            ),
-          ),
-          const BookingBackButton(),
+          const BackgroundDesign(),
+          BackButtonTitle(titleText: 'select_time'.tr),
           Positioned(
             top: 80,
             left: 0,
@@ -59,8 +47,8 @@ class _DoctorsBookingScreenState extends State<DoctorsBookingScreen> {
                           fontFamily: AppFontStyle.rubik,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: AppColors.doctorNameColor),
-                      backgroundColor: AppColors.doctorInfoCardBackgroundColor,
+                          color: AppColors.commonBlackColor),
+                      backgroundColor: AppColors.commonWhiteColor,
                       doctorImage: Get.arguments['doctorImage'.toString()],
                       rowChild: const RatingIcons(),
                     ),

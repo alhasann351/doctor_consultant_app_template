@@ -1,19 +1,19 @@
-import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/payment_button_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/assets/images_icons.dart';
-import '../../../resources/colors/app_colors.dart';
+import '../../../../../../../resources/assets/images_icons.dart';
+import '../../../../../../../resources/colors/app_colors.dart';
+import '../../../../../../../resources/fonts/app_font_style.dart';
 
-class CreditDebitCardsButton extends StatefulWidget {
-  const CreditDebitCardsButton({super.key});
+class CashOnDelivery extends StatefulWidget {
+  const CashOnDelivery({super.key});
 
   @override
-  State<CreditDebitCardsButton> createState() => _CreditDebitCardsButtonState();
+  State<CashOnDelivery> createState() => _CashOnDeliveryState();
 }
 
-class _CreditDebitCardsButtonState extends State<CreditDebitCardsButton> {
+class _CashOnDeliveryState extends State<CashOnDelivery> {
   final PaymentButtonController paymentButtonController =
       Get.put(PaymentButtonController());
 
@@ -21,7 +21,7 @@ class _CreditDebitCardsButtonState extends State<CreditDebitCardsButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        paymentButtonController.selectCreditDebitCard();
+        paymentButtonController.selectCashOnDelivery();
       },
       child: Obx(
         () => SizedBox(
@@ -30,9 +30,9 @@ class _CreditDebitCardsButtonState extends State<CreditDebitCardsButton> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            color: paymentButtonController.creditDebitCardSelected.value
-                ? AppColors.cardSelectedColor
-                : Colors.white,
+            color: paymentButtonController.cashOnDeliverySelected.value
+                ? AppColors.commonGreenColor
+                : AppColors.commonWhiteColor,
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Row(
@@ -40,19 +40,19 @@ class _CreditDebitCardsButtonState extends State<CreditDebitCardsButton> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'credit_debit_card_text'.tr,
+                    'cash_on_delivery'.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 16,
                       color:
-                          paymentButtonController.creditDebitCardSelected.value
-                              ? Colors.white
-                              : Colors.black,
+                          paymentButtonController.cashOnDeliverySelected.value
+                              ? AppColors.commonWhiteColor
+                              : AppColors.commonBlackColor,
                     ),
                   ),
                   Image.asset(
-                    ImagesIcons.creditDebitCardIcon,
+                    ImagesIcons.cashOnDeliveryIcon,
                     height: 35,
                   ),
                 ],

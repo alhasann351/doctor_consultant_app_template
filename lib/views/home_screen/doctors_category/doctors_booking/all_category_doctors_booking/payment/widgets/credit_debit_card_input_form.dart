@@ -14,21 +14,21 @@ class CreditDebitCardInputForm extends StatelessWidget {
           SizedBox(
             height: 50,
             child: TextFormField(
-              cursorColor: AppColors.signupCursorColor,
+              cursorColor: AppColors.commonBlackColor,
               keyboardType: TextInputType.text,
               style: const TextStyle(
                 fontFamily: AppFontStyle.rubik,
                 fontSize: 18,
-                color: AppColors.signupNameTextColor,
+                color: AppColors.commonBlackColor,
               ),
               decoration: InputDecoration(
                 filled: true,
-                fillColor: AppColors.signupFillColor,
+                fillColor: AppColors.commonWhiteColor,
                 hintText: 'name_on_the_card'.tr,
                 hintStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
                   fontSize: 18,
-                  color: AppColors.signupHintTextColor,
+                  color: AppColors.commonGreyColor,
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: const BorderSide(style: BorderStyle.none),
@@ -47,21 +47,21 @@ class CreditDebitCardInputForm extends StatelessWidget {
           SizedBox(
             height: 50,
             child: TextFormField(
-              cursorColor: AppColors.signupCursorColor,
+              cursorColor: AppColors.commonBlackColor,
               keyboardType: TextInputType.number,
               style: const TextStyle(
                 fontFamily: AppFontStyle.rubik,
                 fontSize: 18,
-                color: AppColors.signupNameTextColor,
+                color: AppColors.commonBlackColor,
               ),
               decoration: InputDecoration(
                 filled: true,
-                fillColor: AppColors.signupFillColor,
+                fillColor: AppColors.commonWhiteColor,
                 hintText: 'card_number'.tr,
                 hintStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
                   fontSize: 18,
-                  color: AppColors.signupHintTextColor,
+                  color: AppColors.commonGreyColor,
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: const BorderSide(style: BorderStyle.none),
@@ -84,21 +84,21 @@ class CreditDebitCardInputForm extends StatelessWidget {
                   height: 50,
                   //width: 200,
                   child: TextFormField(
-                    cursorColor: AppColors.signupCursorColor,
+                    cursorColor: AppColors.commonBlackColor,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 18,
-                      color: AppColors.signupNameTextColor,
+                      color: AppColors.commonBlackColor,
                     ),
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: AppColors.signupFillColor,
+                      fillColor: AppColors.commonWhiteColor,
                       hintText: 'card_expiry_date'.tr,
                       hintStyle: const TextStyle(
                         fontFamily: AppFontStyle.rubik,
                         fontSize: 18,
-                        color: AppColors.signupHintTextColor,
+                        color: AppColors.commonGreyColor,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(style: BorderStyle.none),
@@ -120,21 +120,21 @@ class CreditDebitCardInputForm extends StatelessWidget {
                   height: 50,
                   //width: 200,
                   child: TextFormField(
-                    cursorColor: AppColors.signupCursorColor,
+                    cursorColor: AppColors.commonBlackColor,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 18,
-                      color: AppColors.signupNameTextColor,
+                      color: AppColors.commonBlackColor,
                     ),
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: AppColors.signupFillColor,
+                      fillColor: AppColors.commonWhiteColor,
                       hintText: 'card_cvv_number'.tr,
                       hintStyle: const TextStyle(
                         fontFamily: AppFontStyle.rubik,
                         fontSize: 18,
-                        color: AppColors.signupHintTextColor,
+                        color: AppColors.commonGreyColor,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(style: BorderStyle.none),

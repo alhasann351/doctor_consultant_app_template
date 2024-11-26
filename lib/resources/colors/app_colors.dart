@@ -5,6 +5,9 @@ class AppColors {
   static const Color commonWhiteColor = Colors.white;
   static const Color commonBlackColor = Colors.black;
   static const Color commonGreyColor = Colors.grey;
+  static const Color commonGreenColor = Color(0xFF0EBE7F);
+  static const Color commonYellowColor = Colors.yellow;
+  static const Color commonBlueColor = Colors.blue;
 
   //scaffold background
   static const Color scaffoldBackgroundColor = Colors.white;
@@ -26,12 +29,23 @@ class AppColors {
   static const Color liveDoctorsCommentsInputSuffixIconColor =
       Colors.lightBlueAccent;
 
+  //doctors category
+  static const Color doctorsCategoryCancerCardColor = Colors.orange;
+  static const Color doctorsCategoryEarCardColor = Colors.blue;
+  static const Color doctorsCategoryEyeCardColor = Colors.deepPurple;
+  static const Color doctorsCategoryHeartCardColor = Colors.red;
+  static const Color doctorsCategorySkinCardColor = Colors.pink;
+  static const Color doctorSpecialistTextColor = Colors.lightBlueAccent;
+  static const Color goodDoctorTextColor = Colors.green;
+  static const Color seePatientsTextColor = Colors.blueAccent;
+  static const Color nextAvailableTextColor = Colors.lightBlueAccent;
+  static const Color bookNowButtonColor = Colors.lightBlueAccent;
+
   //toast message
   static const Color toastMessageBackgroundColor = Colors.white;
   static const Color toastMessageTextColor = Colors.black;
 
   //default button background
-  static const Color defaultButtonBackgroundColor = Color(0xFF0EBE7F);
 
   //splash screen
   static const Color splashTopBackgroundColor = Colors.lightBlueAccent;
@@ -123,15 +137,6 @@ class AppColors {
   static const Color homeTopBackgroundColor = Colors.lightBlueAccent;
   static const Color homeBottomBackgroundColor = Colors.greenAccent;
 
-  static const Color doctorsCategoryTitleTextColor = Colors.black;
-  static const Color doctorsCategoryCancerCardColor = Colors.orange;
-  static const Color doctorsCategoryEarCardColor = Colors.blue;
-  static const Color doctorsCategoryEyeCardColor = Colors.deepPurple;
-  static const Color doctorsCategoryHeartCardColor = Colors.red;
-  static const Color doctorsCategorySkinCardColor = Colors.pink;
-  static const Color doctorsCategoryIconsColor = Colors.white;
-  static const Color categoryNameTextColor = Colors.white;
-
   //live doctors screen
   static const Color backButtonCardBackgroundColor = Colors.white;
   static const Color backButtonIconColor = Colors.black;
@@ -142,16 +147,6 @@ class AppColors {
   static const Color cancerScreenBackButtonCardBackgroundColor = Colors.white;
   static const Color cancerScreenBackButtonIconColor = Colors.black;
   static const Color cancerTitleTextColor = Colors.black;
-  static const Color doctorNameColor = Colors.black;
-  static const Color doctorSpecialistTextColor = Colors.lightBlueAccent;
-  static const Color doctorInfoCardBackgroundColor = Colors.white;
-  static const Color doctorInfoFavoriteIconColor = Colors.grey;
-  static const Color goodDoctorTextColor = Colors.green;
-  static const Color seePatientsTextColor = Colors.blueAccent;
-  static const Color nextAvailableTextColor = Colors.lightBlueAccent;
-  static const Color nextAvailableTimeTextColor = Colors.grey;
-  static const Color bookNowButtonTextColor = Colors.white;
-  static const Color bookNowButtonColor = Colors.lightBlueAccent;
+
   static const Color favoriteIconColor = Colors.red;
-  static const Color cardSelectedColor = Color(0xFF0EBE7F);
 }

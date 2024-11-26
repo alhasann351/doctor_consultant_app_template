@@ -1,23 +1,24 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
+import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/components/loading_animation.dart';
-import '../../../resources/components/rounded_button.dart';
-import '../../../resources/fonts/app_font_style.dart';
-import '../../../resources/routes/routes_name.dart';
-import '../../../utils/app_utils.dart';
+import '../../../../../resources/colors/app_colors.dart';
+import '../../../../../resources/components/loading_animation.dart';
+import '../../../../../resources/components/rounded_button.dart';
+import '../../../../../resources/fonts/app_font_style.dart';
+import '../../../../../resources/routes/routes_name.dart';
+import '../../../../../utils/app_utils.dart';
 
-class EarDoctors extends StatefulWidget {
-  const EarDoctors({super.key});
+class SkinDoctors extends StatefulWidget {
+  const SkinDoctors({super.key});
 
   @override
-  State<EarDoctors> createState() => _EarDoctorsState();
+  State<SkinDoctors> createState() => _SkinDoctorsState();
 }
 
-class _EarDoctorsState extends State<EarDoctors> {
+class _SkinDoctorsState extends State<SkinDoctors> {
   final List<String> image = [
     'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
     'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
@@ -32,104 +33,91 @@ class _EarDoctorsState extends State<EarDoctors> {
   ];
 
   final List<String> doctorName = [
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'hasan'.tr,
-    'elisa'.tr,
-    'elisa'.tr,
+    'Dr. Sebastian Cole',
+    'Dr. Clarissa Morgan',
+    'Dr. Daniel Hartfield',
+    'Dr. Penelope Ashton',
+    'Dr. Owen Prescott',
+    'Dr. Victoria Lane',
+    'Dr. Isaac Bennett',
+    'Dr. Genevieve Clarke',
+    'Dr. Theodore Vaughn',
+    'Dr. Amelia Townsend',
   ];
 
   final List<String> hospitalName = [
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
-    'hospital_name'.tr,
+    'Lifeline Haven Medical',
+    'Serenity Springs Health',
+    'Beacon Crest Medical',
+    'Evergreen Care Pavilion',
+    'Horizon Wellness Hospital',
+    'Harmony Ridge Health Center',
+    'VitalPath Regional Medical',
+    'Silver Oak Healing Center',
+    'Tranquil Meadows Medical',
+    'Summit Grove Healthcare',
   ];
 
   final List<String> doctorExperience = [
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
-    '5_years_experience'.tr,
-    '7_years_experience'.tr,
+    '5 years experience',
+    '6 years experience',
+    '7 years experience',
+    '8 years experience',
+    '5 years experience',
+    '6 years experience',
+    '4 years experience',
+    '3 years experience',
+    '7 years experience',
+    '8 years experience',
   ];
 
   final List<String> goodDoctor = [
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '95%_good'.tr,
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '85%_good'.tr,
-    '95%_good'.tr,
-    '95%_good'.tr,
-    '85%_good'.tr,
-    '85%_good'.tr,
+    '95% good',
+    '85% good',
+    '75% good',
+    '85% good',
+    '75% good',
+    '85% good',
+    '95% good',
+    '85% good',
+    '75% good',
+    '85% good',
   ];
 
   final List<String> seePatients = [
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
-    '95_patients'.tr,
-    '85_patients'.tr,
+    '95 patients',
+    '85 patients',
+    '75 patients',
+    '65 patients',
+    '55 patients',
+    '45 patients',
+    '75 patients',
+    '85 patients',
+    '95 patients',
+    '55 patients',
   ];
 
   final List<String> nextAvailableTime = [
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
-    '10:00_AM_tomorrow'.tr,
-    '11:00_AM_tomorrow'.tr,
+    '01:00 PM tomorrow',
+    '02:00 PM tomorrow',
+    '03:00 PM tomorrow',
+    '04:00 PM tomorrow',
+    '05:00 PM tomorrow',
+    '06:00 PM tomorrow',
+    '07:00 PM tomorrow',
+    '08:00 PM tomorrow',
+    '09:00 PM tomorrow',
+    '10:00 PM tomorrow',
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  AppColors.cancerScreenTopBackgroundColor.withOpacity(0.2),
-                  AppColors.cancerScreenBottomBackgroundColor.withOpacity(0.2),
-                ],
-              ),
-            ),
-          ),
-          BackButtonTitle(titleText: 'ear_specialist'.tr),
+          const BackgroundDesign(),
+          BackButtonTitle(titleText: 'skin_specialist'.tr),
           Positioned(
             top: 70,
             bottom: 0,
@@ -149,7 +137,7 @@ class _EarDoctorsState extends State<EarDoctors> {
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 5.0),
                           child: Card(
-                            color: AppColors.doctorInfoCardBackgroundColor,
+                            color: AppColors.commonWhiteColor,
                             elevation: 8,
                             child: Stack(
                               children: [
@@ -169,7 +157,7 @@ class _EarDoctorsState extends State<EarDoctors> {
                                       errorWidget: (context, url, error) =>
                                           const Icon(
                                         Icons.error,
-                                        color: Colors.grey,
+                                        color: AppColors.commonGreyColor,
                                       ),
                                     ),
                                   ),
@@ -191,18 +179,17 @@ class _EarDoctorsState extends State<EarDoctors> {
                                             fontFamily: AppFontStyle.rubik,
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: AppColors.doctorNameColor),
+                                            color: AppColors.commonBlackColor),
                                       ),
                                       InkWell(
                                         onTap: () {
                                           AppUtils.showToastMessage(
-                                              'Favorite option clicked');
+                                              'favorite_option_clicked'.tr);
                                         },
                                         child: const Icon(
                                           Icons.favorite,
                                           size: 25,
-                                          color: AppColors
-                                              .doctorInfoFavoriteIconColor,
+                                          color: AppColors.commonGreyColor,
                                         ),
                                       ),
                                     ],
@@ -214,7 +201,7 @@ class _EarDoctorsState extends State<EarDoctors> {
                                   right: 0,
                                   bottom: 0,
                                   child: Text(
-                                    'ear_specialist'.tr,
+                                    'skin_specialist'.tr,
                                     style: const TextStyle(
                                         fontFamily: AppFontStyle.rubik,
                                         fontSize: 15,
@@ -232,7 +219,7 @@ class _EarDoctorsState extends State<EarDoctors> {
                                     style: const TextStyle(
                                         fontFamily: AppFontStyle.rubik,
                                         fontSize: 15,
-                                        color: AppColors.doctorNameColor),
+                                        color: AppColors.commonBlackColor),
                                   ),
                                 ),
                                 Positioned(
@@ -292,8 +279,7 @@ class _EarDoctorsState extends State<EarDoctors> {
                                         style: const TextStyle(
                                             fontFamily: AppFontStyle.rubik,
                                             fontSize: 15,
-                                            color: AppColors
-                                                .nextAvailableTimeTextColor),
+                                            color: AppColors.commonGreyColor),
                                       ),
                                     ],
                                   ),
@@ -311,18 +297,18 @@ class _EarDoctorsState extends State<EarDoctors> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
                                         fontFamily: AppFontStyle.rubik,
-                                        color:
-                                            AppColors.bookNowButtonTextColor),
+                                        color: AppColors.commonWhiteColor),
                                     onTap: () {
                                       Get.toNamed(
-                                          RoutesName.doctorsBookingScreen,
-                                          arguments: {
-                                            'doctorImage': image[index],
-                                            'doctorName': doctorName[index],
-                                            'doctorSpeciality':
-                                                'ear_specialist'.tr,
-                                            'hospitalName': hospitalName[index],
-                                          });
+                                        RoutesName.doctorsBookingScreen,
+                                        arguments: {
+                                          'doctorImage': image[index],
+                                          'doctorName': doctorName[index],
+                                          'doctorSpeciality':
+                                              'skin_specialist'.tr,
+                                          'hospitalName': hospitalName[index],
+                                        },
+                                      );
                                     },
                                   ),
                                 ),

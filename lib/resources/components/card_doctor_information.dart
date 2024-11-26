@@ -24,7 +24,7 @@ class CardDoctorInformation extends StatelessWidget {
       required this.speciality,
       required this.hospitalName,
       required this.textStyle,
-      this.backgroundColor = AppColors.doctorInfoCardBackgroundColor,
+      this.backgroundColor = AppColors.commonWhiteColor,
       required this.doctorImage,
       required this.rowChild});
 
@@ -75,7 +75,7 @@ class CardDoctorInformation extends StatelessWidget {
                       child: const Icon(
                         Icons.favorite,
                         size: 25,
-                        color: AppColors.doctorInfoFavoriteIconColor,
+                        color: AppColors.commonGreyColor,
                       ),
                     ),
                   ],

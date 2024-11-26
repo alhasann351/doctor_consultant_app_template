@@ -1,29 +1,23 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../resources/colors/app_colors.dart';
 
 class ShowAvailableTimes extends StatelessWidget {
   ShowAvailableTimes({super.key});
 
   final List<String> times = [
     '1:00 PM',
-    '1:30 PM',
     '2:00 PM',
-    '2:30 PM',
     '3:00 PM',
-    '3:30 PM',
     '4:00 PM',
-    '4:30 PM',
-    '5:30 PM',
+    '5:00 PM',
+    '6:00 PM',
     '7:00 PM',
-    '7:30 PM',
     '8:00 PM',
-    '8:30 PM',
     '9:00 PM',
-    '9:30 PM',
+    '10:00 PM',
   ];
 
   final CardDoctorBookingTimeController cardDoctorBookingTimeController =
@@ -42,7 +36,7 @@ class ShowAvailableTimes extends StatelessWidget {
                 fontSize: 18,
                 fontFamily: AppFontStyle.rubik,
                 fontWeight: FontWeight.bold,
-                color: Colors.black),
+                color: AppColors.commonBlackColor),
           ),
         ),
         GridView.builder(
@@ -67,8 +61,8 @@ class ShowAvailableTimes extends StatelessWidget {
                     color: cardDoctorBookingTimeController
                                 .selectedTimeIndex.value ==
                             times[index]
-                        ? AppColors.cardSelectedColor
-                        : Colors.white,
+                        ? AppColors.commonGreenColor
+                        : AppColors.commonWhiteColor,
                     child: Center(
                         child: Text(
                       times[index],
@@ -78,8 +72,8 @@ class ShowAvailableTimes extends StatelessWidget {
                           color: cardDoctorBookingTimeController
                                       .selectedTimeIndex.value ==
                                   times[index]
-                              ? Colors.white
-                              : AppColors.doctorNameColor),
+                              ? AppColors.commonWhiteColor
+                              : AppColors.commonBlackColor),
                     )),
                   ),
                 ),

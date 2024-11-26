@@ -1,19 +1,19 @@
-import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
+import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/payment_button_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/fonts/app_font_style.dart';
+import '../../../../../../../resources/assets/images_icons.dart';
+import '../../../../../../../resources/colors/app_colors.dart';
 
-class PaypalPaymentButton extends StatefulWidget {
-  const PaypalPaymentButton({super.key});
+class CreditDebitCardsButton extends StatefulWidget {
+  const CreditDebitCardsButton({super.key});
 
   @override
-  State<PaypalPaymentButton> createState() => _PaypalPaymentButtonState();
+  State<CreditDebitCardsButton> createState() => _CreditDebitCardsButtonState();
 }
 
-class _PaypalPaymentButtonState extends State<PaypalPaymentButton> {
+class _CreditDebitCardsButtonState extends State<CreditDebitCardsButton> {
   final PaymentButtonController paymentButtonController =
       Get.put(PaymentButtonController());
 
@@ -21,7 +21,7 @@ class _PaypalPaymentButtonState extends State<PaypalPaymentButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        paymentButtonController.selectPaypal();
+        paymentButtonController.selectCreditDebitCard();
       },
       child: Obx(
         () => SizedBox(
@@ -30,9 +30,9 @@ class _PaypalPaymentButtonState extends State<PaypalPaymentButton> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            color: paymentButtonController.paypalSelected.value
-                ? AppColors.cardSelectedColor
-                : Colors.white,
+            color: paymentButtonController.creditDebitCardSelected.value
+                ? AppColors.commonGreenColor
+                : AppColors.commonWhiteColor,
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Row(
@@ -40,18 +40,19 @@ class _PaypalPaymentButtonState extends State<PaypalPaymentButton> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'paypal'.tr,
+                    'credit_debit_card_text'.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 16,
-                      color: paymentButtonController.paypalSelected.value
-                          ? Colors.white
-                          : Colors.black,
+                      color:
+                          paymentButtonController.creditDebitCardSelected.value
+                              ? AppColors.commonWhiteColor
+                              : AppColors.commonBlackColor,
                     ),
                   ),
                   Image.asset(
-                    ImagesIcons.paypalIcon,
+                    ImagesIcons.creditDebitCardIcon,
                     height: 35,
                   ),
                 ],

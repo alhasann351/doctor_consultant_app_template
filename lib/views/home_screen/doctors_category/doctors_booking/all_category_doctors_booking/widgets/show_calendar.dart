@@ -1,10 +1,10 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import '../../../resources/colors/app_colors.dart';
-import '../../../views_models/controllers/date_controller.dart';
+import '../../../../../../views_models/controllers/date_controller.dart';
 
 class ShowCalendar extends StatefulWidget {
   const ShowCalendar({super.key});
@@ -29,11 +29,11 @@ class _ShowCalendarState extends State<ShowCalendar> {
                 fontSize: 20,
                 fontFamily: AppFontStyle.rubik,
                 fontWeight: FontWeight.bold,
-                color: Colors.black),
+                color: AppColors.commonBlackColor),
           ),
         ),
         Card(
-          color: Colors.white,
+          color: AppColors.commonWhiteColor,
           child: Obx(
             () => TableCalendar(
               focusedDay: dateController.selectedDate.value,
@@ -46,57 +46,59 @@ class _ShowCalendarState extends State<ShowCalendar> {
               },
               headerStyle: const HeaderStyle(
                 titleTextStyle: TextStyle(
-                  color: Colors.black,
+                  color: AppColors.commonBlackColor,
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   fontFamily: AppFontStyle.rubik,
                 ),
                 formatButtonVisible: false,
-                leftChevronIcon: Icon(Icons.chevron_left, color: Colors.black),
-                rightChevronIcon:
-                    Icon(Icons.chevron_right, color: Colors.black),
+                leftChevronIcon:
+                    Icon(Icons.chevron_left, color: AppColors.commonBlackColor),
+                rightChevronIcon: Icon(Icons.chevron_right,
+                    color: AppColors.commonBlackColor),
               ),
               daysOfWeekStyle: const DaysOfWeekStyle(
                 weekdayStyle: TextStyle(
-                    color: Colors.black, fontFamily: AppFontStyle.rubik),
+                    color: AppColors.commonBlackColor,
+                    fontFamily: AppFontStyle.rubik),
                 weekendStyle: TextStyle(
-                    color: Colors.black, fontFamily: AppFontStyle.rubik),
+                    color: AppColors.commonBlackColor,
+                    fontFamily: AppFontStyle.rubik),
               ),
               calendarStyle: CalendarStyle(
                 weekendTextStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
-                  color: Colors.black,
+                  color: AppColors.commonBlackColor,
                   fontSize: 15,
                 ),
                 disabledTextStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
-                  color: Colors.grey,
+                  color: AppColors.commonGreyColor,
                   fontSize: 15,
                 ),
                 todayTextStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
-                  color: Colors.black,
+                  color: AppColors.commonBlackColor,
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
                 todayDecoration: BoxDecoration(
-                  color:
-                      AppColors.defaultButtonBackgroundColor.withOpacity(0.3),
+                  color: AppColors.commonGreenColor.withOpacity(0.3),
                   shape: BoxShape.circle,
                 ),
                 selectedTextStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
-                  color: Colors.black,
+                  color: AppColors.commonBlackColor,
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
                 selectedDecoration: const BoxDecoration(
-                  color: AppColors.defaultButtonBackgroundColor,
+                  color: AppColors.commonGreenColor,
                   shape: BoxShape.circle,
                 ),
                 defaultTextStyle: const TextStyle(
                   fontFamily: AppFontStyle.rubik,
-                  color: Colors.black,
+                  color: AppColors.commonBlackColor,
                   fontSize: 15,
                 ),
               ),

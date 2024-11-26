@@ -34,6 +34,26 @@ class Languages extends Translations {
           'live_doctors_title_text': 'Live Doctors',
           'live_doctors_comments_input_hint_text': 'Add a comment',
 
+          //doctors category
+          'doctors_category_title_text': 'Doctors Category',
+          'cancer': 'Cancer',
+          'ear': 'Ear',
+          'eye': 'Eye',
+          'heart': 'Heart',
+          'skin': 'Skin',
+          'cancer_specialist': 'Cancer specialist',
+          'ear_specialist': 'Ear specialist',
+          'eye_specialist': 'Eye specialist',
+          'heart_specialist': 'Heart specialist',
+          'skin_specialist': 'Skin specialist',
+          'favorite_option_clicked': 'Favorite option clicked',
+          'next_available': 'Next Available',
+          'book_now': 'Book now',
+          'confirm': 'Confirm',
+          'select_time': 'Select time',
+          'date_select': 'Select your date',
+          'time_select': 'Select your time',
+
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
@@ -93,42 +113,14 @@ class Languages extends Translations {
 
           //home screen
 
-          'doctors_category_title_text': 'Doctors Category',
-          'cancer': 'Cancer',
-          'ear': 'Ear',
-          'eye': 'Eye',
-          'heart': 'Heart',
-          'skin': 'Skin',
-
           'popular_doctors_title_text': 'Popular Doctors',
           'see_all_text': 'See all',
 
           //doctors category screen
           'specialist_doctors': 'Specialist doctors',
-          'elisa': 'Dr. Elisa',
-          'hasan': 'Dr. Hasan',
-          '5_years_experience': '5 years experience',
-          '7_years_experience': '7 years experience',
-          '95%_good': '95% good',
-          '85%_good': '85% good',
-          '95_patients': '95 patients',
-          '85_patients': '85 patients',
-          'next_available': 'Next Available',
-          '10:00_AM_tomorrow': '10:00 AM tomorrow',
-          '11:00_AM_tomorrow': '11:00 AM tomorrow',
-          'book_now': 'Book now',
-          'cancer_specialist': 'Cancer specialist',
-          'ear_specialist': 'Ear specialist',
-          'eye_specialist': 'Eye specialist',
-          'heart_specialist': 'Heart specialist',
-          'skin_specialist': 'Skin specialist',
 
           //booking doctors screen
-          'select_time': 'Select time',
-          'hospital_name': 'Life Care Medical Center',
-          'date_select': 'Select your date',
-          'time_select': 'Select your time',
-          'confirm': 'Confirm',
+
           'doctor_booking_successfully': 'Doctor Booking Successfully',
           'thank_you': 'Thank you...',
           'payment': 'Payment',
@@ -174,6 +166,37 @@ class Languages extends Translations {
           //live doctors
           'live_doctors_title_text': 'লাইভ ডাক্তার',
           'live_doctors_comments_input_hint_text': 'একটা মন্তব্য যোগ করুন',
+
+          //doctors category
+          'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
+          'cancer': 'ক্যান্সার',
+          'ear': 'কান',
+          'eye': 'চোখ',
+          'heart': 'হার্ট',
+          'skin': 'ত্বক',
+          'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
+          'ear_specialist': 'কান বিশেষজ্ঞ',
+          'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
+          'heart_specialist': 'হৃদরোগ বিশেষজ্ঞ',
+          'skin_specialist': 'ত্বক বিশেষজ্ঞ',
+          'favorite_option_clicked': 'পছন্দের অপশনে ক্লিক করা হয়েছে',
+          'next_available': 'পরবর্তী সময়',
+          'book_now': 'বুক করুন',
+          'confirm': 'নিশ্চিত করুন',
+          'select_time': 'সময় নির্বাচন',
+          'date_select': 'আপনার তারিখ নির্বাচন করুন',
+          'time_select': 'আপনার সময় নির্বাচন করুন',
+          'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
+          'paypal': 'পেপ্যাল',
+          'payment': 'পেমেন্ট',
+          'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
+          'name_on_the_card': 'কার্ডের নাম',
+          'card_number': 'কার্ড নম্বর',
+          'card_expiry_date': 'মেয়াদ (MM/YY)',
+          'card_cvv_number': 'CVV',
+          'pay': 'Pay',
+          'ok': 'ঠিক আছে',
+          'edit_appointment': 'অ্যাপয়েন্টমেন্ট এডিট করুন',
 
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
@@ -234,56 +257,18 @@ class Languages extends Translations {
 
           //home screen
 
-          'doctors_category_title_text': 'ডাক্তারদের বিভাগ',
-          'cancer': 'ক্যান্সার',
-          'ear': 'কান',
-          'eye': 'চোখ',
-          'heart': 'হার্ট',
-          'skin': 'ত্বক',
-
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
           'see_all_text': 'সব দেখুন',
 
           //doctors category screen
           'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
-          'elisa': 'ডা: এলিসা',
-          'hasan': 'ডা: হাসান',
-          '5_years_experience': '৫ বছরের অভিজ্ঞতা',
-          '7_years_experience': '৭ বছরের অভিজ্ঞতা',
-          '95%_good': '৯৫% ভালো',
-          '85%_good': '৮৫% ভালো',
-          '95_patients': '৯৫ রোগী',
-          '85_patients': '৮৫ রোগী',
-          'next_available': 'পরবর্তী সময়',
-          '10:00_AM_tomorrow': 'আগামীকাল সকাল ১০টা',
-          '11:00_AM_tomorrow': 'আগামীকাল সকাল ১১টা',
-          'book_now': 'বুক করুন',
-          'cancer_specialist': 'ক্যান্সার বিশেষজ্ঞ',
-          'ear_specialist': 'কান বিশেষজ্ঞ',
-          'eye_specialist': 'চক্ষু বিশেষজ্ঞ',
-          'heart_specialist': 'হৃদরোগ বিশেষজ্ঞ',
-          'skin_specialist': 'ত্বক বিশেষজ্ঞ',
 
           //booking doctors screen
-          'select_time': 'সময় নির্বাচন',
-          'hospital_name': 'লাইফ কেয়ার মেডিকেল সেন্টার',
-          'date_select': 'আপনার তারিখ নির্বাচন করুন',
-          'time_select': 'আপনার সময় নির্বাচন করুন',
-          'confirm': 'নিশ্চিত করুন',
+
           'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
           'thank_you': 'ধন্যবাদ...',
-          'payment': 'পেমেন্ট',
+
           '10_hr': '10/ঘণ্টা',
-          'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
-          'paypal': 'পেপ্যাল',
-          'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
-          'name_on_the_card': 'কার্ডের নাম',
-          'card_number': 'কার্ড নম্বর',
-          'card_expiry_date': 'মেয়াদ (MM/YY)',
-          'card_cvv_number': 'CVV',
-          'pay': 'Pay',
-          'ok': 'ঠিক আছে',
-          'edit_appointment': 'অ্যাপয়েন্টমেন্ট এডিট করুন',
         },
         'hi_IN': {
           //splash screen
@@ -315,6 +300,37 @@ class Languages extends Translations {
           //live doctors
           'live_doctors_title_text': 'लाइव डॉक्टर्स',
           'live_doctors_comments_input_hint_text': 'एक टिप्पणी जोड़ने',
+
+          //doctors category
+          'doctors_category_title_text': 'डॉक्टर श्रेणी',
+          'cancer': 'कैंसर',
+          'ear': 'कान',
+          'eye': 'आँख',
+          'heart': 'हार्ट',
+          'skin': 'त्वचा',
+          'cancer_specialist': 'कैंसर विशेषज्ञ',
+          'ear_specialist': 'कान विशेषज्ञ',
+          'eye_specialist': 'नेत्र विशेषज्ञ',
+          'heart_specialist': 'हृदय रोग विशेषज्ञ',
+          'skin_specialist': 'त्वचा विशेषज्ञ',
+          'favorite_option_clicked': 'पसंदीदा विकल्प पर क्लिक किया गया',
+          'next_available': 'अगली बार',
+          'book_now': 'बुक करें',
+          'confirm': 'पुष्टि करना',
+          'select_time': 'समय चुनें',
+          'date_select': 'अपनी तिथि चुनें',
+          'time_select': 'अपना समय चुनें',
+          'cash_on_delivery': 'डिलवरी पर नकदी',
+          'name_on_the_card': 'कार्ड पर नाम',
+          'card_number': 'कार्ड संख्या',
+          'card_expiry_date': 'समाप्ति (MM/YY)',
+          'card_cvv_number': 'CVV',
+          'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
+          'paypal': 'पेपाल',
+          'payment': 'भुगतान',
+          'pay': 'Pay',
+          'ok': 'ठीक है',
+          'edit_appointment': 'अपॉइंटमेंट संपादित करें',
 
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
@@ -376,56 +392,18 @@ class Languages extends Translations {
 
           //home screen
 
-          'doctors_category_title_text': 'डॉक्टर श्रेणी',
-          'cancer': 'कैंसर',
-          'ear': 'कान',
-          'eye': 'आँख',
-          'heart': 'हार्ट',
-          'skin': 'त्वचा',
-
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
           'see_all_text': 'सभी देखें',
 
           //doctors category screen
           'specialist_doctors': 'विशेषज्ञ डॉक्टर',
-          'elisa': 'डॉ: एलिसा',
-          'hasan': 'डॉ: हसन',
-          '5_years_experience': '५ वर्ष का अनुभव',
-          '7_years_experience': '७ वर्ष का अनुभव',
-          '95%_good': '९५% ভালো',
-          '85%_good': '८५% ভালো',
-          '95_patients': '९५ मरीज',
-          '85_patients': '८५ मरीज',
-          'next_available': 'अगली बार',
-          '10:00_AM_tomorrow': 'कल सुबह १० बजे',
-          '11:00_AM_tomorrow': 'कल सुबह ११ बजे',
-          'book_now': 'बुक करें',
-          'cancer_specialist': 'कैंसर विशेषज्ञ',
-          'ear_specialist': 'कान विशेषज्ञ',
-          'eye_specialist': 'नेत्र विशेषज्ञ',
-          'heart_specialist': 'हृदय रोग विशेषज्ञ',
-          'skin_specialist': 'त्वचा विशेषज्ञ',
 
           //booking doctors screen
-          'select_time': 'समय चुनें',
-          'hospital_name': 'लाइफ केयर मेडिकल सेंटर',
-          'date_select': 'अपनी तिथि चुनें',
-          'time_select': 'अपना समय चुनें',
-          'confirm': 'पुष्टि करना',
+
           'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
           'thank_you': 'धन्यवाद...',
-          'payment': 'भुगतान',
+
           '10_hr': '10/घंटा',
-          'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
-          'paypal': 'पेपाल',
-          'cash_on_delivery': 'डिलवरी पर नकदी',
-          'name_on_the_card': 'कार्ड पर नाम',
-          'card_number': 'कार्ड संख्या',
-          'card_expiry_date': 'समाप्ति (MM/YY)',
-          'card_cvv_number': 'CVV',
-          'pay': 'Pay',
-          'ok': 'ठीक है',
-          'edit_appointment': 'अपॉइंटमेंट संपादित करें',
         },
       };
 }

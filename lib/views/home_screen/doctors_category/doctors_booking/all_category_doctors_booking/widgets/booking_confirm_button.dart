@@ -1,9 +1,10 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/card_doctor_booking_time_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/components/rounded_button.dart';
-import '../../../resources/fonts/app_font_style.dart';
+import '../../../../../../resources/components/rounded_button.dart';
+import '../../../../../../resources/fonts/app_font_style.dart';
 
 class BookingConfirmButton extends StatelessWidget {
   BookingConfirmButton({super.key});
@@ -22,7 +23,7 @@ class BookingConfirmButton extends StatelessWidget {
           fontFamily: AppFontStyle.rubik,
           fontWeight: FontWeight.bold,
           fontSize: 18,
-          color: Colors.white,
+          color: AppColors.commonWhiteColor,
         ),
         onTap: () {
           cardDoctorBookingTimeController.goToPaymentScreen(

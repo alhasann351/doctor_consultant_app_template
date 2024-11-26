@@ -14,7 +14,7 @@ class RoundedButton extends StatelessWidget {
     required this.onTap,
     this.loading = false,
     this.textStyle,
-    this.backgroundColor = AppColors.defaultButtonBackgroundColor,
+    this.backgroundColor = AppColors.commonGreenColor,
   });
 
   @override

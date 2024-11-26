@@ -138,7 +138,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Card(
-                    color: AppColors.doctorInfoCardBackgroundColor,
+                    color: AppColors.commonWhiteColor,
                     elevation: 8,
                     child: Stack(
                       children: [
@@ -156,7 +156,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                   const LoadingAnimation(),
                               errorWidget: (context, url, error) => const Icon(
                                 Icons.error,
-                                color: Colors.grey,
+                                color: AppColors.commonGreyColor,
                               ),
                             ),
                           ),
@@ -176,17 +176,17 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: AppColors.doctorNameColor),
+                                    color: AppColors.commonBlackColor),
                               ),
                               InkWell(
                                 onTap: () {
                                   AppUtils.showToastMessage(
-                                      'Favorite option clicked');
+                                      'favorite_option_clicked'.tr);
                                 },
                                 child: const Icon(
                                   Icons.favorite,
                                   size: 25,
-                                  color: AppColors.doctorInfoFavoriteIconColor,
+                                  color: AppColors.commonGreyColor,
                                 ),
                               ),
                             ],
@@ -215,7 +215,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                             style: const TextStyle(
                                 fontFamily: AppFontStyle.rubik,
                                 fontSize: 15,
-                                color: AppColors.doctorNameColor),
+                                color: AppColors.commonBlackColor),
                           ),
                         ),
                         Positioned(
@@ -270,8 +270,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                 style: const TextStyle(
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 15,
-                                    color:
-                                        AppColors.nextAvailableTimeTextColor),
+                                    color: AppColors.commonGreyColor),
                               ),
                             ],
                           ),
@@ -290,7 +289,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                   fontFamily: AppFontStyle.rubik,
-                                  color: AppColors.bookNowButtonTextColor),
+                                  color: AppColors.commonBlueColor),
                               onTap: () {
                                 Get.toNamed(RoutesName.doctorsBookingScreen,
                                     arguments: {

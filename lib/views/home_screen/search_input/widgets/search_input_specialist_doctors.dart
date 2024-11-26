@@ -5,8 +5,8 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../resources/components/rating_icons.dart';
 import '../../../../resources/fonts/app_font_style.dart';
-import '../../../doctors_booking/widgets/rating_icons.dart';
 
 class SearchInputSpecialistDoctors extends StatelessWidget {
   SearchInputSpecialistDoctors({super.key});

@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/loading_animation.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/widgets/rating_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../resources/colors/app_colors.dart';
+import '../../../resources/components/rating_icons.dart';
 import '../../../resources/fonts/app_font_style.dart';
 
 class PopularDoctors extends StatelessWidget {
@@ -65,7 +65,7 @@ class PopularDoctors extends StatelessWidget {
                   fontFamily: AppFontStyle.rubik,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.doctorsCategoryTitleTextColor,
+                  color: AppColors.commonBlackColor,
                 ),
               ),
             ),

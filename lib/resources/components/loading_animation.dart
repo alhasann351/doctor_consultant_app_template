@@ -8,7 +8,7 @@ class LoadingAnimation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LoadingAnimationWidget.hexagonDots(
-      color: AppColors.defaultButtonBackgroundColor,
+      color: AppColors.commonGreenColor,
       size: 35,
     );
   }

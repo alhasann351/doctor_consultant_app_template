@@ -1,7 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
-import 'package:doctor_consultant_app_template/views/doctors_booking/payment_screen.dart';
-import 'package:doctor_consultant_app_template/views/doctors_category_screens/doctors_category_screens.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_category_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
@@ -11,7 +10,8 @@ import 'package:doctor_consultant_app_template/views/signup_screen/signup_screen
 import 'package:doctor_consultant_app_template/views/splash_screen/splash_screen.dart';
 import 'package:get/get.dart';
 
-import '../../views/doctors_booking/doctors_booking_screen.dart';
+import '../../views/home_screen/doctors_category/doctors_booking/all_category_doctors_booking/payment/payment_screen.dart';
+import '../../views/home_screen/doctors_category/doctors_booking/doctors_booking_screen.dart';
 import '../../views/home_screen/live_doctors/live_doctors_screen.dart';
 import '../../views/home_screen/search_input/search_input_screen.dart';
 
@@ -69,7 +69,7 @@ class AppRoutes {
         ),
         GetPage(
           name: RoutesName.doctorsCategoryScreens,
-          page: () => const DoctorsCategoryScreens(),
+          page: () => const DoctorsCategoryScreen(),
           transition: Transition.upToDown,
           transitionDuration: const Duration(milliseconds: 600),
         ),

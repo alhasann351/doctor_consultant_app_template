@@ -1,19 +1,19 @@
+import 'package:doctor_consultant_app_template/resources/assets/images_icons.dart';
 import 'package:doctor_consultant_app_template/views_models/controllers/payment_button_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../resources/assets/images_icons.dart';
-import '../../../resources/colors/app_colors.dart';
-import '../../../resources/fonts/app_font_style.dart';
+import '../../../../../../../resources/colors/app_colors.dart';
+import '../../../../../../../resources/fonts/app_font_style.dart';
 
-class CashOnDelivery extends StatefulWidget {
-  const CashOnDelivery({super.key});
+class PaypalPaymentButton extends StatefulWidget {
+  const PaypalPaymentButton({super.key});
 
   @override
-  State<CashOnDelivery> createState() => _CashOnDeliveryState();
+  State<PaypalPaymentButton> createState() => _PaypalPaymentButtonState();
 }
 
-class _CashOnDeliveryState extends State<CashOnDelivery> {
+class _PaypalPaymentButtonState extends State<PaypalPaymentButton> {
   final PaymentButtonController paymentButtonController =
       Get.put(PaymentButtonController());
 
@@ -21,7 +21,7 @@ class _CashOnDeliveryState extends State<CashOnDelivery> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        paymentButtonController.selectCashOnDelivery();
+        paymentButtonController.selectPaypal();
       },
       child: Obx(
         () => SizedBox(
@@ -30,9 +30,9 @@ class _CashOnDeliveryState extends State<CashOnDelivery> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            color: paymentButtonController.cashOnDeliverySelected.value
-                ? AppColors.cardSelectedColor
-                : Colors.white,
+            color: paymentButtonController.paypalSelected.value
+                ? AppColors.commonGreenColor
+                : AppColors.commonWhiteColor,
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Row(
@@ -40,19 +40,18 @@ class _CashOnDeliveryState extends State<CashOnDelivery> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'cash_on_delivery'.tr,
+                    'paypal'.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: AppFontStyle.rubik,
                       fontSize: 16,
-                      color:
-                          paymentButtonController.cashOnDeliverySelected.value
-                              ? Colors.white
-                              : Colors.black,
+                      color: paymentButtonController.paypalSelected.value
+                          ? AppColors.commonWhiteColor
+                          : AppColors.commonBlackColor,
                     ),
                   ),
                   Image.asset(
-                    ImagesIcons.cashOnDeliveryIcon,
+                    ImagesIcons.paypalIcon,
                     height: 35,
                   ),
                 ],

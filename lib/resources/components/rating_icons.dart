@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class RatingIcons extends StatelessWidget {
@@ -12,27 +13,27 @@ class RatingIcons extends StatelessWidget {
         Icon(
           Icons.star,
           size: 20,
-          color: Colors.yellow,
+          color: AppColors.commonYellowColor,
         ),
         Icon(
           Icons.star,
           size: 20,
-          color: Colors.yellow,
+          color: AppColors.commonYellowColor,
         ),
         Icon(
           Icons.star,
           size: 20,
-          color: Colors.yellow,
+          color: AppColors.commonYellowColor,
         ),
         Icon(
           Icons.star,
           size: 20,
-          color: Colors.yellow,
+          color: AppColors.commonYellowColor,
         ),
         Icon(
           Icons.star,
           size: 20,
-          color: Colors.grey,
+          color: AppColors.commonYellowColor,
         ),
       ],
     );
