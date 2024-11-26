@@ -20,16 +20,16 @@ class HeartDoctors extends StatefulWidget {
 
 class _HeartDoctorsState extends State<HeartDoctors> {
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1v_84NrfA21XpCXVUvVVcl9jMdkZ3NgDG',
+    'https://drive.google.com/uc?export=view&id=1Xa52UTZiZZ8lI4rSSr4tNCwAOWs-ophz',
+    'https://drive.google.com/uc?export=view&id=1FecpBpsDfBQA7ys8PY77HGuZcp3eBAmd',
+    'https://drive.google.com/uc?export=view&id=1AB_20pqkIyHMM3wtwYXXNsYvK2PtNos6',
+    'https://drive.google.com/uc?export=view&id=1a4hCnkNOZVncLydL24HAQ1gmCu-oD9L6',
+    'https://drive.google.com/uc?export=view&id=1mNaa8Cp1BLd2G3QTDb6Emwk-yAhz_oAL',
+    'https://drive.google.com/uc?export=view&id=15oC6ZpvTACOLTS9lXyJkcSbA4s_XbNFM',
+    'https://drive.google.com/uc?export=view&id=1aQGPoapzLxWPBxdnc68xEqPqD2QvaFaD',
+    'https://drive.google.com/uc?export=view&id=178NiahI3-ZWQFK3gA1kQ_Eu4pXkK4swm',
+    'https://drive.google.com/uc?export=view&id=1IZbsP9pKcUmh-k3pMoRUB-DfCE6mVOF0',
   ];
 
   final List<String> doctorName = [

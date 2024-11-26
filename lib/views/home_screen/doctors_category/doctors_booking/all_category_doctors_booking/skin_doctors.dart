@@ -20,16 +20,16 @@ class SkinDoctors extends StatefulWidget {
 
 class _SkinDoctorsState extends State<SkinDoctors> {
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1pm0yPU4DElOoiLpCElUVg1Ml5aWilqQQ',
+    'https://drive.google.com/uc?export=view&id=1Lb0gHD85eGtbq-WawGuwLAGb8ZesW30Y',
+    'https://drive.google.com/uc?export=view&id=1Q0xb8c5ubLRKfC5Inelk_bi68odOPraz',
+    'https://drive.google.com/uc?export=view&id=1YkymiztcMl2DakCHrhB30MzyuwA2wqa5',
+    'https://drive.google.com/uc?export=view&id=1oaJ4driUyTSafpjwmFfwvaUpbcHZmN2I',
+    'https://drive.google.com/uc?export=view&id=11kC46mNeRjjn3ESoDTmU1D5kUSCOnA7F',
+    'https://drive.google.com/uc?export=view&id=1znrEk43jNPin0wqg3Nmh04ofyp6SKWnR',
+    'https://drive.google.com/uc?export=view&id=1QzTS-w8T98LN3jQeMG1LNV-7JWyg4Des',
+    'https://drive.google.com/uc?export=view&id=1Dm8cldhVFLFkGQS_JhmFPXgUOo5Yg6uU',
+    'https://drive.google.com/uc?export=view&id=1DHdu2k2Xa1k2XeEGXaJ0ZCu30LW4TY8T',
   ];
 
   final List<String> doctorName = [

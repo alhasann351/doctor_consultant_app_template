@@ -20,16 +20,16 @@ class CancerDoctors extends StatefulWidget {
 
 class _CancerDoctorsState extends State<CancerDoctors> {
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1cIk74RjWsLC57fX4mwWGqKmFwk2AKzS2',
+    'https://drive.google.com/uc?export=view&id=14Cwe2WRBlRpHN_IaZI7Cj68000cYu3fK',
+    'https://drive.google.com/uc?export=view&id=1vpleHNzLlqIYxP1qnij_JechPHpW7_-T',
+    'https://drive.google.com/uc?export=view&id=1ZQWZCRUE_LK0yR6qqtBtUEyVqavCPlvF',
+    'https://drive.google.com/uc?export=view&id=1NO0uqzGZxR2KWV2TD69JZh90R7GsK1oY',
+    'https://drive.google.com/uc?export=view&id=1MOQBZlf7am-5k0OvoVMY_9tyKnHqotSV',
+    'https://drive.google.com/uc?export=view&id=1tRUxJmBjRkh2giq7KWPWQo9ACxmTloan',
+    'https://drive.google.com/uc?export=view&id=1EExoqK-3a5bRGizfp9GjB_1oqMahrRWj',
+    'https://drive.google.com/uc?export=view&id=1vmouia40MbLiasRb1iD9d7-6AXxjJRTF',
+    'https://drive.google.com/uc?export=view&id=16f8RVv7vJc3EkHcWhXLMauPWYpgXkpLK',
   ];
 
   final List<String> doctorName = [

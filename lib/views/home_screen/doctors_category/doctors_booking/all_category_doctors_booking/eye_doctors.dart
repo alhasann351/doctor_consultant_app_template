@@ -20,16 +20,16 @@ class EyeDoctors extends StatefulWidget {
 
 class _EyeDoctorsState extends State<EyeDoctors> {
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=17-mssCexa3D5i1IcSIoamZ0n4URHMeHO',
+    'https://drive.google.com/uc?export=view&id=1CDB2KDsj7pFds55w-6i3F59T81CX_FL2',
+    'https://drive.google.com/uc?export=view&id=1WrN92X7bwrrnWkBmekiOBUxE5be4l9tv',
+    'https://drive.google.com/uc?export=view&id=1boHtlPzR6Q53XCrHh8KRu0UwcbV80B_8',
+    'https://drive.google.com/uc?export=view&id=1dFDm4BIxPkrRdmQykS-vSkdJVmiQPavP',
+    'https://drive.google.com/uc?export=view&id=11aPXX7Kw58M_UYq-MD2t5D0Lhzp-FSle',
+    'https://drive.google.com/uc?export=view&id=1PSSaH8QQlOZCucMftrH_2jl7nSFn6uA-',
+    'https://drive.google.com/uc?export=view&id=18SOpOLXuBNx18bOSM85JRSNXUdoSBR_g',
+    'https://drive.google.com/uc?export=view&id=1QLLbx92ZldRjTj3iWcjVfFZtSR9c4CHu',
+    'https://drive.google.com/uc?export=view&id=1uylNGqjpgkTv7a587j9utVBSVwinBuhq',
   ];
 
   final List<String> doctorName = [

@@ -20,16 +20,16 @@ class EarDoctors extends StatefulWidget {
 
 class _EarDoctorsState extends State<EarDoctors> {
   final List<String> image = [
-    'https://drive.google.com/uc?export=view&id=1WIP2tlhwqlBrPZg0egCSXjlThxnDC2mQ',
-    'https://drive.google.com/uc?export=view&id=10Uha5IOVfaw5k8PTPVG1-pRNiLbQnBzU',
-    'https://drive.google.com/uc?export=view&id=1TpGWYK4ADG9WGY5kTFA7HypTP4mggqZ3',
-    'https://drive.google.com/uc?export=view&id=1J6UFObdGZzgjx1QNq4GpkOHwsiRRSi_m',
-    'https://drive.google.com/uc?export=view&id=1f54iCh1kLGBc8AhXE1jlNzMyJWVZ7t1J',
-    'https://drive.google.com/uc?export=view&id=1rVHsdd4u1GOjCQbSUL5-o3ZKECokzpx2',
-    'https://drive.google.com/uc?export=view&id=1CgeVOO8vKOx_b2EytCK_G6dxqdCy6opw',
-    'https://drive.google.com/uc?export=view&id=1--YOc3yRVMe7x5pmGdQzJWVCOe1hasnQ',
-    'https://drive.google.com/uc?export=view&id=1QemuqXbRjWl04H6LcRHafpTXABzZQHRs',
-    'https://drive.google.com/uc?export=view&id=1qiPh0zepJAKlY870VvKiTRQHqLSLEmuu',
+    'https://drive.google.com/uc?export=view&id=1nH-s_MePHqQ3bpPi_juu1LUz2oHEPq9h',
+    'https://drive.google.com/uc?export=view&id=1AAim39CKHOXSAck7ZKFYM0kJaMzftHE1',
+    'https://drive.google.com/uc?export=view&id=1WnsmUhXwTpRer7FyG1vjD57zM_G_BCs-',
+    'https://drive.google.com/uc?export=view&id=1Di_zc_mThhpFCpBlm61cpBeYiRyL7zMV',
+    'https://drive.google.com/uc?export=view&id=1xwrRakt832JUMA-srTK1C0YsjSyj2vsv',
+    'https://drive.google.com/uc?export=view&id=1pQfKESpa8SE5inmEUSbJfp3tRv29zEae',
+    'https://drive.google.com/uc?export=view&id=1FcS4n3UTvK-2LWRy4zEdVtFz7U2nPTP5',
+    'https://drive.google.com/uc?export=view&id=1FLPurFHa9Mjjk6dxXk3Eiy3DcynciG0e',
+    'https://drive.google.com/uc?export=view&id=1baMxZluWFMwWmnd4MsjmtbH8Su70QL8W',
+    'https://drive.google.com/uc?export=view&id=1ALmpsCiKa3gEnOw_p5iD_QlbHyzutLVx',
   ];
 
   final List<String> doctorName = [
