@@ -50,6 +50,19 @@ class PopularDoctors extends StatelessWidget {
     'skin_specialist'.tr,
   ];
 
+  final List<String> hospitalName = [
+    'Lifeline Haven Medical',
+    'Serenity Springs Health',
+    'Beacon Crest Medical',
+    'Evergreen Care Pavilion',
+    'Horizon Wellness Hospital',
+    'Harmony Ridge Health Center',
+    'VitalPath Regional Medical',
+    'Silver Oak Healing Center',
+    'Tranquil Meadows Medical',
+    'Summit Grove Healthcare',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -105,59 +118,71 @@ class PopularDoctors extends StatelessWidget {
                     width: 170,
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 20),
-                      child: Card(
-                        elevation: 10,
-                        color: Colors.white,
-                        clipBehavior: Clip.antiAlias,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            CachedNetworkImage(
-                              height: 150,
-                              width: double.infinity,
-                              imageUrl: image[index],
-                              fit: BoxFit.fill,
-                              placeholder: (context, url) =>
-                                  const LoadingAnimation(),
-                              errorWidget: (context, url, error) => const Icon(
-                                Icons.error,
-                                color: Colors.grey,
-                              ),
-                            ),
-                            Flexible(
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                    top: 10, bottom: 0, left: 5, right: 5),
-                                child: Text(
-                                  doctorName[index],
-                                  overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(
-                                    fontFamily: AppFontStyle.rubik,
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 0, bottom: 0, left: 5, right: 5),
-                              child: Text(
-                                doctorSpeciality[index],
-                                style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 13,
+                      child: GestureDetector(
+                        onTap: () {
+                          Get.toNamed(RoutesName.doctorsBookingScreen,
+                              arguments: {
+                                'doctorImage': image[index],
+                                'doctorName': doctorName[index],
+                                'doctorSpeciality': doctorSpeciality[index],
+                                'hospitalName': hospitalName[index],
+                              });
+                        },
+                        child: Card(
+                          elevation: 10,
+                          color: Colors.white,
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              CachedNetworkImage(
+                                height: 150,
+                                width: double.infinity,
+                                imageUrl: image[index],
+                                fit: BoxFit.fill,
+                                placeholder: (context, url) =>
+                                    const LoadingAnimation(),
+                                errorWidget: (context, url, error) =>
+                                    const Icon(
+                                  Icons.error,
                                   color: Colors.grey,
                                 ),
                               ),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                  top: 0, bottom: 0, left: 5, right: 5),
-                              child: RatingIcons(),
-                            ),
-                          ],
+                              Flexible(
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 10, bottom: 0, left: 5, right: 5),
+                                  child: Text(
+                                    doctorName[index],
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      fontFamily: AppFontStyle.rubik,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 0, bottom: 0, left: 5, right: 5),
+                                child: Text(
+                                  doctorSpeciality[index],
+                                  style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 13,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                    top: 0, bottom: 0, left: 5, right: 5),
+                                child: RatingIcons(),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),

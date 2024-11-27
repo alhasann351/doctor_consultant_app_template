@@ -28,7 +28,6 @@ class Languages extends Translations {
           'search_input_experience': 'Experience',
           'search_input_doctors': 'Doctors',
           'search_input_specialist_Title_Text': 'Specialist',
-          'search_input_hospital_name': 'Life Care Medical Center',
 
           //live doctors
           'live_doctors_title_text': 'Live Doctors',
@@ -199,6 +198,10 @@ class Languages extends Translations {
           'ok': 'ঠিক আছে',
           'edit_appointment': 'অ্যাপয়েন্টমেন্ট এডিট করুন',
 
+          //popular doctors
+          'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
+          'see_all_text': 'সব দেখুন',
+
           //onboarding screen
           'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
           'onboarding_title_text_2': 'সেরা ডাক্তার চয়ন করুন',
@@ -257,9 +260,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
 
           //home screen
-
-          'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
-          'see_all_text': 'সব দেখুন',
 
           //doctors category screen
           'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
@@ -333,6 +333,10 @@ class Languages extends Translations {
           'ok': 'ठीक है',
           'edit_appointment': 'अपॉइंटमेंट संपादित करें',
 
+          //popular doctors
+          'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
+          'see_all_text': 'सभी देखें',
+
           //onboarding screen
           'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
           'onboarding_title_text_2': 'सर्वश्रेष्ठ डॉक्टर चुनें',
@@ -392,9 +396,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
 
           //home screen
-
-          'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
-          'see_all_text': 'सभी देखें',
 
           //doctors category screen
           'specialist_doctors': 'विशेषज्ञ डॉक्टर',

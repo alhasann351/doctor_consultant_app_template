@@ -50,6 +50,19 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
     'Skin specialist',
   ];
 
+  final List<String> hospitalName = [
+    'Lifeline Haven Medical',
+    'Serenity Springs Health',
+    'Beacon Crest Medical',
+    'Evergreen Care Pavilion',
+    'Horizon Wellness Hospital',
+    'Harmony Ridge Health Center',
+    'VitalPath Regional Medical',
+    'Silver Oak Healing Center',
+    'Tranquil Meadows Medical',
+    'Summit Grove Healthcare',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -90,7 +103,7 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                               'doctorImage': image[index],
                               'doctorName': doctorName[index],
                               'doctorSpeciality': doctorSpeciality[index],
-                              'hospitalName': 'search_input_hospital_name'.tr,
+                              'hospitalName': hospitalName[index],
                             });
                       },
                       child: Card(
