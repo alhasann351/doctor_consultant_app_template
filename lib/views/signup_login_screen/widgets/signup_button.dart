@@ -15,7 +15,7 @@ class SignupButton extends StatelessWidget {
       height: 54,
       width: MediaQuery.of(context).size.width,
       child: RoundedButton(
-        backgroundColor: AppColors.signupButtonBackgroundColor.withOpacity(0.8),
+        backgroundColor: AppColors.commonLightBlueAccentColor.withOpacity(0.8),
         title: 'signup_text'.tr,
         textStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,

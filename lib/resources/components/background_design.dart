@@ -16,7 +16,7 @@ class BackgroundDesign extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             AppColors.homeBottomBackgroundColor.withOpacity(0.2),
-            AppColors.homeTopBackgroundColor.withOpacity(0.2),
+            AppColors.commonLightBlueAccentColor.withOpacity(0.2),
           ],
         ),
       ),

@@ -205,7 +205,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                             style: const TextStyle(
                                 fontFamily: AppFontStyle.rubik,
                                 fontSize: 15,
-                                color: AppColors.doctorSpecialistTextColor),
+                                color: AppColors.commonLightBlueAccentColor),
                           ),
                         ),
                         Positioned(
@@ -234,7 +234,7 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                 style: const TextStyle(
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 15,
-                                    color: AppColors.goodDoctorTextColor),
+                                    color: AppColors.commonGreenColor),
                               ),
                               const SizedBox(
                                 width: 15,
@@ -263,7 +263,8 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                                     fontFamily: AppFontStyle.rubik,
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
-                                    color: AppColors.nextAvailableTextColor),
+                                    color:
+                                        AppColors.commonLightBlueAccentColor),
                               ),
                               const SizedBox(
                                 height: 2,
@@ -287,7 +288,8 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
                             height: 50,
                             child: RoundedButton(
                               title: 'book_now'.tr,
-                              backgroundColor: AppColors.bookNowButtonColor,
+                              backgroundColor:
+                                  AppColors.commonLightBlueAccentColor,
                               textStyle: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,

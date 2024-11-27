@@ -206,7 +206,7 @@ class _EyeDoctorsState extends State<EyeDoctors> {
                                         fontFamily: AppFontStyle.rubik,
                                         fontSize: 15,
                                         color: AppColors
-                                            .doctorSpecialistTextColor),
+                                            .commonLightBlueAccentColor),
                                   ),
                                 ),
                                 Positioned(
@@ -236,8 +236,7 @@ class _EyeDoctorsState extends State<EyeDoctors> {
                                         style: const TextStyle(
                                             fontFamily: AppFontStyle.rubik,
                                             fontSize: 15,
-                                            color:
-                                                AppColors.goodDoctorTextColor),
+                                            color: AppColors.commonGreenColor),
                                       ),
                                       const SizedBox(
                                         width: 15,
@@ -269,7 +268,7 @@ class _EyeDoctorsState extends State<EyeDoctors> {
                                             fontSize: 15,
                                             fontWeight: FontWeight.bold,
                                             color: AppColors
-                                                .nextAvailableTextColor),
+                                                .commonLightBlueAccentColor),
                                       ),
                                       const SizedBox(
                                         height: 2,
@@ -292,7 +291,7 @@ class _EyeDoctorsState extends State<EyeDoctors> {
                                   child: RoundedButton(
                                     title: 'book_now'.tr,
                                     backgroundColor:
-                                        AppColors.bookNowButtonColor,
+                                        AppColors.commonLightBlueAccentColor,
                                     textStyle: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,

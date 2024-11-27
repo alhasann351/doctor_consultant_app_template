@@ -33,7 +33,7 @@ class AlreadyAccount extends StatelessWidget {
               fontFamily: AppFontStyle.rubik,
               fontSize: 15,
               fontWeight: FontWeight.bold,
-              color: AppColors.alreadyAccountLoginTextColor,
+              color: AppColors.commonLightBlueAccentColor,
             ),
           ),
         ),

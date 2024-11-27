@@ -126,7 +126,7 @@ class _CommentsInputState extends State<CommentsInput> {
                   },
                   child: const Icon(
                     Icons.send_outlined,
-                    color: AppColors.liveDoctorsCommentsInputSuffixIconColor,
+                    color: AppColors.commonLightBlueAccentColor,
                     size: 25,
                   ),
                 ),

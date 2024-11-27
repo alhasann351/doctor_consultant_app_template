@@ -17,14 +17,14 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              AppColors.forgotPasswordTopBackgroundColor.withOpacity(0.3),
+              AppColors.commonLightBlueAccentColor.withOpacity(0.3),
               AppColors.forgotPasswordBottomBackgroundColor.withOpacity(0.3),
             ],
           ),

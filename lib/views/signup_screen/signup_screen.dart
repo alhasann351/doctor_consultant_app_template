@@ -21,14 +21,14 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              AppColors.signupTopBackgroundColor.withOpacity(0.3),
+              AppColors.commonLightBlueAccentColor.withOpacity(0.3),
               AppColors.signupBottomBackgroundColor.withOpacity(0.3),
             ],
           ),

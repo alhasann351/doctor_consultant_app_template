@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
           Positioned(
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   center: Alignment.topLeft,
                   radius: 0.8,
                   colors: [
-                    AppColors.splashTopBackgroundColor.withOpacity(0.3),
+                    AppColors.commonLightBlueAccentColor.withOpacity(0.3),
                     AppColors.splashCenterBackgroundColor.withOpacity(0.3),
                   ],
                   stops: const [

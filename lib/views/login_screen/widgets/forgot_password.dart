@@ -22,7 +22,7 @@ class ForgotPassword extends StatelessWidget {
             fontFamily: AppFontStyle.rubik,
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: AppColors.forgotPasswordTextColor,
+            color: AppColors.commonLightBlueAccentColor,
           ),
         ),
       ),

@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
             end: Alignment.bottomCenter,
             colors: [
               AppColors.loginTopBackgroundColor.withOpacity(0.3),
-              AppColors.loginBottomBackgroundColor.withOpacity(0.3),
+              AppColors.commonLightBlueAccentColor.withOpacity(0.3),
             ],
           ),
         ),

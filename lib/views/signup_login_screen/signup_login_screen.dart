@@ -18,7 +18,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
           Positioned(
@@ -32,7 +32,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                   center: Alignment.topLeft,
                   radius: 0.8,
                   colors: [
-                    AppColors.signupLoginTopBackgroundColor.withOpacity(0.3),
+                    AppColors.commonLightBlueAccentColor.withOpacity(0.3),
                     AppColors.signupLoginCenterBackgroundColor.withOpacity(0.3),
                   ],
                   stops: const [

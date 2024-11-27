@@ -1,4 +1,4 @@
-import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/widgets/doctors_category.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/live_doctors.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/popular_doctors/widgets/popular_doctors.dart';
@@ -19,20 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  AppColors.homeTopBackgroundColor.withOpacity(0.2),
-                  AppColors.homeBottomBackgroundColor.withOpacity(0.2),
-                ],
-              ),
-            ),
-          ),
+          const BackgroundDesign(),
           const UsersProfile(),
           const Positioned(
             top: 115,

@@ -34,7 +34,7 @@ class DoNotAccount extends StatelessWidget {
               fontFamily: AppFontStyle.rubik,
               fontSize: 15,
               fontWeight: FontWeight.bold,
-              color: AppColors.doNotAccountSignupTextColor,
+              color: AppColors.commonLightBlueAccentColor,
             ),
           ),
         ),

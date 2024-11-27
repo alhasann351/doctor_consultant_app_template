@@ -8,9 +8,7 @@ class AppColors {
   static const Color commonGreenColor = Color(0xFF0EBE7F);
   static const Color commonYellowColor = Colors.yellow;
   static const Color commonBlueColor = Colors.blue;
-
-  //scaffold background
-  static const Color scaffoldBackgroundColor = Colors.white;
+  static const Color commonLightBlueAccentColor = Colors.lightBlueAccent;
 
   //users profile
   static const Color usersProfileDetailsTopLeftBackgroundColor =
@@ -26,8 +24,6 @@ class AppColors {
   static Color liveDoctorsCommentBoxColor = Colors.black26.withOpacity(0.2);
   static const Color liveDoctorsCommentsInputPrefixIconColor =
       Colors.greenAccent;
-  static const Color liveDoctorsCommentsInputSuffixIconColor =
-      Colors.lightBlueAccent;
 
   //doctors category
   static const Color doctorsCategoryCancerCardColor = Colors.orange;
@@ -35,43 +31,25 @@ class AppColors {
   static const Color doctorsCategoryEyeCardColor = Colors.deepPurple;
   static const Color doctorsCategoryHeartCardColor = Colors.red;
   static const Color doctorsCategorySkinCardColor = Colors.pink;
-  static const Color doctorSpecialistTextColor = Colors.lightBlueAccent;
-  static const Color goodDoctorTextColor = Colors.green;
   static const Color seePatientsTextColor = Colors.blueAccent;
-  static const Color nextAvailableTextColor = Colors.lightBlueAccent;
-  static const Color bookNowButtonColor = Colors.lightBlueAccent;
-
-  //toast message
-  static const Color toastMessageBackgroundColor = Colors.white;
-  static const Color toastMessageTextColor = Colors.black;
-
-  //default button background
 
   //splash screen
-  static const Color splashTopBackgroundColor = Colors.lightBlueAccent;
   static const Color splashCenterBackgroundColor = Colors.white;
   static const Color splashBottomBackgroundColor = Colors.greenAccent;
   static const Color splashTextColor = Colors.black;
 
   //onboarding screen
-  static const Color topBackgroundColor = Colors.lightBlueAccent;
   static const Color centerBackgroundColor = Colors.white;
   static const Color bottomBackgroundColor = Colors.greenAccent;
   static const Color circleAvatarForegroundColor = Colors.white;
   static const Color onboardingTitleTextColor = Colors.black;
   static const Color onboardingDescriptionTextColor = Colors.grey;
-  static const Color smoothPageIndicatorActiveDotColor = Colors.lightBlueAccent;
-  static const Color onboardingNextButtonTextColor = Colors.lightBlueAccent;
-  static const Color onboardingSkipFinishButtonTextColor =
-      Colors.lightBlueAccent;
 
   //signup login screen
-  static const Color signupLoginTopBackgroundColor = Colors.lightBlueAccent;
   static const Color signupLoginCenterBackgroundColor = Colors.white;
   static const Color signupLoginBottomBackgroundColor = Colors.greenAccent;
   static const Color titleTextColor = Colors.black;
   static const Color descriptionTextColor = Colors.grey;
-  static const Color signupButtonBackgroundColor = Colors.lightBlueAccent;
   static const Color loginButtonBackgroundColor = Colors.greenAccent;
   static const Color signupButtonTextColor = Colors.white;
   static const Color loginButtonTextColor = Colors.white;
@@ -79,7 +57,6 @@ class AppColors {
   static const Color dividerTextColor = Colors.black;
 
   //signup screen
-  static const Color signupTopBackgroundColor = Colors.lightBlueAccent;
   static const Color signupBottomBackgroundColor = Colors.greenAccent;
   static const Color signupTitleTextColor = Colors.black;
   static const Color signupCursorColor = Colors.black;
@@ -90,18 +67,15 @@ class AppColors {
   static const Color signupNameTextColor = Colors.black;
   static const Color signupEmailTextColor = Colors.black;
   static const Color signupPasswordTextColor = Colors.black;
-  static const Color signupButtonColor = Colors.lightBlueAccent;
   static const Color signupTextColor = Colors.white;
   static const Color signupDividerColor = Colors.grey;
   static const Color signupDividerTextColor = Colors.black;
   static const Color differentSignupCardBackgroundColor = Colors.white;
   static const Color alreadyAccountTextColor = Colors.grey;
-  static const Color alreadyAccountLoginTextColor = Colors.lightBlueAccent;
   static const Color signupSubtitleTextColor = Colors.grey;
 
 //login screen
   static const Color loginTopBackgroundColor = Colors.greenAccent;
-  static const Color loginBottomBackgroundColor = Colors.lightBlueAccent;
   static const Color loginTitleTextColor = Colors.black;
   static const Color loginCursorColor = Colors.black;
   static const Color loginEmailTextColor = Colors.black;
@@ -113,15 +87,12 @@ class AppColors {
   static const Color loginButtonColor = Colors.greenAccent;
   static const Color loginTextColor = Colors.white;
   static const Color loginSubtitleTextColor = Colors.grey;
-  static const Color forgotPasswordTextColor = Colors.lightBlueAccent;
   static const Color loginDividerColor = Colors.grey;
   static const Color loginDividerTextColor = Colors.black;
   static const Color differentLoginCardBackgroundColor = Colors.white;
   static const Color doNotAccountTextColor = Colors.grey;
-  static const Color doNotAccountSignupTextColor = Colors.lightBlueAccent;
 
   //forgot password screen
-  static const Color forgotPasswordTopBackgroundColor = Colors.lightBlueAccent;
   static const Color forgotPasswordBottomBackgroundColor = Colors.greenAccent;
   static const Color forgotPasswordTitleTextColor = Colors.black;
   static const Color forgotPasswordSubtitleTextColor = Colors.grey;
@@ -130,11 +101,9 @@ class AppColors {
   static const Color forgotPasswordFillColor = Colors.white;
   static const Color forgotPasswordHintTextColor = Colors.grey;
   static const Color forgotPasswordPrefixIconColor = Colors.grey;
-  static const Color submitButtonColor = Colors.lightBlueAccent;
   static const Color submitTextColor = Colors.white;
 
   //home screen
-  static const Color homeTopBackgroundColor = Colors.lightBlueAccent;
   static const Color homeBottomBackgroundColor = Colors.greenAccent;
 
   //live doctors screen
@@ -142,11 +111,9 @@ class AppColors {
   static const Color backButtonIconColor = Colors.black;
 
   //doctors category screen
-  static const Color cancerScreenTopBackgroundColor = Colors.lightBlueAccent;
   static const Color cancerScreenBottomBackgroundColor = Colors.greenAccent;
   static const Color cancerScreenBackButtonCardBackgroundColor = Colors.white;
   static const Color cancerScreenBackButtonIconColor = Colors.black;
   static const Color cancerTitleTextColor = Colors.black;
-
   static const Color favoriteIconColor = Colors.red;
 }

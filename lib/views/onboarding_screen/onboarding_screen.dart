@@ -22,7 +22,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackgroundColor,
+      backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
           Positioned(
@@ -36,7 +36,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   center: Alignment.topLeft,
                   radius: 0.8,
                   colors: [
-                    AppColors.topBackgroundColor.withOpacity(0.3),
+                    AppColors.commonLightBlueAccentColor.withOpacity(0.3),
                     AppColors.centerBackgroundColor.withOpacity(0.3),
                   ],
                   stops: const [
@@ -106,7 +106,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         fontFamily: AppFontStyle.rubik,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: AppColors.onboardingSkipFinishButtonTextColor,
+                        color: AppColors.commonLightBlueAccentColor,
                       ),
                     ),
                   ),
@@ -115,8 +115,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     count: 3,
                     axisDirection: Axis.horizontal,
                     effect: const WormEffect(
-                        activeDotColor:
-                            AppColors.smoothPageIndicatorActiveDotColor),
+                        activeDotColor: AppColors.commonLightBlueAccentColor),
                   ),
                   onboardingController.currentScreenIndex.value == 2
                       ? const SizedBox(width: 10)
@@ -135,7 +134,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               fontFamily: AppFontStyle.rubik,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.onboardingNextButtonTextColor,
+                              color: AppColors.commonLightBlueAccentColor,
                             ),
                           ),
                         ),
