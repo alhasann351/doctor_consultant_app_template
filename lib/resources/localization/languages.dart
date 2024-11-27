@@ -54,6 +54,10 @@ class Languages extends Translations {
           'date_select': 'Select your date',
           'time_select': 'Select your time',
 
+          //popular doctors
+          'popular_doctors_title_text': 'Popular Doctors',
+          'see_all_text': 'See all',
+
           //onboarding screen
           'onboarding_title_text_1': 'Find Trusted Doctors',
           'onboarding_title_text_2': 'Choose Best Doctors',
@@ -112,9 +116,6 @@ class Languages extends Translations {
           'forgot_password_submit_toast': 'Check your email',
 
           //home screen
-
-          'popular_doctors_title_text': 'Popular Doctors',
-          'see_all_text': 'See all',
 
           //doctors category screen
           'specialist_doctors': 'Specialist doctors',

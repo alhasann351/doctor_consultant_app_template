@@ -64,9 +64,12 @@ class CardDoctorInformation extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      doctorName,
-                      style: textStyle,
+                    Flexible(
+                      child: Text(
+                        doctorName,
+                        overflow: TextOverflow.ellipsis,
+                        style: textStyle,
+                      ),
                     ),
                     InkWell(
                       onTap: () {
