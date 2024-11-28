@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/different_way_login.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/dividers.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/widgets/do_not_account.dart';
@@ -22,42 +23,35 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.commonWhiteColor,
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.commonGreenAccentColor.withOpacity(0.3),
-              AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-            ],
-          ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Center(
-            child: ListView(
-              shrinkWrap: true,
-              children: const [
-                TitleText(),
-                SubtitleText(),
-                SizedBox(height: 50),
-                InputEmail(),
-                SizedBox(height: 10),
-                InputPassword(),
-                ForgotPassword(),
-                SizedBox(height: 40),
-                LoginButton(),
-                SizedBox(height: 20),
-                Dividers(),
-                SizedBox(height: 20),
-                DifferentWayLogin(),
-                SizedBox(height: 50),
-                DoNotAccount(),
-              ],
+      body: Stack(
+        children: [
+          const BackgroundDesign(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Center(
+              child: ListView(
+                shrinkWrap: true,
+                children: const [
+                  TitleText(),
+                  SubtitleText(),
+                  SizedBox(height: 50),
+                  InputEmail(),
+                  SizedBox(height: 10),
+                  InputPassword(),
+                  ForgotPassword(),
+                  SizedBox(height: 40),
+                  LoginButton(),
+                  SizedBox(height: 20),
+                  Dividers(),
+                  SizedBox(height: 20),
+                  DifferentWayLogin(),
+                  SizedBox(height: 50),
+                  DoNotAccount(),
+                ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }

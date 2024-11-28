@@ -1,3 +1,5 @@
+import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
+import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/input_email.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/submit_button.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/widgets/subtitle_text.dart';
@@ -18,33 +20,27 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.commonWhiteColor,
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-              AppColors.commonGreenAccentColor.withOpacity(0.3),
-            ],
-          ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Center(
-            child: ListView(
-              shrinkWrap: true,
-              children: const [
-                TitleText(),
-                SubtitleText(),
-                SizedBox(height: 50),
-                InputEmail(),
-                SizedBox(height: 50),
-                SubmitButton(),
-              ],
+      body: Stack(
+        children: [
+          const BackgroundDesign(),
+          const BackButtonTitle(titleText: ''),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Center(
+              child: ListView(
+                shrinkWrap: true,
+                children: const [
+                  TitleText(),
+                  SubtitleText(),
+                  SizedBox(height: 50),
+                  InputEmail(),
+                  SizedBox(height: 50),
+                  SubmitButton(),
+                ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }

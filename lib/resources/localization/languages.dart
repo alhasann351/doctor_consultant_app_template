@@ -22,6 +22,49 @@ class Languages extends Translations {
           'onboarding_next_text': 'Next',
           'onboarding_finish_text': 'Finish',
 
+          //signup login screen
+          'title_text': 'Doctor Consultant',
+          'description_text': 'Get popular doctors in doctor consultant',
+          'signup_text': 'Signup',
+          'login_text': 'Login',
+          'or_text': 'OR',
+
+          //signup screen
+          'signup_title_text': 'Doctor Consultant',
+          'signup_input_name_hint_text': 'Name',
+          'signup_input_email_hint_text': 'Email',
+          'signup_input_password_hint_text': 'Password',
+          'signup_button_text': 'Signup',
+          'signup_or_text': 'OR',
+          'signup_with_apple_toast_message': 'Signup with apple id',
+          'signup_with_google_toast_message': 'Signup with google',
+          'signup_with_facebook_toast_message': 'Signup with facebook',
+          'already_account_text': 'Already have an account?',
+          'already_account_login_text': 'Login',
+          'signup_subtitle_text': 'Welcome! Please enter your signup details.',
+
+          //login screen
+          'login_title_text': 'Doctor Consultant',
+          'login_input_email_hint_text': 'Email',
+          'login_input_password_hint_text': 'Password',
+          'login_button_text': 'Login',
+          'login_subtitle_text': 'Welcome! Please enter your login details.',
+          'forgot_password_text': 'Forgot password?',
+          'login_or_text': 'OR',
+          'login_with_apple_toast_message': 'Login with apple id',
+          'login_with_google_toast_message': 'Login with google',
+          'login_with_facebook_toast_message': 'Login with facebook',
+          'do_not_account_text': "Don't have an account?",
+          'do_not_account_signup_text': 'Signup',
+
+          //forgot password screen
+          'forgot_password_title_text': 'Forgot Password?',
+          'forgot_password_subtitle_text':
+              "Don't worry! It happens. Please enter the email address associated with your account.",
+          'forgot_password_input_email_hint_text': 'Email',
+          'submit_button_text': 'Submit',
+          'forgot_password_submit_toast': 'Check your email',
+
           //users profile
           'user_name_text': 'Hi Al-Hasan!',
           'users_title_text': 'Find popular Doctors',
@@ -84,56 +127,6 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'Popular Doctors',
           'see_all_text': 'See all',
-
-          //signup login screen
-          'title_text': 'Doctor Consultant',
-          'description_text': 'Get popular doctors in doctor consultant',
-          'signup_text': 'Signup',
-          'login_text': 'Login',
-          'or_text': 'OR',
-
-          //signup screen
-          'signup_title_text': 'Doctor Consultant',
-          'signup_input_name_hint_text': 'Name',
-          'signup_input_email_hint_text': 'Email',
-          'signup_input_password_hint_text': 'Password',
-          'signup_button_text': 'Signup',
-          'signup_or_text': 'OR',
-          'signup_with_apple_toast_message': 'Signup with apple id',
-          'signup_with_google_toast_message': 'Signup with google',
-          'signup_with_facebook_toast_message': 'Signup with facebook',
-          'already_account_text': 'Already have an account?',
-          'already_account_login_text': 'Login',
-          'signup_subtitle_text': 'Welcome! Please enter your signup details.',
-
-          //login screen
-          'login_title_text': 'Doctor Consultant',
-          'login_input_email_hint_text': 'Email',
-          'login_input_password_hint_text': 'Password',
-          'login_button_text': 'Login',
-          'login_subtitle_text': 'Welcome! Please enter your login details.',
-          'forgot_password_text': 'Forgot password?',
-          'login_or_text': 'OR',
-          'login_with_apple_toast_message': 'Login with apple id',
-          'login_with_google_toast_message': 'Login with google',
-          'login_with_facebook_toast_message': 'Login with facebook',
-          'do_not_account_text': "Don't have an account?",
-          'do_not_account_signup_text': 'Signup',
-
-          //forgot password screen
-          'forgot_password_title_text': 'Forgot Password?',
-          'forgot_password_subtitle_text':
-              "Don't worry! It happens. Please enter the email address associated with your account.",
-          'forgot_password_input_email_hint_text': 'Email',
-          'submit_button_text': 'Submit',
-          'forgot_password_submit_toast': 'Check your email',
-
-          //home screen
-
-          //doctors category screen
-          'specialist_doctors': 'Specialist doctors',
-
-          //booking doctors screen
         },
         'bn_BD': {
           //splash screen
@@ -153,6 +146,49 @@ class Languages extends Translations {
           'onboarding_skip_text': 'এড়িয়ে যান',
           'onboarding_next_text': 'পরবর্তী',
           'onboarding_finish_text': 'শেষ করুন',
+
+          //signup login screen
+          'title_text': 'ডাক্তার পরামর্শদাতা',
+          'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
+          'signup_text': 'সাইন আপ',
+          'login_text': 'লগইন',
+          'or_text': 'অথবা',
+
+          //signup screen
+          'signup_title_text': 'ডাক্তার পরামর্শদাতা',
+          'signup_input_name_hint_text': 'নাম',
+          'signup_input_email_hint_text': 'ইমেইল',
+          'signup_input_password_hint_text': 'পাসওয়ার্ড',
+          'signup_button_text': 'সাইন আপ',
+          'signup_or_text': 'অথবা',
+          'signup_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে সাইন আপ করুন',
+          'signup_with_google_toast_message': 'গুগলের সাথে সাইন আপ করুন',
+          'signup_with_facebook_toast_message': 'ফেসবুক দিয়ে সাইন আপ',
+          'already_account_text': 'একাউন্ট থাকলে?',
+          'already_account_login_text': 'লগইন',
+          'signup_subtitle_text': 'স্বাগত! আপনার সাইন আপ বিবরণ লিখুন।',
+
+          //login screen
+          'login_title_text': 'ডাক্তার পরামর্শদাতা',
+          'login_input_email_hint_text': 'ইমেইল',
+          'login_input_password_hint_text': 'পাসওয়ার্ড',
+          'login_button_text': 'লগইন',
+          'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।',
+          'forgot_password_text': 'পাসওয়ার্ড ভুলে গেছেন?',
+          'login_or_text': 'অথবা',
+          'login_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে লগইন করুন',
+          'login_with_google_toast_message': 'গুগলের সাথে লগইন করুন',
+          'login_with_facebook_toast_message': 'ফেসবুক দিয়ে লগইন আপ',
+          'do_not_account_text': 'একাউন্ট না থাকলে?',
+          'do_not_account_signup_text': 'সাইন আপ',
+
+          //forgot password screen
+          'forgot_password_title_text': 'পাসওয়ার্ড ভুলে গেছেন?',
+          'forgot_password_subtitle_text':
+              "চিন্তা করবেন না! এটা ঘটে। আপনার অ্যাকাউন্টের সাথে যুক্ত ইমেইল ঠিকানা লিখুন।",
+          'forgot_password_input_email_hint_text': 'ইমেইল',
+          'submit_button_text': 'জমা দিন',
+          'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
 
           //users profile
           'user_name_text': 'হাই আল-হাসান!',
@@ -217,56 +253,6 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
           'see_all_text': 'সব দেখুন',
-
-          //signup login screen
-          'title_text': 'ডাক্তার পরামর্শদাতা',
-          'description_text': 'ডাক্তার পরামর্শদাতা জনপ্রিয় ডাক্তার পান',
-          'signup_text': 'সাইন আপ',
-          'login_text': 'লগইন',
-          'or_text': 'অথবা',
-
-          //signup screen
-          'signup_title_text': 'ডাক্তার পরামর্শদাতা',
-          'signup_input_name_hint_text': 'নাম',
-          'signup_input_email_hint_text': 'ইমেইল',
-          'signup_input_password_hint_text': 'পাসওয়ার্ড',
-          'signup_button_text': 'সাইন আপ',
-          'signup_or_text': 'অথবা',
-          'signup_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে সাইন আপ করুন',
-          'signup_with_google_toast_message': 'গুগলের সাথে সাইন আপ করুন',
-          'signup_with_facebook_toast_message': 'ফেসবুক দিয়ে সাইন আপ',
-          'already_account_text': 'একাউন্ট থাকলে?',
-          'already_account_login_text': 'লগইন',
-          'signup_subtitle_text': 'স্বাগত! আপনার সাইন আপ বিবরণ লিখুন।',
-
-          //login screen
-          'login_title_text': 'ডাক্তার পরামর্শদাতা',
-          'login_input_email_hint_text': 'ইমেইল',
-          'login_input_password_hint_text': 'পাসওয়ার্ড',
-          'login_button_text': 'লগইন',
-          'login_subtitle_text': 'স্বাগত! আপনার লগইন বিবরণ লিখুন।',
-          'forgot_password_text': 'পাসওয়ার্ড ভুলে গেছেন?',
-          'login_or_text': 'অথবা',
-          'login_with_apple_toast_message': 'অ্যাপল আইডি দিয়ে লগইন করুন',
-          'login_with_google_toast_message': 'গুগলের সাথে লগইন করুন',
-          'login_with_facebook_toast_message': 'ফেসবুক দিয়ে লগইন আপ',
-          'do_not_account_text': 'একাউন্ট না থাকলে?',
-          'do_not_account_signup_text': 'সাইন আপ',
-
-          //forgot password screen
-          'forgot_password_title_text': 'পাসওয়ার্ড ভুলে গেছেন?',
-          'forgot_password_subtitle_text':
-              "চিন্তা করবেন না! এটা ঘটে। আপনার অ্যাকাউন্টের সাথে যুক্ত ইমেইল ঠিকানা লিখুন।",
-          'forgot_password_input_email_hint_text': 'ইমেইল',
-          'submit_button_text': 'জমা দিন',
-          'forgot_password_submit_toast': 'আপনার ইমেইল চেক করুন',
-
-          //home screen
-
-          //doctors category screen
-          'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
-
-          //booking doctors screen
         },
         'hi_IN': {
           //splash screen
@@ -286,6 +272,50 @@ class Languages extends Translations {
           'onboarding_skip_text': 'छोडना',
           'onboarding_next_text': 'अगला',
           'onboarding_finish_text': 'खत्म करना',
+
+          //signup login screen
+          'title_text': 'डॉक्टर सलाहकार',
+          'signup_text': 'साइन अप करें',
+          'login_text': 'लॉगिन',
+          'or_text': 'अथवा',
+
+          //signup screen
+          'signup_title_text': 'डॉक्टर सलाहकार',
+          'signup_input_name_hint_text': 'नाम',
+          'signup_input_email_hint_text': 'ईमेल',
+          'signup_input_password_hint_text': 'पासवर्ड',
+          'signup_button_text': 'साइन अप करें',
+          'signup_or_text': 'अथवा',
+          'signup_with_apple_toast_message': 'एप्पल आईडी से साइनअप करें',
+          'signup_with_google_toast_message': 'गूगल के साथ साइनअप करें',
+          'signup_with_facebook_toast_message': 'फेस्बूक के साथ साइन अप करें',
+          'already_account_text': 'एक खाता है?',
+          'already_account_login_text': 'लॉगिन',
+          'signup_subtitle_text':
+              'आपका स्वागत है! कृपया अपना साइनअप विवरण दर्ज करें।',
+
+          //login screen
+          'login_title_text': 'डॉक्टर सलाहकार',
+          'login_input_email_hint_text': 'ईमेल',
+          'login_input_password_hint_text': 'पासवर्ड',
+          'login_button_text': 'लॉगिन',
+          'login_subtitle_text':
+              'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
+          'forgot_password_text': 'पासवर्ड भूल गए?',
+          'login_or_text': 'अथवा',
+          'login_with_apple_toast_message': 'एप्पल आईडी से लॉगइन करें',
+          'login_with_google_toast_message': 'गूगल से लॉगिन करें',
+          'login_with_facebook_toast_message': 'फ़ेसबुक लॉगिन करें',
+          'do_not_account_text': 'कोई खाता नहीं है?',
+          'do_not_account_signup_text': 'साइन अप करें',
+
+          //forgot password screen
+          'forgot_password_title_text': 'पासवर्ड भूल गए?',
+          'forgot_password_subtitle_text':
+              'चिंता मत करो! ऐसा होता है। कृपया अपने खाते से जुड़ा ईमेल पता दर्ज करें।',
+          'forgot_password_input_email_hint_text': 'ईमेल',
+          'submit_button_text': 'जमा करना',
+          'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
 
           //users profile
           'user_name_text': 'हाय अल-हसन!',
@@ -350,57 +380,6 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
           'see_all_text': 'सभी देखें',
-
-          //signup login screen
-          'title_text': 'डॉक्टर सलाहकार',
-          'signup_text': 'साइन अप करें',
-          'login_text': 'लॉगिन',
-          'or_text': 'अथवा',
-
-          //signup screen
-          'signup_title_text': 'डॉक्टर सलाहकार',
-          'signup_input_name_hint_text': 'नाम',
-          'signup_input_email_hint_text': 'ईमेल',
-          'signup_input_password_hint_text': 'पासवर्ड',
-          'signup_button_text': 'साइन अप करें',
-          'signup_or_text': 'अथवा',
-          'signup_with_apple_toast_message': 'एप्पल आईडी से साइनअप करें',
-          'signup_with_google_toast_message': 'गूगल के साथ साइनअप करें',
-          'signup_with_facebook_toast_message': 'फेस्बूक के साथ साइन अप करें',
-          'already_account_text': 'एक खाता है?',
-          'already_account_login_text': 'लॉगिन',
-          'signup_subtitle_text':
-              'आपका स्वागत है! कृपया अपना साइनअप विवरण दर्ज करें।',
-
-          //login screen
-          'login_title_text': 'डॉक्टर सलाहकार',
-          'login_input_email_hint_text': 'ईमेल',
-          'login_input_password_hint_text': 'पासवर्ड',
-          'login_button_text': 'लॉगिन',
-          'login_subtitle_text':
-              'आपका स्वागत है! कृपया अपना लॉगिन विवरण दर्ज करें।',
-          'forgot_password_text': 'पासवर्ड भूल गए?',
-          'login_or_text': 'अथवा',
-          'login_with_apple_toast_message': 'एप्पल आईडी से लॉगइन करें',
-          'login_with_google_toast_message': 'गूगल से लॉगिन करें',
-          'login_with_facebook_toast_message': 'फ़ेसबुक लॉगिन करें',
-          'do_not_account_text': 'कोई खाता नहीं है?',
-          'do_not_account_signup_text': 'साइन अप करें',
-
-          //forgot password screen
-          'forgot_password_title_text': 'पासवर्ड भूल गए?',
-          'forgot_password_subtitle_text':
-              'चिंता मत करो! ऐसा होता है। कृपया अपने खाते से जुड़ा ईमेल पता दर्ज करें।',
-          'forgot_password_input_email_hint_text': 'ईमेल',
-          'submit_button_text': 'जमा करना',
-          'forgot_password_submit_toast': 'अपने ईमेल की जाँच करें',
-
-          //home screen
-
-          //doctors category screen
-          'specialist_doctors': 'विशेषज्ञ डॉक्टर',
-
-          //booking doctors screen
         },
       };
 }
