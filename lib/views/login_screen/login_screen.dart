@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              AppColors.loginTopBackgroundColor.withOpacity(0.3),
+              AppColors.commonGreenAccentColor.withOpacity(0.3),
               AppColors.commonLightBlueAccentColor.withOpacity(0.3),
             ],
           ),

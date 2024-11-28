@@ -9,27 +9,27 @@ class InputEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      cursorColor: AppColors.forgotPasswordCursorColor,
+      cursorColor: AppColors.commonBlackColor,
       keyboardType: TextInputType.emailAddress,
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.forgotPasswordEmailTextColor,
+        color: AppColors.commonBlackColor,
       ),
       decoration: InputDecoration(
         filled: true,
-        fillColor: AppColors.forgotPasswordFillColor,
+        fillColor: AppColors.commonWhiteColor,
         hintText: 'forgot_password_input_email_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,
-          color: AppColors.forgotPasswordHintTextColor,
+          color: AppColors.commonGreyColor,
         ),
         prefixIcon: const Padding(
           padding: EdgeInsets.only(left: 8.0),
           child: Icon(
             Icons.email_outlined,
-            color: AppColors.forgotPasswordPrefixIconColor,
+            color: AppColors.commonGreyColor,
             size: 30,
           ),
         ),

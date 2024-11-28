@@ -33,7 +33,7 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                   radius: 0.8,
                   colors: [
                     AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-                    AppColors.signupLoginCenterBackgroundColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,
@@ -54,8 +54,8 @@ class _SignupLoginScreenState extends State<SignupLoginScreen> {
                   center: Alignment.bottomRight,
                   radius: 0.8,
                   colors: [
-                    AppColors.signupLoginBottomBackgroundColor.withOpacity(0.3),
-                    AppColors.signupLoginCenterBackgroundColor.withOpacity(0.3),
+                    AppColors.commonGreenAccentColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,

@@ -21,7 +21,7 @@ class SignupButton extends StatelessWidget {
           fontFamily: AppFontStyle.rubik,
           fontWeight: FontWeight.bold,
           fontSize: 18,
-          color: AppColors.signupTextColor,
+          color: AppColors.commonWhiteColor,
         ),
         onTap: () {
           Get.offAllNamed(RoutesName.homeScreen);

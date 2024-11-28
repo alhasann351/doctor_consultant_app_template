@@ -20,7 +20,7 @@ class DoNotAccount extends StatelessWidget {
             fontFamily: AppFontStyle.rubik,
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: AppColors.doNotAccountTextColor,
+            color: AppColors.commonGreyColor,
           ),
         ),
         const SizedBox(width: 5),

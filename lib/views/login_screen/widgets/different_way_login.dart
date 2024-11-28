@@ -17,7 +17,7 @@ class DifferentWayLogin extends StatelessWidget {
             AppUtils.showToastMessage('login_with_apple_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentLoginCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -34,7 +34,7 @@ class DifferentWayLogin extends StatelessWidget {
             AppUtils.showToastMessage('login_with_google_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentLoginCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -51,7 +51,7 @@ class DifferentWayLogin extends StatelessWidget {
             AppUtils.showToastMessage('login_with_facebook_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentLoginCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),

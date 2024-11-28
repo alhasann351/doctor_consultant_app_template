@@ -19,7 +19,7 @@ class AlreadyAccount extends StatelessWidget {
             fontFamily: AppFontStyle.rubik,
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: AppColors.alreadyAccountTextColor,
+            color: AppColors.commonGreyColor,
           ),
         ),
         const SizedBox(width: 5),

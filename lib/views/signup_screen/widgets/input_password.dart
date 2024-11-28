@@ -13,28 +13,28 @@ class InputPassword extends StatelessWidget {
 
     return Obx(
       () => TextFormField(
-        cursorColor: AppColors.signupCursorColor,
+        cursorColor: AppColors.commonBlackColor,
         keyboardType: TextInputType.text,
         style: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,
-          color: AppColors.signupPasswordTextColor,
+          color: AppColors.commonBlackColor,
         ),
         obscureText: showPasswordController.showPassword.value,
         decoration: InputDecoration(
           filled: true,
-          fillColor: AppColors.signupFillColor,
+          fillColor: AppColors.commonWhiteColor,
           hintText: 'signup_input_password_hint_text'.tr,
           hintStyle: const TextStyle(
             fontFamily: AppFontStyle.rubik,
             fontSize: 18,
-            color: AppColors.signupHintTextColor,
+            color: AppColors.commonGreyColor,
           ),
           prefixIcon: const Padding(
             padding: EdgeInsets.only(left: 8.0),
             child: Icon(
               Icons.lock_outline,
-              color: AppColors.signupPrefixIconColor,
+              color: AppColors.commonGreyColor,
               size: 30,
             ),
           ),
@@ -48,7 +48,7 @@ class InputPassword extends StatelessWidget {
                 showPasswordController.showPassword.value
                     ? Icons.visibility_off_outlined
                     : Icons.visibility_outlined,
-                color: AppColors.signupSuffixIconColor,
+                color: AppColors.commonGreyColor,
                 size: 30,
               ),
             ),

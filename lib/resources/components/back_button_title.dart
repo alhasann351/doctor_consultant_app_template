@@ -28,10 +28,10 @@ class BackButtonTitle extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  color: AppColors.cancerScreenBackButtonCardBackgroundColor,
+                  color: AppColors.commonWhiteColor,
                   child: const Icon(
                     CupertinoIcons.back,
-                    color: AppColors.cancerScreenBackButtonIconColor,
+                    color: AppColors.commonBlackColor,
                   ),
                 ),
               ),
@@ -44,7 +44,7 @@ class BackButtonTitle extends StatelessWidget {
                     fontFamily: AppFontStyle.rubik,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.cancerTitleTextColor),
+                    color: AppColors.commonBlackColor),
               ),
             ),
           ],

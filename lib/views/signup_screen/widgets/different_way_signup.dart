@@ -17,7 +17,7 @@ class DifferentWaySignup extends StatelessWidget {
             AppUtils.showToastMessage('signup_with_apple_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentSignupCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -34,7 +34,7 @@ class DifferentWaySignup extends StatelessWidget {
             AppUtils.showToastMessage('signup_with_google_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentSignupCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -51,7 +51,7 @@ class DifferentWaySignup extends StatelessWidget {
             AppUtils.showToastMessage('signup_with_facebook_toast_message'.tr);
           },
           child: Card(
-            color: AppColors.differentSignupCardBackgroundColor,
+            color: AppColors.commonWhiteColor,
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),

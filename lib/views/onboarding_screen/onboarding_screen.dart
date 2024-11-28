@@ -37,7 +37,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   radius: 0.8,
                   colors: [
                     AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-                    AppColors.centerBackgroundColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,
@@ -58,8 +58,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   center: Alignment.bottomRight,
                   radius: 0.8,
                   colors: [
-                    AppColors.bottomBackgroundColor.withOpacity(0.3),
-                    AppColors.centerBackgroundColor.withOpacity(0.3),
+                    AppColors.commonGreenAccentColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,

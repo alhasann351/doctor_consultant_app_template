@@ -9,28 +9,28 @@ class InputName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      cursorColor: AppColors.signupCursorColor,
+      cursorColor: AppColors.commonBlackColor,
       keyboardType: TextInputType.text,
       expands: false,
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.signupNameTextColor,
+        color: AppColors.commonBlackColor,
       ),
       decoration: InputDecoration(
         filled: true,
-        fillColor: AppColors.signupFillColor,
+        fillColor: AppColors.commonWhiteColor,
         hintText: 'signup_input_name_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,
-          color: AppColors.signupHintTextColor,
+          color: AppColors.commonGreyColor,
         ),
         prefixIcon: const Padding(
           padding: EdgeInsets.only(left: 8.0),
           child: Icon(
             Icons.person_2_outlined,
-            color: AppColors.signupPrefixIconColor,
+            color: AppColors.commonGreyColor,
             size: 30,
           ),
         ),

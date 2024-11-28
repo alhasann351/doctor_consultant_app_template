@@ -17,7 +17,7 @@ class Dividers extends StatelessWidget {
           child: SizedBox(
             width: MediaQuery.of(context).size.width,
             child: const Divider(
-              color: AppColors.signupDividerColor,
+              color: AppColors.commonGreyColor,
               height: 10,
               indent: 40,
             ),
@@ -31,7 +31,7 @@ class Dividers extends StatelessWidget {
               fontFamily: AppFontStyle.rubik,
               fontWeight: FontWeight.bold,
               fontSize: 14,
-              color: AppColors.signupDividerTextColor,
+              color: AppColors.commonBlackColor,
             ),
           ),
         ),
@@ -39,7 +39,7 @@ class Dividers extends StatelessWidget {
           child: SizedBox(
             width: MediaQuery.of(context).size.width,
             child: const Divider(
-              color: AppColors.signupDividerColor,
+              color: AppColors.commonGreyColor,
               height: 10,
               endIndent: 40,
             ),

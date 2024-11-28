@@ -110,7 +110,7 @@ class _CommentsInputState extends State<CommentsInput> {
                 padding: EdgeInsets.only(left: 8.0),
                 child: Icon(
                   Icons.comment_outlined,
-                  color: AppColors.liveDoctorsCommentsInputPrefixIconColor,
+                  color: AppColors.commonGreenAccentColor,
                   size: 30,
                 ),
               ),

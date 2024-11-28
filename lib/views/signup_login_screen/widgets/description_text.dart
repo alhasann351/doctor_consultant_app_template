@@ -16,7 +16,7 @@ class DescriptionText extends StatelessWidget {
         fontFamily: AppFontStyle.rubik,
         fontWeight: FontWeight.bold,
         fontSize: 16,
-        color: AppColors.descriptionTextColor,
+        color: AppColors.commonGreyColor,
       ),
     );
   }

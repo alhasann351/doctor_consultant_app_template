@@ -20,7 +20,7 @@ class TitleText extends StatelessWidget {
             fontFamily: AppFontStyle.rubik,
             fontSize: 28,
             fontWeight: FontWeight.bold,
-            color: AppColors.loginTitleTextColor,
+            color: AppColors.commonBlackColor,
           ),
         ),
       ),

@@ -16,12 +16,12 @@ class LoginButton extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: RoundedButton(
         title: 'login_button_text'.tr,
-        backgroundColor: AppColors.loginButtonColor.withOpacity(0.8),
+        backgroundColor: AppColors.commonGreenAccentColor.withOpacity(0.8),
         textStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontWeight: FontWeight.bold,
           fontSize: 18,
-          color: AppColors.loginTextColor,
+          color: AppColors.commonWhiteColor,
         ),
         onTap: () {
           Get.offAllNamed(RoutesName.homeScreen);

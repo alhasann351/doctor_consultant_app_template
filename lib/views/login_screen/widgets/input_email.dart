@@ -10,27 +10,27 @@ class InputEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      cursorColor: AppColors.loginCursorColor,
+      cursorColor: AppColors.commonBlackColor,
       keyboardType: TextInputType.text,
       style: const TextStyle(
         fontFamily: AppFontStyle.rubik,
         fontSize: 18,
-        color: AppColors.loginEmailTextColor,
+        color: AppColors.commonBlackColor,
       ),
       decoration: InputDecoration(
         filled: true,
-        fillColor: AppColors.loginFillColor,
+        fillColor: AppColors.commonWhiteColor,
         hintText: 'login_input_email_hint_text'.tr,
         hintStyle: const TextStyle(
           fontFamily: AppFontStyle.rubik,
           fontSize: 18,
-          color: AppColors.loginHintTextColor,
+          color: AppColors.commonGreyColor,
         ),
         prefixIcon: const Padding(
           padding: EdgeInsets.only(left: 8.0),
           child: Icon(
             Icons.person_2_outlined,
-            color: AppColors.loginPrefixIconColor,
+            color: AppColors.commonGreyColor,
             size: 30,
           ),
         ),

@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   radius: 0.8,
                   colors: [
                     AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-                    AppColors.splashCenterBackgroundColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,
@@ -63,8 +63,8 @@ class _SplashScreenState extends State<SplashScreen> {
                   center: Alignment.bottomRight,
                   radius: 0.8,
                   colors: [
-                    AppColors.splashBottomBackgroundColor.withOpacity(0.3),
-                    AppColors.splashCenterBackgroundColor.withOpacity(0.3),
+                    AppColors.commonGreenAccentColor.withOpacity(0.3),
+                    AppColors.commonWhiteColor.withOpacity(0.3),
                   ],
                   stops: const [
                     0.1,
@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   style: const TextStyle(
                     fontFamily: AppFontStyle.rubik,
                     fontSize: 26,
-                    color: AppColors.splashTextColor,
+                    color: AppColors.commonBlackColor,
                   ),
                 ),
                 const SizedBox(height: 5),
@@ -100,7 +100,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     fontFamily: AppFontStyle.rubik,
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
-                    color: AppColors.splashTextColor,
+                    color: AppColors.commonBlackColor,
                   ),
                 ),
               ],

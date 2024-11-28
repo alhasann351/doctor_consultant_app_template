@@ -29,7 +29,7 @@ class _SignupScreenState extends State<SignupScreen> {
             end: Alignment.bottomCenter,
             colors: [
               AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-              AppColors.signupBottomBackgroundColor.withOpacity(0.3),
+              AppColors.commonGreenAccentColor.withOpacity(0.3),
             ],
           ),
         ),

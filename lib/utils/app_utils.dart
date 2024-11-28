@@ -99,7 +99,7 @@ class AppUtils {
       icon: const Icon(
         Icons.check_circle_rounded,
         size: 60,
-        color: AppColors.cancerScreenBottomBackgroundColor,
+        color: AppColors.commonGreenAccentColor,
       ),
     ));
   }

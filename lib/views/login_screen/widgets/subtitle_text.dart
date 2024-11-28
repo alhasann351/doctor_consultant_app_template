@@ -20,7 +20,7 @@ class SubtitleText extends StatelessWidget {
             fontFamily: AppFontStyle.rubik,
             fontSize: 16,
             fontWeight: FontWeight.bold,
-            color: AppColors.loginSubtitleTextColor,
+            color: AppColors.commonGreyColor,
           ),
         ),
       ),

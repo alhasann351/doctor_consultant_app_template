@@ -21,7 +21,7 @@ class SubmitButton extends StatelessWidget {
           fontFamily: AppFontStyle.rubik,
           fontWeight: FontWeight.bold,
           fontSize: 18,
-          color: AppColors.submitTextColor,
+          color: AppColors.commonWhiteColor,
         ),
         onTap: () {
           AppUtils.showToastMessage('forgot_password_submit_toast'.tr);
