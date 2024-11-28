@@ -8,6 +8,20 @@ class Languages extends Translations {
           'splash_text_1': 'Welcome to',
           'splash_text_2': 'Doctor Consultant',
 
+          //onboarding screen
+          'onboarding_title_text_1': 'Find Trusted Doctors',
+          'onboarding_title_text_2': 'Choose Best Doctors',
+          'onboarding_title_text_3': 'Easy Appointments',
+          'onboarding_description_text_1':
+              'Discover and connect with highly-rated healthcare professionals in your area using Find Trusted Doctors.',
+          'onboarding_description_text_2':
+              'Easily find and book appointments with top-rated healthcare providers in your area with Choose Best Doctors.',
+          'onboarding_description_text_3':
+              'Simplify your healthcare experience with Easy Appointments. Find and book appointments with trusted doctors in just a few taps.',
+          'onboarding_skip_text': 'Skip',
+          'onboarding_next_text': 'Next',
+          'onboarding_finish_text': 'Finish',
+
           //users profile
           'user_name_text': 'Hi Al-Hasan!',
           'users_title_text': 'Find popular Doctors',
@@ -52,24 +66,24 @@ class Languages extends Translations {
           'select_time': 'Select time',
           'date_select': 'Select your date',
           'time_select': 'Select your time',
+          'payment': 'Payment',
+          '10_hr': '10/hr',
+          'credit_debit_card_text': 'Credit/Debit Card',
+          'paypal': 'Paypal',
+          'cash_on_delivery': 'Cash On Delivery',
+          'name_on_the_card': 'Name on the card',
+          'card_number': 'Card number',
+          'card_expiry_date': 'Expiry (MM/YY)',
+          'card_cvv_number': 'CVV',
+          'pay': 'Pay',
+          'ok': 'OK',
+          'doctor_booking_successfully': 'Doctor Booking Successfully',
+          'thank_you': 'Thank you...',
+          'edit_appointment': 'Edit your appointment',
 
           //popular doctors
           'popular_doctors_title_text': 'Popular Doctors',
           'see_all_text': 'See all',
-
-          //onboarding screen
-          'onboarding_title_text_1': 'Find Trusted Doctors',
-          'onboarding_title_text_2': 'Choose Best Doctors',
-          'onboarding_title_text_3': 'Easy Appointments',
-          'onboarding_description_text_1':
-              'Discover and connect with highly-rated healthcare professionals in your area using Find Trusted Doctors.',
-          'onboarding_description_text_2':
-              'Easily find and book appointments with top-rated healthcare providers in your area with Choose Best Doctors.',
-          'onboarding_description_text_3':
-              'Simplify your healthcare experience with Easy Appointments. Find and book appointments with trusted doctors in just a few taps.',
-          'onboarding_skip_text': 'Skip',
-          'onboarding_next_text': 'Next',
-          'onboarding_finish_text': 'Finish',
 
           //signup login screen
           'title_text': 'Doctor Consultant',
@@ -120,26 +134,25 @@ class Languages extends Translations {
           'specialist_doctors': 'Specialist doctors',
 
           //booking doctors screen
-
-          'doctor_booking_successfully': 'Doctor Booking Successfully',
-          'thank_you': 'Thank you...',
-          'payment': 'Payment',
-          '10_hr': '10/hr',
-          'credit_debit_card_text': 'Credit/Debit Card',
-          'paypal': 'Paypal',
-          'cash_on_delivery': 'Cash On Delivery',
-          'name_on_the_card': 'Name on the card',
-          'card_number': 'Card number',
-          'card_expiry_date': 'Expiry (MM/YY)',
-          'card_cvv_number': 'CVV',
-          'pay': 'Pay',
-          'ok': 'OK',
-          'edit_appointment': 'Edit your appointment',
         },
         'bn_BD': {
           //splash screen
           'splash_text_1': 'স্বাগতম',
           'splash_text_2': 'ডাক্তার পরামর্শদাতা',
+
+          //onboarding screen
+          'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
+          'onboarding_title_text_2': 'সেরা ডাক্তার চয়ন করুন',
+          'onboarding_title_text_3': 'সহজ অ্যাপয়েন্টমেন্ট',
+          'onboarding_description_text_1':
+              'বিশ্বস্ত ডাক্তার খুঁজুন ব্যবহার করে আপনার এলাকার উচ্চ-মূল্যায়িত স্বাস্থ্যসেবা পেশাদারদের খুঁজুন এবং তাদের সাথে সংযোগ করুন।',
+          'onboarding_description_text_2':
+              'সেরা ডাক্তার চয়ন করুন সহ আপনার এলাকার শীর্ষ-রেটেড স্বাস্থ্যসেবা প্রদানকারীদের সাথে সহজেই অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
+          'onboarding_description_text_3':
+              'সহজ অ্যাপয়েন্টমেন্টের সাথে আপনার স্বাস্থ্যসেবা অভিজ্ঞতা সহজ করুন। শুধুমাত্র কয়েকটি ট্যাপে বিশ্বস্ত ডাক্তারদের সাথে অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
+          'onboarding_skip_text': 'এড়িয়ে যান',
+          'onboarding_next_text': 'পরবর্তী',
+          'onboarding_finish_text': 'শেষ করুন',
 
           //users profile
           'user_name_text': 'হাই আল-হাসান!',
@@ -186,9 +199,10 @@ class Languages extends Translations {
           'select_time': 'সময় নির্বাচন',
           'date_select': 'আপনার তারিখ নির্বাচন করুন',
           'time_select': 'আপনার সময় নির্বাচন করুন',
+          'payment': 'পেমেন্ট',
+          '10_hr': '10/ঘণ্টা',
           'credit_debit_card_text': 'ক্রেডিট/ডেবিট কার্ড',
           'paypal': 'পেপ্যাল',
-          'payment': 'পেমেন্ট',
           'cash_on_delivery': 'ক্যাশ অন ডেলিভারি',
           'name_on_the_card': 'কার্ডের নাম',
           'card_number': 'কার্ড নম্বর',
@@ -196,25 +210,13 @@ class Languages extends Translations {
           'card_cvv_number': 'CVV',
           'pay': 'Pay',
           'ok': 'ঠিক আছে',
+          'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
+          'thank_you': 'ধন্যবাদ...',
           'edit_appointment': 'অ্যাপয়েন্টমেন্ট এডিট করুন',
 
           //popular doctors
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
           'see_all_text': 'সব দেখুন',
-
-          //onboarding screen
-          'onboarding_title_text_1': 'বিশ্বস্ত ডাক্তার খুঁজুন',
-          'onboarding_title_text_2': 'সেরা ডাক্তার চয়ন করুন',
-          'onboarding_title_text_3': 'সহজ অ্যাপয়েন্টমেন্ট',
-          'onboarding_description_text_1':
-              'বিশ্বস্ত ডাক্তার খুঁজুন ব্যবহার করে আপনার এলাকার উচ্চ-মূল্যায়িত স্বাস্থ্যসেবা পেশাদারদের খুঁজুন এবং তাদের সাথে সংযোগ করুন।',
-          'onboarding_description_text_2':
-              'সেরা ডাক্তার চয়ন করুন সহ আপনার এলাকার শীর্ষ-রেটেড স্বাস্থ্যসেবা প্রদানকারীদের সাথে সহজেই অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
-          'onboarding_description_text_3':
-              'সহজ অ্যাপয়েন্টমেন্টের সাথে আপনার স্বাস্থ্যসেবা অভিজ্ঞতা সহজ করুন। শুধুমাত্র কয়েকটি ট্যাপে বিশ্বস্ত ডাক্তারদের সাথে অ্যাপয়েন্টমেন্ট খুঁজুন এবং বুক করুন।',
-          'onboarding_skip_text': 'এড়িয়ে যান',
-          'onboarding_next_text': 'পরবর্তী',
-          'onboarding_finish_text': 'শেষ করুন',
 
           //signup login screen
           'title_text': 'ডাক্তার পরামর্শদাতা',
@@ -265,16 +267,25 @@ class Languages extends Translations {
           'specialist_doctors': 'বিশেষজ্ঞ চিকিৎসক',
 
           //booking doctors screen
-
-          'doctor_booking_successfully': 'সফলভাবে ডাক্তার বুকিং হয়েছে',
-          'thank_you': 'ধন্যবাদ...',
-
-          '10_hr': '10/ঘণ্টা',
         },
         'hi_IN': {
           //splash screen
           'splash_text_1': 'आपका स्वागत है',
           'splash_text_2': 'डॉक्टर सलाहकार',
+
+          //onboarding screen
+          'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
+          'onboarding_title_text_2': 'सर्वश्रेष्ठ डॉक्टर चुनें',
+          'onboarding_title_text_3': 'आसान नियुक्तियाँ',
+          'onboarding_description_text_1':
+              'विश्वसनीय डॉक्टर्स का उपयोग करके अपने क्षेत्र में उच्च श्रेणी के स्वास्थ्य देखभाल पेशेवरों को खोजें और उनसे जुड़ें।',
+          'onboarding_description_text_2':
+              'अपने क्षेत्र में सर्वश्रेष्ठ डॉक्टर्स चुनें के साथ शीर्ष-रेटेड स्वास्थ्य सेवा प्रदाताओं के साथ आसानी से अपॉइंटमेंट खोजें और बुक करें।',
+          'onboarding_description_text_3':
+              'आसान नियुक्तियाँ के साथ अपने स्वास्थ्य सेवा अनुभव को सरल बनाएँ। बस कुछ ही टैप में विश्वसनीय डॉक्टरों के साथ अपॉइंटमेंट पाएँ और बुक करें।',
+          'onboarding_skip_text': 'छोडना',
+          'onboarding_next_text': 'अगला',
+          'onboarding_finish_text': 'खत्म करना',
 
           //users profile
           'user_name_text': 'हाय अल-हसन!',
@@ -321,6 +332,8 @@ class Languages extends Translations {
           'select_time': 'समय चुनें',
           'date_select': 'अपनी तिथि चुनें',
           'time_select': 'अपना समय चुनें',
+          'payment': 'भुगतान',
+          '10_hr': '10/घंटा',
           'cash_on_delivery': 'डिलवरी पर नकदी',
           'name_on_the_card': 'कार्ड पर नाम',
           'card_number': 'कार्ड संख्या',
@@ -328,28 +341,15 @@ class Languages extends Translations {
           'card_cvv_number': 'CVV',
           'credit_debit_card_text': 'क्रेडिट/डेबिट कार्ड',
           'paypal': 'पेपाल',
-          'payment': 'भुगतान',
           'pay': 'Pay',
           'ok': 'ठीक है',
+          'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
+          'thank_you': 'धन्यवाद...',
           'edit_appointment': 'अपॉइंटमेंट संपादित करें',
 
           //popular doctors
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
           'see_all_text': 'सभी देखें',
-
-          //onboarding screen
-          'onboarding_title_text_1': 'विश्वसनीय डॉक्टर खोजें',
-          'onboarding_title_text_2': 'सर्वश्रेष्ठ डॉक्टर चुनें',
-          'onboarding_title_text_3': 'आसान नियुक्तियाँ',
-          'onboarding_description_text_1':
-              'विश्वसनीय डॉक्टर्स का उपयोग करके अपने क्षेत्र में उच्च श्रेणी के स्वास्थ्य देखभाल पेशेवरों को खोजें और उनसे जुड़ें।',
-          'onboarding_description_text_2':
-              'अपने क्षेत्र में सर्वश्रेष्ठ डॉक्टर्स चुनें के साथ शीर्ष-रेटेड स्वास्थ्य सेवा प्रदाताओं के साथ आसानी से अपॉइंटमेंट खोजें और बुक करें।',
-          'onboarding_description_text_3':
-              'आसान नियुक्तियाँ के साथ अपने स्वास्थ्य सेवा अनुभव को सरल बनाएँ। बस कुछ ही टैप में विश्वसनीय डॉक्टरों के साथ अपॉइंटमेंट पाएँ और बुक करें।',
-          'onboarding_skip_text': 'छोडना',
-          'onboarding_next_text': 'अगला',
-          'onboarding_finish_text': 'खत्म करना',
 
           //signup login screen
           'title_text': 'डॉक्टर सलाहकार',
@@ -401,11 +401,6 @@ class Languages extends Translations {
           'specialist_doctors': 'विशेषज्ञ डॉक्टर',
 
           //booking doctors screen
-
-          'doctor_booking_successfully': 'डॉक्टर की बुकिंग सफलतापूर्वक हो गई',
-          'thank_you': 'धन्यवाद...',
-
-          '10_hr': '10/घंटा',
         },
       };
 }

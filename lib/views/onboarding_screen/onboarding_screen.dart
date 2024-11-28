@@ -1,4 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/components/radial_gradient_background_design.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/widgets/onboarding_screen_1.dart';
@@ -25,50 +26,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
-          Positioned(
-            top: 0,
-            left: 0,
-            child: Container(
-              height: 342,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                gradient: RadialGradient(
-                  center: Alignment.topLeft,
-                  radius: 0.8,
-                  colors: [
-                    AppColors.commonLightBlueAccentColor.withOpacity(0.3),
-                    AppColors.commonWhiteColor.withOpacity(0.3),
-                  ],
-                  stops: const [
-                    0.1,
-                    1.0,
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: Container(
-              height: 342,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                gradient: RadialGradient(
-                  center: Alignment.bottomRight,
-                  radius: 0.8,
-                  colors: [
-                    AppColors.commonGreenAccentColor.withOpacity(0.3),
-                    AppColors.commonWhiteColor.withOpacity(0.3),
-                  ],
-                  stops: const [
-                    0.1,
-                    1.0,
-                  ],
-                ),
-              ),
-            ),
-          ),
+          const RadialGradientBackgroundDesign(),
           Obx(
             () => PageView(
               controller: onboardingController.pageController.value,
