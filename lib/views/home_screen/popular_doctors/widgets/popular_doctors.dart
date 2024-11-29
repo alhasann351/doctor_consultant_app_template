@@ -108,7 +108,6 @@ class PopularDoctors extends StatelessWidget {
             width: double.infinity,
             child: ListView.builder(
               cacheExtent: 1500,
-              //shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemCount: image.length,
               itemBuilder: (context, index) {

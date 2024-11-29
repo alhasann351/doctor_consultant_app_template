@@ -36,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
             child: SafeArea(
               child: ListView(
                 scrollDirection: Axis.vertical,
-                shrinkWrap: true,
                 children: [
                   LiveDoctors(),
                   DoctorsCategory(),

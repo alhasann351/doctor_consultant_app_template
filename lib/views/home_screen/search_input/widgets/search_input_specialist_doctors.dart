@@ -87,7 +87,6 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
           child: ListView.builder(
             cacheExtent: 1500,
             scrollDirection: Axis.horizontal,
-            shrinkWrap: true,
             itemCount: doctorName.length,
             itemBuilder: (context, index) {
               return Padding(
@@ -125,16 +124,19 @@ class SearchInputSpecialistDoctors extends StatelessWidget {
                                 color: AppColors.commonGreyColor,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 10, bottom: 0, left: 5, right: 5),
-                              child: Text(
-                                doctorName[index],
-                                style: const TextStyle(
-                                  fontFamily: AppFontStyle.rubik,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppColors.commonBlackColor,
+                            Flexible(
+                              child: Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 10, bottom: 0, left: 5, right: 5),
+                                child: Text(
+                                  doctorName[index],
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    fontFamily: AppFontStyle.rubik,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.commonBlackColor,
+                                  ),
                                 ),
                               ),
                             ),

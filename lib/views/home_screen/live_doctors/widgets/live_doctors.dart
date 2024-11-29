@@ -62,7 +62,6 @@ class LiveDoctors extends StatelessWidget {
             child: ListView.builder(
               cacheExtent: 1500,
               scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
               itemCount: imagePaths.length,
               itemBuilder: (BuildContext context, index) {
                 return GestureDetector(

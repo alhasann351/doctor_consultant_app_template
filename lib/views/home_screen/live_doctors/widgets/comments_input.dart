@@ -54,7 +54,6 @@ class _CommentsInputState extends State<CommentsInput> {
             child: Obx(
               () => ListView.builder(
                 controller: scrollController,
-                //shrinkWrap: true,
                 itemCount: commentShowController.comments.length,
                 itemBuilder: (context, index) {
                   final comment = commentShowController.comments[index];

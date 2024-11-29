@@ -1,15 +1,11 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
 import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_booking/all_category_doctors_booking/widgets/doctors_information.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../../resources/colors/app_colors.dart';
-import '../../../../../resources/components/loading_animation.dart';
-import '../../../../../resources/components/rounded_button.dart';
-import '../../../../../resources/fonts/app_font_style.dart';
-import '../../../../../resources/routes/routes_name.dart';
-import '../../../../../utils/app_utils.dart';
+import '../../../../../resources/components/rating_icons.dart';
 
 class EarDoctors extends StatefulWidget {
   const EarDoctors({super.key});
@@ -71,7 +67,7 @@ class _EarDoctorsState extends State<EarDoctors> {
     '8 years experience',
   ];
 
-  final List<String> goodDoctor = [
+  final List<String> doctorPercentOfGood = [
     '95% good',
     '85% good',
     '75% good',
@@ -132,189 +128,17 @@ class _EarDoctorsState extends State<EarDoctors> {
                     cacheExtent: 1500,
                     itemCount: image.length,
                     itemBuilder: (context, index) {
-                      return SizedBox(
-                        height: 200,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 5.0),
-                          child: Card(
-                            color: AppColors.commonWhiteColor,
-                            elevation: 8,
-                            child: Stack(
-                              children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(top: 10, left: 10),
-                                  child: ClipRRect(
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(10)),
-                                    child: CachedNetworkImage(
-                                      fit: BoxFit.fill,
-                                      height: 95,
-                                      width: 100,
-                                      imageUrl: image[index],
-                                      placeholder: (context, url) =>
-                                          const LoadingAnimation(),
-                                      errorWidget: (context, url, error) =>
-                                          const Icon(
-                                        Icons.error,
-                                        color: AppColors.commonGreyColor,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 15,
-                                  left: 120,
-                                  right: 10,
-                                  bottom: 0,
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        doctorName[index],
-                                        style: const TextStyle(
-                                            fontFamily: AppFontStyle.rubik,
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                            color: AppColors.commonBlackColor),
-                                      ),
-                                      InkWell(
-                                        onTap: () {
-                                          AppUtils.showToastMessage(
-                                              'favorite_option_clicked'.tr);
-                                        },
-                                        child: const Icon(
-                                          Icons.favorite,
-                                          size: 25,
-                                          color: AppColors.commonGreyColor,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 42,
-                                  left: 120,
-                                  right: 0,
-                                  bottom: 0,
-                                  child: Text(
-                                    'ear_specialist'.tr,
-                                    style: const TextStyle(
-                                        fontFamily: AppFontStyle.rubik,
-                                        fontSize: 15,
-                                        color: AppColors
-                                            .commonLightBlueAccentColor),
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 65,
-                                  left: 120,
-                                  right: 0,
-                                  bottom: 0,
-                                  child: Text(
-                                    doctorExperience[index],
-                                    style: const TextStyle(
-                                        fontFamily: AppFontStyle.rubik,
-                                        fontSize: 15,
-                                        color: AppColors.commonBlackColor),
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 90,
-                                  left: 120,
-                                  right: 10,
-                                  bottom: 0,
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        goodDoctor[index],
-                                        style: const TextStyle(
-                                            fontFamily: AppFontStyle.rubik,
-                                            fontSize: 15,
-                                            color: AppColors.commonGreenColor),
-                                      ),
-                                      const SizedBox(
-                                        width: 15,
-                                      ),
-                                      Text(
-                                        seePatients[index],
-                                        style: const TextStyle(
-                                            fontFamily: AppFontStyle.rubik,
-                                            fontSize: 15,
-                                            color:
-                                                AppColors.seePatientsTextColor),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 130,
-                                  left: 10,
-                                  right: 0,
-                                  bottom: 0,
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'next_available'.tr,
-                                        style: const TextStyle(
-                                            fontFamily: AppFontStyle.rubik,
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: AppColors
-                                                .commonLightBlueAccentColor),
-                                      ),
-                                      const SizedBox(
-                                        height: 2,
-                                      ),
-                                      Text(
-                                        nextAvailableTime[index],
-                                        style: const TextStyle(
-                                            fontFamily: AppFontStyle.rubik,
-                                            fontSize: 15,
-                                            color: AppColors.commonGreyColor),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 130,
-                                  left: 220,
-                                  right: 10,
-                                  bottom: 20,
-                                  child: RoundedButton(
-                                    title: 'book_now'.tr,
-                                    backgroundColor:
-                                        AppColors.commonLightBlueAccentColor,
-                                    textStyle: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
-                                        fontFamily: AppFontStyle.rubik,
-                                        color: AppColors.commonWhiteColor),
-                                    onTap: () {
-                                      Get.toNamed(
-                                          RoutesName.doctorsBookingScreen,
-                                          arguments: {
-                                            'doctorImage': image[index],
-                                            'doctorName': doctorName[index],
-                                            'doctorSpeciality':
-                                                'ear_specialist'.tr,
-                                            'hospitalName': hospitalName[index],
-                                          });
-                                    },
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
+                      return DoctorsInformation(
+                          doctorImage: image[index],
+                          doctorName: doctorName[index],
+                          doctorSpeciality: 'ear_specialist'.tr,
+                          doctorExperience: doctorExperience[index],
+                          doctorPercentOfGood: doctorPercentOfGood[index],
+                          seePatients: seePatients[index],
+                          nextAvailable: 'next_available'.tr,
+                          nextAvailableTime: nextAvailableTime[index],
+                          hospitalName: hospitalName[index],
+                          rowChild: const RatingIcons());
                     },
                   ),
                 ),

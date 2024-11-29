@@ -69,7 +69,6 @@ class DoctorsCategory extends StatelessWidget {
           child: ListView.builder(
             cacheExtent: 1500,
             scrollDirection: Axis.horizontal,
-            shrinkWrap: true,
             itemCount: iconPaths.length,
             itemBuilder: (context, index) {
               return Padding(

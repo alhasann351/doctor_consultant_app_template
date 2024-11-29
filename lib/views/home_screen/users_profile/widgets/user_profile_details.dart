@@ -48,6 +48,7 @@ class UserProfileDetails extends StatelessWidget {
                   padding: EdgeInsets.only(top: 15, bottom: 20),
                   child: CircleAvatar(
                     radius: 25,
+                    backgroundColor: AppColors.commonWhiteColor,
                     foregroundImage: AssetImage(
                       ImagesIcons.profileImage,
                     ),
