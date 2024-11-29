@@ -72,13 +72,16 @@ class DoctorsInformation extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      doctorName,
-                      style: const TextStyle(
-                          fontFamily: AppFontStyle.rubik,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.commonBlackColor),
+                    Flexible(
+                      child: Text(
+                        doctorName,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontFamily: AppFontStyle.rubik,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.commonBlackColor),
+                      ),
                     ),
                     InkWell(
                       onTap: () {
