@@ -24,7 +24,7 @@ class LoginButton extends StatelessWidget {
           color: AppColors.commonWhiteColor,
         ),
         onTap: () {
-          Get.offAllNamed(RoutesName.homeScreen);
+          Get.offAllNamed(RoutesName.bottomNavBarScreen);
         },
       ),
     );

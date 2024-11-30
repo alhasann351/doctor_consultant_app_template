@@ -1,5 +1,4 @@
 import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/bottom_nav_bar/bottom_nav_bar.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/widgets/doctors_category.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/live_doctors.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/popular_doctors/widgets/popular_doctors.dart';
@@ -33,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             top: 160,
             right: 0,
             left: 0,
-            bottom: 10,
+            bottom: 50,
             child: SafeArea(
               child: ListView(
                 scrollDirection: Axis.vertical,
@@ -47,7 +46,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      bottomSheet: const BottomNavBar(),
     );
   }
 }
