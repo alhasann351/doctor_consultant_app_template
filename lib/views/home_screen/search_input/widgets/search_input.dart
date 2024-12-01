@@ -10,43 +10,45 @@ class SearchInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10, right: 10),
-      child: TextFormField(
-        onTap: () {
-          Get.toNamed(RoutesName.searchInputScreen);
-        },
-        showCursor: false,
-        keyboardType: TextInputType.none,
-        style: const TextStyle(
-          fontFamily: AppFontStyle.rubik,
-          fontSize: 18,
-          color: AppColors.commonBlackColor,
-        ),
-        decoration: InputDecoration(
-          filled: true,
-          fillColor: AppColors.commonWhiteColor,
-          hintText: 'search_input_hint_text'.tr,
-          hintStyle: const TextStyle(
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.only(left: 10, right: 10),
+        child: TextFormField(
+          onTap: () {
+            Get.toNamed(RoutesName.searchInputScreen);
+          },
+          showCursor: false,
+          keyboardType: TextInputType.none,
+          style: const TextStyle(
             fontFamily: AppFontStyle.rubik,
             fontSize: 18,
-            color: AppColors.commonGreyColor,
+            color: AppColors.commonBlackColor,
           ),
-          prefixIcon: const Padding(
-            padding: EdgeInsets.only(left: 8.0),
-            child: Icon(
-              Icons.search_outlined,
+          decoration: InputDecoration(
+            filled: true,
+            fillColor: AppColors.commonWhiteColor,
+            hintText: 'search_input_hint_text'.tr,
+            hintStyle: const TextStyle(
+              fontFamily: AppFontStyle.rubik,
+              fontSize: 18,
               color: AppColors.commonGreyColor,
-              size: 30,
             ),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(style: BorderStyle.none),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(style: BorderStyle.none),
-            borderRadius: BorderRadius.circular(10),
+            prefixIcon: const Padding(
+              padding: EdgeInsets.only(left: 8.0),
+              child: Icon(
+                Icons.search_outlined,
+                color: AppColors.commonGreyColor,
+                size: 30,
+              ),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: const BorderSide(style: BorderStyle.none),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(style: BorderStyle.none),
+              borderRadius: BorderRadius.circular(10),
+            ),
           ),
         ),
       ),

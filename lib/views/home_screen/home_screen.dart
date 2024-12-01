@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const BackgroundDesign(),
           const UsersProfile(),
           const Positioned(
-            top: 115,
+            top: 80,
             right: 0,
             left: 0,
             bottom: 0,

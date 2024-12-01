@@ -127,6 +127,12 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'Popular Doctors',
           'see_all_text': 'See all',
+
+          //bottom nav bar
+          'nav_home': 'Home',
+          'nav_favorite': 'Favorite',
+          'nav_notifications': 'Notifications',
+          'nav_message': 'Message',
         },
         'bn_BD': {
           //splash screen
@@ -253,6 +259,12 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'জনপ্রিয় ডাক্তার',
           'see_all_text': 'সব দেখুন',
+
+          //bottom nav bar
+          'nav_home': 'হোম',
+          'nav_favorite': 'প্রিয়',
+          'nav_notifications': 'বিজ্ঞপ্তি',
+          'nav_message': 'বার্তা',
         },
         'hi_IN': {
           //splash screen
@@ -380,6 +392,12 @@ class Languages extends Translations {
           //popular doctors
           'popular_doctors_title_text': 'लोकप्रिय डॉक्टर',
           'see_all_text': 'सभी देखें',
+
+          //bottom nav bar
+          'nav_home': 'होम',
+          'nav_favorite': 'पसंदीदा',
+          'nav_notifications': 'सूचनाएँ',
+          'nav_message': 'संदेश',
         },
       };
 }
