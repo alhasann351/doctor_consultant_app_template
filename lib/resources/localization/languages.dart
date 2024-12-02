@@ -133,6 +133,15 @@ class Languages extends Translations {
           'nav_favorite': 'Favorite',
           'nav_notifications': 'Notifications',
           'nav_message': 'Message',
+
+          //favorite screen
+          'favorite_title_text': 'Favorite',
+
+          //favorite screen
+          'notification_title_text': 'Notification',
+
+          //favorite screen
+          'message_title_text': 'Message',
         },
         'bn_BD': {
           //splash screen
@@ -265,6 +274,15 @@ class Languages extends Translations {
           'nav_favorite': 'প্রিয়',
           'nav_notifications': 'বিজ্ঞপ্তি',
           'nav_message': 'বার্তা',
+
+          //favorite screen
+          'favorite_title_text': 'প্রিয় ডাক্তার',
+
+          //favorite screen
+          'notification_title_text': 'বিজ্ঞপ্তি',
+
+          //favorite screen
+          'message_title_text': 'বার্তা',
         },
         'hi_IN': {
           //splash screen
@@ -398,6 +416,15 @@ class Languages extends Translations {
           'nav_favorite': 'पसंदीदा',
           'nav_notifications': 'सूचनाएँ',
           'nav_message': 'संदेश',
+
+          //favorite screen
+          'favorite_title_text': 'पसंदीदा डॉक्टर',
+
+          //favorite screen
+          'notification_title_text': 'सूचनाएँ',
+
+          //favorite screen
+          'message_title_text': 'संदेश',
         },
       };
 }
