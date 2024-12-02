@@ -1,6 +1,7 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/home_screen.dart';
+import 'package:doctor_consultant_app_template/views_models/controllers/bottom_nav_bar_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -17,7 +18,9 @@ class BottomNavBarScreen extends StatefulWidget {
 }
 
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
-  int currentTab = 0;
+  final BottomNavbarController bottomNavbarController =
+      Get.put(BottomNavbarController());
+
   final List<Widget> pages = [
     const HomeScreen(),
     const FavoriteScreen(),
@@ -26,9 +29,17 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   ];
 
   @override
+  void dispose() {
+    bottomNavbarController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: pages.elementAt(currentTab)),
+      body: Center(
+          child: Obx(
+              () => pages.elementAt(bottomNavbarController.currentTab.value))),
       bottomSheet: Container(
         decoration: const BoxDecoration(
           color: AppColors.commonWhiteColor,
@@ -40,11 +51,9 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
           child: GNav(
-            selectedIndex: currentTab,
+            selectedIndex: bottomNavbarController.currentTab.value,
             onTabChange: (index) {
-              setState(() {
-                currentTab = index;
-              });
+              bottomNavbarController.currentTab.value = index;
             },
             gap: 8,
             activeColor: AppColors.commonWhiteColor,
