@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../../resources/colors/app_colors.dart';
-import '../../../../../resources/components/rating_icons.dart';
 
 class SkinDoctors extends StatefulWidget {
   const SkinDoctors({super.key});
@@ -129,16 +128,21 @@ class _SkinDoctorsState extends State<SkinDoctors> {
                     itemCount: image.length,
                     itemBuilder: (context, index) {
                       return DoctorsInformation(
-                          doctorImage: image[index],
-                          doctorName: doctorName[index],
-                          doctorSpeciality: 'skin_specialist'.tr,
-                          doctorExperience: doctorExperience[index],
-                          doctorPercentOfGood: doctorPercentOfGood[index],
-                          seePatients: seePatients[index],
-                          nextAvailable: 'next_available'.tr,
-                          nextAvailableTime: nextAvailableTime[index],
-                          hospitalName: hospitalName[index],
-                          rowChild: const RatingIcons());
+                        doctorImage: image[index],
+                        doctorName: doctorName[index],
+                        doctorSpeciality: 'skin_specialist'.tr,
+                        doctorExperience: doctorExperience[index],
+                        doctorPercentOfGood: doctorPercentOfGood[index],
+                        seePatients: seePatients[index],
+                        nextAvailable: 'next_available'.tr,
+                        nextAvailableTime: nextAvailableTime[index],
+                        hospitalName: hospitalName[index],
+                        favoriteIcon: const Icon(
+                          Icons.favorite,
+                          size: 25,
+                          color: AppColors.commonGreyColor,
+                        ),
+                      );
                     },
                   ),
                 ),

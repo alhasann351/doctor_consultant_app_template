@@ -1,6 +1,5 @@
 import 'package:doctor_consultant_app_template/resources/components/back_button_title.dart';
 import 'package:doctor_consultant_app_template/resources/components/background_design.dart';
-import 'package:doctor_consultant_app_template/resources/components/rating_icons.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_booking/all_category_doctors_booking/widgets/doctors_information.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -129,16 +128,21 @@ class _CancerDoctorsState extends State<CancerDoctors> {
                     itemCount: image.length,
                     itemBuilder: (context, index) {
                       return DoctorsInformation(
-                          doctorImage: image[index],
-                          doctorName: doctorName[index],
-                          doctorSpeciality: 'cancer_specialist'.tr,
-                          doctorExperience: doctorExperience[index],
-                          doctorPercentOfGood: doctorPercentOfGood[index],
-                          seePatients: seePatients[index],
-                          nextAvailable: 'next_available'.tr,
-                          nextAvailableTime: nextAvailableTime[index],
-                          hospitalName: hospitalName[index],
-                          rowChild: const RatingIcons());
+                        doctorImage: image[index],
+                        doctorName: doctorName[index],
+                        doctorSpeciality: 'cancer_specialist'.tr,
+                        doctorExperience: doctorExperience[index],
+                        doctorPercentOfGood: doctorPercentOfGood[index],
+                        seePatients: seePatients[index],
+                        nextAvailable: 'next_available'.tr,
+                        nextAvailableTime: nextAvailableTime[index],
+                        hospitalName: hospitalName[index],
+                        favoriteIcon: const Icon(
+                          Icons.favorite,
+                          size: 25,
+                          color: AppColors.commonGreyColor,
+                        ),
+                      );
                     },
                   ),
                 ),

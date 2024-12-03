@@ -10,6 +10,7 @@ class AppColors {
   static const Color commonBlueColor = Colors.blue;
   static const Color commonLightBlueAccentColor = Colors.lightBlueAccent;
   static const Color commonGreenAccentColor = Colors.greenAccent;
+  static const Color commonRedColor = Colors.red;
 
   //users profile
   static const Color usersProfileDetailsTopLeftBackgroundColor =

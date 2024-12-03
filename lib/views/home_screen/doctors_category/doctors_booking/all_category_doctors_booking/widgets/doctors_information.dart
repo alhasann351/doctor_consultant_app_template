@@ -19,7 +19,7 @@ class DoctorsInformation extends StatelessWidget {
   final String nextAvailable;
   final String nextAvailableTime;
   final String hospitalName;
-  final Widget rowChild;
+  final Widget favoriteIcon;
 
   const DoctorsInformation(
       {super.key,
@@ -32,7 +32,7 @@ class DoctorsInformation extends StatelessWidget {
       required this.nextAvailable,
       required this.nextAvailableTime,
       required this.hospitalName,
-      required this.rowChild});
+      required this.favoriteIcon});
 
   @override
   Widget build(BuildContext context) {
@@ -87,11 +87,7 @@ class DoctorsInformation extends StatelessWidget {
                       onTap: () {
                         AppUtils.showToastMessage('favorite_option_clicked'.tr);
                       },
-                      child: const Icon(
-                        Icons.favorite,
-                        size: 25,
-                        color: AppColors.commonGreyColor,
-                      ),
+                      child: favoriteIcon,
                     ),
                   ],
                 ),

@@ -102,7 +102,7 @@ class PopularDoctors extends StatelessWidget {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.only(top: 10, bottom: 10),
           child: SizedBox(
             height: 260,
             width: double.infinity,

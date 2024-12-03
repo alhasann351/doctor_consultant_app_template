@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../resources/components/rating_icons.dart';
+import '../../../../resources/colors/app_colors.dart';
 import '../../doctors_category/doctors_booking/all_category_doctors_booking/widgets/doctors_information.dart';
 
 class PopularDoctorsInformation extends StatefulWidget {
@@ -129,16 +129,21 @@ class _PopularDoctorsInformationState extends State<PopularDoctorsInformation> {
           itemCount: 10,
           itemBuilder: (context, index) {
             return DoctorsInformation(
-                doctorImage: image[index],
-                doctorName: doctorName[index],
-                doctorSpeciality: doctorSpeciality[index],
-                doctorExperience: doctorExperience[index],
-                doctorPercentOfGood: doctorPercentOfGood[index],
-                seePatients: seePatients[index],
-                nextAvailable: 'next_available'.tr,
-                nextAvailableTime: nextAvailableTime[index],
-                hospitalName: hospitalName[index],
-                rowChild: const RatingIcons());
+              doctorImage: image[index],
+              doctorName: doctorName[index],
+              doctorSpeciality: doctorSpeciality[index],
+              doctorExperience: doctorExperience[index],
+              doctorPercentOfGood: doctorPercentOfGood[index],
+              seePatients: seePatients[index],
+              nextAvailable: 'next_available'.tr,
+              nextAvailableTime: nextAvailableTime[index],
+              hospitalName: hospitalName[index],
+              favoriteIcon: const Icon(
+                Icons.favorite,
+                size: 25,
+                color: AppColors.commonGreyColor,
+              ),
+            );
           },
         ),
       ),
