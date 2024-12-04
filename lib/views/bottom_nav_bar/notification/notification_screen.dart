@@ -1,9 +1,9 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/views/bottom_nav_bar/notification/widgets/notification_details.dart';
+import 'package:doctor_consultant_app_template/views/bottom_nav_bar/notification/widgets/notification_title_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../resources/components/background_design.dart';
-import '../../../resources/fonts/app_font_style.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -15,20 +15,8 @@ class NotificationScreen extends StatelessWidget {
       body: Stack(
         children: [
           const BackgroundDesign(),
-          SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                'notification_title_text'.tr,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: AppFontStyle.rubik,
-                  color: AppColors.commonBlackColor,
-                ),
-              ),
-            ),
-          ),
+          const NotificationTitleText(),
+          NotificationDetails(),
         ],
       ),
     );

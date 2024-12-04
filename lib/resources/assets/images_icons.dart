@@ -1,4 +1,7 @@
 class ImagesIcons {
+  //app icon
+  static const String appIcon = 'assets/icons/app_icon.png';
+
   //splash screen
   static const String splashBackgroundImage =
       'assets/images/splash_background_image.jpg';
