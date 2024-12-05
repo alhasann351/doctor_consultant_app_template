@@ -1,34 +1,37 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
+import 'package:doctor_consultant_app_template/resources/fonts/app_font_style.dart';
+import 'package:doctor_consultant_app_template/views/bottom_nav_bar/message/widgets/message_input.dart';
+import 'package:doctor_consultant_app_template/views/bottom_nav_bar/message/widgets/message_title.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../resources/components/background_design.dart';
-import '../../../resources/fonts/app_font_style.dart';
 
-class MessageScreen extends StatelessWidget {
+class MessageScreen extends StatefulWidget {
   const MessageScreen({super.key});
 
   @override
+  State<MessageScreen> createState() => _MessageScreenState();
+}
+
+class _MessageScreenState extends State<MessageScreen> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.commonWhiteColor,
       body: Stack(
         children: [
-          const BackgroundDesign(),
-          SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(10),
+          BackgroundDesign(),
+          MessageTitle(),
+          Center(
               child: Text(
-                'message_title_text'.tr,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: AppFontStyle.rubik,
-                  color: AppColors.commonBlackColor,
-                ),
-              ),
-            ),
-          ),
+            'Not Message Yet',
+            style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                fontFamily: AppFontStyle.rubik,
+                color: AppColors.commonBlackColor),
+          )),
+          Positioned(bottom: 80, left: 10, right: 10, child: MessageInput()),
         ],
       ),
     );

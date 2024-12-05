@@ -137,11 +137,12 @@ class Languages extends Translations {
           //favorite screen
           'favorite_title_text': 'Favorite',
 
-          //favorite screen
+          //notification screen
           'notification_title_text': 'Notification',
 
-          //favorite screen
+          //message screen
           'message_title_text': 'Message',
+          'write_message': 'Write message',
         },
         'bn_BD': {
           //splash screen
@@ -278,11 +279,12 @@ class Languages extends Translations {
           //favorite screen
           'favorite_title_text': 'প্রিয় ডাক্তার',
 
-          //favorite screen
+          //notification screen
           'notification_title_text': 'বিজ্ঞপ্তি',
 
-          //favorite screen
+          //message screen
           'message_title_text': 'বার্তা',
+          'write_message': 'মেসেজ লিখুন',
         },
         'hi_IN': {
           //splash screen
@@ -420,11 +422,12 @@ class Languages extends Translations {
           //favorite screen
           'favorite_title_text': 'पसंदीदा डॉक्टर',
 
-          //favorite screen
+          //notification screen
           'notification_title_text': 'सूचनाएँ',
 
-          //favorite screen
+          //message screen
           'message_title_text': 'संदेश',
+          'write_message': 'संदेश दर्ज करें',
         },
       };
 }

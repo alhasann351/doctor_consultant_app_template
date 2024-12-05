@@ -37,6 +37,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.commonWhiteColor,
       body: Center(
           child: Obx(
               () => pages.elementAt(bottomNavbarController.currentTab.value))),
