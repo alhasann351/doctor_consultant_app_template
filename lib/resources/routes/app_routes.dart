@@ -2,6 +2,7 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:doctor_consultant_app_template/views/bottom_nav_bar/bottom_nav_bar_screen.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_category_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/users_profile_screen.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
 import 'package:doctor_consultant_app_template/views/signup_login_screen/signup_login_screen.dart';
@@ -54,6 +55,12 @@ class AppRoutes {
           page: () => const BottomNavBarScreen(),
           transition: Transition.rightToLeft,
           transitionDuration: const Duration(milliseconds: 800),
+        ),
+        GetPage(
+          name: RoutesName.userProfileScreen,
+          page: () => const UsersProfileScreen(),
+          transition: Transition.fade,
+          transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
           name: RoutesName.searchInputScreen,
