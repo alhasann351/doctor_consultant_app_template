@@ -13,4 +13,5 @@ class RoutesName {
   static const String popularDoctorsScreen = '/popular_doctors_screen';
   static const String doctorsBookingScreen = '/doctors_booking_screen';
   static const String userProfileScreen = '/user_profile_screen';
+  static const String userDetails = '/user_details';
 }

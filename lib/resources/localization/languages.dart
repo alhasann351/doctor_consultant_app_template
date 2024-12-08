@@ -69,6 +69,7 @@ class Languages extends Translations {
           'user_name_text': 'Hi Al-Hasan!',
           'users_title_text': 'Find popular Doctors',
           'users_profile': 'User profile',
+          'users_details': 'User details',
 
           //search input
           'search_input_hint_text': 'Search',
@@ -211,6 +212,7 @@ class Languages extends Translations {
           'user_name_text': 'হাই আল-হাসান!',
           'users_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
           'users_profile': 'ব্যবহারকারীর প্রোফাইল',
+          'users_details': 'ব্যবহারকারীর বিবরণ',
 
           //search input
           'search_input_hint_text': 'অনুসন্ধান করুন',
@@ -355,6 +357,7 @@ class Languages extends Translations {
           'user_name_text': 'हाय अल-हसन!',
           'users_title_text': 'लोकप्रिय डॉक्टर खोजें',
           'users_profile': 'उपयोगकर्ता रूपरेखा',
+          'users_details': 'उपयोगकर्ता विवरण',
 
           //search input
           'search_input_hint_text': 'खोज',
