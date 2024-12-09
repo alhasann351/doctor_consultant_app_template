@@ -70,6 +70,8 @@ class Languages extends Translations {
           'users_title_text': 'Find popular Doctors',
           'users_profile': 'User profile',
           'users_details': 'User details',
+          'camera': 'Camera',
+          'gallery': 'Gallery',
 
           //search input
           'search_input_hint_text': 'Search',
@@ -213,6 +215,8 @@ class Languages extends Translations {
           'users_title_text': 'জনপ্রিয় ডাক্তার খুঁজুন',
           'users_profile': 'ব্যবহারকারীর প্রোফাইল',
           'users_details': 'ব্যবহারকারীর বিবরণ',
+          'camera': 'ক্যামেরা',
+          'gallery': 'গ্যালারি',
 
           //search input
           'search_input_hint_text': 'অনুসন্ধান করুন',
@@ -358,6 +362,8 @@ class Languages extends Translations {
           'users_title_text': 'लोकप्रिय डॉक्टर खोजें',
           'users_profile': 'उपयोगकर्ता रूपरेखा',
           'users_details': 'उपयोगकर्ता विवरण',
+          'camera': 'कैमरा',
+          'gallery': 'गैलरी',
 
           //search input
           'search_input_hint_text': 'खोज',
