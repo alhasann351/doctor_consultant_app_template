@@ -84,6 +84,7 @@ class UserDetailsInput extends StatelessWidget {
           Obx(
             () => TextFormField(
               showCursor: false,
+              keyboardType: TextInputType.none,
               controller: TextEditingController(
                   text: dateController.selectDateOfBirth.value),
               onTap: () {
@@ -113,6 +114,9 @@ class UserDetailsInput extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          const SizedBox(
+            height: 20,
           ),
         ],
       ),

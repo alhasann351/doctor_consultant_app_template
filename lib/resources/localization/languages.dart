@@ -72,6 +72,7 @@ class Languages extends Translations {
           'users_details': 'User details',
           'camera': 'Camera',
           'gallery': 'Gallery',
+          'submit': 'Submit',
 
           //search input
           'search_input_hint_text': 'Search',
@@ -217,6 +218,7 @@ class Languages extends Translations {
           'users_details': 'ব্যবহারকারীর বিবরণ',
           'camera': 'ক্যামেরা',
           'gallery': 'গ্যালারি',
+          'submit': 'জমা দিন',
 
           //search input
           'search_input_hint_text': 'অনুসন্ধান করুন',
@@ -364,6 +366,7 @@ class Languages extends Translations {
           'users_details': 'उपयोगकर्ता विवरण',
           'camera': 'कैमरा',
           'gallery': 'गैलरी',
+          'submit': 'सबमिट',
 
           //search input
           'search_input_hint_text': 'खोज',

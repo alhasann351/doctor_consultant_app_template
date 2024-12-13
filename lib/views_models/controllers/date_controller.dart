@@ -1,3 +1,4 @@
+import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,6 +12,16 @@ class DateController extends GetxController {
 
   Future<void> pickDate(BuildContext context) async {
     DateTime? pickDateOfBirth = await showDatePicker(
+      builder: (BuildContext context, Widget? child) {
+        return Theme(
+          data: ThemeData(
+            colorScheme:
+                const ColorScheme.light(primary: AppColors.commonGreenColor),
+            dialogBackgroundColor: AppColors.commonWhiteColor,
+          ),
+          child: child ?? const Text(""),
+        );
+      },
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(1980),
