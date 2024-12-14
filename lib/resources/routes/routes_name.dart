@@ -14,4 +14,13 @@ class RoutesName {
   static const String doctorsBookingScreen = '/doctors_booking_screen';
   static const String userProfileScreen = '/user_profile_screen';
   static const String userDetails = '/user_details';
+  static const String myAppointmentScreen = '/my_appointment_screen';
+  static const String myReviewsScreen = '/my_reviews_screen';
+  static const String notificationsSettingScreen =
+      '/notifications_setting_screen';
+  static const String languagesSettingScreen = '/languages_setting_screen';
+  static const String privacyPolicyScreen = '/privacy_policy_screen';
+  static const String termsConditionsScreen = '/terms_conditions_screen';
+  static const String faqScreen = '/faq_screen';
+  static const String aboutUsScreen = '/about_us_screen';
 }

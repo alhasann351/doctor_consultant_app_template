@@ -3,6 +3,14 @@ import 'package:doctor_consultant_app_template/views/bottom_nav_bar/bottom_nav_b
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_category_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/users_profile_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/about_us_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/faq_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/languages_setting_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/my_appointment_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/my_reviews_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/notification_setting_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/privacy_policy_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/terms_conditions_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/user_details.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
@@ -66,6 +74,54 @@ class AppRoutes {
         GetPage(
           name: RoutesName.userDetails,
           page: () => const UserDetails(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.myAppointmentScreen,
+          page: () => const MyAppointmentScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.myReviewsScreen,
+          page: () => const MyReviewsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.notificationsSettingScreen,
+          page: () => const NotificationSettingScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.languagesSettingScreen,
+          page: () => const LanguagesSettingsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.privacyPolicyScreen,
+          page: () => const PrivacyPolicyScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.termsConditionsScreen,
+          page: () => const TermsConditionsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.faqScreen,
+          page: () => const FAQScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.aboutUsScreen,
+          page: () => const AboutUsScreen(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),
