@@ -2,11 +2,11 @@ import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart'
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../resources/components/back_button_title.dart';
-import '../../../../resources/components/background_design.dart';
+import '../../../../../resources/components/back_button_title.dart';
+import '../../../../../resources/components/background_design.dart';
 
-class FAQScreen extends StatelessWidget {
-  const FAQScreen({super.key});
+class LanguagesSettingsScreen extends StatelessWidget {
+  const LanguagesSettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class FAQScreen extends StatelessWidget {
       body: Stack(
         children: [
           const BackgroundDesign(),
-          BackButtonTitle(titleText: 'faq'.tr)
+          BackButtonTitle(titleText: 'languages'.tr),
         ],
       ),
     );

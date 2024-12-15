@@ -2,9 +2,9 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../resources/assets/images_icons.dart';
-import '../../../../resources/colors/app_colors.dart';
-import '../../../../resources/fonts/app_font_style.dart';
+import '../../../../../resources/assets/images_icons.dart';
+import '../../../../../resources/colors/app_colors.dart';
+import '../../../../../resources/fonts/app_font_style.dart';
 
 class UsersProfile extends StatelessWidget {
   const UsersProfile({super.key});

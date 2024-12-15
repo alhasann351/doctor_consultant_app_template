@@ -23,4 +23,5 @@ class RoutesName {
   static const String termsConditionsScreen = '/terms_conditions_screen';
   static const String faqScreen = '/faq_screen';
   static const String aboutUsScreen = '/about_us_screen';
+  static const String contactUsScreen = '/contact_us_screen';
 }

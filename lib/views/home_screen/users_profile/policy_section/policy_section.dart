@@ -162,6 +162,41 @@ class PolicySection extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(
+          height: 55,
+          width: MediaQuery.of(context).size.width,
+          child: GestureDetector(
+            onTap: () {
+              Get.toNamed(RoutesName.contactUsScreen);
+            },
+            child: Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              color: AppColors.commonWhiteColor,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'contact_us'.tr,
+                      style: const TextStyle(
+                        fontFamily: AppFontStyle.rubik,
+                        fontSize: 18,
+                        color: AppColors.commonBlackColor,
+                      ),
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: AppColors.commonBlackColor,
+                      size: 20,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

@@ -3,7 +3,7 @@ import 'package:doctor_consultant_app_template/views/home_screen/doctors_categor
 import 'package:doctor_consultant_app_template/views/home_screen/live_doctors/widgets/live_doctors.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/popular_doctors/widgets/popular_doctors.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/search_input/widgets/search_input.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/users_profile.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/user_details_section/widgets/users_profile.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

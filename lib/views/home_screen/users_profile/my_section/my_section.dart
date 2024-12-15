@@ -4,8 +4,8 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class UserSection extends StatelessWidget {
-  const UserSection({super.key});
+class MySection extends StatelessWidget {
+  const MySection({super.key});
 
   @override
   Widget build(BuildContext context) {

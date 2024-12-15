@@ -2,16 +2,12 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:doctor_consultant_app_template/views/bottom_nav_bar/bottom_nav_bar_screen.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_category_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/about_us_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/contact_us_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/faq_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/setting_section/widgets/languages_setting_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/setting_section/widgets/notification_setting_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/users_profile_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/about_us_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/faq_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/languages_setting_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/my_appointment_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/my_reviews_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/notification_setting_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/privacy_policy_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/terms_conditions_screen.dart';
-import 'package:doctor_consultant_app_template/views/home_screen/users_profile/widgets/user_details.dart';
 import 'package:doctor_consultant_app_template/views/login_screen/login_screen.dart';
 import 'package:doctor_consultant_app_template/views/onboarding_screen/onboarding_screen.dart';
 import 'package:doctor_consultant_app_template/views/signup_login_screen/signup_login_screen.dart';
@@ -24,6 +20,11 @@ import '../../views/home_screen/doctors_category/doctors_booking/doctors_booking
 import '../../views/home_screen/live_doctors/live_doctors_screen.dart';
 import '../../views/home_screen/popular_doctors/popular_doctors_screen.dart';
 import '../../views/home_screen/search_input/search_input_screen.dart';
+import '../../views/home_screen/users_profile/my_section/widgets/my_appointment_screen.dart';
+import '../../views/home_screen/users_profile/my_section/widgets/my_reviews_screen.dart';
+import '../../views/home_screen/users_profile/policy_section/widgets/privacy_policy_screen.dart';
+import '../../views/home_screen/users_profile/policy_section/widgets/terms_conditions_screen.dart';
+import '../../views/home_screen/users_profile/user_details_section/widgets/user_details.dart';
 
 class AppRoutes {
   static appRoutes() => [
@@ -115,13 +116,19 @@ class AppRoutes {
         ),
         GetPage(
           name: RoutesName.faqScreen,
-          page: () => const FAQScreen(),
+          page: () => FAQScreen(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),
         GetPage(
           name: RoutesName.aboutUsScreen,
           page: () => const AboutUsScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.contactUsScreen,
+          page: () => const ContactUsScreen(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),

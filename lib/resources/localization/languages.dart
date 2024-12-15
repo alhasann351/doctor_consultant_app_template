@@ -83,7 +83,43 @@ class Languages extends Translations {
           'privacy_policy': 'Privacy policy',
           'terms_conditions': 'Terms & conditions',
           'faq': 'FAQ',
+          'title_question_1': '1. What is the Doctor Consultant App?',
+          'answer_question_1':
+              'The Doctor Consultant App is a mobile application that connects patients with qualified medical professionals for consultations, advice, and follow-up care from the comfort of their homes.',
+          'title_question_2': '2. How do I create an account on the app?',
+          'answer_question_2':
+              'To create an account, download the app from the App Store or Google Play, open it, and follow the prompts to enter your personal information, including your name, email address, and phone number. You will also need to create a password.',
+          'title_question_3':
+              '3. Is the app available for both iOS and Android devices?',
+          'answer_question_3':
+              'Yes, the Doctor Consultant App is available for download on both iOS and Android platforms. You can find it in the App Store or Google Play Store.',
+          'title_question_4': '4. How can I find a doctor through the app?',
+          'answer_question_4':
+              'You can search for doctors by specialty, location, or availability. Simply enter your criteria in the search bar, and the app will provide you with a list of suitable doctors for your needs.',
+          'title_question_5':
+              '5. Are the consultations conducted via video, chat, or in-person?',
+          'answer_question_5':
+              'Consultations can be conducted via video calls or chat, allowing for flexibility and convenience. In-person consultations may also be available depending on the doctors practice and your location.',
+          'title_question_6': '6. How do I schedule an appointment?',
+          'answer_question_6':
+              'To schedule an appointment, select a doctor from your search results, choose an available time slot, and confirm your appointment. You will receive a notification with the details.',
+          'title_question_7': '7. Is there a fee for using the app?',
+          'answer_question_7':
+              'While downloading the app is free, consultations may incur a fee depending on the doctors rates. Pricing information will be provided during the booking process.',
+          'title_question_8':
+              '8. What should I do if I have a technical issue with the app?',
+          'answer_question_8':
+              'If you encounter any technical issues, you can contact our support team through the apps help section or visit our website for troubleshooting guides and customer service.',
+          'title_question_9':
+              '9. Can I access my medical history through the app?',
+          'answer_question_9':
+              'Yes, the app allows you to maintain a personal health record, where you can store and access your medical history, prescriptions, and doctor notes securely.',
+          'title_question_10':
+              '10. How do I ensure my privacy and data security while using the app?',
+          'answer_question_10':
+              'We take your privacy seriously. The app uses encryption and follows strict data protection regulations to ensure that your personal and medical information is secure. You can read our privacy policy for more details on how we protect your data.',
           'about_us': 'About us',
+          'contact_us': 'Contact us',
           'logout': 'Logout',
 
           //search input
@@ -241,7 +277,44 @@ class Languages extends Translations {
           'privacy_policy': 'গোপনীয়তা নীতি',
           'terms_conditions': 'নিয়ম ও শর্তাবলী',
           'faq': 'FAQ',
+          'title_question_1': '১. ডক্টর কনসালটেন্ট অ্যাপ কি?',
+          'answer_question_1':
+              'ডক্টর কনসালট্যান্ট অ্যাপ হল একটি মোবাইল অ্যাপ্লিকেশন যা রোগীদের পরামর্শ, পরামর্শ এবং ফলো-আপ যত্নের জন্য যোগ্য চিকিৎসা পেশাদারদের সাথে তাদের ঘরে বসেই সংযুক্ত করে।',
+          'title_question_2': '২. আমি কিভাবে অ্যাপে একটি অ্যাকাউন্ট তৈরি করব?',
+          'answer_question_2':
+              'একটি অ্যাকাউন্ট তৈরি করতে, অ্যাপ স্টোর বা Google Play থেকে অ্যাপটি ডাউনলোড করুন, এটি খুলুন এবং আপনার নাম, ইমেল ঠিকানা এবং ফোন নম্বর সহ আপনার ব্যক্তিগত তথ্য প্রবেশের অনুরোধগুলি অনুসরণ করুন। আপনাকে একটি পাসওয়ার্ডও তৈরি করতে হবে।',
+          'title_question_3':
+              '৩. অ্যাপটি কি iOS এবং Android উভয় ডিভাইসের জন্য উপলব্ধ?',
+          'answer_question_3':
+              'হ্যাঁ, ডাক্তার পরামর্শদাতা অ্যাপটি iOS এবং Android উভয় প্ল্যাটফর্মে ডাউনলোডের জন্য উপলব্ধ। আপনি এটি অ্যাপ স্টোর বা গুগল প্লে স্টোরে খুঁজে পেতে পারেন।',
+          'title_question_4':
+              '৪. অ্যাপের মাধ্যমে আমি কীভাবে একজন ডাক্তার খুঁজে পাব?',
+          'answer_question_4':
+              'আপনি বিশেষত্ব, অবস্থান, বা প্রাপ্যতা দ্বারা ডাক্তারদের জন্য অনুসন্ধান করতে পারেন। শুধু অনুসন্ধান বারে আপনার মানদণ্ড লিখুন, এবং অ্যাপটি আপনাকে আপনার প্রয়োজনের জন্য উপযুক্ত ডাক্তারদের একটি তালিকা প্রদান করবে।',
+          'title_question_5':
+              '৫. পরামর্শগুলি কি ভিডিও, চ্যাট বা ব্যক্তিগতভাবে পরিচালিত হয়?',
+          'answer_question_5':
+              'পরামর্শ ভিডিও কল বা চ্যাটের মাধ্যমে পরিচালিত হতে পারে, নমনীয়তা এবং সুবিধার জন্য অনুমতি দেয়। ডাক্তারদের অনুশীলন এবং আপনার অবস্থানের উপর নির্ভর করে ব্যক্তিগত পরামর্শও পাওয়া যেতে পারে।',
+          'title_question_6': '৬. আমি কিভাবে একটি অ্যাপয়েন্টমেন্ট শিডিউল করব?',
+          'answer_question_6':
+              'একটি অ্যাপয়েন্টমেন্ট নির্ধারণ করতে, আপনার অনুসন্ধানের ফলাফল থেকে একজন ডাক্তার নির্বাচন করুন, একটি উপলব্ধ সময় স্লট চয়ন করুন এবং আপনার অ্যাপয়েন্টমেন্ট নিশ্চিত করুন৷ আপনি বিস্তারিত সহ একটি বিজ্ঞপ্তি পাবেন',
+          'title_question_7': '৭. অ্যাপ ব্যবহার করার জন্য কি কোনো ফি আছে?',
+          'answer_question_7':
+              'অ্যাপটি ডাউনলোড করার সময় বিনামূল্যে, পরামর্শের জন্য ডাক্তারের হারের উপর নির্ভর করে একটি ফি লাগতে পারে। বুকিং প্রক্রিয়া চলাকালীন মূল্যের তথ্য প্রদান করা হবে।',
+          'title_question_8':
+              '৮. অ্যাপটিতে আমার কোনো প্রযুক্তিগত সমস্যা হলে আমার কী করা উচিত?',
+          'answer_question_8':
+              'যদি আপনি কোনো প্রযুক্তিগত সমস্যার সম্মুখীন হন, আপনি অ্যাপস সহায়তা বিভাগের মাধ্যমে আমাদের সহায়তা দলের সাথে যোগাযোগ করতে পারেন বা সমস্যা সমাধানের নির্দেশিকা এবং গ্রাহক পরিষেবার জন্য আমাদের ওয়েবসাইটে যেতে পারেন।',
+          'title_question_9':
+              '৯. আমি কি অ্যাপের মাধ্যমে আমার চিকিৎসা ইতিহাস অ্যাক্সেস করতে পারি?',
+          'answer_question_9':
+              'হ্যাঁ, অ্যাপটি আপনাকে একটি ব্যক্তিগত স্বাস্থ্য রেকর্ড বজায় রাখার অনুমতি দেয়, যেখানে আপনি নিরাপদে আপনার চিকিৎসা ইতিহাস, প্রেসক্রিপশন এবং ডাক্তারের নোট সংরক্ষণ এবং অ্যাক্সেস করতে পারেন।',
+          'title_question_10':
+              '১০. অ্যাপটি ব্যবহার করার সময় আমি কীভাবে আমার গোপনীয়তা এবং ডেটা নিরাপত্তা নিশ্চিত করব?',
+          'answer_question_10':
+              'আমরা আপনার গোপনীয়তাকে গুরুত্ব সহকারে নিই। অ্যাপটি এনক্রিপশন ব্যবহার করে এবং আপনার ব্যক্তিগত ও চিকিৎসা সংক্রান্ত তথ্য নিরাপদ কিনা তা নিশ্চিত করতে কঠোর ডেটা সুরক্ষা বিধি অনুসরণ করে। আমরা কীভাবে আপনার ডেটা সুরক্ষিত রাখি সে সম্পর্কে আরও বিস্তারিত জানার জন্য আপনি আমাদের গোপনীয়তা নীতি পড়তে পারেন।',
           'about_us': 'আমাদের সম্পর্কে',
+          'contact_us': 'যোগাযোগ',
           'logout': 'লগআউট',
 
           //search input
@@ -401,7 +474,43 @@ class Languages extends Translations {
           'privacy_policy': 'गोपनीयता नीति',
           'terms_conditions': 'नियम और शर्तें',
           'faq': 'FAQ',
+          'title_question_1': '१. डॉक्टर कंसल्टेंट ऐप क्या है?',
+          'answer_question_1':
+              'डॉक्टर कंसल्टेंट ऐप एक मोबाइल एप्लिकेशन है जो मरीजों को उनके घर बैठे परामर्श, सलाह और अनुवर्ती देखभाल के लिए योग्य चिकित्सा पेशेवरों से जोड़ता है।',
+          'title_question_2': '२. मैं ऐप पर खाता कैसे बनाऊं?',
+          'answer_question_2':
+              'खाता बनाने के लिए, ऐप स्टोर या Google Play से ऐप डाउनलोड करें, इसे खोलें और अपना नाम, ईमेल पता और फ़ोन नंबर सहित अपनी व्यक्तिगत जानकारी दर्ज करने के लिए संकेतों का पालन करें। आपको एक पासवर्ड भी बनाना होगा।',
+          'title_question_3':
+              '३. क्या ऐप iOS और Android दोनों डिवाइस के लिए उपलब्ध है?',
+          'answer_question_3':
+              'हां, डॉक्टर कंसल्टेंट ऐप iOS और Android दोनों प्लेटफ़ॉर्म पर डाउनलोड के लिए उपलब्ध है। आप इसे ऐप स्टोर या Google Play स्टोर में पा सकते हैं।',
+          'title_question_4': '४. मैं ऐप के ज़रिए डॉक्टर कैसे ढूँढ़ सकता हूँ?',
+          'answer_question_4':
+              'आप विशेषता, स्थान या उपलब्धता के आधार पर डॉक्टरों की खोज कर सकते हैं। बस खोज बार में अपने मानदंड दर्ज करें, और ऐप आपको आपकी ज़रूरतों के लिए उपयुक्त डॉक्टरों की सूची प्रदान करेगा।',
+          'title_question_5':
+              '५. क्या परामर्श वीडियो, चैट या व्यक्तिगत रूप से आयोजित किए जाते हैं?',
+          'answer_question_5':
+              'परामर्श वीडियो कॉल या चैट के माध्यम से आयोजित किए जा सकते हैं, जिससे लचीलापन और सुविधा मिलती है। डॉक्टर के अभ्यास और आपके स्थान के आधार पर व्यक्तिगत परामर्श भी उपलब्ध हो सकते हैं।',
+          'title_question_6': '६. मैं अपॉइंटमेंट कैसे शेड्यूल करूँ?',
+          'answer_question_6':
+              'अपॉइंटमेंट शेड्यूल करने के लिए, अपने खोज परिणामों से डॉक्टर चुनें, उपलब्ध समय स्लॉट चुनें और अपनी अपॉइंटमेंट की पुष्टि करें। आपको विवरण के साथ एक सूचना प्राप्त होगी।',
+          'title_question_7': '७. क्या ऐप का उपयोग करने के लिए कोई शुल्क है?',
+          'answer_question_7':
+              'ऐप डाउनलोड करना निःशुल्क है, लेकिन परामर्श के लिए डॉक्टरों की दरों के आधार पर शुल्क लग सकता है। बुकिंग प्रक्रिया के दौरान मूल्य निर्धारण की जानकारी प्रदान की जाएगी।',
+          'title_question_8':
+              '८. अगर मुझे ऐप के साथ कोई तकनीकी समस्या है तो मुझे क्या करना चाहिए?',
+          'answer_question_8':
+              'यदि आपको कोई तकनीकी समस्या आती है, तो आप ऐप सहायता अनुभाग के माध्यम से हमारी सहायता टीम से संपर्क कर सकते हैं या समस्या निवारण मार्गदर्शिकाओं और ग्राहक सेवा के लिए हमारी वेबसाइट पर जा सकते हैं।',
+          'title_question_9':
+              '९. क्या मैं ऐप के माध्यम से अपने चिकित्सा इतिहास तक पहुँच सकता हूँ?',
+          'answer_question_9':
+              'हाँ, ऐप आपको एक व्यक्तिगत स्वास्थ्य रिकॉर्ड बनाए रखने की अनुमति देता है, जहाँ आप अपने चिकित्सा इतिहास, नुस्खे और डॉक्टर के नोट्स को सुरक्षित रूप से संग्रहीत और एक्सेस कर सकते हैं।',
+          'title_question_10':
+              '१०. ऐप का उपयोग करते समय मैं अपनी गोपनीयता और डेटा सुरक्षा कैसे सुनिश्चित करूँ?',
+          'answer_question_10':
+              'हम आपकी गोपनीयता को गंभीरता से लेते हैं। ऐप एन्क्रिप्शन का उपयोग करता है और यह सुनिश्चित करने के लिए सख्त डेटा सुरक्षा विनियमों का पालन करता है कि आपकी व्यक्तिगत और चिकित्सा जानकारी सुरक्षित है। हम आपके डेटा की सुरक्षा कैसे करते हैं, इस बारे में अधिक जानकारी के लिए आप हमारी गोपनीयता नीति पढ़ सकते हैं।',
           'about_us': 'हमारे बारे में',
+          'contact_us': 'हमसे संपर्क करें',
           'logout': 'लॉगआउट',
 
           //search input
