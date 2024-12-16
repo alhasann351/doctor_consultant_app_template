@@ -86,7 +86,7 @@ class AppRoutes {
         ),
         GetPage(
           name: RoutesName.myReviewsScreen,
-          page: () => const MyReviewsScreen(),
+          page: () => MyReviewsScreen(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),
