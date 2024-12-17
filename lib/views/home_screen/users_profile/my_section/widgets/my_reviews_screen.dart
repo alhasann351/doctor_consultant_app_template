@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 import '../../../../../resources/components/back_button_title.dart';
 import '../../../../../resources/components/background_design.dart';
+import '../../../../../resources/components/loading_animation.dart';
 import '../../../../../resources/fonts/app_font_style.dart';
 
 class MyReviewsScreen extends StatelessWidget {
@@ -96,8 +97,16 @@ class MyReviewsScreen extends StatelessWidget {
                                   size: const Size.fromRadius(20),
                                   // Image radius
                                   child: CachedNetworkImage(
-                                      imageUrl: doctorsImages[index],
-                                      fit: BoxFit.cover),
+                                    imageUrl: doctorsImages[index],
+                                    fit: BoxFit.cover,
+                                    placeholder: (context, url) =>
+                                        const LoadingAnimation(),
+                                    errorWidget: (context, url, error) =>
+                                        const Icon(
+                                      Icons.error,
+                                      color: AppColors.commonGreyColor,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),

@@ -15,6 +15,7 @@ class RoutesName {
   static const String userProfileScreen = '/user_profile_screen';
   static const String userDetails = '/user_details';
   static const String myAppointmentScreen = '/my_appointment_screen';
+  static const String addReview = '/add_review';
   static const String myReviewsScreen = '/my_reviews_screen';
   static const String notificationsSettingScreen =
       '/notifications_setting_screen';

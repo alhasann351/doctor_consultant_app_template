@@ -1,5 +1,6 @@
 import 'package:doctor_consultant_app_template/resources/colors/app_colors.dart';
 import 'package:doctor_consultant_app_template/resources/components/rounded_button.dart';
+import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class AppUtils {
 
   void showDoctorBookingDialog(String doctorName, doctorSpeciality) {
     Get.dialog(AlertDialog(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.commonWhiteColor,
       title: Text(
         textAlign: TextAlign.center,
         'doctor_booking_successfully'.tr,
@@ -33,7 +34,7 @@ class AppUtils {
             fontFamily: AppFontStyle.rubik,
             fontWeight: FontWeight.bold,
             fontSize: 16,
-            color: Colors.black),
+            color: AppColors.commonBlackColor),
       ),
       content: SizedBox(
         height: 215,
@@ -47,7 +48,7 @@ class AppUtils {
                   fontFamily: AppFontStyle.rubik,
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
-                  color: Colors.black),
+                  color: AppColors.commonBlackColor),
             ),
             const SizedBox(
               height: 10,
@@ -59,7 +60,7 @@ class AppUtils {
                   fontFamily: AppFontStyle.rubik,
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
-                  color: Colors.grey),
+                  color: AppColors.commonGreyColor),
             ),
             const SizedBox(
               height: 10,
@@ -72,7 +73,7 @@ class AppUtils {
                       fontFamily: AppFontStyle.rubik,
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      color: Colors.white),
+                      color: AppColors.commonWhiteColor),
                   onTap: () {
                     Get.back();
                   }),
@@ -81,14 +82,16 @@ class AppUtils {
               height: 10,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.offNamed(RoutesName.myAppointmentScreen);
+              },
               child: Text(
                 'edit_appointment'.tr,
                 style: const TextStyle(
                     fontFamily: AppFontStyle.rubik,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
-                    color: Colors.grey),
+                    color: AppColors.commonGreyColor),
               ),
             ),
           ],

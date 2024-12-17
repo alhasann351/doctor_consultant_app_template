@@ -2,6 +2,7 @@ import 'package:doctor_consultant_app_template/resources/routes/routes_name.dart
 import 'package:doctor_consultant_app_template/views/bottom_nav_bar/bottom_nav_bar_screen.dart';
 import 'package:doctor_consultant_app_template/views/forgot_password_screen/forgot_password_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/doctors_category/doctors_category_screen.dart';
+import 'package:doctor_consultant_app_template/views/home_screen/users_profile/my_section/widgets/add_review.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/about_us_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/contact_us_screen.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/policy_section/widgets/faq_screen.dart';
@@ -80,7 +81,13 @@ class AppRoutes {
         ),
         GetPage(
           name: RoutesName.myAppointmentScreen,
-          page: () => const MyAppointmentScreen(),
+          page: () => MyAppointmentScreen(),
+          transition: Transition.zoom,
+          transitionDuration: const Duration(milliseconds: 600),
+        ),
+        GetPage(
+          name: RoutesName.addReview,
+          page: () => const AddReview(),
           transition: Transition.zoom,
           transitionDuration: const Duration(milliseconds: 600),
         ),
