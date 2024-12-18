@@ -13,7 +13,6 @@ class SwitchNotifications extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('object');
     return SafeArea(
         child: Column(
       children: [

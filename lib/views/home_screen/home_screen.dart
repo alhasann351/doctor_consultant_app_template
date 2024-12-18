@@ -5,6 +5,9 @@ import 'package:doctor_consultant_app_template/views/home_screen/popular_doctors
 import 'package:doctor_consultant_app_template/views/home_screen/search_input/widgets/search_input.dart';
 import 'package:doctor_consultant_app_template/views/home_screen/users_profile/user_details_section/widgets/users_profile.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../views_models/controllers/switch_languages_controller.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,6 +15,9 @@ class HomeScreen extends StatefulWidget {
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
+final SwitchLanguagesController switchLanguagesController =
+    Get.put(SwitchLanguagesController());
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
